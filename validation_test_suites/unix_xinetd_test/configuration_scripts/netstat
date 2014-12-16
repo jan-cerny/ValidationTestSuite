@@ -1,0 +1,15 @@
+# Begin /etc/xinetd.d/netstat
+
+service netstat
+{
+   disable           = yes
+   socket_type       = stream
+   wait              = no
+   user              = nobody
+   server            = /usr/ucb/netstat
+   server_args       = -f inet
+   only_from         = 128.138.209.0
+   log_on_success    = HOST
+}
+
+# End /etc/xinetd.d/netstat

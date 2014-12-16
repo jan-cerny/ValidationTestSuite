@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scap-validation-results xmlns="http://scap.nist.gov/schema/validation/results/0.1"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         implementation-version="scapval-1.2.1.9"
+                         message-count="28"
+                         resource-id="R2000-5-win-datastream.xml"
+                         validation-datetime="2013-08-05T09:34:54"
+                         xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
+   <messages>
+      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
+      <message level="INFO" resource-id="R2000-5-win-datastream.xml" type="SUBMITTED_RESOURCE">Resource R2000-5-win-datastream.xml was submitted.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\nvdcce-0.1-feed.xml.</message>
+      <message level="INFO" type="APPLICATION">File is less than 12 hours old, skipping download for C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="INFO" type="APPLICATION">Hashing inputs.</message>
+      <message level="INFO" resource-id="R2000-5-win-datastream.xml" type="HASH">SHA-256 : 9F39D4D2AD6F0843889249C4A36C1F64A6327B0566EBC5E8E724C2FEA38EF61C</message>
+      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 838DDDFCA7C69A311563DF7B7928313CAC0D0DE4F43339302E1D0558E6FC8123</message>
+      <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection R2000-5-win-datastream.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_win-R2000-5-cpe-dictionary.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_win-R2000-5-xccdf.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_win-R2000-5-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_win-R2000-5-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Applying SCAP schematron rules to content.</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule xccdf-1.2.sch with phase #ALL against source scap_gov.nist_comp_win-R2000-5-xccdf.xml</message>
+      <message level="WARN" location="/*[local-name()='Benchmark']/*[local-name()='platform']"
+               requirement-id="330-3"
+               resource-id="scap_gov.nist_comp_win-R2000-5-xccdf.xml"
+               test="false()"
+               type="SCHEMATRON">Warning: The 'cpe:/' prefix (CPE URI binding) is allowed within an @idref attribute, but the CPE Formatted String binding is preferred. See the XCCDF 1.2.1 specification, Section 6.2.5.</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.8.sch against source scap_gov.nist_comp_win-R2000-5-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.10.sch against source scap_gov.nist_comp_win-R2000-5-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule tmsad-1.0.sch against source R2000-5-win-datastream.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule source-data-stream-1.2_1.0.sch against source R2000-5-win-datastream.xml</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:version[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
+               requirement-id="3-2"
+               resource-id="R2000-5-win-datastream.xml"
+               test="exists(@time)"
+               type="SCHEMATRON">The @time attribute of the &lt;xccdf:version&gt; element SHOULD be used for a timestamp of when the benchmark was defined.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
+               requirement-id="251-1"
+               resource-id="R2000-5-win-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_xccdf_gov.nist.validation_R2000.5_rule_1 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]"
+               requirement-id="251-1"
+               resource-id="R2000-5-win-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_xccdf_gov.nist.validation_R2000.5_rule_2 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]"
+               requirement-id="207-1"
+               resource-id="R2000-5-win-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.r2000.5:def:5 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:02.381.</message>
+      <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:05.694.</message>
+   </messages>
+</scap-validation-results>

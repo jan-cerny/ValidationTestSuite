@@ -1,0 +1,2298 @@
+<html xmlns:svr="http://scap.nist.gov/schema/validation/results/0.1" xmlns:xcf="nist:scap:xslt:function">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SCAP Content Validation Results</title><style type="text/css">
+				
+				
+				body,div,p,blockquote,ol,ul,dl,li,dt,dd,td,th,pre {
+				font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+				}
+
+				body {
+				background-color: #ffffff;
+				color: #000154;
+				font-size: 0.85em;
+				margin: 2em;
+				width: 75%;
+				}
+
+
+				h3,h4,h5,h6 {
+				font-size:1em;
+				}
+
+				
+				html,form,div,ol,ul,dl,li,dt,dd,td,th,h1,h2,h3,h4,h5,h6,pre,p,blockquote,fieldset,img {
+				margin:0;
+				padding:0;
+				}
+
+				h1 {
+				margin: 1em -0.5em 0.5em;
+				font-size:1.5em;
+				border-bottom: solid 3px #cccccc;
+				}
+
+				h2 {
+				margin: 1em -0.5em 0.5em;
+				padding: 2px 3px 2px;
+				font-size:1.25em;
+				border-bottom: solid 3px #cccccc;
+				background-color: #eeeeee;
+				}
+
+				h3 {
+				margin: 1em -0.5em 0.5em 0.5em;
+				padding: 2px 3px 2px;
+				font-size:1em;
+				border-bottom: solid 3px #cccccc;
+				background-color: #eeeeee;
+				}
+
+				pre {
+				background-color: #dddddd;
+				border: solid thin black;
+				margin: 0.5em 5em;
+				padding: 1em;
+				overflow: auto;
+				width: 100%;
+				font-size: 1.25em;
+				}
+
+				code, samp {
+				font-family: courier;
+				}
+
+				
+				a img,:link img,:visited img, img, fieldset {
+				border:none;
+				}
+
+				
+				address {
+				font-style:normal;
+				}
+
+				
+				p {
+				margin: 0 0 0.3em 0;
+				}
+
+				
+				abbr, acronym, .help {
+				border-bottom: 1px dotted #333;
+				cursor: help;
+				}
+
+				.command {
+				font-size: 1em;
+				font-weight: bold;
+				}
+
+				.flag {
+				font-weight: bold;
+				}
+
+				.arg {
+				font-weight: bold;
+				font-style: italic;
+				}
+
+				div.section {
+				margin: 2em 1.25em 0em;
+				}
+
+				div.topOfPage {
+				font-size: 0.7em;
+				margin: 1em -1.5em 0em;
+				}
+
+				#parameters dd {
+				margin: 0.25em 1em;
+				}
+
+				#parameters dt {
+				margin-top: 1em;
+				}
+
+				#parameters dd ul {
+				list-style: none;
+				}
+
+				#parameters dd li {
+				margin: 0.25em 1em;
+				}
+
+				#remarks ul {
+				list-style: none;
+				}
+
+				#remarks li {
+				margin: 1em 1em;
+				}
+
+				div.example {
+				margin-left: 1em;
+				}
+
+				table {
+					border-width: 2px;
+					border-style: solid;
+					border-color: #cccccc;
+
+				}
+				td, th { 
+					border-width: 2px;
+					border-style: solid;
+					border-color: #cccccc;
+					padding:10px;
+				}
+                	</style></head>
+   <body>
+      <h1>SCAP Content Validation Results</h1>
+      <h3>Validation Result: <font color="#347235" size="+1">PASS</font><br>Submitted Resource: ind_environment_variable_58_test-datastream.xml (SHA-256 : E8898C5BA544C6EE39511A680C392B69D71B19C1E0C9DF4B424A3741673899F5)<br>Validation Time: 2013-08-07T15:32:25<br>Tool Version: scapval-1.2.1.9<br></h3>
+      <h2>ind_environment_variable_58_test-datastream.xml</h2>
+      <table>
+         <tr>
+            <th>Requirement</th>
+            <th>Count</th>
+            <th>Level</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Test</th>
+         </tr>
+         <tr>
+            <th>3-2</th>
+            <td align="center">1<br>(of&nbsp;1)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>The @time attribute of the &lt;xccdf:version&gt; element SHOULD be used for a timestamp
+               of when the benchmark was defined.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:version[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]</td>
+            <td>exists(@time)</td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:1 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][1]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:2 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][2]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:3 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][3]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:4 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][4]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:5 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][5]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:6 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][6]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:7 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][7]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:8 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][8]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:9 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][9]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:10 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][10]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:11 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][11]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:12 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][12]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:13 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][13]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:14 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][14]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:15 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][15]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:16 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][16]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:17 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][17]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:18 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][18]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:19 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][19]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:20 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][20]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:21 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][21]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:22 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][22]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:23 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][23]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:24 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][24]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:25 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][25]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:26 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][26]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:27 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][27]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:28 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][28]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:29 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][29]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:30 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][30]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:31 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][31]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:32 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][32]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:33 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][33]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:34 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][34]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:35 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][35]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:36 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][36]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:37 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][37]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:38 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][38]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:39 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][39]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:40 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][40]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:41 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][41]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:42 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][42]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:43 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][43]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:44 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][44]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:45 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][45]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:46 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][46]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:47 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][47]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:48 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][48]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:49 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][49]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:50 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][50]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:51 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][51]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:tst:52 - The OVAL test type is not checked
+               in the NIST SCAP Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:environmentvariable58_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#independent'][52]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>A21</th>
+            <td align="center">1<br>(of&nbsp;53)
+            </td>
+            <td>INFO</td>
+            <td>SCHEMATRON</td>
+            <td>oval:gov.nist.cpe.oval:tst:101 - The OVAL test type is not checked in the NIST SCAP
+               Validation Program.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:rpminfo_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#linux'][1]</td>
+            <td>exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace
+               eq namespace-uri(current()) and @name eq local-name(current())])
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:1 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:2 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][2]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:3 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][3]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:4 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][4]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:5 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][5]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:6 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][6]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:7 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][7]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:8 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][8]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:9 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][9]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:10 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][10]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:11 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][11]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:12 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][12]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:13 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][13]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:14 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][14]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:15 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][15]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:16 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][16]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:17 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][17]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:18 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][18]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:19 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][19]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:20 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][20]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:21 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][21]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:22 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][22]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:23 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][23]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:24 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][24]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:25 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][25]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:26 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][26]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:27 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][27]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:28 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][28]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:29 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][29]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:30 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][30]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:31 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][31]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:32 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][32]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:33 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][33]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:34 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][34]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:35 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][35]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:36 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][36]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:37 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][37]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:38 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][38]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:39 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][39]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:40 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][40]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:41 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][41]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:42 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][42]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:43 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][43]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:44 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][44]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:45 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][45]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:46 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][46]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:47 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][47]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:48 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][48]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:49 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][49]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:50 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][50]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:51 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][51]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.environmentvariable58:def:52 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][52]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_1 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_2 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_3 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][3]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_4 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][4]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_5 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][5]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_6 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][6]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_7 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][7]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_8 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][8]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_9 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][9]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_10 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][10]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_11 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][11]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_12 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][12]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_13 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][13]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_14 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][14]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_15 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][15]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_16 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][16]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_17 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][17]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_18 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][18]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_19 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][19]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_20 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][20]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_21 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][21]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_22 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][22]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_23 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][23]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_24 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][24]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_25 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][25]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_26 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][26]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_27 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][27]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_28 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][28]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_29 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][29]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_30 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][30]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_31 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][31]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_32 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][32]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_33 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][33]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_34 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][34]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_35 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][35]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_36 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][36]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_37 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][37]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_38 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][38]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_39 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][39]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_40 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][40]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_41 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][41]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_42 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][42]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_43 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][43]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_44 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][44]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_45 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][45]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_46 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][46]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_47 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][47]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_48 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][48]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_49 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][49]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_50 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][50]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_51 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][51]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;52)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_validation.environmentvariable58_rule_52 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][52]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+      </table>
+      <h2>scap_gov.nist_comp_environmentvariable58-xccdf.xml</h2>
+      <table>
+         <tr>
+            <th>Requirement</th>
+            <th>Count</th>
+            <th>Level</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Test</th>
+         </tr>
+         <tr>
+            <th>330-3</th>
+            <td align="center">1<br>(of&nbsp;1)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>Warning: The 'Benchmark' element has no platform specified, which implies the benchmark
+               applies to all platforms. Applicable platforms should be indicate if possible. See
+               the XCCDF 1.2.1 specification, Section 6.2.5.
+            </td>
+            <td>/*[local-name()='Benchmark']</td>
+            <td>false()</td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval:oval_variables 
+    xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-variables-5
+    http://oval.mitre.org/language/version5.10/ovalvar/complete/oval-variables-schema.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-variables-5">
+    <oval:generator>
+        <product_name xmlns="http://oval.mitre.org/XMLSchema/oval-common-5">NIST Validation Content Generation Script</product_name>
+        <product_version xmlns="http://oval.mitre.org/XMLSchema/oval-common-5">1.0</product_version>
+        <schema_version xmlns="http://oval.mitre.org/XMLSchema/oval-common-5">5.10</schema_version>
+        <timestamp xmlns="http://oval.mitre.org/XMLSchema/oval-common-5">2012-09-21T10:00:00</timestamp>
+    </oval:generator>
+    <oval:variables>
+        <oval:variable id="oval:nist.validation.r1900-rhel:var:2" comment="External variable with multiple values" datatype="evr_string">
+            <oval:value>0:3Desktop-13.9.7</oval:value>
+            <oval:value>0:3WS-13.9.7</oval:value>
+            <oval:value>0:3ES-13.9.7</oval:value>
+        </oval:variable>
+    </oval:variables>
+</oval:oval_variables>

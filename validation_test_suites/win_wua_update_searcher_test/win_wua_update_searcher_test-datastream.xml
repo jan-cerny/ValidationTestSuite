@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_wua_update_searcher_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_gov.nist_datastream_win_wua_update_searcher_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:52" use-case="CONFIGURATION">
+    <dictionaries>
+      <component-ref id="scap_gov.nist_cref_wuaupdatesearcher-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_wuaupdatesearcher-cpe-dictionary.xml">
+        <cat:catalog>
+          <cat:uri name="wuaupdatesearcher-cpe-oval.xml" uri="#scap_gov.nist_cref_wuaupdatesearcher-cpe-oval.xml"/>
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref id="scap_gov.nist_cref_wuaupdatesearcher-xccdf.xml" xlink:href="#scap_gov.nist_comp_wuaupdatesearcher-xccdf.xml">
+        <cat:catalog>
+          <cat:uri name="wuaupdatesearcher-oval.xml" uri="#scap_gov.nist_cref_wuaupdatesearcher-oval.xml"/>
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref id="scap_gov.nist_cref_wuaupdatesearcher-oval.xml" xlink:href="#scap_gov.nist_comp_wuaupdatesearcher-oval.xml"/>
+      <component-ref id="scap_gov.nist_cref_wuaupdatesearcher-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_wuaupdatesearcher-cpe-oval.xml"/>
+    </checks>
+  </data-stream>
+  <component id="scap_gov.nist_comp_wuaupdatesearcher-xccdf.xml" timestamp="2012-11-09T09:58:52">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation.winWuaUpdateSearcher_benchmark_wuaupdatesearcher" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+      <xccdf:status date="2011-10-21">draft</xccdf:status>
+      <xccdf:title>XCCDF Benchmark That References the Validation Content for the wuaupdatesearcher_test</xccdf:title>
+      <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the wuaupdatesearcher_test.</xccdf:description>
+      <xccdf:version update="1">1.0</xccdf:version>
+      <xccdf:metadata>
+        <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+        <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+        <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_gov.nist.validation.winWuaUpdateSearcher_profile_wuaupdatesearcher" prohibitChanges="1">
+        <xccdf:title>XCCDF Profile That References the Validation Content for the wuaupdatesearcher_test</xccdf:title>
+        <xccdf:description>This Profile allows for the tailoring of the validation content for the wuaupdatesearcher_test.</xccdf:description>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_1" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_2" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_3" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_4" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_5" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_11" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_12" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_13" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_14" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_15" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_16" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_17" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_18" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_19" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_20" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_21" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_22" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_23" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_25" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_26" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_27" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_28" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_29" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_30" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_32" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_33" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_34" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_35" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_36" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_37" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_39" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_40" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_42" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_43" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_44" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_45" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_46" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_47" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_48" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_49" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_50" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_51" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_52" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_53" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_54" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_55" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_56" selected="true"/>
+      </xccdf:Profile>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_1" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:1"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_2" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:2"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_3" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:3"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_4" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:4"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_5" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:5"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_6" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:6"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_7" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:7"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_8" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:8"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_9" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:9"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_10" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:10"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_11" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:11"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_12" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:12"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_13" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:13"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_14" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:14"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_15" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:15"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_16" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:16"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_17" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:17"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_18" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:18"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_19" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:19"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_20" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:20"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_21" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:21"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_22" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:22"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_23" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:23"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_24" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:24"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_25" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:25"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_26" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:26"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_27" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:27"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_28" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:28"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_29" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:29"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_30" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:30"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_31" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:31"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_32" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:32"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_33" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:33"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_34" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:34"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_35" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:35"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_36" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:36"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_37" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:37"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_38" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:38"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_39" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:39"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_40" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:40"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_41" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:41"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_42" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:42"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_43" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:43"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_44" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:44"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_45" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:45"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_46" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:46"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_47" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:47"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_48" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:48"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_49" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:49"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_50" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:50"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_51" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:51"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_52" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:52"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_53" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:53"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_54" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:54"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_55" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:55"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWuaUpdateSearcher_rule_56" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wuaupdatesearcher-oval.xml" name="oval:nist.validation.winWuaUpdateSearcher:def:56"/>
+        </xccdf:check>
+      </xccdf:Rule>
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_gov.nist_comp_wuaupdatesearcher-oval.xml" timestamp="2012-11-09T09:58:52">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+      <generator>
+        <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+        <oval:product_version>1.0</oval:product_version>
+        <oval:schema_version>5.8</oval:schema_version>
+        <oval:timestamp>2011-10-21T09:45:57-04:00</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:1" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:1"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:2" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:2"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:3" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:3"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:4" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:4"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:5" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:5"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:6" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:6"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:7" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:7"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:8" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:8"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:9" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:9"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:10" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:10"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:11" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:11"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:12" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:12"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:13" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:13"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:14" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:14"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:15" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:15"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:16" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:16"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:17" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:17"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:18" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:18"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:19" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:19"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:20" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:20"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:21" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:21"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:22" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:22"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:23" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:23"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:24" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:24"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:25" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:25"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:26" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:26"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:27" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:27"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:28" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:28"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:29" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:29"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:30" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:30"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:31" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:31"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:32" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:32"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:33" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:33"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:34" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:34"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:35" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:35"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:36" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:36"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:37" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:37"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:38" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:38"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:39" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:39"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:40" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:40"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:41" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:41"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:42" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:42"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:43" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:43"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:44" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:44"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:45" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:45"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:46" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:46"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:47" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:47"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:48" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:48"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:49" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:49"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:50" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:50"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:51" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:51"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:52" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:52"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:53" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:53"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:54" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:54"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:55" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:55"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWuaUpdateSearcher:def:56" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winWuaUpdateSearcher:tst:56"/>
+          </criteria>
+        </definition>
+      </definitions>
+      <tests>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:1" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:2" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:2"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:3" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:4" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:3"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:5" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:6" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:3"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:7" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:3"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:8" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:3"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:9" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:10" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:7"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:11" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:11"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:12" version="2" state_operator="OR">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:12"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:13" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:3"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:14" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:14"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:15" version="2" state_operator="OR">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:15"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:16" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:7"/>
+          <!-- <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/> -->
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:16"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:17" version="1">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:17"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:18" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:19" version="2" state_operator="OR">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:19"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:20" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:7"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:20"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:21" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:21"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:22" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:22"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:23" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:23"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:24" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:24"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:25" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:25"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:26" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:26"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:27" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:27"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:28" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:28"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:29" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:29"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:30" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:30"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:31" version="2" state_operator="OR">
+          <!-- <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:31" version="2" state_operator="OR"> -->
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:31"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:32" version="2" state_operator="OR">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:32"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:42"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:33" version="2" state_operator="OR">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:33"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:43"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:34" version="2" state_operator="OR">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:34"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:44"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:35" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:35"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:36" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:36"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:37" version="2" state_operator="AND">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:37"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:45"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:38" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:38"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:39" version="2" state_operator="AND">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:39"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:46"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:40" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:40"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:41" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:41"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:42" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:42"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:43" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:43"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:44" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:44"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:45" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:45"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:46" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:46"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:47" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:47"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:48" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:49" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:49"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:50" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:50"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:51" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:51"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:52" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:52"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:53" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:53"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:54" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:54"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:55" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:55"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:56" version="2">
+          <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:56"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:41"/>
+        </wuaupdatesearcher_test>
+      </tests>
+      <objects>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:1" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsInstalled=1</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:2" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>UpdateId!='ddb30279-d5f2-4505-851e-3689abfb80a0'</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:3" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>UpdateId='55555555-751a-48ec-80a2-2d0b06fbf379'</search_criteria>
+        </wuaupdatesearcher_object>
+        
+        
+        
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:4" version="2" comment="Security Update for Windows 7 for x64-based Systems (KB2509553)">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>UpdateId='ddb30279-d5f2-4505-851e-3689abfb80a0'</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:5" version="1" comment="Security Update for Windows 7 (KB2509553)">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>UpdateId='58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc'</search_criteria>
+        </wuaupdatesearcher_object>
+        
+        
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:6" version="1" comment="Union of Security Update for Windows 7 (KB2509553) and Security Update for Windows 7 for x64-based Systems (KB2509553)">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:4</object_reference>
+            <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:5</object_reference>
+          </set>
+        </wuaupdatesearcher_object>
+        
+
+
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:7" version="1" comment="set=UNION IsInstalled=1 and RebootRequired=0">
+          <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+            <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:1</object_reference>
+            <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:55</object_reference>
+          </set>
+        </wuaupdatesearcher_object>
+        
+        
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:41" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>type='driver'</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:42" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>type!='driver'</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:43" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsAssigned=1</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:44" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsAssigned=0</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:45" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>AutoSelectOnWebSites=0</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:46" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>AutoSelectOnWebSites=1</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:47" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>CategoryIDs contains '0FA1201D-4330-4FA8-8AE9-B877473B6441'</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:49" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsInstalled=0</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:50" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsHidden=1</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:51" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsHidden=0</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:52" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsPresent=1</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:53" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsPresent=0</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:54" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>RebootRequired=1</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:55" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>RebootRequired=0</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:56" version="1">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>IsInstalled=3</search_criteria>
+        </wuaupdatesearcher_object>
+      </objects>
+      <states>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:11" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="pattern match">.*</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:12" version="2" comment="Security Update for Windows 7 for x64-based Systems (KB2584146)">
+          <update_id datatype="string" entity_check="at least one" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:13" version="1" comment="Security Update for Windows 7 (KB2509553)">
+          <update_id datatype="string" entity_check="at least one" operation="equals">58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:14" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="pattern match">^.{1}z.*$</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:15" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:16" version="1">
+          <update_id datatype="string" entity_check="all" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:17" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="equals">123</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:19" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:20" version="1">
+          <update_id datatype="string" entity_check="only one" operation="pattern match">.*</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:21" version="1">
+          <search_criteria datatype="string" operation="equals">IsInstalled=1</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:22" version="1">
+          <search_criteria datatype="string" operation="not equal">IsInstalled=0</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:23" version="1">
+          <search_criteria datatype="string" operation="case insensitive equals">IsInStalled=1</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:24" version="1">
+          <search_criteria datatype="string" operation="case insensitive not equal">IsInstalleD=0</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:25" version="1">
+          <search_criteria datatype="string" operation="pattern match">^\w*=\d$</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:26" version="1">
+          <search_criteria datatype="string" operation="equals">IsInstalled=0</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:27" version="1">
+          <search_criteria datatype="string" operation="not equal">IsInstalled=1</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:28" version="1">
+          <search_criteria datatype="string" operation="case insensitive equals">IsInstalleD=0</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:29" version="1">
+          <search_criteria datatype="string" operation="case insensitive not equal">IsInStalled=1</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:30" version="1">
+          <search_criteria datatype="string" operation="pattern match">^\w*\d$</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:31" version="2" comment="Security Update for Windows 7 for x64-based Systems (KB2509553)">
+          <update_id datatype="string" entity_check="at least one" operation="equals">ddb30279-d5f2-4505-851e-3689abfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:32" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">ddb30279-d5f2-4505-851e-3689ABfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:42" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:33" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">DDB30279-d5f2-4505-851e-3689abfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:43" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">58E9EACA-4CC8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:34" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">ddb31279-d5f2-4505-851e-3689ABfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:44" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">58e9eaca-4cc8-429d-9d0f-3E2D47C1CFBC</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:35" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="pattern match">^[\-a-fA-f\d]*$</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:36" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="equals">ddb30279-d5f2-4505-851e-3689abfb80A0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:37" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">ddb30279-d5f2-4505-851e-3689abfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:45" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:38" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">ddb30279-d5f2-4505-851e-3689abfb80B0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:39" version="2">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">DDB30279-d5f2-4505-851e-3689abfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:46" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">58E9EACA-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:40" version="2">
+          <update_id datatype="string" entity_check="all" operation="pattern match">^[^0]+$</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:41" version="1">
+          <search_criteria datatype="string" operation="pattern match">.*</search_criteria>
+        </wuaupdatesearcher_state>
+      </states>
+    </oval_definitions>
+  </component>
+  <component id="scap_gov.nist_comp_wuaupdatesearcher-cpe-oval.xml" timestamp="2012-11-09T09:58:52">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+      <generator>
+        <oval:product_name>National Institute of Standards and Technology</oval:product_name>
+        <oval:schema_version>5.3</oval:schema_version>
+        <oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+      </generator>
+      <!-- ==================================================================================================== -->
+      <!-- ==========================================  DEFINITIONS  =========================================== -->
+      <!-- ==================================================================================================== -->
+      <definitions>
+        <definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+          <metadata>
+            <title>Microsoft Windows is installed</title>
+            <affected family="windows">
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows Vista</platform>
+              <platform>Microsoft Windows XP</platform>
+            </affected>
+            <reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+            <description>The operating system installed on the system is Microsoft Windows</description>
+          </metadata>
+          <criteria>
+            <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+          </criteria>
+        </definition>
+      </definitions>
+      <!-- ==================================================================================================== -->
+      <!-- ============================================  TESTS  =============================================== -->
+      <!-- ==================================================================================================== -->
+      <tests>
+        <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+          <object object_ref="oval:org.mitre.oval:obj:99"/>
+          <state state_ref="oval:org.mitre.oval:ste:99"/>
+        </family_test>
+      </tests>
+      <!-- ==================================================================================================== -->
+      <!-- ============================================  OBJECTS  ============================================= -->
+      <!-- ==================================================================================================== -->
+      <objects>
+        <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+      </objects>
+      <!-- ==================================================================================================== -->
+      <!-- =============================================  STATES  ============================================= -->
+      <!-- ==================================================================================================== -->
+      <states>
+        <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+          <family operation="equals">windows</family>
+        </family_state>
+      </states>
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+    </oval_definitions>
+  </component>
+  <component id="scap_gov.nist_comp_wuaupdatesearcher-cpe-dictionary.xml" timestamp="2012-11-09T09:58:52">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+      <cpe-item name="cpe:/o:microsoft:windows">
+        <title xml:lang="en-US">Microsoft Windows</title>
+        <notes xml:lang="en-US">
+          <note>This CPE Name represents the Windows OS</note>
+        </notes>
+        <check href="wuaupdatesearcher-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+</data-stream-collection>

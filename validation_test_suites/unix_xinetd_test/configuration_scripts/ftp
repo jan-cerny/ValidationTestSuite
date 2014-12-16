@@ -1,0 +1,21 @@
+# Begin /etc/xinetd.d/ftp
+
+service ftp
+{
+flags             = IPv4 IPv6
+no_access         = 192.168.1.254 hosta
+   disable        = yes
+   socket_type    = stream
+   wait           = no
+   user           = root
+   server         = /usr/sbin/in.ftpd
+   server_args    = -l
+ only_from        = 192.168.1.1 hostb
+   instances      = 4
+   log_on_success += DURATION USERID
+   log_on_failure += USERID
+   access_times   = 2:00-8:59 12:00-23:59
+   nice           = 10
+}
+
+# End /etc/xinetd.d/ftp

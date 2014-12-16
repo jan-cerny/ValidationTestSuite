@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scap-validation-results xmlns="http://scap.nist.gov/schema/validation/results/0.1"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         implementation-version="scapval-1.2.1.6"
+                         message-count="26"
+                         resource-id="r3300-datastream.xml"
+                         validation-datetime="2013-05-30T15:57:27"
+                         xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
+   <messages>
+      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
+      <message level="INFO" resource-id="r3300-datastream.xml" type="SUBMITTED_RESOURCE">Resource r3300-datastream.xml was submitted.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\SCAP-tools\SCAPContentValidationTool1.2.1.6\data_feeds\nvdcce-0.1-feed.xml.</message>
+      <message level="INFO" type="APPLICATION">File is less than 12 hours old, skipping download for C:\SCAP-tools\SCAPContentValidationTool1.2.1.6\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="INFO" type="APPLICATION">Hashing inputs.</message>
+      <message level="INFO" resource-id="r3300-datastream.xml" type="HASH">SHA-256 : 6F565FA885320FABBF54E9A84D68A0B58B74DFE6C08540403DDCED2DD44B55CE</message>
+      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 8C4E92A87B241B95217F6990F2FC11DD1D626CBA34023F957957DF204BACD22E</message>
+      <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection r3300-datastream.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_r3300-cpe-dictionary.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_r3300-xccdf.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_r3300-OCIL.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_r3300-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Applying SCAP schematron rules to content.</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule xccdf-1.2.sch with phase #ALL against source scap_gov.nist_comp_r3300-xccdf.xml</message>
+      <message level="WARN" location="/*[local-name()='Benchmark']" requirement-id="330-3"
+               resource-id="scap_gov.nist_comp_r3300-xccdf.xml"
+               test="false()"
+               type="SCHEMATRON">Warning: The 'Benchmark' element has no platform specified, which implies the benchmark applies to all platforms. Applicable platforms should be indicate if possible. See the XCCDF 1.2.1 specification, Section 6.2.5.</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule ocil-2.0.sch against source scap_gov.nist_comp_r3300-OCIL.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.10.sch against source scap_gov.nist_comp_r3300-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule tmsad-1.0.sch against source r3300-datastream.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule source-data-stream-1.2_1.0.sch against source r3300-datastream.xml</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
+               requirement-id="251-1"
+               resource-id="r3300-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_r3300_01 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="INFO"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:rpminfo_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#linux'][1]"
+               requirement-id="A21"
+               resource-id="r3300-datastream.xml"
+               test="exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace eq namespace-uri(current()) and @name eq local-name(current())])"
+               type="SCHEMATRON">oval:gov.nist.cpe.oval:tst:101 - The OVAL test type is not checked in the NIST SCAP Validation Program.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:02.037.</message>
+      <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:05.318.</message>
+   </messages>
+</scap-validation-results>

@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_ind_environment_variable_58_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_ind_environment_variable_58_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:56:26" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_environmentvariable58-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_environmentvariable58-cpe-dictionary.xml"><cat:catalog><cat:uri name="environmentvariable58-cpe-oval.xml" uri="#scap_gov.nist_cref_environmentvariable58-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_environmentvariable58-xccdf.xml" xlink:href="#scap_gov.nist_comp_environmentvariable58-xccdf.xml"><cat:catalog><cat:uri name="environmentvariable58-oval.xml" uri="#scap_gov.nist_cref_environmentvariable58-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_environmentvariable58-oval.xml" xlink:href="#scap_gov.nist_comp_environmentvariable58-oval.xml"/><component-ref id="scap_gov.nist_cref_environmentvariable58-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_environmentvariable58-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_environmentvariable58-xccdf.xml" timestamp="2012-11-09T09:56:26"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation.environmentvariable58_benchmark_environmentvariable58" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+  <xccdf:status date="2011-12-01">draft</xccdf:status>
+  <xccdf:title>XCCDF Benchmark That References the Validation Content for the environmentvariable58_test</xccdf:title>
+  <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the environmentvariable58_test.</xccdf:description>
+  <xccdf:version update="1">1.0</xccdf:version>
+  <xccdf:metadata>
+    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+  </xccdf:metadata>
+  <xccdf:Profile id="xccdf_gov.nist.validation.environmentvariable58_profile_environmentvariable58" prohibitChanges="1">
+    <xccdf:title>XCCDF Profile That References the Validation Content for the environmentvariable58_test</xccdf:title>
+    <xccdf:description>This Profile allows for the tailoring of the validation content for the environmentvariable58_test.</xccdf:description>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_1" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_2" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_3" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_4" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_5" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_6" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_7" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_8" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_9" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_10" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_11" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_12" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_13" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_14" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_15" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_16" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_17" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_19" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_20" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_21" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_22" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_23" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_24" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_25" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_26" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_27" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_28" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_29" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_30" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_31" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_32" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_33" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_34" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_35" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_36" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_37" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_38" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_39" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_40" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_41" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_42" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_43" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_44" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_45" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_46" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_47" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_48" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_49" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_50" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_51" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_validation.environmentvariable58_rule_52" selected="true"/>
+  </xccdf:Profile>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_1" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:1"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_2" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:2"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_3" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:3"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_4" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:4"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_5" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:5"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_6" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:6"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_7" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:7"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_8" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:8"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_9" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:9"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_10" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:10"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_11" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:11"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_12" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:12"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_13" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:13"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_14" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:14"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_15" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:15"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_16" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:16"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_17" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:17"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_18" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:18"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_19" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:19"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_20" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:20"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_21" selected="true">
+    <xccdf:title>Test the pid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:21"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_22" selected="true">
+    <xccdf:title>Test the pid entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:22"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_23" selected="true">
+    <xccdf:title>Test the pid entity with the greater than operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the greater than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:23"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_24" selected="true">
+    <xccdf:title>Test the pid entity with the less than operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the less than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:24"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_25" selected="true">
+    <xccdf:title>Test the pid entity with the greater than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the greater than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:25"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_26" selected="true">
+    <xccdf:title>Test the pid entity with the less than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the less than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:26"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_27" selected="true">
+    <xccdf:title>Test the pid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:27"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_28" selected="true">
+    <xccdf:title>Test the pid entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:28"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_29" selected="true">
+    <xccdf:title>Test the pid entity with the greater than operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the greater than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:29"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_30" selected="true">
+    <xccdf:title>Test the pid entity with the less than operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the less than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:30"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_31" selected="true">
+    <xccdf:title>Test the pid entity with the greater than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the greater than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:31"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_32" selected="true">
+    <xccdf:title>Test the pid entity with the less than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the pid entity properly supports the less than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:32"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_33" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:33"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_34" selected="true">
+    <xccdf:title>Test the name entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:34"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_35" selected="true">
+    <xccdf:title>Test the name entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:35"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_36" selected="true">
+    <xccdf:title>Test the name entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:36"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_37" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:37"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_38" selected="true">
+    <xccdf:title>Test the name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:38"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_39" selected="true">
+    <xccdf:title>Test the name entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:39"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_40" selected="true">
+    <xccdf:title>Test the name entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:40"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_41" selected="true">
+    <xccdf:title>Test the name entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:41"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_42" selected="true">
+    <xccdf:title>Test the name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:42"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_43" selected="true">
+    <xccdf:title>Test the value entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:43"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_44" selected="true">
+    <xccdf:title>Test the value entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:44"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_45" selected="true">
+    <xccdf:title>Test the value entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:45"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_46" selected="true">
+    <xccdf:title>Test the value entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:46"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_47" selected="true">
+    <xccdf:title>Test the value entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:47"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_48" selected="true">
+    <xccdf:title>Test the value entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:48"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_49" selected="true">
+    <xccdf:title>Test the value entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:49"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_50" selected="true">
+    <xccdf:title>Test the value entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:50"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_51" selected="true">
+    <xccdf:title>Test the value entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:51"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_validation.environmentvariable58_rule_52" selected="true">
+    <xccdf:title>Test the value entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the value entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="environmentvariable58-oval.xml" name="oval:nist.validation.environmentvariable58:def:52"/>
+    </xccdf:check>
+  </xccdf:Rule>
+</xccdf:Benchmark></component><component id="scap_gov.nist_comp_environmentvariable58-oval.xml" timestamp="2012-11-09T09:56:26"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+   <generator>
+    <oval:product_name>nist.validation.environmentvariable58 Content Generation Script</oval:product_name>
+    <oval:product_version>1.0</oval:product_version>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2011-12-01T06:25:57-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:1" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that every environment variable 58 item exists for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:1"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:2" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that any environment variable 58 items exist for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:3" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that at least one environment variable 58 item exists for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:3"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:4" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that no environment variable 58 items exist for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:4"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:5" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that only one environment variable 58 item exists for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:6" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that every environment variable 58 item exists for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:6"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:7" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that any environment variable 58 items exist for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:7"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:8" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that at least one environment variable 58 item exists for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:8"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:9" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that no environment variable 58 items exist for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:9"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:10" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:environmentvariable58_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that only one environment variable 58 item exists for the specified object." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:10"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:11" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression .*." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:11"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:12" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression [tT]emp." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:12"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:13" version="2">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name equals nosuchenvvariable." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:13"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:14" version="1">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name equals nosuchenvvariable." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:14"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:15" version="1">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name equals temp." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:15"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:16" version="1">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name equals temp." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:16"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:17" version="1">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name equals nosuchenvvariable." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:17"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:18" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression .*." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:18"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:19" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression .*." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:19"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:20" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression .*." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:20"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:21" version="1">
+      <metadata>
+        <title>Test the pid entity with the equals operation</title>
+        <description>Make sure the pid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid equals pid of current process." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:21"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:22" version="1">
+      <metadata>
+        <title>Test the pid entity with the not equal operation</title>
+        <description>Make sure the pid entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is not equal to pid of current process + 1." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:22"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:23" version="1">
+      <metadata>
+        <title>Test the pid entity with the greater than operation</title>
+        <description>Make sure the pid entity properly supports the greater than operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is greater than 0." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:23"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:24" version="1">
+      <metadata>
+        <title>Test the pid entity with the less than operation</title>
+        <description>Make sure the pid entity properly supports the less than operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is less than pid of current process + 1." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:24"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:25" version="1">
+      <metadata>
+        <title>Test the pid entity with the greater than or equal operation</title>
+        <description>Make sure the pid entity properly supports the greater than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is greater than or equal to 1." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:25"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:26" version="1">
+      <metadata>
+        <title>Test the pid entity with the less than or equal operation</title>
+        <description>Make sure the pid entity properly supports the less than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is less than or equal to pid of current process." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:26"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:27" version="1">
+      <metadata>
+        <title>Test the pid entity with the equals operation</title>
+        <description>Make sure the pid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid equals pid of current process + 1." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:27"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:28" version="1">
+      <metadata>
+        <title>Test the pid entity with the not equal operation</title>
+        <description>Make sure the pid entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is not equal to pid of current process." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:28"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:29" version="1">
+      <metadata>
+        <title>Test the pid entity with the greater than operation</title>
+        <description>Make sure the pid entity properly supports the greater than operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is greater than pid of current process + 1." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:29"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:30" version="1">
+      <metadata>
+        <title>Test the pid entity with the less than operation</title>
+        <description>Make sure the pid entity properly supports the less than operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is less than 0." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:30"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:31" version="1">
+      <metadata>
+        <title>Test the pid entity with the greater than or equal operation</title>
+        <description>Make sure the pid entity properly supports the greater than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is greater than or equal to pid of current process + 1." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:31"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:32" version="1">
+      <metadata>
+        <title>Test the pid entity with the less than or equal operation</title>
+        <description>Make sure the pid entity properly supports the less than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the pid is less than or equal to 0." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:32"/>
+      </criteria>
+    </definition>
+    <definition id="oval:nist.validation.environmentvariable58:def:33" version="2" class="compliance">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion test_ref="oval:nist.validation.environmentvariable58:tst:33" comment="Test to see that the name equals TEMP." negate="false"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:34" version="1">
+      <metadata>
+        <title>Test the name entity with the not equal operation</title>
+        <description>Make sure the name entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name is not equal to tempx." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:34"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:35" version="1">
+      <metadata>
+        <title>Test the name entity with the case insensitive equals operation</title>
+        <description>Make sure the name entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name case insensitive equals TEmP." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:35"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:36" version="1">
+      <metadata>
+        <title>Test the name entity with the case insensitive not equal operation</title>
+        <description>Make sure the name entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name is case insensitive not equal to tempX." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:36"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:37" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression [tT].*." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:37"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:38" version="1">
+      <metadata>
+        <title>Test the name entity with the equals operation</title>
+        <description>Make sure the name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name equals tempx." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:38"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:39" version="1">
+      <metadata>
+        <title>Test the name entity with the not equal operation</title>
+        <description>Make sure the name entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name is not equal to temp." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:39"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:40" version="1">
+      <metadata>
+        <title>Test the name entity with the case insensitive equals operation</title>
+        <description>Make sure the name entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name case insensitive equals TemPX." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:40"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:41" version="1">
+      <metadata>
+        <title>Test the name entity with the case insensitive not equal operation</title>
+        <description>Make sure the name entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name is case insensitive not equal to TemP." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:41"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:42" version="1">
+      <metadata>
+        <title>Test the name entity with the pattern match operation</title>
+        <description>Make sure the name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the name matches the regular expression \a." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:42"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:43" version="1">
+      <metadata>
+        <title>Test the value entity with the equals operation</title>
+        <description>Make sure the value entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value equals retrieve current value." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:43"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:44" version="1">
+      <metadata>
+        <title>Test the value entity with the not equal operation</title>
+        <description>Make sure the value entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value is not equal to retrieve current value + 'X'." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:44"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:45" version="1">
+      <metadata>
+        <title>Test the value entity with the case insensitive equals operation</title>
+        <description>Make sure the value entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value case insensitive equals retrieve current value." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:45"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:46" version="1">
+      <metadata>
+        <title>Test the value entity with the case insensitive not equal operation</title>
+        <description>Make sure the value entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value is case insensitive not equal to retrieve current value + 'X'." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:46"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:47" version="1">
+      <metadata>
+        <title>Test the value entity with the pattern match operation</title>
+        <description>Make sure the value entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value matches the regular expression [tT].*." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:47"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:48" version="1">
+      <metadata>
+        <title>Test the value entity with the equals operation</title>
+        <description>Make sure the value entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value equals retrieve current value + 'X'." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:48"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:49" version="1">
+      <metadata>
+        <title>Test the value entity with the not equal operation</title>
+        <description>Make sure the value entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value is not equal to retrieve current value." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:49"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:50" version="1">
+      <metadata>
+        <title>Test the value entity with the case insensitive equals operation</title>
+        <description>Make sure the value entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value case insensitive equals retrieve current value + 'X'." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:50"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:51" version="1">
+      <metadata>
+        <title>Test the value entity with the case insensitive not equal operation</title>
+        <description>Make sure the value entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value is case insensitive not equal to retrieve current value." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:51"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.environmentvariable58:def:52" version="1">
+      <metadata>
+        <title>Test the value entity with the pattern match operation</title>
+        <description>Make sure the value entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the value matches the regular expression \a." negate="false" test_ref="oval:nist.validation.environmentvariable58:tst:52"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="all_exist" comment="Test to see that every environment variable 58 item exists for the specified object." id="oval:nist.validation.environmentvariable58:tst:1" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="any_exist" comment="Test to see that any environment variable 58 items exist for the specified object." id="oval:nist.validation.environmentvariable58:tst:2" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one environment variable 58 item exists for the specified object." id="oval:nist.validation.environmentvariable58:tst:3" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="none_exist" comment="Test to see that no environment variable 58 items exist for the specified object." id="oval:nist.validation.environmentvariable58:tst:4" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="only_one_exists" comment="Test to see that only one environment variable 58 item exists for the specified object." id="oval:nist.validation.environmentvariable58:tst:5" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="all_exist" comment="Test to see that every environment variable 58 item exists for the specified object." id="oval:nist.validation.environmentvariable58:tst:6" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="any_exist" comment="Test to see that any environment variable 58 items exist for the specified object." id="oval:nist.validation.environmentvariable58:tst:7" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one environment variable 58 item exists for the specified object." id="oval:nist.validation.environmentvariable58:tst:8" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="none_exist" comment="Test to see that no environment variable 58 items exist for the specified object." id="oval:nist.validation.environmentvariable58:tst:9" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:tst:10" version="2" check_existence="only_one_exists" check="all" comment="Test to see that only one environment variable 58 item exists for the specified object.">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:4"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression .*." id="oval:nist.validation.environmentvariable58:tst:11" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression [tT]emp." id="oval:nist.validation.environmentvariable58:tst:12" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:2"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none exist" check_existence="at_least_one_exists" comment="Test to see that the name equals nosuchenvvariable." id="oval:nist.validation.environmentvariable58:tst:13" version="2">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:3"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the name equals nosuchenvvariable." id="oval:nist.validation.environmentvariable58:tst:14" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="Test to see that the name equals temp." id="oval:nist.validation.environmentvariable58:tst:15" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:4"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name equals temp." id="oval:nist.validation.environmentvariable58:tst:16" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:4"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the name equals nosuchenvvariable." id="oval:nist.validation.environmentvariable58:tst:17" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:3"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none exist" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression .*." id="oval:nist.validation.environmentvariable58:tst:18" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression .*." id="oval:nist.validation.environmentvariable58:tst:19" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression .*." id="oval:nist.validation.environmentvariable58:tst:20" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:1"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid equals pid of current process." id="oval:nist.validation.environmentvariable58:tst:21" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:5"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is not equal to pid of current process + 1." id="oval:nist.validation.environmentvariable58:tst:22" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:6"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is greater than 0." id="oval:nist.validation.environmentvariable58:tst:23" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:7"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is less than pid of current process + 1." id="oval:nist.validation.environmentvariable58:tst:24" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:8"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is greater than or equal to 1." id="oval:nist.validation.environmentvariable58:tst:25" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:9"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is less than or equal to pid of current process." id="oval:nist.validation.environmentvariable58:tst:26" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:10"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid equals pid of current process + 1." id="oval:nist.validation.environmentvariable58:tst:27" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:11"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is not equal to pid of current process." id="oval:nist.validation.environmentvariable58:tst:28" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:12"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is greater than pid of current process + 1." id="oval:nist.validation.environmentvariable58:tst:29" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:13"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is less than 0." id="oval:nist.validation.environmentvariable58:tst:30" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:14"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is greater than or equal to pid of current process + 1." id="oval:nist.validation.environmentvariable58:tst:31" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:15"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the pid is less than or equal to 0." id="oval:nist.validation.environmentvariable58:tst:32" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:16"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:tst:33" version="2" check_existence="at_least_one_exists" check="at least one" comment="Test to see that the name equals TEMP.">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:4"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name is not equal to tempx." id="oval:nist.validation.environmentvariable58:tst:34" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:17"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name case insensitive equals TEmP." id="oval:nist.validation.environmentvariable58:tst:35" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:18"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name is case insensitive not equal to tempX." id="oval:nist.validation.environmentvariable58:tst:36" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:19"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression [tT].*." id="oval:nist.validation.environmentvariable58:tst:37" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:20"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name equals tempx." id="oval:nist.validation.environmentvariable58:tst:38" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:21"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name is not equal to temp." id="oval:nist.validation.environmentvariable58:tst:39" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:22"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name case insensitive equals TemPX." id="oval:nist.validation.environmentvariable58:tst:40" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:23"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name is case insensitive not equal to TemP." id="oval:nist.validation.environmentvariable58:tst:41" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:24"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the name matches the regular expression \a." id="oval:nist.validation.environmentvariable58:tst:42" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:25"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value equals retrieve current value." id="oval:nist.validation.environmentvariable58:tst:43" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:26"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value is not equal to retrieve current value + 'X'." id="oval:nist.validation.environmentvariable58:tst:44" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:27"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value case insensitive equals retrieve current value." id="oval:nist.validation.environmentvariable58:tst:45" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:28"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value is case insensitive not equal to retrieve current value + 'X'." id="oval:nist.validation.environmentvariable58:tst:46" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:29"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value matches the regular expression [tT].*." id="oval:nist.validation.environmentvariable58:tst:47" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:30"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value equals retrieve current value + 'X'." id="oval:nist.validation.environmentvariable58:tst:48" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:31"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value is not equal to retrieve current value." id="oval:nist.validation.environmentvariable58:tst:49" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:32"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value case insensitive equals retrieve current value + 'X'." id="oval:nist.validation.environmentvariable58:tst:50" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:33"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value is case insensitive not equal to retrieve current value." id="oval:nist.validation.environmentvariable58:tst:51" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:34"/>
+    </environmentvariable58_test>
+    <environmentvariable58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the value matches the regular expression \a." id="oval:nist.validation.environmentvariable58:tst:52" version="1">
+      <object object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+      <state state_ref="oval:nist.validation.environmentvariable58:ste:35"/>
+    </environmentvariable58_test>
+  </tests>
+  <objects>
+    <environmentvariable58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:obj:1" version="1">
+      <pid datatype="int" operation="equals" xsi:nil="true"/>
+      <name operation="pattern match">.*</name>
+    </environmentvariable58_object>
+    <environmentvariable58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:obj:2" version="2">
+      <pid datatype="int" operation="equals" xsi:nil="true"></pid>
+      <name operation="pattern match">^[Tt][Ee][Mm][Pp]$</name>
+    </environmentvariable58_object>
+	<environmentvariable58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:obj:3" version="1">
+      <pid datatype="int" operation="equals" xsi:nil="true"></pid>
+      <name operation="equals">NOSUCHVARIABLE</name>
+    </environmentvariable58_object>
+    <environmentvariable58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:obj:4" version="1">
+      <pid datatype="int" operation="equals" xsi:nil="true"></pid>
+      <name operation="equals">TEMP</name>
+    </environmentvariable58_object>
+  </objects>
+  <states>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:1" version="1">
+      <name datatype="string" operation="pattern match">.*</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:2" version="1">
+      <name datatype="string" operation="pattern match">[tT][Ee][Mm][Pp]</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:3" version="1">
+      <name datatype="string" operation="equals">nosuchenvvariable</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:4" version="1">
+      <name datatype="string" operation="equals">TEMP</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:5" version="1">
+      <pid datatype="int" operation="equals" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:1"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:6" version="1">
+      <pid datatype="int" operation="not equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:2"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:7" version="1">
+      <pid datatype="int" operation="greater than">0</pid>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:8" version="1">
+      <pid datatype="int" operation="less than" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:2"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:9" version="1">
+      <pid datatype="int" operation="greater than or equal">1</pid>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:10" version="1">
+      <pid datatype="int" operation="less than or equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:1"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:11" version="1">
+      <pid datatype="int" operation="equals" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:2"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:12" version="1">
+      <pid datatype="int" operation="not equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:1"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:13" version="1">
+      <pid datatype="int" operation="greater than" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:2"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:14" version="1">
+      <pid datatype="int" operation="less than">0</pid>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:15" version="1">
+      <pid datatype="int" operation="greater than or equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:2"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:16" version="1">
+      <pid datatype="int" operation="less than or equal">0</pid>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:17" version="1">
+      <name datatype="string" operation="not equal">tempx</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:18" version="1">
+      <name datatype="string" operation="case insensitive equals">TEmP</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:19" version="1">
+      <name datatype="string" operation="case insensitive not equal">tempX</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:20" version="1">
+      <name datatype="string" operation="pattern match">[tT].*</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:21" version="1">
+      <name datatype="string" operation="equals">tempx</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:22" version="1">
+      <name datatype="string" operation="not equal">TEMP</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:23" version="1">
+      <name datatype="string" operation="case insensitive equals">TemPX</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:24" version="1">
+      <name datatype="string" operation="case insensitive not equal">TemP</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:25" version="1">
+      <name datatype="string" operation="pattern match">\a</name>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:26" version="1">
+      <value datatype="string" operation="equals" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:3"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:27" version="1">
+      <value datatype="string" operation="not equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:4"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:28" version="1">
+      <value datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:3"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:29" version="1">
+      <value datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:4"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:30" version="1">
+      <value datatype="string" operation="pattern match">[tT].*</value>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:31" version="1">
+      <value datatype="string" operation="equals" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:4"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:32" version="1">
+      <value datatype="string" operation="not equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:3"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:33" version="1">
+      <value datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:4"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:34" version="1">
+      <value datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.environmentvariable58:var:3"/>
+    </environmentvariable58_state>
+    <environmentvariable58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.environmentvariable58:ste:35" version="1">
+      <value datatype="string" operation="pattern match">\a</value>
+    </environmentvariable58_state>
+  </states>
+  <variables>
+    <local_variable comment="This local variable contains the pid of the current process." datatype="int" id="oval:nist.validation.environmentvariable58:var:1" version="1">
+      <object_component item_field="pid" object_ref="oval:nist.validation.environmentvariable58:obj:1"/>
+    </local_variable>
+    <local_variable comment="This local variable contains the pid of the current process + 1." datatype="int" id="oval:nist.validation.environmentvariable58:var:2" version="1">
+      <arithmetic arithmetic_operation="add">
+        <variable_component var_ref="oval:nist.validation.environmentvariable58:var:1"/>
+        <literal_component datatype="int">1</literal_component>
+      </arithmetic>
+    </local_variable>
+    <local_variable comment="This local variable contains the value of the environment variable 'temp'." datatype="string" id="oval:nist.validation.environmentvariable58:var:3" version="1">
+      <object_component item_field="value" object_ref="oval:nist.validation.environmentvariable58:obj:2"/>
+    </local_variable>
+    <local_variable comment="This local variable contains the value of the environment variable 'temp' with 'X' concatenated to the end." datatype="string" id="oval:nist.validation.environmentvariable58:var:4" version="1">
+      <concat>
+        <variable_component var_ref="oval:nist.validation.environmentvariable58:var:3"/>
+        <literal_component>X</literal_component>
+      </concat>
+    </local_variable>
+  </variables>
+</oval_definitions></component><component id="scap_gov.nist_comp_environmentvariable58-cpe-oval.xml" timestamp="2012-11-09T09:56:26"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/linux-definitions-schema.xsd">
+	<generator>
+		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+	</generator>
+	<!-- ==================================================================================================== -->
+	<!-- ==========================================  DEFINITIONS  =========================================== -->
+	<!-- ==================================================================================================== -->
+	<definitions>
+		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+			<metadata>
+				<title>Microsoft Windows is installed</title>
+				<affected family="windows">
+					<platform>Microsoft Windows</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 8</platform>
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows Vista</platform>
+				</affected>
+				<reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+				<description>The operating system installed on the system is Microsoft Windows</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+			</criteria>
+		</definition>
+		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:100" version="1">
+			<metadata>
+				<title>Red Hat Enterprise Linux 3, 4, 5 or 6</title>
+				<affected family="unix">
+					<platform>Red Hat Enterprise Linux</platform>
+				</affected>
+				<reference ref_id="cpe:/o:redhat:enterprise_linux" source="CPE"/>
+				<description>The operating system installed on the system is Red Hat Enterprise Linux 3, 4, 5 or 6</description>
+			</metadata>
+			<criteria>
+				<criterion comment="Installed operating system is part of the unix family" test_ref="oval:gov.nist.cpe.oval:tst:100"/>
+				<criterion comment="Red Hat Enterprise Linux 3, 4, 5 or 6 is installed" test_ref="oval:gov.nist.cpe.oval:tst:101"/>
+			</criteria>
+		</definition>
+	</definitions>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  TESTS  =============================================== -->
+	<!-- ==================================================================================================== -->
+	<tests>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+			<object object_ref="oval:org.mitre.oval:obj:99"/>
+			<state state_ref="oval:org.mitre.oval:ste:99"/>
+		</family_test>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="installed operating system is part of the Unix family" id="oval:gov.nist.cpe.oval:tst:100" version="1">
+			<object object_ref="oval:gov.nist.cpe.oval:obj:100"/>
+			<state state_ref="oval:gov.nist.cpe.oval:ste:100"/>
+		</family_test>
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="redhat-release is version 3, 4, 5 or 6" id="oval:gov.nist.cpe.oval:tst:101" version="1">
+			<object object_ref="oval:gov.nist.cpe.oval:obj:101"/>
+			<state state_ref="oval:gov.nist.cpe.oval:ste:101"/>
+		</rpminfo_test>
+	</tests>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  OBJECTS  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<objects>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.cpe.oval:obj:100" version="1"/>
+		<rpminfo_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="the redhat-release rpm" id="oval:gov.nist.cpe.oval:obj:101" version="1">
+			<name>redhat-release</name>
+		</rpminfo_object>
+	</objects>
+	<!-- ==================================================================================================== -->
+	<!-- =============================================  STATES  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<states>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+			<family operation="equals">windows</family>
+		</family_state>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.cpe.oval:ste:100" version="1">
+			<family>unix</family>
+		</family_state>
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" id="oval:gov.nist.cpe.oval:ste:101" version="1">
+			<version operation="pattern match">^[3-6]\D</version>
+		</rpminfo_state>
+	</states>
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</oval_definitions></component><component id="scap_gov.nist_comp_environmentvariable58-cpe-dictionary.xml" timestamp="2012-11-09T09:56:26"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+	<cpe-item name="cpe:/o:microsoft:windows">
+		<title xml:lang="en-US">Microsoft Windows</title>
+		<notes xml:lang="en-US">
+			<note>This CPE Name represents the Windows OS</note>
+		</notes>
+		<check href="environmentvariable58-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+	</cpe-item>
+	<cpe-item name="cpe:/o:redhat:enterprise_linux">
+		<title xml:lang="en-us">Red Hat Enterprise Linux</title>
+		<notes xml:lang="en-us">
+			<note>This CPE Name represents Red Hat Enterprise Linux OS</note>
+		</notes>
+		<check href="environmentvariable58-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:100</check>
+	</cpe-item>
+</cpe-list></component></data-stream-collection>

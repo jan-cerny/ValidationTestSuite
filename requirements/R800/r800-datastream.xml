@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_unix_runlevel_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_unix_runlevel_test-datastream.zip" scap-version="1.2" timestamp="2012-01-31T01:46:50" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_runlevel_validation_content-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_runlevel_validation_content-cpe-dictionary.xml"><cat:catalog><cat:uri name="runlevel_validation_content-cpe-oval.xml" uri="#scap_gov.nist_cref_runlevel_validation_content-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_runlevel_validation_content-xccdf.xml" xlink:href="#scap_gov.nist_comp_runlevel_validation_content-xccdf.xml"><cat:catalog><cat:uri name="runlevel_validation_content-oval.xml" uri="#scap_gov.nist_cref_runlevel_validation_content-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_runlevel_validation_content-oval.xml" xlink:href="#scap_gov.nist_comp_runlevel_validation_content-oval.xml"/><component-ref id="scap_gov.nist_cref_runlevel_validation_content-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_runlevel_validation_content-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_runlevel_validation_content-xccdf.xml" timestamp="2012-01-31T01:46:50"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf-for-runlevel-test-validation-content" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+<!--
+<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_runlevel-test-validation-content" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd" style="SCAP_1.2">
+-->
+  <xccdf:status date="2011-08-08">draft</xccdf:status>
+  <xccdf:title>XCCDF Benchmark That References the Validation Content for the runlevel_test</xccdf:title>
+  <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the runlevel_test.</xccdf:description>
+  <xccdf:version update="2011-08-08">1.0</xccdf:version>
+  <xccdf:metadata>
+    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+  </xccdf:metadata>
+  <xccdf:Profile id="xccdf_gov.nist_profile_runlevel-validation" prohibitChanges="1">
+    <xccdf:title>XCCDF Profile That References the Validation Content for the runlevel_test</xccdf:title>
+    <xccdf:description>a profile</xccdf:description>
+    <xccdf:select idref="xccdf_gov.nist_rule_service-exists-1" selected="true"/>    
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-2" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-3" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-4" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-5" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-6" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-7" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-8" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-9" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-10" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-11" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-12" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-13" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-14" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_start-with-equals-operation-15" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-16" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-17" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-19" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-20" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-21" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-22" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-23" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-24" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-25" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-26" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-27" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-28" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_kill-with-equals-operation-29" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-property-36" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-property-37" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-property-38" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-property-39" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_test-construct-with-check-property-40" selected="true"/>
+  </xccdf:Profile>
+  <xccdf:Rule id="xccdf_gov.nist_rule_service-exists-1" selected="true">
+    <xccdf:title>Test that the service exists for any runlevel</xccdf:title>
+    <xccdf:description>Make sure the service exists for any runlevel.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:1"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-2" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:2"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-3" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:3"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-4" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:4"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-5" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:5"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-6" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:6"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-7" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:7"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-8" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:8"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-9" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:9"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-10" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:10"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-11" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:11"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-12" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:12"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-13" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:13"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-14" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:14"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_start-with-equals-operation-15" selected="true">
+    <xccdf:title>Test the start entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the start entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:15"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-16" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:16"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-17" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:17"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-18" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:18"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-19" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:19"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-20" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:20"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-21" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:21"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-22" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:22"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-23" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:23"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-24" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:24"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-25" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:25"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-26" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:26"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-27" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:27"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-28" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:28"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_kill-with-equals-operation-29" selected="true">
+    <xccdf:title>Test the kill entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the kill entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:29"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" selected="true">
+    <xccdf:title>Test the criterion construct with the negate property</xccdf:title>
+    <xccdf:description>Make sure that the criterion construct properly supports the negate property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:30"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" selected="true">
+    <xccdf:title>Test that the test construct with the check_existence property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check_existence property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:31"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" selected="true">
+    <xccdf:title>Test that the test construct with the check_existence property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check_existence property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:32"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" selected="true">
+    <xccdf:title>Test that the test construct with the check_existence property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check_existence property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:33"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" selected="true">
+    <xccdf:title>Test that the test construct with the check_existence property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check_existence property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:34"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" selected="true">
+    <xccdf:title>Test that the test construct with the check_existence property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check_existence property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:35"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-property-36" selected="true">
+    <xccdf:title>Test that the test construct with the check property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:36"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-property-37" selected="true">
+    <xccdf:title>Test that the test construct with the check property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:37"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-property-38" selected="true">
+    <xccdf:title>Test that the test construct with the check property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:38"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-property-39" selected="true">
+    <xccdf:title>Test that the test construct with the check property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:39"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+  <xccdf:Rule id="xccdf_gov.nist_rule_test-construct-with-check-property-40" selected="true">
+    <xccdf:title>Test that the test construct with the check property</xccdf:title>
+    <xccdf:description>Make sure that the test construct properly supports the check property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="runlevel_validation_content-oval.xml" name="oval:nist.validation:def:40"/>
+    </xccdf:check>
+  </xccdf:Rule> 
+</xccdf:Benchmark></component><component id="scap_gov.nist_comp_runlevel_validation_content-oval.xml" timestamp="2012-01-31T01:46:50"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+    <oval:product_version>1.0</oval:product_version>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2011-07-01T11:19:19-04:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="compliance" id="oval:nist.validation:def:1" version="1">
+      <metadata>
+        <title>Test that the service exists for any runlevel</title>
+        <description>Make sure the service exists for any runlevel.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the httpd service exists for any runlevel." test_ref="oval:nist.validation:tst:1"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:2" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:3" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:3"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:4" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:4"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:5" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:6" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:6"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:7" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:7"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:8" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." test_ref="oval:nist.validation:tst:8"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:9" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:9"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:10" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:10"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:11" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:11"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:12" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:12"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:13" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:13"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:14" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:14"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:15" version="1">
+      <metadata>
+        <title>Test the start entity with the equals operation</title>
+        <description>Make sure the start entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 0." test_ref="oval:nist.validation:tst:15"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:16" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:16"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:17" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:17"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:18" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:18"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:19" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:19"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:20" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:20"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:21" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:21"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:22" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 1." test_ref="oval:nist.validation:tst:22"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:23" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:23"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:24" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:24"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:25" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:25"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:26" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:26"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:27" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:27"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:28" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:28"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:29" version="1">
+      <metadata>
+        <title>Test the kill entity with the equals operation</title>
+        <description>Make sure the kill entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the kill entity equals 0." test_ref="oval:nist.validation:tst:29"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:30" version="1">
+      <metadata>
+        <title>Test the criterion construct with the negate property</title>
+        <description>Make sure that the criterion construct properly supports the negate property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the start entity equals 1." negate="true" test_ref="oval:nist.validation:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:31" version="1">
+      <metadata>
+        <title>Test the test construct with the check_existence property</title>
+        <description>Make sure that the test construct properly supports the check_existence property.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check_existence property with a value of all_exist." test_ref="oval:nist.validation:tst:30"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:32" version="1">
+      <metadata>
+        <title>Test the test construct with the check_existence property</title>
+        <description>Make sure that the test construct properly supports the check_existence property.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check_existence property with a value of any_exist." test_ref="oval:nist.validation:tst:31"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:33" version="1">
+      <metadata>
+        <title>Test the test construct with the check_existence property</title>
+        <description>Make sure that the test construct properly supports the check_existence property.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check_existence property with a value of at_least_one_exists." test_ref="oval:nist.validation:tst:32"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:34" version="1">
+      <metadata>
+        <title>Test the test construct with the check_existence property</title>
+        <description>Make sure that the test construct properly supports the check_existence property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check_existence property with a value of none_exist." test_ref="oval:nist.validation:tst:33"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:35" version="1">
+      <metadata>
+        <title>Test the test construct with the check_existence property</title>
+        <description>Make sure that the test construct properly supports the check_existence property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check_existence property with a value of only_one_exists." test_ref="oval:nist.validation:tst:34"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:36" version="1">
+      <metadata>
+        <title>Test the test construct with the check property</title>
+        <description>Make sure that the test construct properly supports the check property.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check property with a value of all." test_ref="oval:nist.validation:tst:35"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:37" version="1">
+      <metadata>
+        <title>Test the test construct with the check property</title>
+        <description>Make sure that the test construct properly supports the check property.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check property with a value of at least one." test_ref="oval:nist.validation:tst:36"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:38" version="1">
+      <metadata>
+        <title>Test the test construct with the check property</title>
+        <description>Make sure that the test construct properly supports the check property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check property with a value of none exist." test_ref="oval:nist.validation:tst:37"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:39" version="1">
+      <metadata>
+        <title>Test the test construct with the check property</title>
+        <description>Make sure that the test construct properly supports the check property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check property with a value of none satisfy." test_ref="oval:nist.validation:tst:38"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation:def:40" version="1">
+      <metadata>
+        <title>Test the test construct with the check property</title>
+        <description>Make sure that the test construct properly supports the check property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the test construct properly supports the check property with a value of only one." test_ref="oval:nist.validation:tst:39"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the httpd service exists for any runlevel." id="oval:nist.validation:tst:1" version="1">
+      <object object_ref="oval:nist.validation:obj:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:2" version="1">
+      <object object_ref="oval:nist.validation:obj:2"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:3" version="1">
+      <object object_ref="oval:nist.validation:obj:3"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:4" version="1">
+      <object object_ref="oval:nist.validation:obj:4"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:5" version="1">
+      <object object_ref="oval:nist.validation:obj:5"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:6" version="1">
+      <object object_ref="oval:nist.validation:obj:6"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:7" version="1">
+      <object object_ref="oval:nist.validation:obj:7"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 1." id="oval:nist.validation:tst:8" version="1">
+      <object object_ref="oval:nist.validation:obj:8"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:9" version="1">
+      <object object_ref="oval:nist.validation:obj:2"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:10" version="1">
+      <object object_ref="oval:nist.validation:obj:3"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:11" version="1">
+      <object object_ref="oval:nist.validation:obj:4"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:12" version="1">
+      <object object_ref="oval:nist.validation:obj:5"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:13" version="1">
+      <object object_ref="oval:nist.validation:obj:6"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:14" version="1">
+      <object object_ref="oval:nist.validation:obj:7"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the start entity equals 0." id="oval:nist.validation:tst:15" version="1">
+      <object object_ref="oval:nist.validation:obj:8"/>
+      <state state_ref="oval:nist.validation:ste:2"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:16" version="1">
+      <object object_ref="oval:nist.validation:obj:2"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:17" version="1">
+      <object object_ref="oval:nist.validation:obj:3"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:18" version="1">
+      <object object_ref="oval:nist.validation:obj:4"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:19" version="1">
+      <object object_ref="oval:nist.validation:obj:5"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:20" version="1">
+      <object object_ref="oval:nist.validation:obj:6"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:21" version="1">
+      <object object_ref="oval:nist.validation:obj:7"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 1." id="oval:nist.validation:tst:22" version="1">
+      <object object_ref="oval:nist.validation:obj:8"/>
+      <state state_ref="oval:nist.validation:ste:3"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:23" version="1">
+      <object object_ref="oval:nist.validation:obj:2"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:24" version="1">
+      <object object_ref="oval:nist.validation:obj:3"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:25" version="1">
+      <object object_ref="oval:nist.validation:obj:4"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:26" version="1">
+      <object object_ref="oval:nist.validation:obj:5"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:27" version="1">
+      <object object_ref="oval:nist.validation:obj:6"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:28" version="1">
+      <object object_ref="oval:nist.validation:obj:7"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the kill entity equals 0." id="oval:nist.validation:tst:29" version="1">
+      <object object_ref="oval:nist.validation:obj:8"/>
+      <state state_ref="oval:nist.validation:ste:4"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="all_exist" comment="Test to see that the test construct properly supports the check_existence property with a value of all_exist." id="oval:nist.validation:tst:30" version="1">
+      <object object_ref="oval:nist.validation:obj:9"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="any_exist" comment="Test to see that the test construct properly supports the check_existence property with a value of any_exist." id="oval:nist.validation:tst:31" version="1">
+      <object object_ref="oval:nist.validation:obj:9"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the test construct properly supports the check_existence property with a value of at_least_one_exists." id="oval:nist.validation:tst:32" version="1">
+      <object object_ref="oval:nist.validation:obj:9"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="none_exist" comment="Test to see that the test construct properly supports the check_existence property with a value of none_exist." id="oval:nist.validation:tst:33" version="1">
+      <object object_ref="oval:nist.validation:obj:9"/>
+    </runlevel_test>
+    <!-- initial code
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation:tst:34" version="1" check_existence="only_one_exists" check="all" comment="Test to see that the test construct properly supports the check_existence property with a value of only_one_exist.">
+      <object object_ref="oval:nist.validation:obj:9"/>
+    </runlevel_test>
+    -->
+    <!-- updated: replaced obj:9 with obj:10 to return only one obj for Configuration #4 -->
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="only_one_exists" comment="Test to see that the test construct properly supports the check_existence property with a value of only_one_exist." id="oval:nist.validation:tst:34" version="1">
+      <object object_ref="oval:nist.validation:obj:10"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the test construct properly supports the check property with a value of all." id="oval:nist.validation:tst:35" version="1">
+      <object object_ref="oval:nist.validation:obj:10"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the test construct properly supports the check property with a value of at least one." id="oval:nist.validation:tst:36" version="1">
+      <object object_ref="oval:nist.validation:obj:10"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="none exist" check_existence="at_least_one_exists" comment="Test to see that the test construct properly supports the check property with a value of none exist." id="oval:nist.validation:tst:37" version="1">
+      <object object_ref="oval:nist.validation:obj:10"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the test construct properly supports the check property with a value of none satisfy." id="oval:nist.validation:tst:38" version="1">
+      <object object_ref="oval:nist.validation:obj:11"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+    <runlevel_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="only one" check_existence="at_least_one_exists" comment="Test to see that the test construct properly supports the check property with a value of only one." id="oval:nist.validation:tst:39" version="1">
+      <object object_ref="oval:nist.validation:obj:10"/>
+      <state state_ref="oval:nist.validation:ste:1"/>
+    </runlevel_test>
+  </tests>
+  <objects>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for any runlevel." id="oval:nist.validation:obj:1" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="pattern match">^[\S]$</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 0." id="oval:nist.validation:obj:2" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">0</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 1." id="oval:nist.validation:obj:3" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">1</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 2." id="oval:nist.validation:obj:4" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">2</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 3." id="oval:nist.validation:obj:5" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">3</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 4." id="oval:nist.validation:obj:6" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">4</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 5." id="oval:nist.validation:obj:7" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">5</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd service for runlevel 6." id="oval:nist.validation:obj:8" version="1">
+      <service_name>httpd</service_name>
+      <runlevel operation="equals">6</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd and mysqld services for any runlevel." id="oval:nist.validation:obj:9" version="1">
+      <service_name operation="pattern match">((httpd)|(mysqld))</service_name>
+      <runlevel operation="pattern match">^[\S]$</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd and mysqld services for runlevel 0." id="oval:nist.validation:obj:10" version="1">
+      <service_name operation="pattern match">((httpd)|(mysqld))</service_name>
+      <runlevel operation="equals">0</runlevel>
+    </runlevel_object>
+    <runlevel_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" comment="Collect the httpd and mysqld services for runlevel 1." id="oval:nist.validation:obj:11" version="1">
+      <service_name operation="pattern match">((httpd)|(mysqld))</service_name>
+      <runlevel operation="equals">1</runlevel>
+    </runlevel_object>
+  </objects>
+  <states>
+    <runlevel_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation:ste:1" version="1">
+      <start datatype="boolean" operation="equals">1</start>
+    </runlevel_state>
+    <runlevel_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation:ste:2" version="1">
+      <start datatype="boolean" operation="equals">0</start>
+    </runlevel_state>
+    <runlevel_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation:ste:3" version="1">
+      <kill datatype="boolean" operation="equals">1</kill>
+    </runlevel_state>
+    <runlevel_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation:ste:4" version="1">
+      <kill datatype="boolean" operation="equals">0</kill>
+    </runlevel_state>
+  </states>
+</oval_definitions></component><component id="scap_gov.nist_comp_runlevel_validation_content-cpe-oval.xml" timestamp="2012-01-31T01:46:50"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+	</generator>
+	<!-- ==================================================================================================== -->
+	<!-- ==========================================  DEFINITIONS  =========================================== -->
+	<!-- ==================================================================================================== -->
+	<definitions>
+	  <definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="1">
+	    <metadata>
+	      <title>Red Hat Enterprise Linux 3, 4, 5 or 6</title>
+	      <affected family="unix">
+	        <platform>Red Hat Enterprise Linux 3, 4, 5 or 6</platform>
+	      </affected>
+	      <reference ref_id="cpe:/o:redhat:enterprise_linux" source="CPE"/>
+	      <description>The operating system installed on the system is Red Hat Enterprise Linux 3, 4, 5 or 6</description>
+	    </metadata>
+	    <criteria>
+	      <criterion comment="Installed operating system is part of the unix family" test_ref="oval:gov.nist.cpe.oval:tst:2"/>
+	      <criterion comment="Red Hat Enterprise Linux 3, 4, 5 or 6 is installed" test_ref="oval:gov.nist.cpe.oval:tst:1"/>
+	    </criteria>
+	  </definition>
+	</definitions>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  TESTS  =============================================== -->
+	<!-- ==================================================================================================== -->
+	<tests>
+	  <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="installed operating system is part of the Unix family" id="oval:gov.nist.cpe.oval:tst:2" version="1">
+	    <object object_ref="oval:gov.nist.cpe.oval:obj:2"/>
+	    <state state_ref="oval:gov.nist.cpe.oval:ste:2"/>
+	  </family_test>
+	  <rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="redhat-release is version 3, 4, 5 or 6" id="oval:gov.nist.cpe.oval:tst:1" version="1">
+	    <object object_ref="oval:gov.nist.cpe.oval:obj:1"/>
+	    <state state_ref="oval:gov.nist.cpe.oval:ste:1"/>
+	  </rpminfo_test>
+	</tests>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  OBJECTS  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<objects>
+	  <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.cpe.oval:obj:2" version="1"/>
+	  <rpminfo_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="the redhat-release rpm" id="oval:gov.nist.cpe.oval:obj:1" version="1">
+	    <name>redhat-release</name>
+	  </rpminfo_object>
+	</objects>
+	<!-- ==================================================================================================== -->
+	<!-- =============================================  STATES  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<states>
+	  <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.cpe.oval:ste:2" version="1">
+	    <family>unix</family>
+	  </family_state>
+	  <rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" id="oval:gov.nist.cpe.oval:ste:1" version="1">
+	    <version operation="pattern match">^[3-6]\D</version>
+	  </rpminfo_state>
+	</states>
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</oval_definitions></component><component id="scap_gov.nist_comp_runlevel_validation_content-cpe-dictionary.xml" timestamp="2012-01-31T01:46:50"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+  <cpe-item name="cpe:/o:redhat:enterprise_linux">
+    <title xml:lang="en-US">Red Hat Enterprise Linux</title>
+    <notes xml:lang="en-US">
+      <note>This CPE Name represents Red Hat Enterprise Linux OS</note>
+    </notes>
+    <check href="runlevel_validation_content-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+  </cpe-item>
+</cpe-list></component><Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="dsig-20121128145308457-29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2006/12/xml-c14n11"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#scap_gov.nist_datastream_unix_runlevel_test-datastream.zip"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>InP2as3988kAdcCJOfzOdwDio5FiX+5yaXbB/fDGec0=</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#sig-props-20121128145308464-21"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DwHzI1eJGbcPOz2Rq7HZdapBXqfJUwM2QhVut2Qkx9QGLEqarVtsPq1PKob86uULDODkCQgBmwxv
+vUX2iy9Z+g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#Manifest" URI="#manifest-20121128145308456-99"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>O1EIa6urZtE8uX7ESlnypWPNo5Qnc7I61BYwS7+Ljm0=</DigestValue></Reference></SignedInfo><SignatureValue>Fw6lILOUgBI6Tpv+8vlbMZPPV2bYwQ58HyoNj7lUOgMO2q2VsTwT4685FM8a2DrsgL3fYplch5Tx
+dGFSX2SH9O5cs4DjXbHFScumQMgSMKDN7pkW4liy1U3l/Wa4DUfFKOfkU25Pu7owkL4affzspCyZ
+C+S7nIdthiv8vstmrVn5+a6ibYt0vILlGFMdzPnKTj4F5G1FRR/1lcYwR8wF41qmX+D9RWit3NYn
+naYKS2YANCNz0BiuA6C5D8+X5/u1hvUpUQH30aQTM6un3h3iqw2i+daAlrC9+4QgH4Q/9hw1z+BO
+UYlycbhJtiatEDI/t6MokuuXiIoSBzodwwfggQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>udiDDDUEIO4YVgWVXvrs9l/1WuTEiEx0vMnef7X6fAY6WIUkK4Q0s7iy9WdyNPI7m6qdPh+mUl+y
+b74j874EIxY+VEz6nATjeBO3F74Se/4kfTe5e+jqauPJ9tpJ8+pjEDkRXmgVr05lQeH/CBQl0xMu
+3kfowA2HtBI9f2AY8w5lbeL3NXQVVdfe4GOy5MBfc1uHmu8eFM57R4p9Z3O8CJ1OdTyhxjhqgwGy
+0Eb4OhnvqFDMyBL0cnGya9nZv8s8gnm4QL3aWxTRo4gTOmgCT+50ET49NK50j6hk98Fpf3tDapCM
+JQWh73Pu2G845AuS2HRn8pPyTQ0Br+l85FX0ew==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509SubjectName>CN=SECURITY AUTOMATION PROGRAM MANAGER,OU=Devices,OU=National Institute of Standards and Technology,OU=Department of Commerce,O=U.S. Government,C=US</X509SubjectName><X509SKI>BBYEFF7dAd5QMljpKnYAvebD/oHjX6jw</X509SKI><X509IssuerSerial><X509IssuerName>OU=Entrust Managed Services SSP CA,OU=Certification Authorities,O=Entrust,C=US</X509IssuerName><X509SerialNumber>1149213983</X509SerialNumber></X509IssuerSerial><X509Certificate>MIIHeTCCBmGgAwIBAgIESQWU5DANBgkqhkiG9w0BAQsFADBtMQswCQYDVQQGEwJVUzEQMA4GA1UE
+ChMHRW50cnVzdDEiMCAGA1UECxMZQ2VydGlmaWNhdGlvbiBBdXRob3JpdGllczEoMCYGA1UECxMf
+RW50cnVzdCBNYW5hZ2VkIFNlcnZpY2VzIFNTUCBDQTAeFw0xMjA0MTAxNTUyNTRaFw0xNTA0MTAx
+NjIyNTRaMIHBMQswCQYDVQQGEwJVUzEYMBYGA1UEChMPVS5TLiBHb3Zlcm5tZW50MR8wHQYDVQQL
+ExZEZXBhcnRtZW50IG9mIENvbW1lcmNlMTcwNQYDVQQLEy5OYXRpb25hbCBJbnN0aXR1dGUgb2Yg
+U3RhbmRhcmRzIGFuZCBUZWNobm9sb2d5MRAwDgYDVQQLEwdEZXZpY2VzMSwwKgYDVQQDEyNTRUNV
+UklUWSBBVVRPTUFUSU9OIFBST0dSQU0gTUFOQUdFUjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBALnYgww1BCDuGFYFlV767PZf9VrkxIhMdLzJ3n+1+nwGOliFJCuENLO4svVncjTyO5uq
+nT4fplJfsm++I/O+BCMWPlRM+pwE43gTtxe+Env+JH03uXvo6mrjyfbaSfPqYxA5EV5oFa9OZUHh
+/wgUJdMTLt5H6MANh7QSPX9gGPMOZW3i9zV0FVXX3uBjsuTAX3Nbh5rvHhTOe0eKfWdzvAidTnU8
+ocY4aoMBstBG+DoZ76hQzMgS9HJxsmvZ2b/LPIJ5uEC92lsU0aOIEzpoAk/udBE+PTSudI+oZPfB
+aX97Q2qQjCUFoe9z7thvOOQLkth0Z/KT8k0NAa/pfORV9HsCAwEAAaOCA8owggPGMA4GA1UdDwEB
+/wQEAwIGwDAXBgNVHSAEEDAOMAwGCmCGSAFlAwIBAwcwggFeBggrBgEFBQcBAQSCAVAwggFMMIG4
+BggrBgEFBQcwAoaBq2xkYXA6Ly9zc3BkaXIubWFuYWdlZC5lbnRydXN0LmNvbS9vdT1FbnRydXN0
+JTIwTWFuYWdlZCUyMFNlcnZpY2VzJTIwU1NQJTIwQ0Esb3U9Q2VydGlmaWNhdGlvbiUyMEF1dGhv
+cml0aWVzLG89RW50cnVzdCxjPVVTP2NBQ2VydGlmaWNhdGU7YmluYXJ5LGNyb3NzQ2VydGlmaWNh
+dGVQYWlyO2JpbmFyeTBLBggrBgEFBQcwAoY/aHR0cDovL3NzcHdlYi5tYW5hZ2VkLmVudHJ1c3Qu
+Y29tL0FJQS9DZXJ0c0lzc3VlZFRvRU1TU1NQQ0EucDdjMEIGCCsGAQUFBzABhjZodHRwOi8vb2Nz
+cC5tYW5hZ2VkLmVudHJ1c3QuY29tL09DU1AvRU1TU1NQQ0FSZXNwb25kZXIwGwYDVR0JBBQwEjAQ
+BgkqhkiG9n0HRB0xAwIBIDCCAYcGA1UdHwSCAX4wggF6MIHqoIHnoIHkhoGrbGRhcDovL3NzcGRp
+ci5tYW5hZ2VkLmVudHJ1c3QuY29tL2NuPVdpbkNvbWJpbmVkMSxvdT1FbnRydXN0JTIwTWFuYWdl
+ZCUyMFNlcnZpY2VzJTIwU1NQJTIwQ0Esb3U9Q2VydGlmaWNhdGlvbiUyMEF1dGhvcml0aWVzLG89
+RW50cnVzdCxjPVVTP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q7YmluYXJ5hjRodHRwOi8vc3Nw
+d2ViLm1hbmFnZWQuZW50cnVzdC5jb20vQ1JMcy9FTVNTU1BDQTEuY3JsMIGKoIGHoIGEpIGBMH8x
+CzAJBgNVBAYTAlVTMRAwDgYDVQQKEwdFbnRydXN0MSIwIAYDVQQLExlDZXJ0aWZpY2F0aW9uIEF1
+dGhvcml0aWVzMSgwJgYDVQQLEx9FbnRydXN0IE1hbmFnZWQgU2VydmljZXMgU1NQIENBMRAwDgYD
+VQQDEwdDUkw0MDMzMCsGA1UdEAQkMCKADzIwMTIwNDEwMTU1MjU0WoEPMjAxNDA1MTcwNDIyNTRa
+MB8GA1UdIwQYMBaAFNPO51uJp81skcZnNqlYcgns4jnzMB0GA1UdDgQWBBRe3QHeUDJY6Sp2AL3m
+w/6B41+o8DAJBgNVHRMEAjAAMBkGCSqGSIb2fQdBAAQMMAobBFY4LjADAgSwMA0GCSqGSIb3DQEB
+CwUAA4IBAQCbR3AvwbMLsTCH7G1FN5ADekjx0S4hKoskNE14AT4ijX/TuEPgMfRCeFyMQ3jZdxgW
+6+TVjd+8SBOHHUaseE5F0WKYeiK32mrTlX3WIzGnvPKpEmnbxLqAQZeKGU8qQr99om1JD24/kgy/
+aEPQCpMya3u+yeSvmJDILkLPliiPSZM5YxBUwjFwZfp44rFjN3ksckWDQDqDqLijgg/Hhzy9YaEE
+uy9ltx8yBje2Ca2CdpZqtocTUx+/SN2Q0HhbZ2aSlG8DCZcNn3/CzmuTSBkeSjt+iqdRW50/7p2z
+r1452HqqnVo8pSa4WkHdM2dkmlzvsgLSRP75dSRXOrXxEvNN</X509Certificate></X509Data><X509Data><X509SubjectName>OU=Entrust Managed Services SSP CA,OU=Certification Authorities,O=Entrust,C=US</X509SubjectName><X509SKI>BBYEFNPO51uJp81skcZnNqlYcgns4jnz</X509SKI><X509IssuerSerial><X509IssuerName>OU=Entrust Managed Services Root CA,OU=Certification Authorities,O=Entrust,C=US</X509IssuerName><X509SerialNumber>514</X509SerialNumber></X509IssuerSerial><X509Certificate>MIIHBDCCBeygAwIBAgIERH+dHzANBgkqhkiG9w0BAQUFADBuMQswCQYDVQQGEwJVUzEQMA4GA1UE
+ChMHRW50cnVzdDEiMCAGA1UECxMZQ2VydGlmaWNhdGlvbiBBdXRob3JpdGllczEpMCcGA1UECxMg
+RW50cnVzdCBNYW5hZ2VkIFNlcnZpY2VzIFJvb3QgQ0EwHhcNMDkwNTA5MTUzMjA2WhcNMTkwNTA5
+MTQwMjMxWjBtMQswCQYDVQQGEwJVUzEQMA4GA1UEChMHRW50cnVzdDEiMCAGA1UECxMZQ2VydGlm
+aWNhdGlvbiBBdXRob3JpdGllczEoMCYGA1UECxMfRW50cnVzdCBNYW5hZ2VkIFNlcnZpY2VzIFNT
+UCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL4Y6xZWI7Bkvhi+89HwIW5REGez
+eZthIq5dJoUYkrwDlbFBXZTxn9E4PnPEmZcznpNE5ru20jXFRBzsFOlkNKCFH1NborQoC8WDnc42
+qCNzHXRBS0mJYxivkRH6abt1m7QvpVXNOrtLgVAAwyu748m+IBP7uPUlHqGyAV0ePih/z+AeYmuZ
+YxZtAoev6HKohyW2e9ZR2bXqWp6tcM0HF+czsWGAVPZ1h3hVU+CNCvudPTYCnI2BrT7t6b1pYG5j
+c8UO1dnABKvNPvERNgi4HSoTMMhzvHFVT9WXDp4endEoXjc0pzsEjV4J0pJz11Sck0TQ+IAroDw3
+PzfTGOgzg10CAwEAAaOCA6kwggOlMA4GA1UdDwEB/wQEAwIBBjBPBgNVHSAESDBGMAwGCmCGSAFl
+AwIBAwYwDAYKYIZIAWUDAgEDBzAMBgpghkgBZQMCAQMIMAwGCmCGSAFlAwIBAw0wDAYKYIZIAWUD
+AgEDETAPBgNVHRMBAf8EBTADAQH/MIIBYwYIKwYBBQUHAQEEggFVMIIBUTCBugYIKwYBBQUHMAKG
+ga1sZGFwOi8vcm9vdGRpci5tYW5hZ2VkLmVudHJ1c3QuY29tL291PUVudHJ1c3QlMjBNYW5hZ2Vk
+JTIwU2VydmljZXMlMjBSb290JTIwQ0Esb3U9Q2VydGlmaWNhdGlvbiUyMEF1dGhvcml0aWVzLG89
+RW50cnVzdCxjPVVTP2NBQ2VydGlmaWNhdGU7YmluYXJ5LGNyb3NzQ2VydGlmaWNhdGVQYWlyO2Jp
+bmFyeTBNBggrBgEFBQcwAoZBaHR0cDovL3Jvb3R3ZWIubWFuYWdlZC5lbnRydXN0LmNvbS9TSUEv
+Q2VydHNJc3N1ZWRUb0VNU1Jvb3RDQS5wN2MwQwYIKwYBBQUHMAGGN2h0dHA6Ly9vY3NwLm1hbmFn
+ZWQuZW50cnVzdC5jb20vT0NTUC9FTVNSb290Q0FSZXNwb25kZXIwggGIBgNVHR8EggF/MIIBezCB
+7qCB66CB6IaBrWxkYXA6Ly9yb290ZGlyLm1hbmFnZWQuZW50cnVzdC5jb20vY249V2luQ29tYmlu
+ZWQxLG91PUVudHJ1c3QlMjBNYW5hZ2VkJTIwU2VydmljZXMlMjBSb290JTIwQ0Esb3U9Q2VydGlm
+aWNhdGlvbiUyMEF1dGhvcml0aWVzLG89RW50cnVzdCxjPVVTP2NlcnRpZmljYXRlUmV2b2NhdGlv
+bkxpc3Q7YmluYXJ5hjZodHRwOi8vcm9vdHdlYi5tYW5hZ2VkLmVudHJ1c3QuY29tL0NSTHMvRU1T
+Um9vdENBMS5jcmwwgYeggYSggYGkfzB9MQswCQYDVQQGEwJVUzEQMA4GA1UEChMHRW50cnVzdDEi
+MCAGA1UECxMZQ2VydGlmaWNhdGlvbiBBdXRob3JpdGllczEpMCcGA1UECxMgRW50cnVzdCBNYW5h
+Z2VkIFNlcnZpY2VzIFJvb3QgQ0ExDTALBgNVBAMTBENSTDEwHwYDVR0jBBgwFoAUnGJmJp1xtqd1
+U2ThrLHHJTxEXQ0wHQYDVR0OBBYEFNPO51uJp81skcZnNqlYcgns4jnzMA0GCSqGSIb3DQEBBQUA
+A4IBAQB1efbjA0HgDMfS7KKmEWnOC5SzYg68tipgd0NXEpsjXLYlJny2JJ0ROZfTWfQwvnYKBita
+pDFD8SIxJVd5dNnyo+tYhsQec3u6PfgQlBM8lTaJtmKbV1Rf0Iqg+LCFMGno04hf2y6nhKMiDmuR
+k2BZmP6CBF5Z+2hY1VKcEllTk5klXJcpRZIAMaYAILfC+4w7lYy3E+g7QODA0TSYp0AT/uDZwRrD
+FbUj2Hzpe/DlrQd1QbU9gOpMz4+XV1BIghkJ9o8n5IL4htk8i1rfaN0JFEiz/FKSsnpPpFmL+7z5
+QPR3NAumcSfkae8ZK+tNTIAIXf1W3wFfUpcNigYJlKgj</X509Certificate></X509Data><X509Data><X509SubjectName>OU=Entrust Managed Services Root CA,OU=Certification Authorities,O=Entrust,C=US</X509SubjectName><X509SKI>BBYEFJxiZiadcbandVNk4ayxxyU8RF0N</X509SKI><X509IssuerSerial><X509IssuerName>CN=Federal Common Policy CA,OU=FPKI,O=U.S. Government,C=US</X509IssuerName><X509SerialNumber>340851109174907066384510</X509SerialNumber></X509IssuerSerial><X509Certificate>MIIGxDCCBaygAwIBAgICAgIwDQYJKoZIhvcNAQELBQAwWTELMAkGA1UEBhMCVVMxGDAWBgNVBAoT
+D1UuUy4gR292ZXJubWVudDENMAsGA1UECxMERlBLSTEhMB8GA1UEAxMYRmVkZXJhbCBDb21tb24g
+UG9saWN5IENBMB4XDTEwMTIxNTIxMTIyNloXDTIwMTIxNTIxMTAyN1owbjELMAkGA1UEBhMCVVMx
+EDAOBgNVBAoTB0VudHJ1c3QxIjAgBgNVBAsTGUNlcnRpZmljYXRpb24gQXV0aG9yaXRpZXMxKTAn
+BgNVBAsTIEVudHJ1c3QgTWFuYWdlZCBTZXJ2aWNlcyBSb290IENBMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAtntz0/7RJGVXZa6iSqs5aLys+CNBBpw/+O5oROQ7rSI4tnz2WPxiqPaC
+1ddAvKRWcb2+aUvYMJfRkdpss9xBH6nRZ5l/lwkQzfgTsOQtKlFv+rT2KVdUFXRikp/CAUDkVyiC
+7iPvi8kHgNK4aYgUbfGwxmwrS77n9csB3Nv5a1jjpMJQM8CXdeQ+nZ2wUtiMIMMHJRVwrTn/259O
+dafLj//GO/rJolAM7E4PNm0O6Ydx06hzHkyxBj3jQa1dwrdxFzvIkwodVA9yVX/i0FVs8veomMZu
+FiBPsS+eH4ixACr4t/kQk2llA6cpWChrKru8vXNHfJ/4O/NEiLVlKIC7pQIDAQABo4IDfzCCA3sw
+DwYDVR0TAQH/BAUwAwEB/zBPBgNVHSAESDBGMAwGCmCGSAFlAwIBAwYwDAYKYIZIAWUDAgEDBzAM
+BgpghkgBZQMCAQMIMAwGCmCGSAFlAwIBAw0wDAYKYIZIAWUDAgEDETCB6QYIKwYBBQUHAQEEgdww
+gdkwPwYIKwYBBQUHMAKGM2h0dHA6Ly9odHRwLmZwa2kuZ292L2ZjcGNhL2NhQ2VydHNJc3N1ZWRU
+b2ZjcGNhLnA3YzCBlQYIKwYBBQUHMAKGgYhsZGFwOi8vbGRhcC5mcGtpLmdvdi9jbj1GZWRlcmFs
+JTIwQ29tbW9uJTIwUG9saWN5JTIwQ0Esb3U9RlBLSSxvPVUuUy4lMjBHb3Zlcm5tZW50LGM9VVM/
+Y0FDZXJ0aWZpY2F0ZTtiaW5hcnksY3Jvc3NDZXJ0aWZpY2F0ZVBhaXI7YmluYXJ5MIIBHgYIKwYB
+BQUHAQsEggEQMIIBDDBNBggrBgEFBQcwBYZBaHR0cDovL3Jvb3R3ZWIubWFuYWdlZC5lbnRydXN0
+LmNvbS9TSUEvQ2VydHNJc3N1ZWRCeUVNU1Jvb3RDQS5wN2MwgboGCCsGAQUFBzAFhoGtbGRhcDov
+L3Jvb3RkaXIubWFuYWdlZC5lbnRydXN0LmNvbS9vdT1FbnRydXN0JTIwTWFuYWdlZCUyMFNlcnZp
+Y2VzJTIwUm9vdCUyMENBLG91PUNlcnRpZmljYXRpb24lMjBBdXRob3JpdGllcyxvPUVudHJ1c3Qs
+Yz1VUz9jQUNlcnRpZmljYXRlO2JpbmFyeSxjcm9zc0NlcnRpZmljYXRlUGFpcjtiaW5hcnkwDgYD
+VR0PAQH/BAQDAgEGMB8GA1UdIwQYMBaAFK0MenVc5fOYxHmYDqwo/Zf05wL8MIG4BgNVHR8EgbAw
+ga0wKqAooCaGJGh0dHA6Ly9odHRwLmZwa2kuZ292L2ZjcGNhL2ZjcGNhLmNybDB/oH2ge4Z5bGRh
+cDovL2xkYXAuZnBraS5nb3YvY24lM2RGZWRlcmFsJTIwQ29tbW9uJTIwUG9saWN5JTIwQ0Esb3Ul
+M2RGUEtJLG8lM2RVLlMuJTIwR292ZXJubWVudCxjJTNkVVM/Y2VydGlmaWNhdGVSZXZvY2F0aW9u
+TGlzdDAdBgNVHQ4EFgQUnGJmJp1xtqd1U2ThrLHHJTxEXQ0wDQYJKoZIhvcNAQELBQADggEBAF1V
+nwRwXqw8cXL1cTi+ooEKDlFQJG6ABGpk9wQMMLZNCWY2SlgTubCLsdmDWss/bjwkDZ32X5/SFniT
+YzOR/R/XQlCdVCrRNuEdTtB7z9GO7zVLusuc53T6yUz6btpK1Es5okLJP0txuwoMKBysSTJ7THum
+muGaDkEOw5mdlygx0CgulNHrIViHsxDXIEsVpCDNMaMhSglO31oaS+gg+GOkFo6PmtOFlgLL4K6N
+O9Ujr31SJqxVB9KWPf1s5QiP7/VKkU7YCRh7WbdI4Bmaw7KVTyTU5aScGLe927fayO1onZ/4yRy0
+4q+7QJmbcZZvw2D33xJmXlq/UGje3aBmkxM=</X509Certificate></X509Data><X509Data><X509SubjectName>CN=Federal Common Policy CA,OU=FPKI,O=U.S. Government,C=US</X509SubjectName><X509SKI>BBYEFK0MenVc5fOYxHmYDqwo/Zf05wL8</X509SKI><X509IssuerSerial><X509IssuerName>CN=Common Policy,OU=FBCA,O=U.S. Government,C=us</X509IssuerName><X509SerialNumber>54780185447832661891327345497050931631</X509SerialNumber></X509IssuerSerial><X509Certificate>MIIHXjCCBkagAwIBAgIKSC2TXgABAAAAfjANBgkqhkiG9w0BAQUFADBOMQswCQYDVQQGEwJ1czEY
+MBYGA1UEChMPVS5TLiBHb3Zlcm5tZW50MQ0wCwYDVQQLEwRGQkNBMRYwFAYDVQQDEw1Db21tb24g
+UG9saWN5MB4XDTExMDIxMTE2Mzc0MFoXDTEzMTIzMTE2NDc0MFowWTELMAkGA1UEBhMCVVMxGDAW
+BgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsGA1UECxMERlBLSTEhMB8GA1UEAxMYRmVkZXJhbCBD
+b21tb24gUG9saWN5IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2HX7NRY0WkG/
+Wq9cMAQUHK14RLXqJup1YcfNNnn4fNi9KVFmWSHjeavUeL6wLbCh1bI1FiPQzB6+Duir3MPJ1hLX
+p3JoGDG4FyKyPn66CG3G/dFYLGmgA/Aqo/Y/ISU937cyxY4nsyOl4FKzXZbpsLjFxZ+7xaBugkC7
+xScFNknWJidpDDSPzyd6KgqjQV+NHQOGgxXgVcHFmCye7Bpy3EjBPvmE0oSCwRvDdDa3ucc2Mnr4
+MrbQNq4iGDGMUHMhnv6DOzCIJOPpwX7e7ZjHH5IQip9bYi+dpLzVhW86/clTpyBLqtsgqyFOHQ1O
+5piF5asRR12dP8QjwOMUBm7+nQIDAQABo4IEMTCCBC0wDwYDVR0TAQH/BAUwAwEB/zALBgNVHQ8E
+BAMCAYYwHQYDVR0OBBYEFK0MenVc5fOYxHmYDqwo/Zf05wL8MB8GA1UdIwQYMBaAFC9Yl9ipBZil
+Vh/72at17wI8NjTHMIG5BgNVHR8EgbEwga4wgauggaiggaWGNWh0dHA6Ly9mcGtpYS5nc2EuZ292
+L0NvbW1vblBvbGljeS9Db21tb25Qb2xpY3koMSkuY3JshmxsZGFwOi8vZnBraWEuZ3NhLmdvdi9j
+bj1Db21tb24lMjBQb2xpY3koMSksb3U9RkJDQSxvPVUuUy4lMjBHb3Zlcm5tZW50LGM9VVM/Y2Vy
+dGlmaWNhdGVSZXZvY2F0aW9uTGlzdDtiaW5hcnkwgdwGCCsGAQUFBwEBBIHPMIHMMEIGCCsGAQUF
+BzAChjZodHRwOi8vZnBraWEuZ3NhLmdvdi9Db21tb25Qb2xpY3kvQ29tbW9uUG9saWN5Um9vdC5w
+N2MwgYUGCCsGAQUFBzAChnlsZGFwOi8vZnBraWEuZ3NhLmdvdi9jbj1Db21tb24lMjBQb2xpY3ks
+b3U9RkJDQSxvPVUuUy4lMjBHb3Zlcm5tZW50LGM9VVM/Y0FDZXJ0aWZpY2F0ZTtiaW5hcnksY3Jv
+c3NDZXJ0aWZpY2F0ZVBhaXI7YmluYXJ5MB0GCSsGAQQBgjcUAgQQHg4AQwByAG8AcwBzAEMAQTCC
+ASUGA1UdIASCARwwggEYMAwGCmCGSAFlAwIBAwYwDAYKYIZIAWUDAgEDBzAMBgpghkgBZQMCAQMI
+MAwGCmCGSAFlAwIBAw0wDAYKYIZIAWUDAgEDEDAMBgpghkgBZQMCAQMRMAwGCmCGSAFlAwIBAwEw
+DAYKYIZIAWUDAgEDAjAMBgpghkgBZQMCAQMOMAwGCmCGSAFlAwIBAw8wDAYKYIZIAWUDAgEDEjAM
+BgpghkgBZQMCAQMUMAwGCmCGSAFlAwIBAxMwDAYKYIZIAWUDAgEDFTAMBgpghkgBZQMCAQMXMAwG
+CmCGSAFlAwIBAxYwDAYKYIZIAWUDAgEDGDAMBgpghkgBZQMCAQMZMAwGCmCGSAFlAwIBAxowDAYK
+YIZIAWUDAgEDGzCB6QYIKwYBBQUHAQsEgdwwgdkwgZUGCCsGAQUFBzAFhoGIbGRhcDovL2xkYXAu
+ZnBraS5nb3YvY249RmVkZXJhbCUyMENvbW1vbiUyMFBvbGljeSUyMENBLG91PUZQS0ksbz1VLlMu
+JTIwR292ZXJubWVudCxjPVVTP2NBQ2VydGlmaWNhdGU7YmluYXJ5LGNyb3NzQ2VydGlmaWNhdGVQ
+YWlyO2JpbmFyeTA/BggrBgEFBQcwBYYzaHR0cDovL2h0dHAuZnBraS5nb3YvZmNwY2EvY2FDZXJ0
+c0lzc3VlZEJ5ZmNwY2EucDdjMA0GCSqGSIb3DQEBBQUAA4IBAQAU0W5asBZqMhmSoIOB3y1XQc4K
+usR/Mr9ZSzmH9UdbM05sq/2f5VMLQropx9kP5o15pvdVUYylb+lkCQXzgY04f9peZ+eBY5gpV1tv
+1Vh6QwTo01RrgrnREuYvngg+AOchm2JBMclrQpbWQCr8feij/E2y8Q4zrYn/PkK5QQm6RT7yB3wb
+qm1liTDkADSXKvpAqS6pbbEsXrDcf+pDwgPtCGqG7nuqO50nqzlq8S/BwaxX2mwMzR0T2Di+2cAd
+ZCrwpewvbIGTZMntcodsQr8ieMzeqF64wLODUwbPwJG8x1Jq4pB1d3jqYW/NhGZnv416bBGIq6v5
+Z0px8nReR3/2</X509Certificate></X509Data><X509Data><X509SubjectName>CN=Common Policy,OU=FBCA,O=U.S. Government,C=us</X509SubjectName><X509SKI>BBYEFC9Yl9ipBZilVh/72at17wI8NjTH</X509SKI><X509Certificate>MIIDoTCCAomgAwIBAgIQKTZHquOKrIZKI1byyrdhrzANBgkqhkiG9w0BAQUFADBOMQswCQYDVQQG
+EwJ1czEYMBYGA1UEChMPVS5TLiBHb3Zlcm5tZW50MQ0wCwYDVQQLEwRGQkNBMRYwFAYDVQQDEw1D
+b21tb24gUG9saWN5MB4XDTA3MTAxNTE1NTgwMFoXDTI3MTAxNTE2MDgwMFowTjELMAkGA1UEBhMC
+dXMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsGA1UECxMERkJDQTEWMBQGA1UEAxMNQ29t
+bW9uIFBvbGljeTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJeNvTMn5K1b+3i9L0dH
+bsd46ZOcpN7JHP0vGzk4rEcXwH53KQA7Ax9oD81Npe53uCxiazH2+nIJfTApBnznfKM9hBiKHa4s
+kqgf6F5PjY7rPxr4nApnnbBnTfAu0DDew5SwoM8uCjR/VAnTNr2kSVdSc+md/uRIeUYbW40y5KVI
+ZPMiDZKdCBW/YDyD90ciJSKtKXG3d+8XyaK2lF7IMJCkFEhcVlcLQUwF1CpMP64Sm1kRdXAHImkt
+LNMxzJJ+zM2kfpRHqpwJCPZLr1LoakCRxVW9QLHIbVeGlRfmH3O+Ry4+i0wXubklHKVSFzYIWcBC
+vgortFZRPBtVyYyQd+sCAwEAAaN7MHkwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8w
+HQYDVR0OBBYEFC9Yl9ipBZilVh/72at17wI8NjTHMBIGCSsGAQQBgjcVAQQFAgMBAAEwIwYJKwYB
+BAGCNxUCBBYEFHa3YJbdFFYprHWF03BjwbxHhhyLMA0GCSqGSIb3DQEBBQUAA4IBAQBgrvNIFkBy
+pgiIybxHLCRLXaCRc+1leJDwZ5B6pb8KrbYq+Zln34PFdx80CTj5fp5B4Ehg/uKqXYeI6oj9XEWy
+yWrafaStsU+/HA2fHprA1RRzOCuKeEBuMPdi4c2Z/FFpZ2wR3bgQo2jeJqVW/TZsN5hs++58PGxr
+cD/3SDcJjwtCga1GRrgLgwb0Gzigf0/NC++DiYeXHIowZ9z9VKEDfgHLhUyxCynDvux84T8PCVI8
+L6eaSP436REGWOE2QYrEtr+O3c5Ks7wawM36GpnScZv6z7zyxFSjiDV2zBssRm8MtNHDYXaSdBHq
+S4CNHIkRi+xb/xfJSPzn4AYR4oRe</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties Id="sig-props-20121128145308464-21"><SignatureProperty Target="#dsig-20121128145308457-29"><dsig:signature-info xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsig="http://scap.nist.gov/schema/xml-dsig/1.0"><dc:date>2012-11-28T14:53:08-0500</dc:date><dsig:nonce>4c64489e59e678e6</dsig:nonce></dsig:signature-info></SignatureProperty></SignatureProperties></Object><Object><Manifest Id="manifest-20121128145308456-99"><Reference URI="#scap_gov.nist_comp_runlevel_validation_content-cpe-dictionary.xml"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>ioTVKH/OwsQ6xEPoHf3u3dA9VkZrw/VphPq1P6IYVBA=</DigestValue></Reference><Reference URI="#scap_gov.nist_comp_runlevel_validation_content-xccdf.xml"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>yz/wD9UVn9riFGdx6oeOjmmlezr8/zY/QvU1Oac0SSU=</DigestValue></Reference><Reference URI="#scap_gov.nist_comp_runlevel_validation_content-oval.xml"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>IPkh1rXBPJZHU/6L+dHaKU+g7jrToW4AAEox2AONqqU=</DigestValue></Reference><Reference URI="#scap_gov.nist_comp_runlevel_validation_content-cpe-oval.xml"><Transforms><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>I5UBEBrfNHBQ2kyaXFNIV5arBFXRkXgm1cEvorsHU5Y=</DigestValue></Reference></Manifest></Object></Signature></data-stream-collection>

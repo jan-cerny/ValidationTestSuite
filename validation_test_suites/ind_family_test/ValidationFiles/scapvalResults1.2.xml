@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scap-validation-results xmlns="http://scap.nist.gov/schema/validation/results/0.1"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         implementation-version="scapval-1.2.1.9"
+                         message-count="44"
+                         resource-id="ind_family_test-datastream.xml"
+                         validation-datetime="2013-08-07T15:32:52"
+                         xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
+   <messages>
+      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
+      <message level="INFO" resource-id="ind_family_test-datastream.xml"
+               type="SUBMITTED_RESOURCE">Resource ind_family_test-datastream.xml was submitted.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\nvdcce-0.1-feed.xml.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="INFO" type="APPLICATION">Hashing inputs.</message>
+      <message level="INFO" resource-id="ind_family_test-datastream.xml" type="HASH">SHA-256 : F5EA6ED3FC9077DCC4882CF43811DB7444516BA4EE2DD1722EC3354E6FF3D9A4</message>
+      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 838DDDFCA7C69A311563DF7B7928313CAC0D0DE4F43339302E1D0558E6FC8123</message>
+      <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection ind_family_test-datastream.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_family_validation_content-cpe-dictionary.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_family_validation_content-xccdf.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_family_validation_content-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_family_validation_content-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Applying SCAP schematron rules to content.</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule xccdf-1.2.sch with phase #ALL against source scap_gov.nist_comp_family_validation_content-xccdf.xml</message>
+      <message level="WARN" location="/*[local-name()='Benchmark']" requirement-id="330-3"
+               resource-id="scap_gov.nist_comp_family_validation_content-xccdf.xml"
+               test="false()"
+               type="SCHEMATRON">Warning: The 'Benchmark' element has no platform specified, which implies the benchmark applies to all platforms. Applicable platforms should be indicate if possible. See the XCCDF 1.2.1 specification, Section 6.2.5.</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.8.sch against source scap_gov.nist_comp_family_validation_content-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.3.sch against source scap_gov.nist_comp_family_validation_content-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule tmsad-1.0.sch against source ind_family_test-datastream.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule source-data-stream-1.2_1.0.sch against source ind_family_test-datastream.xml</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:version[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
+               requirement-id="3-2"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(@time)"
+               type="SCHEMATRON">The @time attribute of the &lt;xccdf:version&gt; element SHOULD be used for a timestamp of when the benchmark was defined.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-1 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-2 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][3]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-3 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][4]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-4 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][5]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-5 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][6]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-6 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][7]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-7 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][8]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_family-with-equals-operation-8 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][9]"
+               requirement-id="251-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])"
+               type="SCHEMATRON">xccdf_gov.nist_rule_extend-definition-construct-with-negate-property-9 - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:1 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][2]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:2 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][3]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:3 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][4]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:4 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][5]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:5 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][6]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:6 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][7]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:7 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][8]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:8 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="WARN"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][9]"
+               requirement-id="207-1"
+               resource-id="ind_family_test-datastream.xml"
+               test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
+               type="SCHEMATRON">oval:nist.validation.family:def:9 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
+      <message level="INFO"
+               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][3]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:tests[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:rpminfo_test[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5#linux'][1]"
+               requirement-id="A21"
+               resource-id="ind_family_test-datastream.xml"
+               test="exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace eq namespace-uri(current()) and @name eq local-name(current())])"
+               type="SCHEMATRON">oval:gov.nist.cpe.oval:tst:101 - The OVAL test type is not checked in the NIST SCAP Validation Program.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:03.027.</message>
+      <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:06.043.</message>
+   </messages>
+</scap-validation-results>

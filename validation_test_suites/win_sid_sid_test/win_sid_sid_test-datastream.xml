@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_sid_sid_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_win_sid_sid_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:37" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_sid_sid-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_sid_sid-cpe-dictionary.xml"><cat:catalog><cat:uri name="sid_sid-cpe-oval.xml" uri="#scap_gov.nist_cref_sid_sid-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_sid_sid-xccdf.xml" xlink:href="#scap_gov.nist_comp_sid_sid-xccdf.xml"><cat:catalog><cat:uri name="sid_sid-oval.xml" uri="#scap_gov.nist_cref_sid_sid-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_sid_sid-oval.xml" xlink:href="#scap_gov.nist_comp_sid_sid-oval.xml"/><component-ref id="scap_gov.nist_cref_sid_sid-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_sid_sid-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_sid_sid-xccdf.xml" timestamp="2012-11-09T09:58:37"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation.winSidSid_benchmark_sid_sid" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+  <xccdf:status date="2011-11-30">draft</xccdf:status>
+  <xccdf:title>XCCDF Benchmark That References the Validation Content for the sid_sid_test</xccdf:title>
+  <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the sid_sid_test.</xccdf:description>
+  <xccdf:version update="1">1.0</xccdf:version>
+  <xccdf:metadata>
+    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+  </xccdf:metadata>
+  <xccdf:Profile id="xccdf_gov.nist.validation.winSidSid_profile_sid-sid" prohibitChanges="1">
+    <xccdf:title>XCCDF Profile That References the Validation Content for the sid_sid_test</xccdf:title>
+    <xccdf:description>This Profile allows for the tailoring of the validation content for the sid_sid_test.</xccdf:description>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_1" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_2" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_3" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_4" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_5" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_6" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_7" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_8" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_9" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_10" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_11" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_12" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_13" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_14" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_15" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_16" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_17" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_19" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_20" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_21" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_22" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_23" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_24" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_25" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_26" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_27" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_28" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_29" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_30" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_31" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_32" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_33" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_34" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_35" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_36" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_37" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_38" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_39" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_40" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_41" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_42" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_43" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_44" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_45" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_46" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_47" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_48" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_49" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winSidSid_rule_50" selected="true"/>
+  </xccdf:Profile>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_1" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:1"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_2" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:2"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_3" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:3"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_4" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:4"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_5" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:5"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_6" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:6"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_7" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:7"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_8" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:8"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_9" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:9"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_10" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:10"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_11" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:11"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_12" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:12"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_13" selected="true">
+    <xccdf:title>Test that the check property (value = none exist) is properly supported.</xccdf:title>
+    <xccdf:description>Make sure the check property (value = none exist) is properly supported.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:13"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_14" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:14"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_15" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:15"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_16" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:16"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_17" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:17"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_18" selected="true">
+    <xccdf:title>Test that the check property (value = none exist) is properly supported.</xccdf:title>
+    <xccdf:description>Make sure the check property (value = none exist) is properly supported.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:18"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_19" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:19"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_20" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:20"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_21" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:21"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_22" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:22"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_23" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:23"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_24" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:24"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_25" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:25"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_26" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:26"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_27" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:27"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_28" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:28"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_29" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:29"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_30" selected="true">
+    <xccdf:title>Test the trustee_sid entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_sid entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:30"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_31" selected="true">
+    <xccdf:title>Test the trustee_name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:31"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_32" selected="true">
+    <xccdf:title>Test the trustee_name entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:32"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_33" selected="true">
+    <xccdf:title>Test the trustee_name entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:33"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_34" selected="true">
+    <xccdf:title>Test the trustee_name entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:34"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_35" selected="true">
+    <xccdf:title>Test the trustee_name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:35"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_36" selected="true">
+    <xccdf:title>Test the trustee_name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:36"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_37" selected="true">
+    <xccdf:title>Test the trustee_name entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:37"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_38" selected="true">
+    <xccdf:title>Test the trustee_name entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:38"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_39" selected="true">
+    <xccdf:title>Test the trustee_name entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:39"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_40" selected="true">
+    <xccdf:title>Test the trustee_name entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_name entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:40"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_41" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:41"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_42" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:42"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_43" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:43"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_44" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:44"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_45" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:45"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_46" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:46"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_47" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:47"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_48" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:48"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_49" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:49"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist.validation.winSidSid_rule_50" selected="true">
+    <xccdf:title>Test the trustee_domain entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the trustee_domain entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="sid_sid-oval.xml" name="oval:nist.validation.winSidSid:def:50"/>
+    </xccdf:check>
+  </xccdf:Rule>
+</xccdf:Benchmark></component><component id="scap_gov.nist_comp_sid_sid-oval.xml" timestamp="2012-11-09T09:58:37"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+    <oval:product_version>1.0</oval:product_version>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2011-11-30T21:08:30-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:1" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:1"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:2" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-1-0." negate="false" test_ref="oval:nist.validation.winSidSid:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:3" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-500." negate="false" test_ref="oval:nist.validation.winSidSid:tst:3"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:4" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-501." negate="false" test_ref="oval:nist.validation.winSidSid:tst:4"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:5" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-500." negate="false" test_ref="oval:nist.validation.winSidSid:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:6" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-5-7." negate="false" test_ref="oval:nist.validation.winSidSid:tst:6"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:7" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-499." negate="false" test_ref="oval:nist.validation.winSidSid:tst:7"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:8" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-5-7." negate="false" test_ref="oval:nist.validation.winSidSid:tst:8"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:9" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-1-0." negate="false" test_ref="oval:nist.validation.winSidSid:tst:9"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:10" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:10"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:11" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:11"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:12" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-1-0." negate="false" test_ref="oval:nist.validation.winSidSid:tst:12"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:13" version="2">
+      <metadata>
+        <title>Test that the check property (value = none exist) is properly supported.</title>
+        <description>Make sure the check property (value = none exist) is properly supported.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test that the check property (value = none exist) is properly supported." negate="false" test_ref="oval:nist.validation.winSidSid:tst:13"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:14" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-499." negate="false" test_ref="oval:nist.validation.winSidSid:tst:14"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:15" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-500." negate="false" test_ref="oval:nist.validation.winSidSid:tst:15"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:16" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-1-0." negate="false" test_ref="oval:nist.validation.winSidSid:tst:16"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:17" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-499." negate="false" test_ref="oval:nist.validation.winSidSid:tst:17"/>
+      </criteria>
+    </definition>
+    <definition id="oval:nist.validation.winSidSid:def:18" version="2" class="compliance">
+      <metadata>
+        <title>Test that the check property (value = none exist) is properly supported.</title>
+        <description>Make sure the check property (value = none exist) is properly supported.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion test_ref="oval:nist.validation.winSidSid:tst:18" comment="Test that the check property (value = none exist) is properly supported." negate="false"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:19" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-500." negate="false" test_ref="oval:nist.validation.winSidSid:tst:19"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:20" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression pattern match." negate="false" test_ref="oval:nist.validation.winSidSid:tst:20"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:21" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-5-11." negate="false" test_ref="oval:nist.validation.winSidSid:tst:21"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:22" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the not equal operation</title>
+        <description>Make sure the trustee_sid entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid is not equal to S-1-5-12." negate="false" test_ref="oval:nist.validation.winSidSid:tst:22"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:23" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the case insensitive equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid case insensitive equals s-1-5-11." negate="false" test_ref="oval:nist.validation.winSidSid:tst:23"/>
+      </criteria>
+    </definition>
+    <definition id="oval:nist.validation.winSidSid:def:24" version="1" class="compliance">
+      <metadata>
+        <title>Test the trustee_sid entity with the case insensitive not equal operation</title>
+        <description>Make sure the trustee_sid entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion test_ref="oval:nist.validation.winSidSid:tst:24" comment="Test to see that the trustee_sid is case insensitive not equal to s-1-5-12." negate="false"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:25" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-11." negate="false" test_ref="oval:nist.validation.winSidSid:tst:25"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:26" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid equals S-1-5-12." negate="false" test_ref="oval:nist.validation.winSidSid:tst:26"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:27" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the not equal operation</title>
+        <description>Make sure the trustee_sid entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid is not equal to S-1-5-11." negate="false" test_ref="oval:nist.validation.winSidSid:tst:27"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:28" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the case insensitive equals operation</title>
+        <description>Make sure the trustee_sid entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid case insensitive equals s-1-5-12." negate="false" test_ref="oval:nist.validation.winSidSid:tst:28"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:29" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the case insensitive not equal operation</title>
+        <description>Make sure the trustee_sid entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid is case insensitive not equal to S-1-5-11." negate="false" test_ref="oval:nist.validation.winSidSid:tst:29"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:30" version="1">
+      <metadata>
+        <title>Test the trustee_sid entity with the pattern match operation</title>
+        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_sid matches the regular expression x.*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:30"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:31" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the equals operation</title>
+        <description>Make sure the trustee_name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name equals Authenticated Users." negate="false" test_ref="oval:nist.validation.winSidSid:tst:31"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:32" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the not equal operation</title>
+        <description>Make sure the trustee_name entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name is not equal to Users." negate="false" test_ref="oval:nist.validation.winSidSid:tst:32"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:33" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the case insensitive equals operation</title>
+        <description>Make sure the trustee_name entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name case insensitive equals AuThentCAted UseRS." negate="false" test_ref="oval:nist.validation.winSidSid:tst:33"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:34" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the case insensitive not equal operation</title>
+        <description>Make sure the trustee_name entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name is case insensitive not equal to users." negate="false" test_ref="oval:nist.validation.winSidSid:tst:34"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:35" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the pattern match operation</title>
+        <description>Make sure the trustee_name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name matches the regular expression A.*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:35"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:36" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the equals operation</title>
+        <description>Make sure the trustee_name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name equals Users." negate="false" test_ref="oval:nist.validation.winSidSid:tst:36"/>
+      </criteria>
+    </definition>
+    <definition id="oval:nist.validation.winSidSid:def:37" version="1" class="compliance">
+      <metadata>
+        <title>Test the trustee_name entity with the not equal operation</title>
+        <description>Make sure the trustee_name entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion test_ref="oval:nist.validation.winSidSid:tst:37" comment="Test to see that the trustee_name is not equal to Authenticated Users." negate="false"/>
+      </criteria>
+    </definition>
+    <definition id="oval:nist.validation.winSidSid:def:38" version="1" class="compliance">
+      <metadata>
+        <title>Test the trustee_name entity with the case insensitive equals operation</title>
+        <description>Make sure the trustee_name entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion test_ref="oval:nist.validation.winSidSid:tst:38" comment="Test to see that the trustee_name case insensitive equals Users." negate="false"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:39" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the case insensitive not equal operation</title>
+        <description>Make sure the trustee_name entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name is case insensitive not equal to AuThentCAted UseRS." negate="false" test_ref="oval:nist.validation.winSidSid:tst:39"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:40" version="1">
+      <metadata>
+        <title>Test the trustee_name entity with the pattern match operation</title>
+        <description>Make sure the trustee_name entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_name matches the regular expression Autheticated USERS." negate="false" test_ref="oval:nist.validation.winSidSid:tst:40"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:41" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the equals operation</title>
+        <description>Make sure the trustee_domain entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain equals NT Authority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:41"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:42" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the not equal operation</title>
+        <description>Make sure the trustee_domain entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain is not equal to nt authority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:42"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:43" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the case insensitive equals operation</title>
+        <description>Make sure the trustee_domain entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain case insensitive equals NT AUthority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:43"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:44" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the case insensitive not equal operation</title>
+        <description>Make sure the trustee_domain entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain is case insensitive not equal to Creator Authority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:44"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:45" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the pattern match operation</title>
+        <description>Make sure the trustee_domain entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain matches the regular expression [Nn][tT] Autho.*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:45"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:46" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the equals operation</title>
+        <description>Make sure the trustee_domain entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain equals nt authority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:46"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:47" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the not equal operation</title>
+        <description>Make sure the trustee_domain entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain is not equal to NT Authority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:47"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:48" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the case insensitive equals operation</title>
+        <description>Make sure the trustee_domain entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain case insensitive equals Creator Authority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:48"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:49" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the case insensitive not equal operation</title>
+        <description>Make sure the trustee_domain entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain is case insensitive not equal to NT AUthority." negate="false" test_ref="oval:nist.validation.winSidSid:tst:49"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:50" version="1">
+      <metadata>
+        <title>Test the trustee_domain entity with the pattern match operation</title>
+        <description>Make sure the trustee_domain entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the trustee_domain matches the regular expression [Nn][tT] autho.*." negate="false" test_ref="oval:nist.validation.winSidSid:tst:50"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="Test to see that the trustee_sid matches the regular expression .*." id="oval:nist.validation.winSidSid:tst:1" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:1"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:1"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="Test to see that the trustee_sid equals S-1-1-0." id="oval:nist.validation.winSidSid:tst:2" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:2"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-500." id="oval:nist.validation.winSidSid:tst:3" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:1"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:3"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="Test to see that the trustee_sid matches the regular expression .*-501." id="oval:nist.validation.winSidSid:tst:4" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:11"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-500." id="oval:nist.validation.winSidSid:tst:5" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:1"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:3"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="Test to see that the trustee_sid equals S-1-5-7." id="oval:nist.validation.winSidSid:tst:6" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:5"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="Test to see that the trustee_sid matches the regular expression .*-499." id="oval:nist.validation.winSidSid:tst:7" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:6"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid equals S-1-5-7." id="oval:nist.validation.winSidSid:tst:8" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:5"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="Test to see that the trustee_sid equals S-1-1-0." id="oval:nist.validation.winSidSid:tst:9" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*." id="oval:nist.validation.winSidSid:tst:10" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:4"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:1"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*." id="oval:nist.validation.winSidSid:tst:11" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:1"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid equals S-1-1-0." id="oval:nist.validation.winSidSid:tst:12" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:2"/>
+    </sid_sid_test>
+    <!-- <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:13" version="1" check_existence="at_least_one_exists" check="none exist" comment="Test to see that the trustee_sid matches the regular expression .*-499."> -->
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:13" version="2" check="none exist" comment="Test that the check property (value = none exist) is properly supported.">
+      <object object_ref="oval:nist.validation.winSidSid:obj:11"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:6"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-499." id="oval:nist.validation.winSidSid:tst:14" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:6"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-500." id="oval:nist.validation.winSidSid:tst:15" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:3"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid equals S-1-1-0." id="oval:nist.validation.winSidSid:tst:16" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:12"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:2"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-499." id="oval:nist.validation.winSidSid:tst:17" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:6"/>
+    </sid_sid_test>
+    <!-- <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:18" version="1" check_existence="at_least_one_exists" check="none exist" comment="Test to see that the trustee_sid matches the regular expression .*-500."> -->
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:18" version="2" check="none exist" comment="Test that the check property (value = none exist) is properly supported.">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:3"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-500." id="oval:nist.validation.winSidSid:tst:19" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:3"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="Test to see that the trustee_sid matches the regular expression pattern match." id="oval:nist.validation.winSidSid:tst:20" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:7"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid equals S-1-5-11." id="oval:nist.validation.winSidSid:tst:21" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:8"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid is not equal to S-1-5-12." id="oval:nist.validation.winSidSid:tst:22" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:9"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid case insensitive equals s-1-5-11." id="oval:nist.validation.winSidSid:tst:23" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:10"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:24" version="1" check_existence="any_exist" check="at least one" comment="Test to see that the trustee_sid is case insensitive not equal to s-1-5-12.">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:35"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid matches the regular expression .*-11." id="oval:nist.validation.winSidSid:tst:25" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:11"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid equals S-1-5-12." id="oval:nist.validation.winSidSid:tst:26" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:12"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid is not equal to S-1-5-11." id="oval:nist.validation.winSidSid:tst:27" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:13"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid case insensitive equals s-1-5-12." id="oval:nist.validation.winSidSid:tst:28" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:14"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid is case insensitive not equal to S-1-5-11." id="oval:nist.validation.winSidSid:tst:29" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:15"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_sid matches the regular expression x.*." id="oval:nist.validation.winSidSid:tst:30" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:16"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name equals Authenticated Users." id="oval:nist.validation.winSidSid:tst:31" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:17"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name is not equal to Users." id="oval:nist.validation.winSidSid:tst:32" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:18"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name case insensitive equals AuThentCAted UseRS." id="oval:nist.validation.winSidSid:tst:33" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:19"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name is case insensitive not equal to users." id="oval:nist.validation.winSidSid:tst:34" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:20"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name matches the regular expression A.*." id="oval:nist.validation.winSidSid:tst:35" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:21"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name equals Users." id="oval:nist.validation.winSidSid:tst:36" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:22"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:37" version="1" check_existence="any_exist" check="at least one" comment="Test to see that the trustee_name is not equal to Authenticated Users.">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:36"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:38" version="1" check_existence="any_exist" check="at least one" comment="Test to see that the trustee_name case insensitive equals Users.">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:37"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name is case insensitive not equal to AuThentCAted UseRS." id="oval:nist.validation.winSidSid:tst:39" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:23"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_name matches the regular expression Autheticated USERS." id="oval:nist.validation.winSidSid:tst:40" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:5"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:24"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain equals NT Authority." id="oval:nist.validation.winSidSid:tst:41" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:6"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:25"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain is not equal to nt authority." id="oval:nist.validation.winSidSid:tst:42" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:6"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:26"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain case insensitive equals NT AUthority." id="oval:nist.validation.winSidSid:tst:43" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:6"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:27"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain is case insensitive not equal to Creator Authority." id="oval:nist.validation.winSidSid:tst:44" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:6"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:28"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain matches the regular expression [Nn][tT] Autho.*." id="oval:nist.validation.winSidSid:tst:45" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:6"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:29"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain equals nt authority." id="oval:nist.validation.winSidSid:tst:46" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:7"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:30"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain is not equal to NT Authority." id="oval:nist.validation.winSidSid:tst:47" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:7"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:31"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain case insensitive equals Creator Authority." id="oval:nist.validation.winSidSid:tst:48" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:7"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:32"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain is case insensitive not equal to NT AUthority." id="oval:nist.validation.winSidSid:tst:49" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:7"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:33"/>
+    </sid_sid_test>
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="any_exist" comment="Test to see that the trustee_domain matches the regular expression [Nn][tT] autho.*." id="oval:nist.validation.winSidSid:tst:50" version="1">
+      <object object_ref="oval:nist.validation.winSidSid:obj:7"/>
+      <state state_ref="oval:nist.validation.winSidSid:ste:34"/>
+    </sid_sid_test>
+  </tests>
+  <objects>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:1" version="1">
+      <trustee_sid operation="equals">S-1-1-0</trustee_sid>
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:2" version="1">
+      <behaviors include_group="true" resolve_group="false"/>
+      <trustee_sid operation="equals">S-1-1-0</trustee_sid>
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:3" version="1">
+		<behaviors include_group="true" resolve_group="true"/>
+      <trustee_sid operation="equals" var_check="all" var_ref="oval:nist.validation.winSidSid:var:1"/>
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:4" version="1">
+      <behaviors include_group="true" resolve_group="true"/>
+      <trustee_sid operation="equals" var_check="all" var_ref="oval:nist.validation.winSidSid:var:1"/>
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:5" version="1">
+      <behaviors include_group="true" resolve_group="false"/>
+      <trustee_sid operation="equals">S-1-5-11</trustee_sid>
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:6" version="1">
+      <behaviors include_group="true" resolve_group="false"/>
+      <trustee_sid operation="equals">S-1-5-2</trustee_sid>
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:7" version="1">
+      <behaviors include_group="true" resolve_group="false"/>
+      <trustee_sid operation="equals">S-1-5-6</trustee_sid>
+    </sid_sid_object>
+    <sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:8" version="1">
+      <trustee_name operation="equals">Administrators</trustee_name>
+    </sid_object>
+    <sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:9" version="1">
+      <trustee_name operation="equals">NOSUCHGROUP</trustee_name>
+    </sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:10" version="1">
+		<behaviors include_group="true" resolve_group="true"/>
+		<trustee_sid operation="equals">S-1-5-0</trustee_sid>
+        <!--<trustee_sid operation="equals" var_ref="oval:nist.validation.winSidSid:var:2" var_check="all"/>-->
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:11" version="1">
+      <trustee_sid operation="equals" var_ref="oval:nist.validation.winSidSid:var:2"/>      
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:12" version="1">
+      <trustee_sid operation="equals" var_ref="oval:nist.validation.winSidSid:var:1"/>      
+    </sid_sid_object>
+  </objects>
+  <states>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:1" version="1">
+      <trustee_sid datatype="string" operation="pattern match">.*</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:2" version="1">
+      <trustee_sid datatype="string" operation="equals">S-1-1-0</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:3" version="1">
+      <trustee_sid datatype="string" operation="pattern match">.*-0</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:4" version="1">
+      <trustee_sid datatype="string" operation="pattern match">.*-501</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:5" version="1">
+      <trustee_sid datatype="string" operation="equals">S-1-5-7</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:6" version="1">
+      <trustee_sid datatype="string" operation="pattern match">.*-499</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:7" version="1">
+      <trustee_sid datatype="string" operation="pattern match">pattern match</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:8" version="1">
+      <trustee_sid datatype="string" operation="equals">S-1-5-11</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:9" version="1">
+      <trustee_sid datatype="string" operation="not equal">S-1-5-12</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:10" version="1">
+      <trustee_sid datatype="string" operation="case insensitive equals">s-1-5-11</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:11" version="1">
+      <trustee_sid datatype="string" operation="pattern match">.*-11</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:12" version="1">
+      <trustee_sid datatype="string" operation="equals">S-1-5-12</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:13" version="1">
+      <trustee_sid datatype="string" operation="not equal">S-1-5-11</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:14" version="1">
+      <trustee_sid datatype="string" operation="case insensitive equals">s-1-5-12</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:15" version="1">
+      <trustee_sid datatype="string" operation="case insensitive not equal">S-1-5-11</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:16" version="1">
+      <trustee_sid datatype="string" operation="pattern match">x.*</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:17" version="1">
+      <trustee_name datatype="string" operation="equals">Authenticated Users</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:18" version="1">
+      <trustee_name datatype="string" operation="not equal">Users</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:19" version="1">
+      <trustee_name datatype="string" operation="case insensitive equals">AuThentiCAted UseRS</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:20" version="1">
+      <trustee_name datatype="string" operation="case insensitive not equal">users</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:21" version="1">
+      <trustee_name datatype="string" operation="pattern match">A.*</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:22" version="1">
+      <trustee_name datatype="string" operation="equals">Users</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:23" version="1">
+      <trustee_name datatype="string" operation="case insensitive not equal">AuThentiCAted UseRS</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:24" version="1">
+      <trustee_name datatype="string" operation="pattern match">Autheticated USERS</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:25" version="1">
+      <trustee_domain datatype="string" operation="equals">NT AUTHORITY</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:26" version="1">
+      <trustee_domain datatype="string" operation="not equal">nt authority</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:27" version="1">
+      <trustee_domain datatype="string" operation="case insensitive equals">NT AUthority</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:28" version="1">
+      <trustee_domain datatype="string" operation="case insensitive not equal">Creator Authority</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:29" version="1">
+      <trustee_domain datatype="string" operation="pattern match">[Nn][tT] AUTHO.*</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:30" version="1">
+      <trustee_domain datatype="string" operation="equals">nt authority</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:31" version="1">
+      <trustee_domain datatype="string" operation="not equal">NT AUTHORITY</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:32" version="1">
+      <trustee_domain datatype="string" operation="case insensitive equals">Creator Authority</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:33" version="1">
+      <trustee_domain datatype="string" operation="case insensitive not equal">NT AUthority</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:34" version="1">
+      <trustee_domain datatype="string" operation="pattern match">[Nn][tT] autho.*</trustee_domain>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:35" version="1">
+      <trustee_sid datatype="string" operation="case insensitive not equal">s-1-5-12</trustee_sid>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:36" version="1">
+      <trustee_name datatype="string" operation="not equal">Authenticated Users</trustee_name>
+    </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:37" version="1">
+      <trustee_name datatype="string" operation="case insensitive equals">Users</trustee_name>
+    </sid_sid_state>
+  </states>
+  <variables>
+    <local_variable comment="This local variable retrieves the SID of the group whose name is 'Administrators'." datatype="string" id="oval:nist.validation.winSidSid:var:1" version="1">
+      <object_component item_field="trustee_sid" object_ref="oval:nist.validation.winSidSid:obj:8"/>
+    </local_variable>
+    <local_variable comment="This local variable retrieves the SID of an account that doesn't exist" datatype="string" id="oval:nist.validation.winSidSid:var:2" version="1">
+      <object_component item_field="trustee_sid" object_ref="oval:nist.validation.winSidSid:obj:9"/>
+    </local_variable>
+  </variables>
+</oval_definitions></component><component id="scap_gov.nist_comp_sid_sid-cpe-oval.xml" timestamp="2012-11-09T09:58:37"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+	</generator>
+	<!-- ==================================================================================================== -->
+	<!-- ==========================================  DEFINITIONS  =========================================== -->
+	<!-- ==================================================================================================== -->
+	<definitions>
+		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+			<metadata>
+				<title>Microsoft Windows is installed</title>
+				<affected family="windows">
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 8</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows XP</platform>
+				</affected>
+				<reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+				<description>The operating system installed on the system is Microsoft Windows</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+			</criteria>
+		</definition>
+	</definitions>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  TESTS  =============================================== -->
+	<!-- ==================================================================================================== -->
+	<tests>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+			<object object_ref="oval:org.mitre.oval:obj:99"/>
+			<state state_ref="oval:org.mitre.oval:ste:99"/>
+		</family_test>
+	</tests>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  OBJECTS  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<objects>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+	</objects>
+	<!-- ==================================================================================================== -->
+	<!-- =============================================  STATES  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<states>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+			<family operation="equals">windows</family>
+		</family_state>
+	</states>
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</oval_definitions></component><component id="scap_gov.nist_comp_sid_sid-cpe-dictionary.xml" timestamp="2012-11-09T09:58:37"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+	<cpe-item name="cpe:/o:microsoft:windows">
+		<title xml:lang="en-US">Microsoft Windows</title>
+		<notes xml:lang="en-US">
+			<note>This CPE Name represents the Windows OS</note>
+		</notes>
+		<check href="sid_sid-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+	</cpe-item>
+</cpe-list></component></data-stream-collection>

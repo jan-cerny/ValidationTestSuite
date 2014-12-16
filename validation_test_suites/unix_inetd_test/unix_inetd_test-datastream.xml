@@ -1,0 +1,1999 @@
+<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_unix_inetd_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2-draft.xsd"><data-stream id="scap_gov.nist_datastream_unix_inetd_test-datastream.zip" scap-version="1.2" timestamp="2012-09-19T03:22:05" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_inetd-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_inetd-cpe-dictionary.xml"><cat:catalog><cat:uri name="inetd-cpe-oval.xml" uri="#scap_gov.nist_cref_inetd-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_inetd-xccdf.xml" xlink:href="#scap_gov.nist_comp_inetd-xccdf.xml"><cat:catalog><cat:uri name="inetd-oval.xml" uri="#scap_gov.nist_cref_inetd-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_inetd-oval.xml" xlink:href="#scap_gov.nist_comp_inetd-oval.xml"/><component-ref id="scap_gov.nist_cref_inetd-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_inetd-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_inetd-xccdf.xml" timestamp="2012-09-19T03:22:05"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation.inetd_benchmark_inetd" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+  <xccdf:status date="2011-10-21">draft</xccdf:status>
+  <xccdf:title>XCCDF Benchmark That References the Validation Content for the inetd_test</xccdf:title>
+  <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the inetd_test.</xccdf:description>
+  <xccdf:version update="1">1.0</xccdf:version>
+  <xccdf:metadata>
+    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+  </xccdf:metadata>
+  <xccdf:Profile id="xccdf_gov.nist_profile_xccdf_gov.nist.validation.inetd_profile_inetd" prohibitChanges="1">
+    <xccdf:title>XCCDF Profile That References the Validation Content for the inetd_test</xccdf:title>
+    <xccdf:description>This Profile allows for the tailoring of the validation content for the inetd_test.</xccdf:description>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_1" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_2" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_3" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_4" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_5" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_6" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_7" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_8" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_9" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_10" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_12" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_13" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_14" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_15" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_16" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_17" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_19" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_20" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_21" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_22" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_23" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_24" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_25" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_26" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_27" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_28" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_29" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_30" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_31" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_32" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_33" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_34" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_35" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_36" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_37" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_38" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_39" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_40" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_41" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_42" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_43" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_44" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_45" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_46" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_47" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_48" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_49" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_50" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_51" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_52" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_53" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_54" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_55" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_56" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_57" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_58" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_59" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_60" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_61" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_62" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_63" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_64" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_65" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_66" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_67" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_68" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_69" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_70" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_71" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_72" selected="true"/>
+  </xccdf:Profile>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_1" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:1"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_2" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:2"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_3" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:3"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_4" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:4"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_5" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:5"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_6" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:6"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_7" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:7"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_8" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:8"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_9" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:9"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_10" selected="true">
+    <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
+    <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:10"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_12" selected="true">
+    <xccdf:title>Test the protocol entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:12"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_13" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:13"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_14" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:14"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_15" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:15"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_16" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:16"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_17" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:17"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_18" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:18"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_19" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:19"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_20" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:20"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_21" selected="true">
+    <xccdf:title>Test the protocol entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the protocol entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:21"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_22" selected="true">
+    <xccdf:title>Test the service_name entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the service_name entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:22"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_23" selected="true">
+    <xccdf:title>Test the server_program entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:23"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_24" selected="true">
+    <xccdf:title>Test the server_program entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:24"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_25" selected="true">
+    <xccdf:title>Test the server_program entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:25"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_26" selected="true">
+    <xccdf:title>Test the server_program entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:26"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_27" selected="true">
+    <xccdf:title>Test the server_program entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:27"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_28" selected="true">
+    <xccdf:title>Test the server_program entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:28"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_29" selected="true">
+    <xccdf:title>Test the server_program entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:29"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_30" selected="true">
+    <xccdf:title>Test the server_program entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:30"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_31" selected="true">
+    <xccdf:title>Test the server_program entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:31"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_32" selected="true">
+    <xccdf:title>Test the server_program entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the server_program entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:32"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_33" selected="true">
+    <xccdf:title>Test the server_arguments entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:33"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_34" selected="true">
+    <xccdf:title>Test the server_arguments entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:34"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_35" selected="true">
+    <xccdf:title>Test the server_arguments entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:35"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_36" selected="true">
+    <xccdf:title>Test the server_arguments entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:36"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_37" selected="true">
+    <xccdf:title>Test the server_arguments entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:37"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_38" selected="true">
+    <xccdf:title>Test the server_arguments entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:38"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_39" selected="true">
+    <xccdf:title>Test the server_arguments entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:39"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_40" selected="true">
+    <xccdf:title>Test the server_arguments entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:40"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_41" selected="true">
+    <xccdf:title>Test the server_arguments entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:41"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_42" selected="true">
+    <xccdf:title>Test the server_arguments entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the server_arguments entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:42"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_43" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:43"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_44" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:44"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_45" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:45"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_46" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:46"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_47" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:47"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_48" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:48"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_49" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:49"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_50" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:50"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_51" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:51"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_52" selected="true">
+    <xccdf:title>Test the endpoint_type entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the endpoint_type entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:52"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_53" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:53"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_54" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:54"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_55" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:55"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_56" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:56"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_57" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:57"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_58" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:58"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_59" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:59"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_60" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:60"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_61" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:61"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_62" selected="true">
+    <xccdf:title>Test the exec_as_user entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the exec_as_user entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:62"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_63" selected="true">
+    <xccdf:title>Test the wait_status entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:63"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_64" selected="true">
+    <xccdf:title>Test the wait_status entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:64"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_65" selected="true">
+    <xccdf:title>Test the wait_status entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:65"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_66" selected="true">
+    <xccdf:title>Test the wait_status entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:66"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_67" selected="true">
+    <xccdf:title>Test the wait_status entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:67"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_68" selected="true">
+    <xccdf:title>Test the wait_status entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:68"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_69" selected="true">
+    <xccdf:title>Test the wait_status entity with the not equal operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:69"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_70" selected="true">
+    <xccdf:title>Test the wait_status entity with the case insensitive equals operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the case insensitive equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:70"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_71" selected="true">
+    <xccdf:title>Test the wait_status entity with the case insensitive not equal operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the case insensitive not equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:71"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_72" selected="true">
+    <xccdf:title>Test the wait_status entity with the pattern match operation</xccdf:title>
+    <xccdf:description>Make sure the wait_status entity properly supports the pattern match operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="inetd-oval.xml" name="oval:nist.validation.inetd:def:72"/>
+    </xccdf:check>
+  </xccdf:Rule>
+</xccdf:Benchmark></component><component id="scap_gov.nist_comp_inetd-oval.xml" timestamp="2012-09-19T03:22:05"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+    <oval:product_version>1.0</oval:product_version>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2011-10-21T12:38:56-04:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:1" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that every inetd item exists for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:1"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:2" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that any inetd items exist for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:3" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that at least one inetd item exists for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:3"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:4" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that no inetd items exist for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:4"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:5" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that only one inetd item exists for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:6" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that every inetd item exists for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:6"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:7" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that any inetd items exist for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:7"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:8" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that at least one inetd item exists for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:8"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:9" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that no inetd items exist for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:9"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:10" version="1">
+      <metadata>
+        <title>Test that the check_existence property is properly supported using the specified value</title>
+        <description>Make sure that the value specified, for the check_existence property, is properly supported for the unix-def:inetd_test.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that only one inetd item exists for the specified object." negate="false" test_ref="oval:nist.validation.inetd:tst:10"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:12" version="1">
+      <metadata>
+        <title>Test the protocol entity with the pattern match operation</title>
+        <description>Make sure the protocol entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol matches the regular expression .*p." negate="false" test_ref="oval:nist.validation.inetd:tst:12"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:13" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals tcp." negate="false" test_ref="oval:nist.validation.inetd:tst:13"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:14" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals tcp." negate="false" test_ref="oval:nist.validation.inetd:tst:14"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:15" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals tcp." negate="false" test_ref="oval:nist.validation.inetd:tst:15"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:16" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals tcp." negate="false" test_ref="oval:nist.validation.inetd:tst:16"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:17" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals tcp." negate="false" test_ref="oval:nist.validation.inetd:tst:17"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:18" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals Xprotocol." negate="false" test_ref="oval:nist.validation.inetd:tst:18"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:19" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals Xprotocol." negate="false" test_ref="oval:nist.validation.inetd:tst:19"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:20" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals Xprotocol." negate="false" test_ref="oval:nist.validation.inetd:tst:20"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:21" version="1">
+      <metadata>
+        <title>Test the protocol entity with the equals operation</title>
+        <description>Make sure the protocol entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the protocol equals Xprotocol." negate="false" test_ref="oval:nist.validation.inetd:tst:21"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:22" version="1">
+      <metadata>
+        <title>Test the service_name entity with the equals operation</title>
+        <description>Make sure the service_name entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the service_name equals ftp." negate="false" test_ref="oval:nist.validation.inetd:tst:22"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:23" version="1">
+      <metadata>
+        <title>Test the server_program entity with the equals operation</title>
+        <description>Make sure the server_program entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program equals /usr/sbin/in.ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:23"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:24" version="1">
+      <metadata>
+        <title>Test the server_program entity with the not equal operation</title>
+        <description>Make sure the server_program entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program is not equal to /usr/sbin/in.ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:24"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:25" version="1">
+      <metadata>
+        <title>Test the server_program entity with the case insensitive equals operation</title>
+        <description>Make sure the server_program entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program case insensitive equals /usr/sbin/in.FTPd." negate="false" test_ref="oval:nist.validation.inetd:tst:25"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:26" version="1">
+      <metadata>
+        <title>Test the server_program entity with the case insensitive not equal operation</title>
+        <description>Make sure the server_program entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program is case insensitive not equal to /usr/sbin/in.FTPd." negate="false" test_ref="oval:nist.validation.inetd:tst:26"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:27" version="1">
+      <metadata>
+        <title>Test the server_program entity with the pattern match operation</title>
+        <description>Make sure the server_program entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program matches the regular expression /usr/sbin/[a-z]n.ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:27"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:28" version="1">
+      <metadata>
+        <title>Test the server_program entity with the equals operation</title>
+        <description>Make sure the server_program entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program equals /usr/sbinX/in.ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:28"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:29" version="1">
+      <metadata>
+        <title>Test the server_program entity with the not equal operation</title>
+        <description>Make sure the server_program entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program is not equal to /usr/sbinX/in.ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:29"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:30" version="1">
+      <metadata>
+        <title>Test the server_program entity with the case insensitive equals operation</title>
+        <description>Make sure the server_program entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program case insensitive equals /usr/sbinX/in.FTPd." negate="false" test_ref="oval:nist.validation.inetd:tst:30"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:31" version="1">
+      <metadata>
+        <title>Test the server_program entity with the case insensitive not equal operation</title>
+        <description>Make sure the server_program entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program is case insensitive not equal to /usr/sbinX/in.FTPd." negate="false" test_ref="oval:nist.validation.inetd:tst:31"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:32" version="1">
+      <metadata>
+        <title>Test the server_program entity with the pattern match operation</title>
+        <description>Make sure the server_program entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_program matches the regular expression /usr/sbinX/in.FTP[cde]." negate="false" test_ref="oval:nist.validation.inetd:tst:32"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:33" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the equals operation</title>
+        <description>Make sure the server_arguments entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments equals ftpd -ll." negate="false" test_ref="oval:nist.validation.inetd:tst:33"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:34" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the not equal operation</title>
+        <description>Make sure the server_arguments entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments is not equal to ftpd -ll." negate="false" test_ref="oval:nist.validation.inetd:tst:34"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:35" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the case insensitive equals operation</title>
+        <description>Make sure the server_arguments entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments case insensitive equals FTPd -ll." negate="false" test_ref="oval:nist.validation.inetd:tst:35"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:36" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the case insensitive not equal operation</title>
+        <description>Make sure the server_arguments entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments is case insensitive not equal to FTPd -ll." negate="false" test_ref="oval:nist.validation.inetd:tst:36"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:37" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the pattern match operation</title>
+        <description>Make sure the server_arguments entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments matches the regular expression [def]tpd -ll." negate="false" test_ref="oval:nist.validation.inetd:tst:37"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:38" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the equals operation</title>
+        <description>Make sure the server_arguments entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments equals ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:38"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:39" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the not equal operation</title>
+        <description>Make sure the server_arguments entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments is not equal to ftpd." negate="false" test_ref="oval:nist.validation.inetd:tst:39"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:40" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the case insensitive equals operation</title>
+        <description>Make sure the server_arguments entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments case insensitive equals FTPD." negate="false" test_ref="oval:nist.validation.inetd:tst:40"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:41" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the case insensitive not equal operation</title>
+        <description>Make sure the server_arguments entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments is case insensitive not equal to FTPD." negate="false" test_ref="oval:nist.validation.inetd:tst:41"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:42" version="1">
+      <metadata>
+        <title>Test the server_arguments entity with the pattern match operation</title>
+        <description>Make sure the server_arguments entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the server_arguments matches the regular expression [abc]tpd -ll." negate="false" test_ref="oval:nist.validation.inetd:tst:42"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:43" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the equals operation</title>
+        <description>Make sure the endpoint_type entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type equals stream." negate="false" test_ref="oval:nist.validation.inetd:tst:43"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:44" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the not equal operation</title>
+        <description>Make sure the endpoint_type entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type is not equal to stream." negate="false" test_ref="oval:nist.validation.inetd:tst:44"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:45" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the case insensitive equals operation</title>
+        <description>Make sure the endpoint_type entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type case insensitive equals STREAM." negate="false" test_ref="oval:nist.validation.inetd:tst:45"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:46" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the case insensitive not equal operation</title>
+        <description>Make sure the endpoint_type entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type is case insensitive not equal to STREAM." negate="false" test_ref="oval:nist.validation.inetd:tst:46"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:47" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the pattern match operation</title>
+        <description>Make sure the endpoint_type entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type matches the regular expression s[a-z]ream." negate="false" test_ref="oval:nist.validation.inetd:tst:47"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:48" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the equals operation</title>
+        <description>Make sure the endpoint_type entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type equals raw." negate="false" test_ref="oval:nist.validation.inetd:tst:48"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:49" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the not equal operation</title>
+        <description>Make sure the endpoint_type entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type is not equal to raw." negate="false" test_ref="oval:nist.validation.inetd:tst:49"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:50" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the case insensitive equals operation</title>
+        <description>Make sure the endpoint_type entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type case insensitive equals RAW." negate="false" test_ref="oval:nist.validation.inetd:tst:50"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:51" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the case insensitive not equal operation</title>
+        <description>Make sure the endpoint_type entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type is case insensitive not equal to RAW." negate="false" test_ref="oval:nist.validation.inetd:tst:51"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:52" version="1">
+      <metadata>
+        <title>Test the endpoint_type entity with the pattern match operation</title>
+        <description>Make sure the endpoint_type entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the endpoint_type matches the regular expression [wer]aw." negate="false" test_ref="oval:nist.validation.inetd:tst:52"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:53" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the equals operation</title>
+        <description>Make sure the exec_as_user entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user equals root." negate="false" test_ref="oval:nist.validation.inetd:tst:53"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:54" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the not equal operation</title>
+        <description>Make sure the exec_as_user entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user is not equal to root." negate="false" test_ref="oval:nist.validation.inetd:tst:54"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:55" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the case insensitive equals operation</title>
+        <description>Make sure the exec_as_user entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user case insensitive equals ROOT." negate="false" test_ref="oval:nist.validation.inetd:tst:55"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:56" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the case insensitive not equal operation</title>
+        <description>Make sure the exec_as_user entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user is case insensitive not equal to ROOT." negate="false" test_ref="oval:nist.validation.inetd:tst:56"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:57" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the pattern match operation</title>
+        <description>Make sure the exec_as_user entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user matches the regular expression roo[.*]." negate="false" test_ref="oval:nist.validation.inetd:tst:57"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:58" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the equals operation</title>
+        <description>Make sure the exec_as_user entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user equals mel." negate="false" test_ref="oval:nist.validation.inetd:tst:58"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:59" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the not equal operation</title>
+        <description>Make sure the exec_as_user entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user is not equal to mel." negate="false" test_ref="oval:nist.validation.inetd:tst:59"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:60" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the case insensitive equals operation</title>
+        <description>Make sure the exec_as_user entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user case insensitive equals MEL." negate="false" test_ref="oval:nist.validation.inetd:tst:60"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:61" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the case insensitive not equal operation</title>
+        <description>Make sure the exec_as_user entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user is case insensitive not equal to MEL." negate="false" test_ref="oval:nist.validation.inetd:tst:61"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:62" version="1">
+      <metadata>
+        <title>Test the exec_as_user entity with the pattern match operation</title>
+        <description>Make sure the exec_as_user entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the exec_as_user matches the regular expression [nm]el." negate="false" test_ref="oval:nist.validation.inetd:tst:62"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:63" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the equals operation</title>
+        <description>Make sure the wait_status entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status equals nowait." negate="false" test_ref="oval:nist.validation.inetd:tst:63"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:64" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the not equal operation</title>
+        <description>Make sure the wait_status entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status is not equal to nowait." negate="false" test_ref="oval:nist.validation.inetd:tst:64"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:65" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the case insensitive equals operation</title>
+        <description>Make sure the wait_status entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status case insensitive equals NoWait." negate="false" test_ref="oval:nist.validation.inetd:tst:65"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:66" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the case insensitive not equal operation</title>
+        <description>Make sure the wait_status entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status is case insensitive not equal to NoWait." negate="false" test_ref="oval:nist.validation.inetd:tst:66"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:67" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the pattern match operation</title>
+        <description>Make sure the wait_status entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status matches the regular expression nowai.*." negate="false" test_ref="oval:nist.validation.inetd:tst:67"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:68" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the equals operation</title>
+        <description>Make sure the wait_status entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status equals wait." negate="false" test_ref="oval:nist.validation.inetd:tst:68"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:69" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the not equal operation</title>
+        <description>Make sure the wait_status entity properly supports the not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status is not equal to wait." negate="false" test_ref="oval:nist.validation.inetd:tst:69"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:70" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the case insensitive equals operation</title>
+        <description>Make sure the wait_status entity properly supports the case insensitive equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status case insensitive equals WAIT." negate="false" test_ref="oval:nist.validation.inetd:tst:70"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:71" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the case insensitive not equal operation</title>
+        <description>Make sure the wait_status entity properly supports the case insensitive not equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status is case insensitive not equal to WAIT." negate="false" test_ref="oval:nist.validation.inetd:tst:71"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.inetd:def:72" version="1">
+      <metadata>
+        <title>Test the wait_status entity with the pattern match operation</title>
+        <description>Make sure the wait_status entity properly supports the pattern match operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the wait_status matches the regular expression [wv]ait." negate="false" test_ref="oval:nist.validation.inetd:tst:72"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="all_exist" comment="Test to see that every inetd item exists for the specified object." id="oval:nist.validation.inetd:tst:1" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:1"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="any_exist" comment="Test to see that any inetd items exist for the specified object." id="oval:nist.validation.inetd:tst:2" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one inetd item exists for the specified object." id="oval:nist.validation.inetd:tst:3" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="none_exist" comment="Test to see that no inetd items exist for the specified object." id="oval:nist.validation.inetd:tst:4" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="only_one_exists" comment="Test to see that only one inetd item exists for the specified object." id="oval:nist.validation.inetd:tst:5" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="all_exist" comment="Test to see that every inetd item exists for the specified object." id="oval:nist.validation.inetd:tst:6" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="any_exist" comment="Test to see that any inetd items exist for the specified object." id="oval:nist.validation.inetd:tst:7" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one inetd item exists for the specified object." id="oval:nist.validation.inetd:tst:8" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="none_exist" comment="Test to see that no inetd items exist for the specified object." id="oval:nist.validation.inetd:tst:9" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="only_one_exists" comment="Test to see that only one inetd item exists for the specified object." id="oval:nist.validation.inetd:tst:10" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:4"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the protocol matches the regular expression .*p." id="oval:nist.validation.inetd:tst:12" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:1"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the protocol equals tcp." id="oval:nist.validation.inetd:tst:13" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="none exist" check_existence="at_least_one_exists" comment="Test to see that the protocol equals tcp." id="oval:nist.validation.inetd:tst:14" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the protocol equals tcp." id="oval:nist.validation.inetd:tst:15" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="only one" check_existence="at_least_one_exists" comment="Test to see that the protocol equals tcp." id="oval:nist.validation.inetd:tst:16" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the protocol equals tcp." id="oval:nist.validation.inetd:tst:17" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:2"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="at least one" check_existence="at_least_one_exists" comment="Test to see that the protocol equals Xprotocol." id="oval:nist.validation.inetd:tst:18" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="none exist" check_existence="at_least_one_exists" comment="Test to see that the protocol equals Xprotocol." id="oval:nist.validation.inetd:tst:19" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the protocol equals Xprotocol." id="oval:nist.validation.inetd:tst:20" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="only one" check_existence="at_least_one_exists" comment="Test to see that the protocol equals Xprotocol." id="oval:nist.validation.inetd:tst:21" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:3"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="only one" check_existence="at_least_one_exists" comment="Test to see that the service_name equals ftp." id="oval:nist.validation.inetd:tst:22" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:4"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program equals /usr/sbin/in.ftpd." id="oval:nist.validation.inetd:tst:23" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:5"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program is not equal to /usr/sbin/in.ftpd." id="oval:nist.validation.inetd:tst:24" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:6"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program case insensitive equals /usr/sbin/in.FTPd." id="oval:nist.validation.inetd:tst:25" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:7"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program is case insensitive not equal to /usr/sbin/in.FTPd." id="oval:nist.validation.inetd:tst:26" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:8"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program matches the regular expression /usr/sbin/[a-z]n.ftpd." id="oval:nist.validation.inetd:tst:27" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:9"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program equals /usr/sbinX/in.ftpd." id="oval:nist.validation.inetd:tst:28" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:10"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program is not equal to /usr/sbinX/in.ftpd." id="oval:nist.validation.inetd:tst:29" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:11"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program case insensitive equals /usr/sbinX/in.FTPd." id="oval:nist.validation.inetd:tst:30" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:12"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program is case insensitive not equal to /usr/sbinX/in.FTPd." id="oval:nist.validation.inetd:tst:31" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:13"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_program matches the regular expression /usr/sbinX/in.FTP[cde]." id="oval:nist.validation.inetd:tst:32" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:14"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments equals ftpd -ll." id="oval:nist.validation.inetd:tst:33" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:15"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments is not equal to ftpd -ll." id="oval:nist.validation.inetd:tst:34" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:16"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments case insensitive equals FTPd -ll." id="oval:nist.validation.inetd:tst:35" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:17"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments is case insensitive not equal to FTPd -ll." id="oval:nist.validation.inetd:tst:36" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:18"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments matches the regular expression [def]tpd -ll." id="oval:nist.validation.inetd:tst:37" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:19"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments equals ftpd." id="oval:nist.validation.inetd:tst:38" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:20"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments is not equal to ftpd." id="oval:nist.validation.inetd:tst:39" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:21"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments case insensitive equals FTPD." id="oval:nist.validation.inetd:tst:40" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:22"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments is case insensitive not equal to FTPD." id="oval:nist.validation.inetd:tst:41" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:23"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the server_arguments matches the regular expression [abc]tpd -ll." id="oval:nist.validation.inetd:tst:42" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:24"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type equals stream." id="oval:nist.validation.inetd:tst:43" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:25"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type is not equal to stream." id="oval:nist.validation.inetd:tst:44" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:26"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type case insensitive equals STREAM." id="oval:nist.validation.inetd:tst:45" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:27"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type is case insensitive not equal to STREAM." id="oval:nist.validation.inetd:tst:46" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:28"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type matches the regular expression s[a-z]ream." id="oval:nist.validation.inetd:tst:47" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:29"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type equals raw." id="oval:nist.validation.inetd:tst:48" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:30"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type is not equal to raw." id="oval:nist.validation.inetd:tst:49" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:31"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type case insensitive equals RAW." id="oval:nist.validation.inetd:tst:50" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:32"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type is case insensitive not equal to RAW." id="oval:nist.validation.inetd:tst:51" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:33"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the endpoint_type matches the regular expression [wer]aw." id="oval:nist.validation.inetd:tst:52" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:34"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user equals root." id="oval:nist.validation.inetd:tst:53" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:35"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user is not equal to root." id="oval:nist.validation.inetd:tst:54" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:36"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user case insensitive equals ROOT." id="oval:nist.validation.inetd:tst:55" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:37"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user is case insensitive not equal to ROOT." id="oval:nist.validation.inetd:tst:56" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:38"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user matches the regular expression roo[.*]." id="oval:nist.validation.inetd:tst:57" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:39"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user equals mel." id="oval:nist.validation.inetd:tst:58" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:40"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user is not equal to mel." id="oval:nist.validation.inetd:tst:59" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:41"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user case insensitive equals MEL." id="oval:nist.validation.inetd:tst:60" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:42"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user is case insensitive not equal to MEL." id="oval:nist.validation.inetd:tst:61" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:43"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the exec_as_user matches the regular expression [nm]el." id="oval:nist.validation.inetd:tst:62" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:44"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status equals nowait." id="oval:nist.validation.inetd:tst:63" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:45"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status is not equal to nowait." id="oval:nist.validation.inetd:tst:64" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:46"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status case insensitive equals NoWait." id="oval:nist.validation.inetd:tst:65" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:47"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status is case insensitive not equal to NoWait." id="oval:nist.validation.inetd:tst:66" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:48"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status matches the regular expression nowai.*." id="oval:nist.validation.inetd:tst:67" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:49"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status equals wait." id="oval:nist.validation.inetd:tst:68" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:50"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status is not equal to wait." id="oval:nist.validation.inetd:tst:69" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:51"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status case insensitive equals WAIT." id="oval:nist.validation.inetd:tst:70" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:52"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status is case insensitive not equal to WAIT." id="oval:nist.validation.inetd:tst:71" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:53"/>
+    </inetd_test>
+    <inetd_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" check_existence="at_least_one_exists" comment="Test to see that the wait_status matches the regular expression [wv]ait." id="oval:nist.validation.inetd:tst:72" version="1">
+      <object object_ref="oval:nist.validation.inetd:obj:2"/>
+      <state state_ref="oval:nist.validation.inetd:ste:54"/>
+    </inetd_test>
+  </tests>
+  <objects>
+    <inetd_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:obj:1" version="1">
+      <protocol operation="pattern match">.*p</protocol>
+      <service_name operation="pattern match">.*</service_name>
+    </inetd_object>
+    <inetd_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:obj:2" version="1">
+      <protocol operation="equals">tcp</protocol>
+      <service_name operation="equals">ftp</service_name>
+    </inetd_object>
+    <inetd_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:obj:3" version="1">
+      <protocol operation="equals">tcp</protocol>
+      <service_name operation="equals">Xservice</service_name>
+    </inetd_object>
+    <inetd_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:obj:4" version="1">
+      <protocol operation="equals">tcp</protocol>
+      <service_name operation="pattern match">.*</service_name>
+    </inetd_object>
+  </objects>
+  <states>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:1" version="1">
+      <protocol datatype="string" operation="pattern match">.*p</protocol>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:2" version="1">
+      <protocol datatype="string" operation="equals">tcp</protocol>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:3" version="1">
+      <protocol datatype="string" operation="equals">Xprotocol</protocol>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:4" version="1">
+      <service_name datatype="string" operation="equals">ftp</service_name>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:5" version="1">
+      <server_program datatype="string" operation="equals">/usr/sbin/in.ftpd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:6" version="1">
+      <server_program datatype="string" operation="not equal">/usr/sbin/in.ftpd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:7" version="1">
+      <server_program datatype="string" operation="case insensitive equals">/usr/sbin/in.FTPd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:8" version="1">
+      <server_program datatype="string" operation="case insensitive not equal">/usr/sbin/in.FTPd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:9" version="1">
+      <server_program datatype="string" operation="pattern match">/usr/sbin/[a-z]n.ftpd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:10" version="1">
+      <server_program datatype="string" operation="equals">/usr/sbinX/in.ftpd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:11" version="1">
+      <server_program datatype="string" operation="not equal">/usr/sbinX/in.ftpd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:12" version="1">
+      <server_program datatype="string" operation="case insensitive equals">/usr/sbinX/in.FTPd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:13" version="1">
+      <server_program datatype="string" operation="case insensitive not equal">/usr/sbinX/in.FTPd</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:14" version="1">
+      <server_program datatype="string" operation="pattern match">/usr/sbinX/in.FTP[cde]</server_program>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:15" version="1">
+      <server_arguments datatype="string" operation="equals">ftpd -ll</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:16" version="1">
+      <server_arguments datatype="string" operation="not equal">ftpd -ll</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:17" version="1">
+      <server_arguments datatype="string" operation="case insensitive equals">FTPd -ll</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:18" version="1">
+      <server_arguments datatype="string" operation="case insensitive not equal">FTPd -ll</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:19" version="1">
+      <server_arguments datatype="string" operation="pattern match">[def]tpd -ll</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:20" version="1">
+      <server_arguments datatype="string" operation="equals">ftpd</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:21" version="1">
+      <server_arguments datatype="string" operation="not equal">ftpd</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:22" version="1">
+      <server_arguments datatype="string" operation="case insensitive equals">FTPD</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:23" version="1">
+      <server_arguments datatype="string" operation="case insensitive not equal">FTPD</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:24" version="1">
+      <server_arguments datatype="string" operation="pattern match">[abc]tpd -ll</server_arguments>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:25" version="1">
+      <endpoint_type datatype="string" operation="equals">stream</endpoint_type>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:26" version="1">
+      <endpoint_type datatype="string" operation="not equal">stream</endpoint_type>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:27" version="1">
+      <endpoint_type datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.inetd:var:1"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:28" version="1">
+      <endpoint_type datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.inetd:var:1"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:29" version="1">
+      <endpoint_type datatype="string" operation="pattern match" var_check="all" var_ref="oval:nist.validation.inetd:var:2"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:30" version="1">
+      <endpoint_type datatype="string" operation="equals">raw</endpoint_type>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:31" version="1">
+      <endpoint_type datatype="string" operation="not equal">raw</endpoint_type>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:32" version="1">
+      <endpoint_type datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.inetd:var:3"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:33" version="1">
+      <endpoint_type datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.inetd:var:3"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:34" version="1">
+      <endpoint_type datatype="string" operation="pattern match" var_check="all" var_ref="oval:nist.validation.inetd:var:4"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:35" version="1">
+      <exec_as_user datatype="string" operation="equals">root</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:36" version="1">
+      <exec_as_user datatype="string" operation="not equal">root</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:37" version="1">
+      <exec_as_user datatype="string" operation="case insensitive equals">ROOT</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:38" version="1">
+      <exec_as_user datatype="string" operation="case insensitive not equal">ROOT</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:39" version="1">
+      <exec_as_user datatype="string" operation="pattern match">roo[.*]</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:40" version="1">
+      <exec_as_user datatype="string" operation="equals">mel</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:41" version="1">
+      <exec_as_user datatype="string" operation="not equal">mel</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:42" version="1">
+      <exec_as_user datatype="string" operation="case insensitive equals">MEL</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:43" version="1">
+      <exec_as_user datatype="string" operation="case insensitive not equal">MEL</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:44" version="1">
+      <exec_as_user datatype="string" operation="pattern match">[nm]el</exec_as_user>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:45" version="1">
+      <wait_status datatype="string" operation="equals">nowait</wait_status>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:46" version="1">
+      <wait_status datatype="string" operation="not equal">nowait</wait_status>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:47" version="1">
+      <wait_status datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.inetd:var:5"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:48" version="1">
+      <wait_status datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.inetd:var:5"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:49" version="1">
+      <wait_status datatype="string" operation="pattern match" var_check="all" var_ref="oval:nist.validation.inetd:var:6"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:50" version="1">
+      <wait_status datatype="string" operation="equals">wait</wait_status>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:51" version="1">
+      <wait_status datatype="string" operation="not equal">wait</wait_status>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:52" version="1">
+      <wait_status datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.inetd:var:7"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:53" version="1">
+      <wait_status datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.inetd:var:7"/>
+    </inetd_state>
+    <inetd_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.inetd:ste:54" version="1">
+      <wait_status datatype="string" operation="pattern match" var_check="all" var_ref="oval:nist.validation.inetd:var:8"/>
+    </inetd_state>
+  </states>
+  <variables>
+    <constant_variable comment="This variable represents a case insensitive representation of the enumeration value stream." datatype="string" id="oval:nist.validation.inetd:var:1" version="1">
+      <value>STREAM</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a regular expression that matches the of the enumeration value stream." datatype="string" id="oval:nist.validation.inetd:var:2" version="1">
+      <value>s[a-z]ream</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a case insensitive representation of the enumeration value raw." datatype="string" id="oval:nist.validation.inetd:var:3" version="1">
+      <value>RAW</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a regular expression that matches the of the enumeration value raw." datatype="string" id="oval:nist.validation.inetd:var:4" version="1">
+      <value>[wer]aw</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a case insensitive representation of the enumeration value nowait." datatype="string" id="oval:nist.validation.inetd:var:5" version="1">
+      <value>NoWait</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a regular expression that matches the of the enumeration value nowait." datatype="string" id="oval:nist.validation.inetd:var:6" version="1">
+      <value>nowai.*</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a case insensitive representation of the enumeration value wait." datatype="string" id="oval:nist.validation.inetd:var:7" version="1">
+      <value>WAIT</value>
+    </constant_variable>
+    <constant_variable comment="This variable represents a regular expression that matches the of the enumeration value wait." datatype="string" id="oval:nist.validation.inetd:var:8" version="1">
+      <value>[wv]ait</value>
+    </constant_variable>
+  </variables>
+</oval_definitions></component><component id="scap_gov.nist_comp_inetd-cpe-oval.xml" timestamp="2012-09-19T03:22:05"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/linux-definitions-schema.xsd  http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/unix-definitions-schema.xsd">
+	<generator>
+		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2012-06-28T09:49:40.000-05:00</oval:timestamp>
+	</generator>
+	<definitions>
+		<!--====================================================================================================-->
+		<!--=====================================  EXTENDED DEFINITIONS  =========================================-->
+		<!--====================================================================================================-->
+		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:100" version="1">
+			<metadata>
+				<title>Red Hat Enterprise Linux 3, 4, 5 or 6</title>
+				<affected family="unix">
+					<platform>Red Hat Enterprise Linux</platform>
+				</affected>
+				<reference ref_id="cpe:/o:redhat:enterprise_linux" source="CPE"/>
+				<description>The operating system installed on the system is Red Hat Enterprise Linux 3, 4, 5 or 6</description>
+			</metadata>
+			<criteria>
+				<criterion comment="Installed operating system is part of the unix family" test_ref="oval:gov.nist.cpe.oval:tst:100"/>
+				<criterion comment="Red Hat Enterprise Linux 3, 4, 5 or 6 is installed" test_ref="oval:gov.nist.cpe.oval:tst:101"/>
+			</criteria>
+		</definition>
+
+	</definitions>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  TESTS  =============================================== -->
+	<!-- ==================================================================================================== -->
+	<tests>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="installed operating system is part of the Unix family" id="oval:gov.nist.cpe.oval:tst:100" version="1">
+			<object object_ref="oval:gov.nist.cpe.oval:obj:100"/>
+			<state state_ref="oval:gov.nist.cpe.oval:ste:100"/>
+		</family_test>
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="redhat-release is version 3, 4, 5 or 6" id="oval:gov.nist.cpe.oval:tst:101" version="1">
+			<object object_ref="oval:gov.nist.cpe.oval:obj:101"/>
+			<state state_ref="oval:gov.nist.cpe.oval:ste:101"/>
+		</rpminfo_test>
+	</tests>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  OBJECTS  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<objects>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.cpe.oval:obj:100" version="1"/>
+		<rpminfo_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="the redhat-release rpm" id="oval:gov.nist.cpe.oval:obj:101" version="1">
+			<name>redhat-release</name>
+		</rpminfo_object>
+	</objects>
+	<!-- ==================================================================================================== -->
+	<!-- =============================================  STATES  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<states>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.cpe.oval:ste:100" version="1">
+			<family>unix</family>
+		</family_state>
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" id="oval:gov.nist.cpe.oval:ste:101" version="1">
+			<version operation="pattern match">^[3-6]\D</version>
+		</rpminfo_state>
+	</states>
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</oval_definitions></component><component id="scap_gov.nist_comp_inetd-cpe-dictionary.xml" timestamp="2012-09-19T03:22:05"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+	<cpe-item name="cpe:/o:redhat:enterprise_linux">
+		<title xml:lang="en-US">Red Hat Enterprise Linux</title>
+		<notes xml:lang="en-US">
+			<note>This CPE Name represents Red Hat Enterprise Linux OS</note>
+		</notes>
+		<check href="inetd-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:100</check>
+	</cpe-item>
+</cpe-list></component></data-stream-collection>

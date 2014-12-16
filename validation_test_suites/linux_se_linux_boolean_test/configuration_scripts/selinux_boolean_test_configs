@@ -1,0 +1,1060 @@
+1	setsebool	NetworkManager_disable_trans	on
+2	setsebool	aisexec_disable_trans	on
+3	setsebool	allow_aisexec_rw_tmpfs	on
+4	setsebool	allow_console_login	on
+5	setsebool	allow_cvs_read_shadow	on
+6	setsebool	allow_daemons_dump_core	on
+7	setsebool	allow_daemons_use_tty	on
+8	setsebool	allow_domain_fd_use	on
+9	setsebool	allow_execheap	on
+10	setsebool	allow_execmem	on
+11	setsebool	allow_execmod	on
+12	setsebool	allow_execstack	on
+13	setsebool	allow_ftpd_anon_write	on
+14	setsebool	allow_ftpd_full_access	on
+15	setsebool	allow_ftpd_use_cifs	on
+16	setsebool	allow_ftpd_use_nfs	on
+17	setsebool	allow_gpg_execstack	on
+18	setsebool	allow_gssd_read_tmp	on
+19	setsebool	allow_httpd_anon_write	on
+20	setsebool	allow_httpd_bugzilla_script_anon_write	on
+21	setsebool	allow_httpd_cvs_script_anon_write	on
+22	setsebool	allow_httpd_mod_auth_pam	on
+23	setsebool	allow_httpd_nagios_script_anon_write	on
+24	setsebool	allow_httpd_prewikka_script_anon_write	on
+25	setsebool	allow_httpd_squid_script_anon_write	on
+26	setsebool	allow_httpd_sys_script_anon_write	on
+27	setsebool	allow_java_execstack	on
+28	setsebool	allow_kerberos	on
+29	setsebool	allow_mount_anyfile	on
+30	setsebool	allow_mounton_anydir	on
+31	setsebool	allow_mplayer_execstack	on
+32	setsebool	allow_nfsd_anon_write	on
+33	setsebool	allow_polyinstantiation	on
+34	setsebool	allow_postfix_local_write_mail_spool	on
+35	setsebool	allow_ptrace	on
+36	setsebool	allow_rsync_anon_write	on
+37	setsebool	allow_saslauthd_read_shadow	on
+38	setsebool	allow_smbd_anon_write	on
+39	setsebool	allow_ssh_keysign	on
+40	setsebool	allow_tftp_anon_write	on
+41	setsebool	allow_unconfined_execmem_dyntrans	on
+42	setsebool	allow_unconfined_mmap_low	on
+43	setsebool	allow_unlabeled_packets	on
+44	setsebool	allow_user_mysql_connect	on
+45	setsebool	allow_write_xshm	on
+46	setsebool	allow_ypbind	on
+47	setsebool	allow_zebra_write_config	on
+48	setsebool	amanda_disable_trans	on
+49	setsebool	amavis_disable_trans	on
+50	setsebool	apmd_disable_trans	on
+51	setsebool	arpwatch_disable_trans	on
+52	setsebool	auditd_disable_trans	on
+53	setsebool	automount_disable_trans	on
+54	setsebool	avahi_disable_trans	on
+55	setsebool	bluetooth_disable_trans	on
+56	setsebool	canna_disable_trans	on
+57	setsebool	cardmgr_disable_trans	on
+58	setsebool	ccs_disable_trans	on
+59	setsebool	cdrecord_read_content	on
+60	setsebool	clamd_disable_trans	on
+61	setsebool	clamscan_disable_trans	on
+62	setsebool	clogd_disable_trans	on
+63	setsebool	clvmd_disable_trans	on
+64	setsebool	comsat_disable_trans	on
+65	setsebool	cron_can_relabel	on
+66	setsebool	crond_disable_trans	on
+67	setsebool	cupsd_config_disable_trans	on
+68	setsebool	cupsd_disable_trans	on
+69	setsebool	cupsd_lpd_disable_trans	on
+70	setsebool	cvs_disable_trans	on
+71	setsebool	cyrus_disable_trans	on
+72	setsebool	dbskkd_disable_trans	on
+73	setsebool	dccd_disable_trans	on
+74	setsebool	dccifd_disable_trans	on
+75	setsebool	dccm_disable_trans	on
+76	setsebool	dhcpc_disable_trans	on
+77	setsebool	dhcpd_disable_trans	on
+78	setsebool	disable_evolution_trans	on
+79	setsebool	disable_games_trans	on
+80	setsebool	disable_mozilla_trans	on
+81	setsebool	disable_thunderbird_trans	on
+82	setsebool	dlm_controld_disable_trans	on
+83	setsebool	dnsmasq_disable_trans	on
+84	setsebool	dovecot_disable_trans	on
+85	setsebool	fcron_crond	on
+86	setsebool	fenced_can_network_connect	on
+87	setsebool	fenced_disable_trans	on
+88	setsebool	fetchmail_disable_trans	on
+89	setsebool	fingerd_disable_trans	on
+90	setsebool	freshclam_disable_trans	on
+91	setsebool	fsdaemon_disable_trans	on
+92	setsebool	ftp_home_dir	on
+93	setsebool	ftpd_connect_db	on
+94	setsebool	ftpd_disable_trans	on
+95	setsebool	ftpd_is_daemon	on
+96	setsebool	gfs_controld_disable_trans	on
+97	setsebool	global_ssp	on
+98	setsebool	gpm_disable_trans	on
+99	setsebool	groupd_disable_trans	on
+100	setsebool	gssd_disable_trans	on
+101	setsebool	hald_disable_trans	on
+102	setsebool	hotplug_disable_trans	on
+103	setsebool	howl_disable_trans	on
+104	setsebool	hplip_disable_trans	on
+105	setsebool	httpd_builtin_scripting	on
+106	setsebool	httpd_can_network_connect	on
+107	setsebool	httpd_can_network_connect_db	on
+108	setsebool	httpd_can_network_relay	on
+109	setsebool	httpd_can_sendmail	on
+110	setsebool	httpd_disable_trans	on
+111	setsebool	httpd_enable_cgi	on
+112	setsebool	httpd_enable_ftp_server	on
+113	setsebool	httpd_enable_homedirs	on
+114	setsebool	httpd_read_user_content	on
+115	setsebool	httpd_rotatelogs_disable_trans	on
+116	setsebool	httpd_setrlimit	on
+117	setsebool	httpd_ssi_exec	on
+118	setsebool	httpd_suexec_disable_trans	on
+119	setsebool	httpd_tty_comm	on
+120	setsebool	httpd_unified	on
+121	setsebool	httpd_use_cifs	on
+122	setsebool	httpd_use_nfs	on
+123	setsebool	inetd_child_disable_trans	on
+124	setsebool	inetd_disable_trans	on
+125	setsebool	innd_disable_trans	on
+126	setsebool	ipsec_disable_trans	on
+127	setsebool	irqbalance_disable_trans	on
+128	setsebool	iscsid_disable_trans	on
+129	setsebool	kadmind_disable_trans	on
+130	setsebool	klogd_disable_trans	on
+131	setsebool	kpropd_disable_trans	on
+132	setsebool	krb5kdc_disable_trans	on
+133	setsebool	ktalkd_disable_trans	on
+134	setsebool	lpd_disable_trans	on
+135	setsebool	mail_read_content	on
+136	setsebool	mailman_mail_disable_trans	on
+137	setsebool	mdadm_disable_trans	on
+138	setsebool	mozilla_read_content	on
+139	setsebool	mysqld_disable_trans	on
+140	setsebool	nagios_disable_trans	on
+141	setsebool	named_disable_trans	on
+142	setsebool	named_write_master_zones	on
+143	setsebool	nfs_export_all_ro	on
+144	setsebool	nfs_export_all_rw	on
+145	setsebool	nfsd_disable_trans	on
+146	setsebool	nmbd_disable_trans	on
+147	setsebool	nrpe_disable_trans	on
+148	setsebool	nscd_disable_trans	on
+149	setsebool	ntpd_disable_trans	on
+150	setsebool	oddjob_disable_trans	on
+151	setsebool	oddjob_mkhomedir_disable_trans	on
+152	setsebool	openvpn_disable_trans	on
+153	setsebool	openvpn_enable_homedirs	on
+154	setsebool	pcscd_disable_trans	on
+155	setsebool	pegasus_disable_trans	on
+156	setsebool	piranha_fos_disable_trans	on
+157	setsebool	piranha_lvs_can_network_connect	on
+158	setsebool	piranha_lvs_disable_trans	on
+159	setsebool	piranha_pulse_disable_trans	on
+160	setsebool	piranha_web_disable_trans	on
+161	setsebool	portmap_disable_trans	on
+162	setsebool	postfix_disable_trans	on
+163	setsebool	postgresql_disable_trans	on
+164	setsebool	postgrey_disable_trans	on
+165	setsebool	pppd_can_insmod	on
+166	setsebool	pppd_disable_trans	on
+167	setsebool	pppd_for_user	on
+168	setsebool	pptp_disable_trans	on
+169	setsebool	prelude_audisp_disable_trans	on
+170	setsebool	prelude_disable_trans	on
+171	setsebool	prelude_lml_disable_trans	on
+172	setsebool	privoxy_connect_any	on
+173	setsebool	privoxy_disable_trans	on
+174	setsebool	ptal_disable_trans	on
+175	setsebool	pyzord_disable_trans	on
+176	setsebool	qdiskd_disable_trans	on
+177	setsebool	qemu_full_network	on
+178	setsebool	qemu_use_cifs	on
+179	setsebool	qemu_use_comm	on
+180	setsebool	qemu_use_nfs	on
+181	setsebool	qemu_use_usb	on
+182	setsebool	racoon_disable_trans	on
+183	setsebool	racoon_read_shadow	on
+184	setsebool	radiusd_disable_trans	on
+185	setsebool	radvd_disable_trans	on
+186	setsebool	rdisc_disable_trans	on
+187	setsebool	read_default_t	on
+188	setsebool	read_untrusted_content	on
+189	setsebool	readahead_disable_trans	on
+190	setsebool	regex_milter_disable_trans	on
+191	setsebool	restorecond_disable_trans	on
+192	setsebool	rgmanager_can_network_connect	on
+193	setsebool	rgmanager_disable_trans	on
+194	setsebool	rhgb_disable_trans	on
+195	setsebool	ricci_disable_trans	on
+196	setsebool	ricci_modclusterd_disable_trans	on
+197	setsebool	rlogind_disable_trans	on
+198	setsebool	rpcd_disable_trans	on
+199	setsebool	rshd_disable_trans	on
+200	setsebool	rsync_client	on
+201	setsebool	rsync_disable_trans	on
+202	setsebool	rsync_export_all_ro	on
+203	setsebool	run_ssh_inetd	on
+204	setsebool	samba_domain_controller	on
+205	setsebool	samba_enable_home_dirs	on
+206	setsebool	samba_export_all_ro	on
+207	setsebool	samba_export_all_rw	on
+208	setsebool	samba_share_fusefs	on
+209	setsebool	samba_share_nfs	on
+210	setsebool	saslauthd_disable_trans	on
+211	setsebool	secure_mode_insmod	on
+212	setsebool	secure_mode_policyload	on
+213	setsebool	setrans_disable_trans	on
+214	setsebool	setroubleshootd_disable_trans	on
+215	setsebool	slapd_disable_trans	on
+216	setsebool	smbd_disable_trans	on
+217	setsebool	snmpd_disable_trans	on
+218	setsebool	spamass_milter_disable_trans	on
+219	setsebool	spamassassin_can_network	on
+220	setsebool	spamd_disable_trans	on
+221	setsebool	spamd_enable_home_dirs	on
+222	setsebool	squid_connect_any	on
+223	setsebool	squid_disable_trans	on
+224	setsebool	ssh_sysadm_login	on
+225	setsebool	staff_read_sysadm_file	on
+226	setsebool	stunnel_disable_trans	on
+227	setsebool	stunnel_is_daemon	on
+228	setsebool	swat_disable_trans	on
+229	setsebool	syslogd_disable_trans	on
+230	setsebool	tcpd_disable_trans	on
+231	setsebool	telnetd_disable_trans	on
+232	setsebool	tftpd_disable_trans	on
+233	setsebool	tzdata_disable_trans	on
+234	setsebool	udev_disable_trans	on
+235	setsebool	use_lpd_server	on
+236	setsebool	use_nfs_home_dirs	on
+237	setsebool	use_samba_home_dirs	on
+238	setsebool	user_direct_mouse	on
+239	setsebool	user_dmesg	on
+240	setsebool	user_net_control	on
+241	setsebool	user_ping	on
+242	setsebool	user_rw_noexattrfile	on
+243	setsebool	user_tcp_server	on
+244	setsebool	user_ttyfile_stat	on
+245	setsebool	uucpd_disable_trans	on
+246	setsebool	vhostmd_disable_trans	on
+247	setsebool	virt_use_comm	on
+248	setsebool	virt_use_fusefs	on
+249	setsebool	virt_use_nfs	on
+250	setsebool	virt_use_samba	on
+251	setsebool	virt_use_sysfs	on
+252	setsebool	virt_use_usb	on
+253	setsebool	virtd_disable_trans	on
+254	setsebool	winbind_disable_trans	on
+255	setsebool	write_untrusted_content	on
+256	setsebool	xdm_disable_trans	on
+257	setsebool	xdm_sysadm_login	on
+258	setsebool	xend_disable_trans	on
+259	setsebool	xfs_disable_trans	on
+260	setsebool	xm_disable_trans	on
+261	setsebool	ypbind_disable_trans	on
+262	setsebool	yppasswdd_disable_trans	on
+263	setsebool	ypserv_disable_trans	on
+264	setsebool	ypxfr_disable_trans	on
+265	setsebool	zebra_disable_trans	on
+266	setsebool -P	NetworkManager_disable_trans	on
+267	setsebool -P	aisexec_disable_trans	on
+268	setsebool -P	allow_aisexec_rw_tmpfs	on
+269	setsebool -P	allow_console_login	on
+270	setsebool -P	allow_cvs_read_shadow	on
+271	setsebool -P	allow_daemons_dump_core	on
+272	setsebool -P	allow_daemons_use_tty	on
+273	setsebool -P	allow_domain_fd_use	on
+274	setsebool -P	allow_execheap	on
+275	setsebool -P	allow_execmem	on
+276	setsebool -P	allow_execmod	on
+277	setsebool -P	allow_execstack	on
+278	setsebool -P	allow_ftpd_anon_write	on
+279	setsebool -P	allow_ftpd_full_access	on
+280	setsebool -P	allow_ftpd_use_cifs	on
+281	setsebool -P	allow_ftpd_use_nfs	on
+282	setsebool -P	allow_gpg_execstack	on
+283	setsebool -P	allow_gssd_read_tmp	on
+284	setsebool -P	allow_httpd_anon_write	on
+285	setsebool -P	allow_httpd_bugzilla_script_anon_write	on
+286	setsebool -P	allow_httpd_cvs_script_anon_write	on
+287	setsebool -P	allow_httpd_mod_auth_pam	on
+288	setsebool -P	allow_httpd_nagios_script_anon_write	on
+289	setsebool -P	allow_httpd_prewikka_script_anon_write	on
+290	setsebool -P	allow_httpd_squid_script_anon_write	on
+291	setsebool -P	allow_httpd_sys_script_anon_write	on
+292	setsebool -P	allow_java_execstack	on
+293	setsebool -P	allow_kerberos	on
+294	setsebool -P	allow_mount_anyfile	on
+295	setsebool -P	allow_mounton_anydir	on
+296	setsebool -P	allow_mplayer_execstack	on
+297	setsebool -P	allow_nfsd_anon_write	on
+298	setsebool -P	allow_polyinstantiation	on
+299	setsebool -P	allow_postfix_local_write_mail_spool	on
+300	setsebool -P	allow_ptrace	on
+301	setsebool -P	allow_rsync_anon_write	on
+302	setsebool -P	allow_saslauthd_read_shadow	on
+303	setsebool -P	allow_smbd_anon_write	on
+304	setsebool -P	allow_ssh_keysign	on
+305	setsebool -P	allow_tftp_anon_write	on
+306	setsebool -P	allow_unconfined_execmem_dyntrans	on
+307	setsebool -P	allow_unconfined_mmap_low	on
+308	setsebool -P	allow_unlabeled_packets	on
+309	setsebool -P	allow_user_mysql_connect	on
+310	setsebool -P	allow_write_xshm	on
+311	setsebool -P	allow_ypbind	on
+312	setsebool -P	allow_zebra_write_config	on
+313	setsebool -P	amanda_disable_trans	on
+314	setsebool -P	amavis_disable_trans	on
+315	setsebool -P	apmd_disable_trans	on
+316	setsebool -P	arpwatch_disable_trans	on
+317	setsebool -P	auditd_disable_trans	on
+318	setsebool -P	automount_disable_trans	on
+319	setsebool -P	avahi_disable_trans	on
+320	setsebool -P	bluetooth_disable_trans	on
+321	setsebool -P	canna_disable_trans	on
+322	setsebool -P	cardmgr_disable_trans	on
+323	setsebool -P	ccs_disable_trans	on
+324	setsebool -P	cdrecord_read_content	on
+325	setsebool -P	clamd_disable_trans	on
+326	setsebool -P	clamscan_disable_trans	on
+327	setsebool -P	clogd_disable_trans	on
+328	setsebool -P	clvmd_disable_trans	on
+329	setsebool -P	comsat_disable_trans	on
+330	setsebool -P	cron_can_relabel	on
+331	setsebool -P	crond_disable_trans	on
+332	setsebool -P	cupsd_config_disable_trans	on
+333	setsebool -P	cupsd_disable_trans	on
+334	setsebool -P	cupsd_lpd_disable_trans	on
+335	setsebool -P	cvs_disable_trans	on
+336	setsebool -P	cyrus_disable_trans	on
+337	setsebool -P	dbskkd_disable_trans	on
+338	setsebool -P	dccd_disable_trans	on
+339	setsebool -P	dccifd_disable_trans	on
+340	setsebool -P	dccm_disable_trans	on
+341	setsebool -P	dhcpc_disable_trans	on
+342	setsebool -P	dhcpd_disable_trans	on
+343	setsebool -P	disable_evolution_trans	on
+344	setsebool -P	disable_games_trans	on
+345	setsebool -P	disable_mozilla_trans	on
+346	setsebool -P	disable_thunderbird_trans	on
+347	setsebool -P	dlm_controld_disable_trans	on
+348	setsebool -P	dnsmasq_disable_trans	on
+349	setsebool -P	dovecot_disable_trans	on
+350	setsebool -P	fcron_crond	on
+351	setsebool -P	fenced_can_network_connect	on
+352	setsebool -P	fenced_disable_trans	on
+353	setsebool -P	fetchmail_disable_trans	on
+354	setsebool -P	fingerd_disable_trans	on
+355	setsebool -P	freshclam_disable_trans	on
+356	setsebool -P	fsdaemon_disable_trans	on
+357	setsebool -P	ftp_home_dir	on
+358	setsebool -P	ftpd_connect_db	on
+359	setsebool -P	ftpd_disable_trans	on
+360	setsebool -P	ftpd_is_daemon	on
+361	setsebool -P	gfs_controld_disable_trans	on
+362	setsebool -P	global_ssp	on
+363	setsebool -P	gpm_disable_trans	on
+364	setsebool -P	groupd_disable_trans	on
+365	setsebool -P	gssd_disable_trans	on
+366	setsebool -P	hald_disable_trans	on
+367	setsebool -P	hotplug_disable_trans	on
+368	setsebool -P	howl_disable_trans	on
+369	setsebool -P	hplip_disable_trans	on
+370	setsebool -P	httpd_builtin_scripting	on
+371	setsebool -P	httpd_can_network_connect	on
+372	setsebool -P	httpd_can_network_connect_db	on
+373	setsebool -P	httpd_can_network_relay	on
+374	setsebool -P	httpd_can_sendmail	on
+375	setsebool -P	httpd_disable_trans	on
+376	setsebool -P	httpd_enable_cgi	on
+377	setsebool -P	httpd_enable_ftp_server	on
+378	setsebool -P	httpd_enable_homedirs	on
+379	setsebool -P	httpd_read_user_content	on
+380	setsebool -P	httpd_rotatelogs_disable_trans	on
+381	setsebool -P	httpd_setrlimit	on
+382	setsebool -P	httpd_ssi_exec	on
+383	setsebool -P	httpd_suexec_disable_trans	on
+384	setsebool -P	httpd_tty_comm	on
+385	setsebool -P	httpd_unified	on
+386	setsebool -P	httpd_use_cifs	on
+387	setsebool -P	httpd_use_nfs	on
+388	setsebool -P	inetd_child_disable_trans	on
+389	setsebool -P	inetd_disable_trans	on
+390	setsebool -P	innd_disable_trans	on
+391	setsebool -P	ipsec_disable_trans	on
+392	setsebool -P	irqbalance_disable_trans	on
+393	setsebool -P	iscsid_disable_trans	on
+394	setsebool -P	kadmind_disable_trans	on
+395	setsebool -P	klogd_disable_trans	on
+396	setsebool -P	kpropd_disable_trans	on
+397	setsebool -P	krb5kdc_disable_trans	on
+398	setsebool -P	ktalkd_disable_trans	on
+399	setsebool -P	lpd_disable_trans	on
+400	setsebool -P	mail_read_content	on
+401	setsebool -P	mailman_mail_disable_trans	on
+402	setsebool -P	mdadm_disable_trans	on
+403	setsebool -P	mozilla_read_content	on
+404	setsebool -P	mysqld_disable_trans	on
+405	setsebool -P	nagios_disable_trans	on
+406	setsebool -P	named_disable_trans	on
+407	setsebool -P	named_write_master_zones	on
+408	setsebool -P	nfs_export_all_ro	on
+409	setsebool -P	nfs_export_all_rw	on
+410	setsebool -P	nfsd_disable_trans	on
+411	setsebool -P	nmbd_disable_trans	on
+412	setsebool -P	nrpe_disable_trans	on
+413	setsebool -P	nscd_disable_trans	on
+414	setsebool -P	ntpd_disable_trans	on
+415	setsebool -P	oddjob_disable_trans	on
+416	setsebool -P	oddjob_mkhomedir_disable_trans	on
+417	setsebool -P	openvpn_disable_trans	on
+418	setsebool -P	openvpn_enable_homedirs	on
+419	setsebool -P	pcscd_disable_trans	on
+420	setsebool -P	pegasus_disable_trans	on
+421	setsebool -P	piranha_fos_disable_trans	on
+422	setsebool -P	piranha_lvs_can_network_connect	on
+423	setsebool -P	piranha_lvs_disable_trans	on
+424	setsebool -P	piranha_pulse_disable_trans	on
+425	setsebool -P	piranha_web_disable_trans	on
+426	setsebool -P	portmap_disable_trans	on
+427	setsebool -P	postfix_disable_trans	on
+428	setsebool -P	postgresql_disable_trans	on
+429	setsebool -P	postgrey_disable_trans	on
+430	setsebool -P	pppd_can_insmod	on
+431	setsebool -P	pppd_disable_trans	on
+432	setsebool -P	pppd_for_user	on
+433	setsebool -P	pptp_disable_trans	on
+434	setsebool -P	prelude_audisp_disable_trans	on
+435	setsebool -P	prelude_disable_trans	on
+436	setsebool -P	prelude_lml_disable_trans	on
+437	setsebool -P	privoxy_connect_any	on
+438	setsebool -P	privoxy_disable_trans	on
+439	setsebool -P	ptal_disable_trans	on
+440	setsebool -P	pyzord_disable_trans	on
+441	setsebool -P	qdiskd_disable_trans	on
+442	setsebool -P	qemu_full_network	on
+443	setsebool -P	qemu_use_cifs	on
+444	setsebool -P	qemu_use_comm	on
+445	setsebool -P	qemu_use_nfs	on
+446	setsebool -P	qemu_use_usb	on
+447	setsebool -P	racoon_disable_trans	on
+448	setsebool -P	racoon_read_shadow	on
+449	setsebool -P	radiusd_disable_trans	on
+450	setsebool -P	radvd_disable_trans	on
+451	setsebool -P	rdisc_disable_trans	on
+452	setsebool -P	read_default_t	on
+453	setsebool -P	read_untrusted_content	on
+454	setsebool -P	readahead_disable_trans	on
+455	setsebool -P	regex_milter_disable_trans	on
+456	setsebool -P	restorecond_disable_trans	on
+457	setsebool -P	rgmanager_can_network_connect	on
+458	setsebool -P	rgmanager_disable_trans	on
+459	setsebool -P	rhgb_disable_trans	on
+460	setsebool -P	ricci_disable_trans	on
+461	setsebool -P	ricci_modclusterd_disable_trans	on
+462	setsebool -P	rlogind_disable_trans	on
+463	setsebool -P	rpcd_disable_trans	on
+464	setsebool -P	rshd_disable_trans	on
+465	setsebool -P	rsync_client	on
+466	setsebool -P	rsync_disable_trans	on
+467	setsebool -P	rsync_export_all_ro	on
+468	setsebool -P	run_ssh_inetd	on
+469	setsebool -P	samba_domain_controller	on
+470	setsebool -P	samba_enable_home_dirs	on
+471	setsebool -P	samba_export_all_ro	on
+472	setsebool -P	samba_export_all_rw	on
+473	setsebool -P	samba_share_fusefs	on
+474	setsebool -P	samba_share_nfs	on
+475	setsebool -P	saslauthd_disable_trans	on
+476	setsebool -P	secure_mode_insmod	on
+477	setsebool -P	secure_mode_policyload	on
+478	setsebool -P	setrans_disable_trans	on
+479	setsebool -P	setroubleshootd_disable_trans	on
+480	setsebool -P	slapd_disable_trans	on
+481	setsebool -P	smbd_disable_trans	on
+482	setsebool -P	snmpd_disable_trans	on
+483	setsebool -P	spamass_milter_disable_trans	on
+484	setsebool -P	spamassassin_can_network	on
+485	setsebool -P	spamd_disable_trans	on
+486	setsebool -P	spamd_enable_home_dirs	on
+487	setsebool -P	squid_connect_any	on
+488	setsebool -P	squid_disable_trans	on
+489	setsebool -P	ssh_sysadm_login	on
+490	setsebool -P	staff_read_sysadm_file	on
+491	setsebool -P	stunnel_disable_trans	on
+492	setsebool -P	stunnel_is_daemon	on
+493	setsebool -P	swat_disable_trans	on
+494	setsebool -P	syslogd_disable_trans	on
+495	setsebool -P	tcpd_disable_trans	on
+496	setsebool -P	telnetd_disable_trans	on
+497	setsebool -P	tftpd_disable_trans	on
+498	setsebool -P	tzdata_disable_trans	on
+499	setsebool -P	udev_disable_trans	on
+500	setsebool -P	use_lpd_server	on
+501	setsebool -P	use_nfs_home_dirs	on
+502	setsebool -P	use_samba_home_dirs	on
+503	setsebool -P	user_direct_mouse	on
+504	setsebool -P	user_dmesg	on
+505	setsebool -P	user_net_control	on
+506	setsebool -P	user_ping	on
+507	setsebool -P	user_rw_noexattrfile	on
+508	setsebool -P	user_tcp_server	on
+509	setsebool -P	user_ttyfile_stat	on
+510	setsebool -P	uucpd_disable_trans	on
+511	setsebool -P	vhostmd_disable_trans	on
+512	setsebool -P	virt_use_comm	on
+513	setsebool -P	virt_use_fusefs	on
+514	setsebool -P	virt_use_nfs	on
+515	setsebool -P	virt_use_samba	on
+516	setsebool -P	virt_use_sysfs	on
+517	setsebool -P	virt_use_usb	on
+518	setsebool -P	virtd_disable_trans	on
+519	setsebool -P	winbind_disable_trans	on
+520	setsebool -P	write_untrusted_content	on
+521	setsebool -P	xdm_disable_trans	on
+522	setsebool -P	xdm_sysadm_login	on
+523	setsebool -P	xend_disable_trans	on
+524	setsebool -P	xfs_disable_trans	on
+525	setsebool -P	xm_disable_trans	on
+526	setsebool -P	ypbind_disable_trans	on
+527	setsebool -P	yppasswdd_disable_trans	on
+528	setsebool -P	ypserv_disable_trans	on
+529	setsebool -P	ypxfr_disable_trans	on
+530	setsebool -P	zebra_disable_trans	on
+531	setsebool	NetworkManager_disable_trans	off
+532	setsebool	aisexec_disable_trans	off
+533	setsebool	allow_aisexec_rw_tmpfs	off
+534	setsebool	allow_console_login	off
+535	setsebool	allow_cvs_read_shadow	off
+536	setsebool	allow_daemons_dump_core	off
+537	setsebool	allow_daemons_use_tty	off
+538	setsebool	allow_domain_fd_use	off
+539	setsebool	allow_execheap	off
+540	setsebool	allow_execmem	off
+541	setsebool	allow_execmod	off
+542	setsebool	allow_execstack	off
+543	setsebool	allow_ftpd_anon_write	off
+544	setsebool	allow_ftpd_full_access	off
+545	setsebool	allow_ftpd_use_cifs	off
+546	setsebool	allow_ftpd_use_nfs	off
+547	setsebool	allow_gpg_execstack	off
+548	setsebool	allow_gssd_read_tmp	off
+549	setsebool	allow_httpd_anon_write	off
+550	setsebool	allow_httpd_bugzilla_script_anon_write	off
+551	setsebool	allow_httpd_cvs_script_anon_write	off
+552	setsebool	allow_httpd_mod_auth_pam	off
+553	setsebool	allow_httpd_nagios_script_anon_write	off
+554	setsebool	allow_httpd_prewikka_script_anon_write	off
+555	setsebool	allow_httpd_squid_script_anon_write	off
+556	setsebool	allow_httpd_sys_script_anon_write	off
+557	setsebool	allow_java_execstack	off
+558	setsebool	allow_kerberos	off
+559	setsebool	allow_mount_anyfile	off
+560	setsebool	allow_mounton_anydir	off
+561	setsebool	allow_mplayer_execstack	off
+562	setsebool	allow_nfsd_anon_write	off
+563	setsebool	allow_polyinstantiation	off
+564	setsebool	allow_postfix_local_write_mail_spool	off
+565	setsebool	allow_ptrace	off
+566	setsebool	allow_rsync_anon_write	off
+567	setsebool	allow_saslauthd_read_shadow	off
+568	setsebool	allow_smbd_anon_write	off
+569	setsebool	allow_ssh_keysign	off
+570	setsebool	allow_tftp_anon_write	off
+571	setsebool	allow_unconfined_execmem_dyntrans	off
+572	setsebool	allow_unconfined_mmap_low	off
+573	setsebool	allow_unlabeled_packets	off
+574	setsebool	allow_user_mysql_connect	off
+575	setsebool	allow_write_xshm	off
+576	setsebool	allow_ypbind	off
+577	setsebool	allow_zebra_write_config	off
+578	setsebool	amanda_disable_trans	off
+579	setsebool	amavis_disable_trans	off
+580	setsebool	apmd_disable_trans	off
+581	setsebool	arpwatch_disable_trans	off
+582	setsebool	auditd_disable_trans	off
+583	setsebool	automount_disable_trans	off
+584	setsebool	avahi_disable_trans	off
+585	setsebool	bluetooth_disable_trans	off
+586	setsebool	canna_disable_trans	off
+587	setsebool	cardmgr_disable_trans	off
+588	setsebool	ccs_disable_trans	off
+589	setsebool	cdrecord_read_content	off
+590	setsebool	clamd_disable_trans	off
+591	setsebool	clamscan_disable_trans	off
+592	setsebool	clogd_disable_trans	off
+593	setsebool	clvmd_disable_trans	off
+594	setsebool	comsat_disable_trans	off
+595	setsebool	cron_can_relabel	off
+596	setsebool	crond_disable_trans	off
+597	setsebool	cupsd_config_disable_trans	off
+598	setsebool	cupsd_disable_trans	off
+599	setsebool	cupsd_lpd_disable_trans	off
+600	setsebool	cvs_disable_trans	off
+601	setsebool	cyrus_disable_trans	off
+602	setsebool	dbskkd_disable_trans	off
+603	setsebool	dccd_disable_trans	off
+604	setsebool	dccifd_disable_trans	off
+605	setsebool	dccm_disable_trans	off
+606	setsebool	dhcpc_disable_trans	off
+607	setsebool	dhcpd_disable_trans	off
+608	setsebool	disable_evolution_trans	off
+609	setsebool	disable_games_trans	off
+610	setsebool	disable_mozilla_trans	off
+611	setsebool	disable_thunderbird_trans	off
+612	setsebool	dlm_controld_disable_trans	off
+613	setsebool	dnsmasq_disable_trans	off
+614	setsebool	dovecot_disable_trans	off
+615	setsebool	fcron_crond	off
+616	setsebool	fenced_can_network_connect	off
+617	setsebool	fenced_disable_trans	off
+618	setsebool	fetchmail_disable_trans	off
+619	setsebool	fingerd_disable_trans	off
+620	setsebool	freshclam_disable_trans	off
+621	setsebool	fsdaemon_disable_trans	off
+622	setsebool	ftp_home_dir	off
+623	setsebool	ftpd_connect_db	off
+624	setsebool	ftpd_disable_trans	off
+625	setsebool	ftpd_is_daemon	off
+626	setsebool	gfs_controld_disable_trans	off
+627	setsebool	global_ssp	off
+628	setsebool	gpm_disable_trans	off
+629	setsebool	groupd_disable_trans	off
+630	setsebool	gssd_disable_trans	off
+631	setsebool	hald_disable_trans	off
+632	setsebool	hotplug_disable_trans	off
+633	setsebool	howl_disable_trans	off
+634	setsebool	hplip_disable_trans	off
+635	setsebool	httpd_builtin_scripting	off
+636	setsebool	httpd_can_network_connect	off
+637	setsebool	httpd_can_network_connect_db	off
+638	setsebool	httpd_can_network_relay	off
+639	setsebool	httpd_can_sendmail	off
+640	setsebool	httpd_disable_trans	off
+641	setsebool	httpd_enable_cgi	off
+642	setsebool	httpd_enable_ftp_server	off
+643	setsebool	httpd_enable_homedirs	off
+644	setsebool	httpd_read_user_content	off
+645	setsebool	httpd_rotatelogs_disable_trans	off
+646	setsebool	httpd_setrlimit	off
+647	setsebool	httpd_ssi_exec	off
+648	setsebool	httpd_suexec_disable_trans	off
+649	setsebool	httpd_tty_comm	off
+650	setsebool	httpd_unified	off
+651	setsebool	httpd_use_cifs	off
+652	setsebool	httpd_use_nfs	off
+653	setsebool	inetd_child_disable_trans	off
+654	setsebool	inetd_disable_trans	off
+655	setsebool	innd_disable_trans	off
+656	setsebool	ipsec_disable_trans	off
+657	setsebool	irqbalance_disable_trans	off
+658	setsebool	iscsid_disable_trans	off
+659	setsebool	kadmind_disable_trans	off
+660	setsebool	klogd_disable_trans	off
+661	setsebool	kpropd_disable_trans	off
+662	setsebool	krb5kdc_disable_trans	off
+663	setsebool	ktalkd_disable_trans	off
+664	setsebool	lpd_disable_trans	off
+665	setsebool	mail_read_content	off
+666	setsebool	mailman_mail_disable_trans	off
+667	setsebool	mdadm_disable_trans	off
+668	setsebool	mozilla_read_content	off
+669	setsebool	mysqld_disable_trans	off
+670	setsebool	nagios_disable_trans	off
+671	setsebool	named_disable_trans	off
+672	setsebool	named_write_master_zones	off
+673	setsebool	nfs_export_all_ro	off
+674	setsebool	nfs_export_all_rw	off
+675	setsebool	nfsd_disable_trans	off
+676	setsebool	nmbd_disable_trans	off
+677	setsebool	nrpe_disable_trans	off
+678	setsebool	nscd_disable_trans	off
+679	setsebool	ntpd_disable_trans	off
+680	setsebool	oddjob_disable_trans	off
+681	setsebool	oddjob_mkhomedir_disable_trans	off
+682	setsebool	openvpn_disable_trans	off
+683	setsebool	openvpn_enable_homedirs	off
+684	setsebool	pcscd_disable_trans	off
+685	setsebool	pegasus_disable_trans	off
+686	setsebool	piranha_fos_disable_trans	off
+687	setsebool	piranha_lvs_can_network_connect	off
+688	setsebool	piranha_lvs_disable_trans	off
+689	setsebool	piranha_pulse_disable_trans	off
+690	setsebool	piranha_web_disable_trans	off
+691	setsebool	portmap_disable_trans	off
+692	setsebool	postfix_disable_trans	off
+693	setsebool	postgresql_disable_trans	off
+694	setsebool	postgrey_disable_trans	off
+695	setsebool	pppd_can_insmod	off
+696	setsebool	pppd_disable_trans	off
+697	setsebool	pppd_for_user	off
+698	setsebool	pptp_disable_trans	off
+699	setsebool	prelude_audisp_disable_trans	off
+700	setsebool	prelude_disable_trans	off
+701	setsebool	prelude_lml_disable_trans	off
+702	setsebool	privoxy_connect_any	off
+703	setsebool	privoxy_disable_trans	off
+704	setsebool	ptal_disable_trans	off
+705	setsebool	pyzord_disable_trans	off
+706	setsebool	qdiskd_disable_trans	off
+707	setsebool	qemu_full_network	off
+708	setsebool	qemu_use_cifs	off
+709	setsebool	qemu_use_comm	off
+710	setsebool	qemu_use_nfs	off
+711	setsebool	qemu_use_usb	off
+712	setsebool	racoon_disable_trans	off
+713	setsebool	racoon_read_shadow	off
+714	setsebool	radiusd_disable_trans	off
+715	setsebool	radvd_disable_trans	off
+716	setsebool	rdisc_disable_trans	off
+717	setsebool	read_default_t	off
+718	setsebool	read_untrusted_content	off
+719	setsebool	readahead_disable_trans	off
+720	setsebool	regex_milter_disable_trans	off
+721	setsebool	restorecond_disable_trans	off
+722	setsebool	rgmanager_can_network_connect	off
+723	setsebool	rgmanager_disable_trans	off
+724	setsebool	rhgb_disable_trans	off
+725	setsebool	ricci_disable_trans	off
+726	setsebool	ricci_modclusterd_disable_trans	off
+727	setsebool	rlogind_disable_trans	off
+728	setsebool	rpcd_disable_trans	off
+729	setsebool	rshd_disable_trans	off
+730	setsebool	rsync_client	off
+731	setsebool	rsync_disable_trans	off
+732	setsebool	rsync_export_all_ro	off
+733	setsebool	run_ssh_inetd	off
+734	setsebool	samba_domain_controller	off
+735	setsebool	samba_enable_home_dirs	off
+736	setsebool	samba_export_all_ro	off
+737	setsebool	samba_export_all_rw	off
+738	setsebool	samba_share_fusefs	off
+739	setsebool	samba_share_nfs	off
+740	setsebool	saslauthd_disable_trans	off
+741	setsebool	secure_mode_insmod	off
+742	setsebool	secure_mode_policyload	off
+743	setsebool	setrans_disable_trans	off
+744	setsebool	setroubleshootd_disable_trans	off
+745	setsebool	slapd_disable_trans	off
+746	setsebool	smbd_disable_trans	off
+747	setsebool	snmpd_disable_trans	off
+748	setsebool	spamass_milter_disable_trans	off
+749	setsebool	spamassassin_can_network	off
+750	setsebool	spamd_disable_trans	off
+751	setsebool	spamd_enable_home_dirs	off
+752	setsebool	squid_connect_any	off
+753	setsebool	squid_disable_trans	off
+754	setsebool	ssh_sysadm_login	off
+755	setsebool	staff_read_sysadm_file	off
+756	setsebool	stunnel_disable_trans	off
+757	setsebool	stunnel_is_daemon	off
+758	setsebool	swat_disable_trans	off
+759	setsebool	syslogd_disable_trans	off
+760	setsebool	tcpd_disable_trans	off
+761	setsebool	telnetd_disable_trans	off
+762	setsebool	tftpd_disable_trans	off
+763	setsebool	tzdata_disable_trans	off
+764	setsebool	udev_disable_trans	off
+765	setsebool	use_lpd_server	off
+766	setsebool	use_nfs_home_dirs	off
+767	setsebool	use_samba_home_dirs	off
+768	setsebool	user_direct_mouse	off
+769	setsebool	user_dmesg	off
+770	setsebool	user_net_control	off
+771	setsebool	user_ping	off
+772	setsebool	user_rw_noexattrfile	off
+773	setsebool	user_tcp_server	off
+774	setsebool	user_ttyfile_stat	off
+775	setsebool	uucpd_disable_trans	off
+776	setsebool	vhostmd_disable_trans	off
+777	setsebool	virt_use_comm	off
+778	setsebool	virt_use_fusefs	off
+779	setsebool	virt_use_nfs	off
+780	setsebool	virt_use_samba	off
+781	setsebool	virt_use_sysfs	off
+782	setsebool	virt_use_usb	off
+783	setsebool	virtd_disable_trans	off
+784	setsebool	winbind_disable_trans	off
+785	setsebool	write_untrusted_content	off
+786	setsebool	xdm_disable_trans	off
+787	setsebool	xdm_sysadm_login	off
+788	setsebool	xend_disable_trans	off
+789	setsebool	xfs_disable_trans	off
+790	setsebool	xm_disable_trans	off
+791	setsebool	ypbind_disable_trans	off
+792	setsebool	yppasswdd_disable_trans	off
+793	setsebool	ypserv_disable_trans	off
+794	setsebool	ypxfr_disable_trans	off
+795	setsebool	zebra_disable_trans	off
+796	setsebool -P	NetworkManager_disable_trans	off
+797	setsebool -P	aisexec_disable_trans	off
+798	setsebool -P	allow_aisexec_rw_tmpfs	off
+799	setsebool -P	allow_console_login	off
+800	setsebool -P	allow_cvs_read_shadow	off
+801	setsebool -P	allow_daemons_dump_core	off
+802	setsebool -P	allow_daemons_use_tty	off
+803	setsebool -P	allow_domain_fd_use	off
+804	setsebool -P	allow_execheap	off
+805	setsebool -P	allow_execmem	off
+806	setsebool -P	allow_execmod	off
+807	setsebool -P	allow_execstack	off
+808	setsebool -P	allow_ftpd_anon_write	off
+809	setsebool -P	allow_ftpd_full_access	off
+810	setsebool -P	allow_ftpd_use_cifs	off
+811	setsebool -P	allow_ftpd_use_nfs	off
+812	setsebool -P	allow_gpg_execstack	off
+813	setsebool -P	allow_gssd_read_tmp	off
+814	setsebool -P	allow_httpd_anon_write	off
+815	setsebool -P	allow_httpd_bugzilla_script_anon_write	off
+816	setsebool -P	allow_httpd_cvs_script_anon_write	off
+817	setsebool -P	allow_httpd_mod_auth_pam	off
+818	setsebool -P	allow_httpd_nagios_script_anon_write	off
+819	setsebool -P	allow_httpd_prewikka_script_anon_write	off
+820	setsebool -P	allow_httpd_squid_script_anon_write	off
+821	setsebool -P	allow_httpd_sys_script_anon_write	off
+822	setsebool -P	allow_java_execstack	off
+823	setsebool -P	allow_kerberos	off
+824	setsebool -P	allow_mount_anyfile	off
+825	setsebool -P	allow_mounton_anydir	off
+826	setsebool -P	allow_mplayer_execstack	off
+827	setsebool -P	allow_nfsd_anon_write	off
+828	setsebool -P	allow_polyinstantiation	off
+829	setsebool -P	allow_postfix_local_write_mail_spool	off
+830	setsebool -P	allow_ptrace	off
+831	setsebool -P	allow_rsync_anon_write	off
+832	setsebool -P	allow_saslauthd_read_shadow	off
+833	setsebool -P	allow_smbd_anon_write	off
+834	setsebool -P	allow_ssh_keysign	off
+835	setsebool -P	allow_tftp_anon_write	off
+836	setsebool -P	allow_unconfined_execmem_dyntrans	off
+837	setsebool -P	allow_unconfined_mmap_low	off
+838	setsebool -P	allow_unlabeled_packets	off
+839	setsebool -P	allow_user_mysql_connect	off
+840	setsebool -P	allow_write_xshm	off
+841	setsebool -P	allow_ypbind	off
+842	setsebool -P	allow_zebra_write_config	off
+843	setsebool -P	amanda_disable_trans	off
+844	setsebool -P	amavis_disable_trans	off
+845	setsebool -P	apmd_disable_trans	off
+846	setsebool -P	arpwatch_disable_trans	off
+847	setsebool -P	auditd_disable_trans	off
+848	setsebool -P	automount_disable_trans	off
+849	setsebool -P	avahi_disable_trans	off
+850	setsebool -P	bluetooth_disable_trans	off
+851	setsebool -P	canna_disable_trans	off
+852	setsebool -P	cardmgr_disable_trans	off
+853	setsebool -P	ccs_disable_trans	off
+854	setsebool -P	cdrecord_read_content	off
+855	setsebool -P	clamd_disable_trans	off
+856	setsebool -P	clamscan_disable_trans	off
+857	setsebool -P	clogd_disable_trans	off
+858	setsebool -P	clvmd_disable_trans	off
+859	setsebool -P	comsat_disable_trans	off
+860	setsebool -P	cron_can_relabel	off
+861	setsebool -P	crond_disable_trans	off
+862	setsebool -P	cupsd_config_disable_trans	off
+863	setsebool -P	cupsd_disable_trans	off
+864	setsebool -P	cupsd_lpd_disable_trans	off
+865	setsebool -P	cvs_disable_trans	off
+866	setsebool -P	cyrus_disable_trans	off
+867	setsebool -P	dbskkd_disable_trans	off
+868	setsebool -P	dccd_disable_trans	off
+869	setsebool -P	dccifd_disable_trans	off
+870	setsebool -P	dccm_disable_trans	off
+871	setsebool -P	dhcpc_disable_trans	off
+872	setsebool -P	dhcpd_disable_trans	off
+873	setsebool -P	disable_evolution_trans	off
+874	setsebool -P	disable_games_trans	off
+875	setsebool -P	disable_mozilla_trans	off
+876	setsebool -P	disable_thunderbird_trans	off
+877	setsebool -P	dlm_controld_disable_trans	off
+878	setsebool -P	dnsmasq_disable_trans	off
+879	setsebool -P	dovecot_disable_trans	off
+880	setsebool -P	fcron_crond	off
+881	setsebool -P	fenced_can_network_connect	off
+882	setsebool -P	fenced_disable_trans	off
+883	setsebool -P	fetchmail_disable_trans	off
+884	setsebool -P	fingerd_disable_trans	off
+885	setsebool -P	freshclam_disable_trans	off
+886	setsebool -P	fsdaemon_disable_trans	off
+887	setsebool -P	ftp_home_dir	off
+888	setsebool -P	ftpd_connect_db	off
+889	setsebool -P	ftpd_disable_trans	off
+890	setsebool -P	ftpd_is_daemon	off
+891	setsebool -P	gfs_controld_disable_trans	off
+892	setsebool -P	global_ssp	off
+893	setsebool -P	gpm_disable_trans	off
+894	setsebool -P	groupd_disable_trans	off
+895	setsebool -P	gssd_disable_trans	off
+896	setsebool -P	hald_disable_trans	off
+897	setsebool -P	hotplug_disable_trans	off
+898	setsebool -P	howl_disable_trans	off
+899	setsebool -P	hplip_disable_trans	off
+900	setsebool -P	httpd_builtin_scripting	off
+901	setsebool -P	httpd_can_network_connect	off
+902	setsebool -P	httpd_can_network_connect_db	off
+903	setsebool -P	httpd_can_network_relay	off
+904	setsebool -P	httpd_can_sendmail	off
+905	setsebool -P	httpd_disable_trans	off
+906	setsebool -P	httpd_enable_cgi	off
+907	setsebool -P	httpd_enable_ftp_server	off
+908	setsebool -P	httpd_enable_homedirs	off
+909	setsebool -P	httpd_read_user_content	off
+910	setsebool -P	httpd_rotatelogs_disable_trans	off
+911	setsebool -P	httpd_setrlimit	off
+912	setsebool -P	httpd_ssi_exec	off
+913	setsebool -P	httpd_suexec_disable_trans	off
+914	setsebool -P	httpd_tty_comm	off
+915	setsebool -P	httpd_unified	off
+916	setsebool -P	httpd_use_cifs	off
+917	setsebool -P	httpd_use_nfs	off
+918	setsebool -P	inetd_child_disable_trans	off
+919	setsebool -P	inetd_disable_trans	off
+920	setsebool -P	innd_disable_trans	off
+921	setsebool -P	ipsec_disable_trans	off
+922	setsebool -P	irqbalance_disable_trans	off
+923	setsebool -P	iscsid_disable_trans	off
+924	setsebool -P	kadmind_disable_trans	off
+925	setsebool -P	klogd_disable_trans	off
+926	setsebool -P	kpropd_disable_trans	off
+927	setsebool -P	krb5kdc_disable_trans	off
+928	setsebool -P	ktalkd_disable_trans	off
+929	setsebool -P	lpd_disable_trans	off
+930	setsebool -P	mail_read_content	off
+931	setsebool -P	mailman_mail_disable_trans	off
+932	setsebool -P	mdadm_disable_trans	off
+933	setsebool -P	mozilla_read_content	off
+934	setsebool -P	mysqld_disable_trans	off
+935	setsebool -P	nagios_disable_trans	off
+936	setsebool -P	named_disable_trans	off
+937	setsebool -P	named_write_master_zones	off
+938	setsebool -P	nfs_export_all_ro	off
+939	setsebool -P	nfs_export_all_rw	off
+940	setsebool -P	nfsd_disable_trans	off
+941	setsebool -P	nmbd_disable_trans	off
+942	setsebool -P	nrpe_disable_trans	off
+943	setsebool -P	nscd_disable_trans	off
+944	setsebool -P	ntpd_disable_trans	off
+945	setsebool -P	oddjob_disable_trans	off
+946	setsebool -P	oddjob_mkhomedir_disable_trans	off
+947	setsebool -P	openvpn_disable_trans	off
+948	setsebool -P	openvpn_enable_homedirs	off
+949	setsebool -P	pcscd_disable_trans	off
+950	setsebool -P	pegasus_disable_trans	off
+951	setsebool -P	piranha_fos_disable_trans	off
+952	setsebool -P	piranha_lvs_can_network_connect	off
+953	setsebool -P	piranha_lvs_disable_trans	off
+954	setsebool -P	piranha_pulse_disable_trans	off
+955	setsebool -P	piranha_web_disable_trans	off
+956	setsebool -P	portmap_disable_trans	off
+957	setsebool -P	postfix_disable_trans	off
+958	setsebool -P	postgresql_disable_trans	off
+959	setsebool -P	postgrey_disable_trans	off
+960	setsebool -P	pppd_can_insmod	off
+961	setsebool -P	pppd_disable_trans	off
+962	setsebool -P	pppd_for_user	off
+963	setsebool -P	pptp_disable_trans	off
+964	setsebool -P	prelude_audisp_disable_trans	off
+965	setsebool -P	prelude_disable_trans	off
+966	setsebool -P	prelude_lml_disable_trans	off
+967	setsebool -P	privoxy_connect_any	off
+968	setsebool -P	privoxy_disable_trans	off
+969	setsebool -P	ptal_disable_trans	off
+970	setsebool -P	pyzord_disable_trans	off
+971	setsebool -P	qdiskd_disable_trans	off
+972	setsebool -P	qemu_full_network	off
+973	setsebool -P	qemu_use_cifs	off
+974	setsebool -P	qemu_use_comm	off
+975	setsebool -P	qemu_use_nfs	off
+976	setsebool -P	qemu_use_usb	off
+977	setsebool -P	racoon_disable_trans	off
+978	setsebool -P	racoon_read_shadow	off
+979	setsebool -P	radiusd_disable_trans	off
+980	setsebool -P	radvd_disable_trans	off
+981	setsebool -P	rdisc_disable_trans	off
+982	setsebool -P	read_default_t	off
+983	setsebool -P	read_untrusted_content	off
+984	setsebool -P	readahead_disable_trans	off
+985	setsebool -P	regex_milter_disable_trans	off
+986	setsebool -P	restorecond_disable_trans	off
+987	setsebool -P	rgmanager_can_network_connect	off
+988	setsebool -P	rgmanager_disable_trans	off
+989	setsebool -P	rhgb_disable_trans	off
+990	setsebool -P	ricci_disable_trans	off
+991	setsebool -P	ricci_modclusterd_disable_trans	off
+992	setsebool -P	rlogind_disable_trans	off
+993	setsebool -P	rpcd_disable_trans	off
+994	setsebool -P	rshd_disable_trans	off
+995	setsebool -P	rsync_client	off
+996	setsebool -P	rsync_disable_trans	off
+997	setsebool -P	rsync_export_all_ro	off
+998	setsebool -P	run_ssh_inetd	off
+999	setsebool -P	samba_domain_controller	off
+1000	setsebool -P	samba_enable_home_dirs	off
+1001	setsebool -P	samba_export_all_ro	off
+1002	setsebool -P	samba_export_all_rw	off
+1003	setsebool -P	samba_share_fusefs	off
+1004	setsebool -P	samba_share_nfs	off
+1005	setsebool -P	saslauthd_disable_trans	off
+1006	setsebool -P	secure_mode_insmod	off
+1007	setsebool -P	secure_mode_policyload	off
+1008	setsebool -P	setrans_disable_trans	off
+1009	setsebool -P	setroubleshootd_disable_trans	off
+1010	setsebool -P	slapd_disable_trans	off
+1011	setsebool -P	smbd_disable_trans	off
+1012	setsebool -P	snmpd_disable_trans	off
+1013	setsebool -P	spamass_milter_disable_trans	off
+1014	setsebool -P	spamassassin_can_network	off
+1015	setsebool -P	spamd_disable_trans	off
+1016	setsebool -P	spamd_enable_home_dirs	off
+1017	setsebool -P	squid_connect_any	off
+1018	setsebool -P	squid_disable_trans	off
+1019	setsebool -P	ssh_sysadm_login	off
+1020	setsebool -P	staff_read_sysadm_file	off
+1021	setsebool -P	stunnel_disable_trans	off
+1022	setsebool -P	stunnel_is_daemon	off
+1023	setsebool -P	swat_disable_trans	off
+1024	setsebool -P	syslogd_disable_trans	off
+1025	setsebool -P	tcpd_disable_trans	off
+1026	setsebool -P	telnetd_disable_trans	off
+1027	setsebool -P	tftpd_disable_trans	off
+1028	setsebool -P	tzdata_disable_trans	off
+1029	setsebool -P	udev_disable_trans	off
+1030	setsebool -P	use_lpd_server	off
+1031	setsebool -P	use_nfs_home_dirs	off
+1032	setsebool -P	use_samba_home_dirs	off
+1033	setsebool -P	user_direct_mouse	off
+1034	setsebool -P	user_dmesg	off
+1035	setsebool -P	user_net_control	off
+1036	setsebool -P	user_ping	off
+1037	setsebool -P	user_rw_noexattrfile	off
+1038	setsebool -P	user_tcp_server	off
+1039	setsebool -P	user_ttyfile_stat	off
+1040	setsebool -P	uucpd_disable_trans	off
+1041	setsebool -P	vhostmd_disable_trans	off
+1042	setsebool -P	virt_use_comm	off
+1043	setsebool -P	virt_use_fusefs	off
+1044	setsebool -P	virt_use_nfs	off
+1045	setsebool -P	virt_use_samba	off
+1046	setsebool -P	virt_use_sysfs	off
+1047	setsebool -P	virt_use_usb	off
+1048	setsebool -P	virtd_disable_trans	off
+1049	setsebool -P	winbind_disable_trans	off
+1050	setsebool -P	write_untrusted_content	off
+1051	setsebool -P	xdm_disable_trans	off
+1052	setsebool -P	xdm_sysadm_login	off
+1053	setsebool -P	xend_disable_trans	off
+1054	setsebool -P	xfs_disable_trans	off
+1055	setsebool -P	xm_disable_trans	off
+1056	setsebool -P	ypbind_disable_trans	off
+1057	setsebool -P	yppasswdd_disable_trans	off
+1058	setsebool -P	ypserv_disable_trans	off
+1059	setsebool -P	ypxfr_disable_trans	off
+1060	setsebool -P	zebra_disable_trans	off

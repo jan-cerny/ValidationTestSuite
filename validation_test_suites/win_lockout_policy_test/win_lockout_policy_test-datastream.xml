@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_lockout_policy_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_win_lockout_policy_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:21" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_lockout_policy_validation_content-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_lockout_policy_validation_content-cpe-dictionary.xml"><cat:catalog><cat:uri name="lockout_policy_validation_content-cpe-oval.xml" uri="#scap_gov.nist_cref_lockout_policy_validation_content-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_lockout_policy_validation_content-xccdf.xml" xlink:href="#scap_gov.nist_comp_lockout_policy_validation_content-xccdf.xml"><cat:catalog><cat:uri name="lockout_policy_validation_content-oval.xml" uri="#scap_gov.nist_cref_lockout_policy_validation_content-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_lockout_policy_validation_content-oval.xml" xlink:href="#scap_gov.nist_comp_lockout_policy_validation_content-oval.xml"/><component-ref id="scap_gov.nist_cref_lockout_policy_validation_content-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_lockout_policy_validation_content-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_lockout_policy_validation_content-xccdf.xml" timestamp="2012-11-09T09:58:21"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf-for-lockoutpolicy-test-validation-content" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+<!--
+<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_lockoutpolicy-test-validation-content" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd" style="SCAP_1.2">
+--> 
+  
+  <xccdf:status date="2011-08-08">draft</xccdf:status>
+  <xccdf:title>XCCDF Benchmark That References the Validation Content for the lockoutpolicy_test</xccdf:title>
+  <xccdf:description>This XCCDF Benchmark references the OVAL Defintitions in the validation content for the lockoutpolicy_test.</xccdf:description>
+  <xccdf:version update="2011-08-08">1.0</xccdf:version>
+  <xccdf:metadata>
+    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+  </xccdf:metadata>
+  <xccdf:Profile id="xccdf_gov.nist_profile_lockoutpolicy-validation" prohibitChanges="1">
+    <xccdf:title>XCCDF Profile That References the Validation Content for the lockoutpolicy_test</xccdf:title>
+    <xccdf:description>a profile</xccdf:description>
+    <xccdf:select idref="xccdf_gov.nist_rule_force-logoff-with-greater-than-operation-1" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_force-logoff-with-equals-operation-2" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_force-logoff-with-less-than-operation-3" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_force-logoff-with-less-than-or-equal-operation-4" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_force-logoff-with-greater-than-or-equal-operation-5" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-duration-with-greater-than-operation-6" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-duration-with-equals-operation-7" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-duration-with-less-than-or-equal-operation-8" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-duration-with-greater-than-or-equal-operation-9" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-duration-with-less-than-operation-10" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-observation-window-with-greater-than-operation-11" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-observation-window-with-equals-operation-12" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-observation-window-with-less-than-or-equal-operation-13" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-observation-window-with-greater-than-or-equal-operation-14" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-observation-window-with-less-than-operation-15" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-threshold-with-greater-than-operation-16" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-threshold-with-equals-operation-17" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-threshold-with-greater-than-or-equal-operation-18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-threshold-with-less-than-or-equal-operation-19" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_lockout-threshold-with-less-than-operation-20" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_criterion-construct-with-negate-property-21" selected="true"/>
+  </xccdf:Profile>
+  <xccdf:Rule id="xccdf_gov.nist_rule_force-logoff-with-greater-than-operation-1" selected="true">
+    <xccdf:title>Test the force_logoff entity with the greater than operation</xccdf:title>
+    <xccdf:description>Make sure the force_logoff entity properly supports the greater than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:1"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_force-logoff-with-equals-operation-2" selected="true">
+    <xccdf:title>Test the force_logoff entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the force_logoff entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:2"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_force-logoff-with-less-than-operation-3" selected="true">
+    <xccdf:title>Test the force_logoff entity with the less than operation</xccdf:title>
+    <xccdf:description>Make sure the force_logoff entity properly supports the less than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:3"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_force-logoff-with-less-than-or-equal-operation-4" selected="true">
+    <xccdf:title>Test the force_logoff entity with the less than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the force_logoff entity properly supports the less than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:4"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_force-logoff-with-greater-than-or-equal-operation-5" selected="true">
+    <xccdf:title>Test the force_logoff entity with the greater than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the force_logoff entity properly supports the greater than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:5"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-duration-with-greater-than-operation-6" selected="true">
+    <xccdf:title>Test the lockout_duration entity with the greater than operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_duration entity properly supports the greater than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:6"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-duration-with-equals-operation-7" selected="true">
+    <xccdf:title>Test the lockout_duration entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_duration entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:7"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-duration-with-less-than-or-equal-operation-8" selected="true">
+    <xccdf:title>Test the lockout_duration entity with the less than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_duration entity properly supports the less than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:8"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-duration-with-greater-than-or-equal-operation-9" selected="true">
+    <xccdf:title>Test the lockout_duration entity with the greater than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_duration entity properly supports the greater than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:9"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-duration-with-less-than-operation-10" selected="true">
+    <xccdf:title>Test the lockout_duration entity with the less than operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_duration entity properly supports the less than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:10"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-observation-window-with-greater-than-operation-11" selected="true">
+    <xccdf:title>Test the lockout_observation_window entity with the greater than operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_observation_window entity properly supports the greater than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:11"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-observation-window-with-equals-operation-12" selected="true">
+    <xccdf:title>Test the lockout_observation_window entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_observation_window entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:12"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-observation-window-with-less-than-or-equal-operation-13" selected="true">
+    <xccdf:title>Test the lockout_observation_window entity with the less than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_observation_window entity properly supports the less than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:13"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-observation-window-with-greater-than-or-equal-operation-14" selected="true">
+    <xccdf:title>Test the lockout_observation_window entity with the greater than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_observation_window entity properly supports the greater than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:14"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-observation-window-with-less-than-operation-15" selected="true">
+    <xccdf:title>Test the lockout_observation_window entity with the less than operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_observation_window entity properly supports the less than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:15"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-threshold-with-greater-than-operation-16" selected="true">
+    <xccdf:title>Test the lockout_threshold entity with the greater than operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_threshold entity properly supports the greater than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:16"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-threshold-with-equals-operation-17" selected="true">
+    <xccdf:title>Test the lockout_threshold entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_threshold entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:17"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-threshold-with-greater-than-or-equal-operation-18" selected="true">
+    <xccdf:title>Test the lockout_threshold entity with the greater than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_threshold entity properly supports the greater than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:18"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-threshold-with-less-than-or-equal-operation-19" selected="true">
+    <xccdf:title>Test the lockout_threshold entity with the less than or equal operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_threshold entity properly supports the less than or equal operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:19"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_lockout-threshold-with-less-than-operation-20" selected="true">
+    <xccdf:title>Test the lockout_threshold entity with the less than operation</xccdf:title>
+    <xccdf:description>Make sure the lockout_threshold entity properly supports the less than operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:20"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_criterion-construct-with-negate-property-21" selected="true">
+    <xccdf:title>Test the criterion construct with the negate property</xccdf:title>
+    <xccdf:description>Make sure that the criterion construct properly supports the negate property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="lockout_policy_validation_content-oval.xml" name="oval:nist.validation.winLockoutPolicy:def:21"/>
+    </xccdf:check>
+  </xccdf:Rule>
+</xccdf:Benchmark></component><component id="scap_gov.nist_comp_lockout_policy_validation_content-oval.xml" timestamp="2012-11-09T09:58:21"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+    <oval:product_version>1.0</oval:product_version>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2011-06-01T08:12:31-04:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:1" version="1">
+      <metadata>
+        <title>Test the force_logoff entity with the greater than operation</title>
+        <description>Make sure the force_logoff entity properly supports the greater than operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the force_logoff is greater than 0 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:1"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:2" version="1">
+      <metadata>
+        <title>Test the force_logoff entity with the equals operation</title>
+        <description>Make sure the force_logoff entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the force_logoff equals 3600 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:3" version="1">
+      <metadata>
+        <title>Test the force_logoff entity with the less than operation</title>
+        <description>Make sure the force_logoff entity properly supports the less than operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the force_logoff is less than 4294967295 seconds (TIMEQ_FOREVER)." test_ref="oval:nist.validation.winLockoutPolicy:tst:3"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:4" version="1">
+      <metadata>
+        <title>Test the force_logoff entity with the less than or equal operation</title>
+        <description>Make sure the force_logoff entity properly supports the less than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the force_logoff is less than or equal to 3600 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:4"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:5" version="1">
+      <metadata>
+        <title>Test the force_logoff entity with the greater than or equal operation</title>
+        <description>Make sure the force_logoff entity properly supports the greater than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the force_logoff is greater than or equal to 3600 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:6" version="1">
+      <metadata>
+        <title>Test the lockout_duration entity with the greater than operation</title>
+        <description>Make sure the lockout_duration entity properly supports the greater than operation.</description>
+        <expected_results>
+          <result configuration="1">Pass</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_duration is greater than 0 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:6"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:7" version="1">
+      <metadata>
+        <title>Test the lockout_duration entity with the equals operation</title>
+        <description>Make sure the lockout_duration entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_duration equals 60 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:7"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:8" version="1">
+      <metadata>
+        <title>Test the lockout_duration entity with the less than or equal operation</title>
+        <description>Make sure the lockout_duration entity properly supports the less than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_duration is less than or equal to 60 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:8"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:9" version="1">
+      <metadata>
+        <title>Test the lockout_duration entity with the greater than or equal operation</title>
+        <description>Make sure the lockout_duration entity properly supports the greater than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_duration is greater than or equal to 60 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:9"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:10" version="1">
+      <metadata>
+        <title>Test the lockout_duration entity with the less than operation</title>
+        <description>Make sure the lockout_duration entity properly supports the less than operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_duration is less than 0 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:10"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:11" version="1">
+      <metadata>
+        <title>Test the lockout_observation_window entity with the greater than operation</title>
+        <description>Make sure the lockout_observation_window entity properly supports the greater than operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_observation_window is greater than 1 second." test_ref="oval:nist.validation.winLockoutPolicy:tst:11"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:12" version="1">
+      <metadata>
+        <title>Test the lockout_observation_window entity with the equals operation</title>
+        <description>Make sure the lockout_observation_window entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_observation_window equals 120 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:12"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:13" version="1">
+      <metadata>
+        <title>Test the lockout_observation_window entity with the less than or equal operation</title>
+        <description>Make sure the lockout_observation_window entity properly supports the less than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_observation_window is less than or equal to 120 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:13"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:14" version="1">
+      <metadata>
+        <title>Test the lockout_observation_window entity with the greater than or equal operation</title>
+        <description>Make sure the lockout_observation_window entity properly supports the greater than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_observation_window is greater than or equal to 120 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:14"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:15" version="1">
+      <metadata>
+        <title>Test the lockout_observation_window entity with the less than operation</title>
+        <description>Make sure the lockout_observation_window entity properly supports the less than operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_observation_window is less than 0 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:15"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:16" version="1">
+      <metadata>
+        <title>Test the lockout_threshold entity with the greater than operation</title>
+        <description>Make sure the lockout_threshold entity properly supports the greater than operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_threshold is greater than 0 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:16"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:17" version="1">
+      <metadata>
+        <title>Test the lockout_threshold entity with the equals operation</title>
+        <description>Make sure the lockout_threshold entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_threshold equals 10 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:17"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:18" version="1">
+      <metadata>
+        <title>Test the lockout_threshold entity with the greater than or equal operation</title>
+        <description>Make sure the lockout_threshold entity properly supports the greater than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_threshold is greater than or equal to 10 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:18"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:19" version="1">
+      <metadata>
+        <title>Test the lockout_threshold entity with the less than or equal operation</title>
+        <description>Make sure the lockout_threshold entity properly supports the less than or equal operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_threshold is less than or equal to 10 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:19"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:20" version="1">
+      <metadata>
+        <title>Test the lockout_threshold entity with the less than operation</title>
+        <description>Make sure the lockout_threshold entity properly supports the less than operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_threshold is less than 0 seconds." test_ref="oval:nist.validation.winLockoutPolicy:tst:20"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winLockoutPolicy:def:21" version="1">
+      <metadata>
+        <title>Test the criterion construct with the negate property</title>
+        <description>Make sure that the criterion construct properly supports the negate property.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the lockout_observation_window is greater than or equal to 120 seconds." negate="true" test_ref="oval:nist.validation.winLockoutPolicy:tst:14"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the force_logoff is greater than 0 seconds." id="oval:nist.validation.winLockoutPolicy:tst:1" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:1"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the force_logoff equals 3600 seconds." id="oval:nist.validation.winLockoutPolicy:tst:2" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:2"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the force_logoff is less than 4294967295 seconds (TIMEQ_FOREVER)." id="oval:nist.validation.winLockoutPolicy:tst:3" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:3"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the force_logoff is less than or equal to 3600 seconds." id="oval:nist.validation.winLockoutPolicy:tst:4" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:4"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the force_logoff is greater than or equal to 3600 seconds." id="oval:nist.validation.winLockoutPolicy:tst:5" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:5"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_duration is greater than 0 seconds." id="oval:nist.validation.winLockoutPolicy:tst:6" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:6"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_duration equals 60 seconds." id="oval:nist.validation.winLockoutPolicy:tst:7" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:7"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_duration is less than or equal to 60 seconds." id="oval:nist.validation.winLockoutPolicy:tst:8" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:8"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_duration is greater than or equal to 60 seconds." id="oval:nist.validation.winLockoutPolicy:tst:9" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:9"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_duration is less than 0 seconds." id="oval:nist.validation.winLockoutPolicy:tst:10" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:10"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_observation_window is greater than 1 second." id="oval:nist.validation.winLockoutPolicy:tst:11" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:11"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_observation_window equals 120 seconds." id="oval:nist.validation.winLockoutPolicy:tst:12" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:12"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_observation_window is less than or equal to 120 seconds." id="oval:nist.validation.winLockoutPolicy:tst:13" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:13"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_observation_window is greater than or equal to 120 seconds." id="oval:nist.validation.winLockoutPolicy:tst:14" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:14"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_observation_window is less than 0 seconds." id="oval:nist.validation.winLockoutPolicy:tst:15" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:15"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_threshold is greater than 0 seconds." id="oval:nist.validation.winLockoutPolicy:tst:16" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:16"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_threshold equals 10 seconds." id="oval:nist.validation.winLockoutPolicy:tst:17" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:17"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_threshold is greater than or equal to 10 seconds." id="oval:nist.validation.winLockoutPolicy:tst:18" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:18"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_threshold is less than or equal to 10 seconds." id="oval:nist.validation.winLockoutPolicy:tst:19" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:19"/>
+    </lockoutpolicy_test>
+    <lockoutpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the lockout_threshold is less than 0 seconds." id="oval:nist.validation.winLockoutPolicy:tst:20" version="1">
+      <object object_ref="oval:nist.validation.winLockoutPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winLockoutPolicy:ste:20"/>
+    </lockoutpolicy_test>
+  </tests>
+  <objects>
+    <lockoutpolicy_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:obj:1" version="1"/>
+  </objects>
+  <states>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:1" version="1">
+      <force_logoff datatype="int" operation="greater than">0</force_logoff>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:2" version="1">
+      <force_logoff datatype="int" operation="equals">3600</force_logoff>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:3" version="1">
+      <force_logoff datatype="int" operation="less than">4294967295</force_logoff>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:4" version="1">
+      <force_logoff datatype="int" operation="less than or equal">3600</force_logoff>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:5" version="1">
+      <force_logoff datatype="int" operation="greater than or equal">3600</force_logoff>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:6" version="1">
+      <lockout_duration datatype="int" operation="greater than">120</lockout_duration>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:7" version="1">
+      <lockout_duration datatype="int" operation="equals">120</lockout_duration>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:8" version="1">
+      <lockout_duration datatype="int" operation="less than or equal">120</lockout_duration>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:9" version="1">
+      <lockout_duration datatype="int" operation="greater than or equal">120</lockout_duration>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:10" version="1">
+      <lockout_duration datatype="int" operation="less than">120</lockout_duration>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:11" version="1">
+      <lockout_observation_window datatype="int" operation="greater than">120</lockout_observation_window>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:12" version="1">
+      <lockout_observation_window datatype="int" operation="equals">120</lockout_observation_window>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:13" version="1">
+      <lockout_observation_window datatype="int" operation="less than or equal">120</lockout_observation_window>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:14" version="1">
+      <lockout_observation_window datatype="int" operation="greater than or equal">120</lockout_observation_window>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:15" version="1">
+      <lockout_observation_window datatype="int" operation="less than">120</lockout_observation_window>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:16" version="1">
+      <lockout_threshold datatype="int" operation="greater than">0</lockout_threshold>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:17" version="1">
+      <lockout_threshold datatype="int" operation="equals">10</lockout_threshold>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:18" version="1">
+      <lockout_threshold datatype="int" operation="greater than or equal">10</lockout_threshold>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:19" version="1">
+      <lockout_threshold datatype="int" operation="less than or equal">10</lockout_threshold>
+    </lockoutpolicy_state>
+    <lockoutpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winLockoutPolicy:ste:20" version="1">
+      <lockout_threshold datatype="int" operation="less than">1</lockout_threshold>
+    </lockoutpolicy_state>
+  </states>
+</oval_definitions></component><component id="scap_gov.nist_comp_lockout_policy_validation_content-cpe-oval.xml" timestamp="2012-11-09T09:58:21"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+	</generator>
+	<!-- ==================================================================================================== -->
+	<!-- ==========================================  DEFINITIONS  =========================================== -->
+	<!-- ==================================================================================================== -->
+	<definitions>
+		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+			<metadata>
+				<title>Microsoft Windows is installed</title>
+				<affected family="windows">
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 8</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows XP</platform>
+				</affected>
+				<reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+				<description>The operating system installed on the system is Microsoft Windows</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+			</criteria>
+		</definition>
+	</definitions>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  TESTS  =============================================== -->
+	<!-- ==================================================================================================== -->
+	<tests>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+			<object object_ref="oval:org.mitre.oval:obj:99"/>
+			<state state_ref="oval:org.mitre.oval:ste:99"/>
+		</family_test>
+	</tests>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  OBJECTS  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<objects>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+	</objects>
+	<!-- ==================================================================================================== -->
+	<!-- =============================================  STATES  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<states>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+			<family operation="equals">windows</family>
+		</family_state>
+	</states>
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</oval_definitions></component><component id="scap_gov.nist_comp_lockout_policy_validation_content-cpe-dictionary.xml" timestamp="2012-11-09T09:58:21"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+	<cpe-item name="cpe:/o:microsoft:windows">
+		<title xml:lang="en-US">Microsoft Windows</title>
+		<notes xml:lang="en-US">
+			<note>This CPE Name represents the Windows OS</note>
+		</notes>
+		<check href="lockout_policy_validation_content-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+	</cpe-item>
+</cpe-list></component></data-stream-collection>

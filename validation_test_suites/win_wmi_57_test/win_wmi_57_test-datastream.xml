@@ -1,0 +1,2055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_wmi_57_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_gov.nist_datastream_win_wmi_57_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:48" use-case="CONFIGURATION">
+    <dictionaries>
+      <component-ref id="scap_gov.nist_cref_wmi57-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_wmi57-cpe-dictionary.xml">
+        <cat:catalog>
+          <cat:uri name="wmi57-cpe-oval.xml" uri="#scap_gov.nist_cref_wmi57-cpe-oval.xml"/>
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref id="scap_gov.nist_cref_wmi57-xccdf.xml" xlink:href="#scap_gov.nist_comp_wmi57-xccdf.xml">
+        <cat:catalog>
+          <cat:uri name="wmi57-oval.xml" uri="#scap_gov.nist_cref_wmi57-oval.xml"/>
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref id="scap_gov.nist_cref_wmi57-oval.xml" xlink:href="#scap_gov.nist_comp_wmi57-oval.xml"/>
+      <component-ref id="scap_gov.nist_cref_wmi57-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_wmi57-cpe-oval.xml"/>
+    </checks>
+  </data-stream>
+  <component id="scap_gov.nist_comp_wmi57-xccdf.xml" timestamp="2012-11-09T09:58:48">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation.winWmi57_benchmark_wmi57" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+      <xccdf:status date="2011-12-06">draft</xccdf:status>
+      <xccdf:title>XCCDF Benchmark That References the Validation Content for the wmi57_test</xccdf:title>
+      <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the wmi57_test.</xccdf:description>
+      <xccdf:version update="1">1.0</xccdf:version>
+      <xccdf:metadata>
+        <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+        <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+        <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_gov.nist.validation.winWmi57_profile_wmi57" prohibitChanges="1">
+        <xccdf:title>XCCDF Profile That References the Validation Content for the wmi57_test</xccdf:title>
+        <xccdf:description>This Profile allows for the tailoring of the validation content for the wmi57_test.</xccdf:description>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_1" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_2" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_3" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_4" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_5" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_6" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_7" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_8" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_9" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_10" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_11" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_12" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_13" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_14" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_15" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_16" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_17" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_18" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_19" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_20" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_21" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_22" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_23" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_24" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_25" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_26" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_27" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_28" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_29" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_30" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_31" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_32" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_33" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_34" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_35" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_36" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_37" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_38" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_39" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_40" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_41" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_42" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_43" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_44" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_45" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_46" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_47" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_48" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_49" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_50" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_51" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_52" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_53" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_54" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_55" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_56" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_57" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_58" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_59" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_60" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_61" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_62" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_63" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_64" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_65" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_66" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_67" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_68" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_69" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_70" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_71" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation.winWmi57_rule_72" selected="true"/>
+      </xccdf:Profile>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_1" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using ALL_EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:1"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_2" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using ANY_EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:2"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_3" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:3"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_4" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using NONE_EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:4"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_5" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:5"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_6" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using ALL_EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:6"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_7" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using ANY_EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:7"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_8" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:8"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_9" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using NONE_EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:9"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_10" selected="true">
+        <xccdf:title>Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:10"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_11" selected="true">
+        <xccdf:title>Test that the check property is properly supported using ALL value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:11"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_12" selected="true">
+        <xccdf:title>Test that the check property is properly supported using AT LEAST ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:12"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_13" selected="true">
+        <xccdf:title>Test that the check property is properly supported using NONE EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:13"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_14" selected="true">
+        <xccdf:title>Test that the check property is properly supported using NONE SATISFY value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:14"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_15" selected="true">
+        <xccdf:title>Test that the check property is properly supported using ONLY ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:15"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_16" selected="true">
+        <xccdf:title>Test that the check property is properly supported using ALL value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:16"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_17" selected="true">
+        <xccdf:title>Test that the check property is properly supported using AT LEAST ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:17"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_18" selected="true">
+        <xccdf:title>Test that the check property is properly supported using NONE EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:18"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_19" selected="true">
+        <xccdf:title>Test that the check property is properly supported using NONE SATISFY value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:19"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_20" selected="true">
+        <xccdf:title>Test that the check property is properly supported using ONLY ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the check property is properly supported for the wmi57_test.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:20"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_21" selected="true">
+        <xccdf:title>Test the result entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:21"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_22" selected="true">
+        <xccdf:title>Test the result entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:22"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_23" selected="true">
+        <xccdf:title>Test the result entity with the case insensitive equals operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the case insensitive equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:23"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_24" selected="true">
+        <xccdf:title>Test the result entity with the case insensitive not equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the case insensitive not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:24"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_25" selected="true">
+        <xccdf:title>Test the result entity with the pattern match operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the pattern match operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:25"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_26" selected="true">
+        <xccdf:title>Test the result entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:26"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_27" selected="true">
+        <xccdf:title>Test the result entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:27"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_28" selected="true">
+        <xccdf:title>Test the result entity with the case insensitive equals operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the case insensitive equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:28"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_29" selected="true">
+        <xccdf:title>Test the result entity with the case insensitive not equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the case insensitive not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:29"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_30" selected="true">
+        <xccdf:title>Test the result entity with the pattern match operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the pattern match operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:30"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_31" selected="true">
+        <xccdf:title>Test the result entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:31"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_32" selected="true">
+        <xccdf:title>Test the result entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:32"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_33" selected="true">
+        <xccdf:title>Test the result entity with the greater than operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the greater than operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:33"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_34" selected="true">
+        <xccdf:title>Test the result entity with the less than operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the less than operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:34"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_35" selected="true">
+        <xccdf:title>Test the result entity with the greater than or equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the greater than or equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:35"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_36" selected="true">
+        <xccdf:title>Test the result entity with the less than or equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the less than or equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:36"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_37" selected="true">
+        <xccdf:title>Test the result entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:37"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_38" selected="true">
+        <xccdf:title>Test the result entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:38"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_39" selected="true">
+        <xccdf:title>Test the result entity with the greater than operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the greater than operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:39"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_40" selected="true">
+        <xccdf:title>Test the result entity with the less than operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the less than operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:40"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_41" selected="true">
+        <xccdf:title>Test the result entity with the greater than or equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the greater than or equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:41"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_42" selected="true">
+        <xccdf:title>Test the result entity with the less than or equal operation</xccdf:title>
+        <xccdf:description>Make sure the result entity properly supports the less than or equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:42"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_43" selected="true">
+        <xccdf:title>Test the namespace entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:43"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_44" selected="true">
+        <xccdf:title>Test the namespace entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:44"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_45" selected="true">
+        <xccdf:title>Test the namespace entity with the case insensitive equals operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the case insensitive equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:45"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_46" selected="true">
+        <xccdf:title>Test the namespace entity with the case insensitive not equal operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the case insensitive not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:46"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_47" selected="true">
+        <xccdf:title>Test the namespace entity with the pattern match operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the pattern match operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:47"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_48" selected="true">
+        <xccdf:title>Test the namespace entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:48"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_49" selected="true">
+        <xccdf:title>Test the namespace entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:49"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_50" selected="true">
+        <xccdf:title>Test the namespace entity with the case insensitive equals operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the case insensitive equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:50"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_51" selected="true">
+        <xccdf:title>Test the namespace entity with the case insensitive not equal operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the case insensitive not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:51"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_52" selected="true">
+        <xccdf:title>Test the namespace entity with the pattern match operation</xccdf:title>
+        <xccdf:description>Make sure the namespace entity properly supports the pattern match operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:52"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_53" selected="true">
+        <xccdf:title>Test the wql entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:53"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_54" selected="true">
+        <xccdf:title>Test the wql entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:54"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_55" selected="true">
+        <xccdf:title>Test the wql entity with the case insensitive equals operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the case insensitive equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:55"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_56" selected="true">
+        <xccdf:title>Test the wql entity with the case insensitive not equal operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the case insensitive not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:56"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_57" selected="true">
+        <xccdf:title>Test the wql entity with the pattern match operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the pattern match operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:57"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_58" selected="true">
+        <xccdf:title>Test the wql entity with the equals operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:58"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_59" selected="true">
+        <xccdf:title>Test the wql entity with the not equal operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:59"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_60" selected="true">
+        <xccdf:title>Test the wql entity with the case insensitive equals operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the case insensitive equals operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:60"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_61" selected="true">
+        <xccdf:title>Test the wql entity with the case insensitive not equal operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the case insensitive not equal operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:61"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_62" selected="true">
+        <xccdf:title>Test the wql entity with the pattern match operation</xccdf:title>
+        <xccdf:description>Make sure the wql entity properly supports the pattern match operation.</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:62"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_63" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using ALL value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:63"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_64" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using AT LEAST ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:64"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_65" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using NONE EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:65"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_66" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using NONE SATISFY value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:66"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_67" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using ONLY ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:67"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_68" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using ALL value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:68"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_69" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using AT LEAST ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:69"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_70" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using NONE EXIST value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:70"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_71" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using NONE SATISFY value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:71"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist.validation.winWmi57_rule_72" selected="true">
+        <xccdf:title>Test that the entity_check property is properly supported using ONLY ONE value.</xccdf:title>
+        <xccdf:description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="wmi57-oval.xml" name="oval:nist.validation.winWmi57:def:72"/>
+        </xccdf:check>
+      </xccdf:Rule>
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_gov.nist_comp_wmi57-oval.xml" timestamp="2012-11-09T09:58:48">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+      <generator>
+        <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+        <oval:product_version>1.0</oval:product_version>
+        <oval:schema_version>5.8</oval:schema_version>
+        <oval:timestamp>2011-12-06T15:05:01-05:00</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:1" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using ALL_EXIST value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using ALL_EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:1"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:2" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using ANY_EXIST value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using ANY_EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:2"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:3" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:3"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:4" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using NONE_EXIST value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using NONE_EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:4"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:5" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:5"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:6" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using ALL_EXIST value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using ALL_EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:6"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:7" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using ANY_EXIST value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using ANY_EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:7"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:8" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:8"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:9" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using NONE_EXIST value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using NONE_EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:9"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:10" version="2">
+          <metadata>
+            <title>Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value.</title>
+            <description>Make sure that the value specified, for the check_existence property, is properly supported for the win:Wmi57_test.</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:10"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:11" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using ALL value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using ALL value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:11"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:12" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using AT LEAST ONE value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using AT LEAST ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:12"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:13" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using NONE EXIST value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using NONE EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:13"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:14" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using NONE SATISFY value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using NONE SATISFY value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:14"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:15" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using ONLY ONE value.</title>
+            <description>Make sure the result entity properly supports the equals operation.</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using ONLY ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:15"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:16" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using ALL value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using ALL value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:16"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:17" version="1">
+          <metadata>
+            <title>Test that the check property is properly supported using AT LEAST ONE value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using AT LEAST ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:17"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:18" version="1">
+          <metadata>
+            <title>Test that the check property is properly supported using NONE EXIST value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using NONE EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:18"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:19" version="1">
+          <metadata>
+            <title>Test that the check property is properly supported using NONE SATISFY value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using NONE SATISFY value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:19"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:20" version="2">
+          <metadata>
+            <title>Test that the check property is properly supported using ONLY ONE value.</title>
+            <description>Make sure that the value specified for the check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the check property is properly supported using ONLY ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:20"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:21" version="1">
+          <metadata>
+            <title>Test the result entity with the equals operation</title>
+            <description>Make sure the result entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result equals Server, Server." negate="false" test_ref="oval:nist.validation.winWmi57:tst:21"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:22" version="1">
+          <metadata>
+            <title>Test the result entity with the not equal operation</title>
+            <description>Make sure the result entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is not equal to workstation, workstation." negate="false" test_ref="oval:nist.validation.winWmi57:tst:22"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:23" version="1">
+          <metadata>
+            <title>Test the result entity with the case insensitive equals operation</title>
+            <description>Make sure the result entity properly supports the case insensitive equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result case insensitive equals sErVeR, SerVEr." negate="false" test_ref="oval:nist.validation.winWmi57:tst:23"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:24" version="1">
+          <metadata>
+            <title>Test the result entity with the case insensitive not equal operation</title>
+            <description>Make sure the result entity properly supports the case insensitive not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is case insensitive not equal to workstation, workstation." negate="false" test_ref="oval:nist.validation.winWmi57:tst:24"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:25" version="1">
+          <metadata>
+            <title>Test the result entity with the pattern match operation</title>
+            <description>Make sure the result entity properly supports the pattern match operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result matches the regular expression Serve[Rr], Serve[Rr]." negate="false" test_ref="oval:nist.validation.winWmi57:tst:25"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:26" version="1">
+          <metadata>
+            <title>Test the result entity with the equals operation</title>
+            <description>Make sure the result entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result equals workstation, workstation." negate="false" test_ref="oval:nist.validation.winWmi57:tst:26"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:27" version="1">
+          <metadata>
+            <title>Test the result entity with the not equal operation</title>
+            <description>Make sure the result entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is not equal to Server, Server." negate="false" test_ref="oval:nist.validation.winWmi57:tst:27"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:28" version="1">
+          <metadata>
+            <title>Test the result entity with the case insensitive equals operation</title>
+            <description>Make sure the result entity properly supports the case insensitive equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result case insensitive equals workstation, workstation." negate="false" test_ref="oval:nist.validation.winWmi57:tst:28"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:29" version="1">
+          <metadata>
+            <title>Test the result entity with the case insensitive not equal operation</title>
+            <description>Make sure the result entity properly supports the case insensitive not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is case insensitive not equal to sERver, SErvER." negate="false" test_ref="oval:nist.validation.winWmi57:tst:29"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:30" version="1">
+          <metadata>
+            <title>Test the result entity with the pattern match operation</title>
+            <description>Make sure the result entity properly supports the pattern match operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result matches the regular expression [wW]orks.*, [wW]orks.*." negate="false" test_ref="oval:nist.validation.winWmi57:tst:30"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:31" version="1">
+          <metadata>
+            <title>Test the result entity with the equals operation</title>
+            <description>Make sure the result entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result equals 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:31"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:32" version="1">
+          <metadata>
+            <title>Test the result entity with the not equal operation</title>
+            <description>Make sure the result entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is not equal to 2." negate="false" test_ref="oval:nist.validation.winWmi57:tst:32"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:33" version="1">
+          <metadata>
+            <title>Test the result entity with the greater than operation</title>
+            <description>Make sure the result entity properly supports the greater than operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is greater than -1." negate="false" test_ref="oval:nist.validation.winWmi57:tst:33"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:34" version="1">
+          <metadata>
+            <title>Test the result entity with the less than operation</title>
+            <description>Make sure the result entity properly supports the less than operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is less than 1." negate="false" test_ref="oval:nist.validation.winWmi57:tst:34"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:35" version="1">
+          <metadata>
+            <title>Test the result entity with the greater than or equal operation</title>
+            <description>Make sure the result entity properly supports the greater than or equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is greater than or equal to -122311." negate="false" test_ref="oval:nist.validation.winWmi57:tst:35"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:36" version="1">
+          <metadata>
+            <title>Test the result entity with the less than or equal operation</title>
+            <description>Make sure the result entity properly supports the less than or equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is less than or equal to 16346356325." negate="false" test_ref="oval:nist.validation.winWmi57:tst:36"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:37" version="1">
+          <metadata>
+            <title>Test the result entity with the equals operation</title>
+            <description>Make sure the result entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result equals 1." negate="false" test_ref="oval:nist.validation.winWmi57:tst:37"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:38" version="1">
+          <metadata>
+            <title>Test the result entity with the not equal operation</title>
+            <description>Make sure the result entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is not equal to 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:38"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:39" version="1">
+          <metadata>
+            <title>Test the result entity with the greater than operation</title>
+            <description>Make sure the result entity properly supports the greater than operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is greater than 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:39"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:40" version="1">
+          <metadata>
+            <title>Test the result entity with the less than operation</title>
+            <description>Make sure the result entity properly supports the less than operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is less than 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:40"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:41" version="1">
+          <metadata>
+            <title>Test the result entity with the greater than or equal operation</title>
+            <description>Make sure the result entity properly supports the greater than or equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is greater than or equal to 421234." negate="false" test_ref="oval:nist.validation.winWmi57:tst:41"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:42" version="1">
+          <metadata>
+            <title>Test the result entity with the less than or equal operation</title>
+            <description>Make sure the result entity properly supports the less than or equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the result is less than or equal to -1231545." negate="false" test_ref="oval:nist.validation.winWmi57:tst:42"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:43" version="1">
+          <metadata>
+            <title>Test the namespace entity with the equals operation</title>
+            <description>Make sure the namespace entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace equals root\cimv2." negate="false" test_ref="oval:nist.validation.winWmi57:tst:43"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:44" version="1">
+          <metadata>
+            <title>Test the namespace entity with the not equal operation</title>
+            <description>Make sure the namespace entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace is not equal to root\foo." negate="false" test_ref="oval:nist.validation.winWmi57:tst:44"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:45" version="1">
+          <metadata>
+            <title>Test the namespace entity with the case insensitive equals operation</title>
+            <description>Make sure the namespace entity properly supports the case insensitive equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace case insensitive equals root\cimv2." negate="false" test_ref="oval:nist.validation.winWmi57:tst:45"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:46" version="1">
+          <metadata>
+            <title>Test the namespace entity with the case insensitive not equal operation</title>
+            <description>Make sure the namespace entity properly supports the case insensitive not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace is case insensitive not equal to root\foo." negate="false" test_ref="oval:nist.validation.winWmi57:tst:46"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:47" version="1">
+          <metadata>
+            <title>Test the namespace entity with the pattern match operation</title>
+            <description>Make sure the namespace entity properly supports the pattern match operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace matches the regular expression root\cimv[/d]." negate="false" test_ref="oval:nist.validation.winWmi57:tst:47"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:48" version="1">
+          <metadata>
+            <title>Test the namespace entity with the equals operation</title>
+            <description>Make sure the namespace entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace equals root\bar." negate="false" test_ref="oval:nist.validation.winWmi57:tst:48"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:49" version="1">
+          <metadata>
+            <title>Test the namespace entity with the not equal operation</title>
+            <description>Make sure the namespace entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace is not equal to root\cimv2." negate="false" test_ref="oval:nist.validation.winWmi57:tst:49"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:50" version="1">
+          <metadata>
+            <title>Test the namespace entity with the case insensitive equals operation</title>
+            <description>Make sure the namespace entity properly supports the case insensitive equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace case insensitive equals root\bar." negate="false" test_ref="oval:nist.validation.winWmi57:tst:50"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:51" version="1">
+          <metadata>
+            <title>Test the namespace entity with the case insensitive not equal operation</title>
+            <description>Make sure the namespace entity properly supports the case insensitive not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace is case insensitive not equal to root\cimv2." negate="false" test_ref="oval:nist.validation.winWmi57:tst:51"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:52" version="1">
+          <metadata>
+            <title>Test the namespace entity with the pattern match operation</title>
+            <description>Make sure the namespace entity properly supports the pattern match operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the namespace matches the regular expression root\bar." negate="false" test_ref="oval:nist.validation.winWmi57:tst:52"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:53" version="1">
+          <metadata>
+            <title>Test the wql entity with the equals operation</title>
+            <description>Make sure the wql entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:53"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:54" version="1">
+          <metadata>
+            <title>Test the wql entity with the not equal operation</title>
+            <description>Make sure the wql entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql is not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi57:tst:54"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:55" version="1">
+          <metadata>
+            <title>Test the wql entity with the case insensitive equals operation</title>
+            <description>Make sure the wql entity properly supports the case insensitive equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:55"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:56" version="1">
+          <metadata>
+            <title>Test the wql entity with the case insensitive not equal operation</title>
+            <description>Make sure the wql entity properly supports the case insensitive not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql is case insensitive not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi57:tst:56"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:57" version="1">
+          <metadata>
+            <title>Test the wql entity with the pattern match operation</title>
+            <description>Make sure the wql entity properly supports the pattern match operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." negate="false" test_ref="oval:nist.validation.winWmi57:tst:57"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:58" version="1">
+          <metadata>
+            <title>Test the wql entity with the equals operation</title>
+            <description>Make sure the wql entity properly supports the equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi57:tst:58"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:59" version="1">
+          <metadata>
+            <title>Test the wql entity with the not equal operation</title>
+            <description>Make sure the wql entity properly supports the not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql is not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:59"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:60" version="1">
+          <metadata>
+            <title>Test the wql entity with the case insensitive equals operation</title>
+            <description>Make sure the wql entity properly supports the case insensitive equals operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi57:tst:60"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:61" version="1">
+          <metadata>
+            <title>Test the wql entity with the case insensitive not equal operation</title>
+            <description>Make sure the wql entity properly supports the case insensitive not equal operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql is case insensitive not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." negate="false" test_ref="oval:nist.validation.winWmi57:tst:61"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:62" version="1">
+          <metadata>
+            <title>Test the wql entity with the pattern match operation</title>
+            <description>Make sure the wql entity properly supports the pattern match operation.</description>
+          </metadata>
+          <criteria>
+            <criterion comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." negate="false" test_ref="oval:nist.validation.winWmi57:tst:62"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:63" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using ALL value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using ALL value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:63"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:64" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using AT LEAST ONE value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using AT LEAST ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:64"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:65" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using NONE EXIST value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using NONE EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:65"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:66" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using NONE SATISFY value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using NONE SATISFY value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:66"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:67" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using ONLY ONE value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">PASS</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using ONLY ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:67"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:68" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using ALL value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using ALL value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:68"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:69" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using AT LEAST ONE value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using AT LEAST ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:69"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:70" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using NONE EXIST value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using NONE EXIST value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:70"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:71" version="1">
+          <metadata>
+            <title>Test that the entity_check property is properly supported using NONE SATISFY value.</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using NONE SATISFY value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:71"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winWmi57:def:72" version="1">
+          <metadata>
+            <title>Test the result entity with the pattern match operation</title>
+            <description>Make sure that the value specified for the entity_check property is properly supported for the wmi57_test</description>
+            <expected_results>
+              <result configuration="1">FAIL</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="Test that the entity_check property is properly supported using ONLY ONE value." negate="false" test_ref="oval:nist.validation.winWmi57:tst:72"/>
+          </criteria>
+        </definition>
+
+      </definitions>
+      <tests>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="Test that the check_existence property is properly supported using ALL_EXIST value." id="oval:nist.validation.winWmi57:tst:1" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:1"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="Test that the check_existence property is properly supported using ANY_EXIST value." id="oval:nist.validation.winWmi57:tst:2" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:1"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value." id="oval:nist.validation.winWmi57:tst:3" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:1"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="Test that the check_existence property is properly supported using NONE_EXIST value." id="oval:nist.validation.winWmi57:tst:4" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value." id="oval:nist.validation.winWmi57:tst:5" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="Test that the check_existence property is properly supported using ALL_EXIST value." id="oval:nist.validation.winWmi57:tst:6" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:4"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="Test that the check_existence property is properly supported using ANY_EXIST value." id="oval:nist.validation.winWmi57:tst:7" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:4"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the check_existence property is properly supported using AT_LEAST_ONE_EXISTS value." id="oval:nist.validation.winWmi57:tst:8" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:4"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="Test that the check_existence property is properly supported using NONE_EXIST value." id="oval:nist.validation.winWmi57:tst:9" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="Test that the check_existence property is properly supported using ONLY_ONE_EXISTS value." id="oval:nist.validation.winWmi57:tst:10" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:3"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using ALL value." id="oval:nist.validation.winWmi57:tst:11" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:47"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using AT LEAST ONE value." id="oval:nist.validation.winWmi57:tst:12" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:48"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using NONE EXIST value." id="oval:nist.validation.winWmi57:tst:13" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using NONE SATISFY value." id="oval:nist.validation.winWmi57:tst:14" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:49"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using ONLY ONE value." id="oval:nist.validation.winWmi57:tst:15" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:50"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using ALL value." id="oval:nist.validation.winWmi57:tst:16" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:51"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using AT LEAST ONE value." id="oval:nist.validation.winWmi57:tst:17" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:52"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using NONE EXIST value." id="oval:nist.validation.winWmi57:tst:18" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:6"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using NONE SATISFY value." id="oval:nist.validation.winWmi57:tst:19" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:53"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using ONLY ONE value." id="oval:nist.validation.winWmi57:tst:20" version="2">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:54"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result equals Server, Server." id="oval:nist.validation.winWmi57:tst:21" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:7"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is not equal to workstation, workstation." id="oval:nist.validation.winWmi57:tst:22" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:8"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result case insensitive equals sErVeR, SerVEr." id="oval:nist.validation.winWmi57:tst:23" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:9"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is case insensitive not equal to workstation, workstation." id="oval:nist.validation.winWmi57:tst:24" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:10"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result matches the regular expression Serve[Rr], Serve[Rr]." id="oval:nist.validation.winWmi57:tst:25" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:11"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result equals workstation, workstation." id="oval:nist.validation.winWmi57:tst:26" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:6"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is not equal to Server, Server." id="oval:nist.validation.winWmi57:tst:27" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:12"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result case insensitive equals workstation, workstation." id="oval:nist.validation.winWmi57:tst:28" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:13"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is case insensitive not equal to sERver, SErvER." id="oval:nist.validation.winWmi57:tst:29" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:14"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result matches the regular expression [wW]orks.*, [wW]orks.*." id="oval:nist.validation.winWmi57:tst:30" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:15"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result equals 0." id="oval:nist.validation.winWmi57:tst:31" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:16"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is not equal to 2." id="oval:nist.validation.winWmi57:tst:32" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:17"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is greater than -1." id="oval:nist.validation.winWmi57:tst:33" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:18"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is less than 1." id="oval:nist.validation.winWmi57:tst:34" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:19"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is greater than or equal to -122311." id="oval:nist.validation.winWmi57:tst:35" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:20"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is less than or equal to 16346356325." id="oval:nist.validation.winWmi57:tst:36" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:21"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result equals 1." id="oval:nist.validation.winWmi57:tst:37" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:22"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is not equal to 0." id="oval:nist.validation.winWmi57:tst:38" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:23"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is greater than 0." id="oval:nist.validation.winWmi57:tst:39" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:24"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is less than 0." id="oval:nist.validation.winWmi57:tst:40" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:25"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is greater than or equal to 421234." id="oval:nist.validation.winWmi57:tst:41" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:26"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result is less than or equal to -1231545." id="oval:nist.validation.winWmi57:tst:42" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:27"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace equals root\cimv2." id="oval:nist.validation.winWmi57:tst:43" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:28"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace is not equal to root\foo." id="oval:nist.validation.winWmi57:tst:44" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:29"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace case insensitive equals root\cimv2." id="oval:nist.validation.winWmi57:tst:45" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:30"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace is case insensitive not equal to root\foo." id="oval:nist.validation.winWmi57:tst:46" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:31"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace matches the regular expression root\cimv[/d]." id="oval:nist.validation.winWmi57:tst:47" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:32"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace equals root\bar." id="oval:nist.validation.winWmi57:tst:48" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:33"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace is not equal to root\cimv2." id="oval:nist.validation.winWmi57:tst:49" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:34"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace case insensitive equals root\bar." id="oval:nist.validation.winWmi57:tst:50" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:35"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace is case insensitive not equal to root\cimv2." id="oval:nist.validation.winWmi57:tst:51" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:4"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:36"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the namespace matches the regular expression root\bar." id="oval:nist.validation.winWmi57:tst:52" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:37"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." id="oval:nist.validation.winWmi57:tst:53" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:38"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql is not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." id="oval:nist.validation.winWmi57:tst:54" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:39"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." id="oval:nist.validation.winWmi57:tst:55" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:40"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql is case insensitive not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." id="oval:nist.validation.winWmi57:tst:56" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:41"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." id="oval:nist.validation.winWmi57:tst:57" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:42"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." id="oval:nist.validation.winWmi57:tst:58" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:43"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql is not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." id="oval:nist.validation.winWmi57:tst:59" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:44"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." id="oval:nist.validation.winWmi57:tst:60" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:45"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql is case insensitive not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." id="oval:nist.validation.winWmi57:tst:61" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:3"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:46"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." id="oval:nist.validation.winWmi57:tst:62" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:5"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:42"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using ALL value." id="oval:nist.validation.winWmi57:tst:63" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:63"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using AT LEAST ONE value." id="oval:nist.validation.winWmi57:tst:64" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:64"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using NONE EXIST value." id="oval:nist.validation.winWmi57:tst:65" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:6"/>
+          <!-- <state state_ref="oval:nist.validation.winWmi57:ste:65"/> -->
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using NONE SATISFY value." id="oval:nist.validation.winWmi57:tst:66" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:66"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using ONLY ONE value." id="oval:nist.validation.winWmi57:tst:67" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:67"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using ALL value." id="oval:nist.validation.winWmi57:tst:68" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:68"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using AT LEAST ONE value." id="oval:nist.validation.winWmi57:tst:69" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:69"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using NONE EXIST value." id="oval:nist.validation.winWmi57:tst:70" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using NONE SATISFY value." id="oval:nist.validation.winWmi57:tst:71" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:2"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:71"/>
+        </wmi57_test>
+        <wmi57_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test that the entity_check property is properly supported using ONLY ONE value." id="oval:nist.validation.winWmi57:tst:72" version="1">
+          <object object_ref="oval:nist.validation.winWmi57:obj:1"/>
+          <state state_ref="oval:nist.validation.winWmi57:ste:72"/>
+        </wmi57_test>
+      </tests>
+      <objects>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:obj:1" version="1">
+          <namespace>root\cimv2</namespace>
+          <wql>SELECT DisplayName, Caption FROM Win32_Service</wql>
+        </wmi57_object>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:obj:2" version="1">
+          <namespace>root\cimv2</namespace>
+          <wql>SELECT DisplayName, Caption FROM Win32_Service WHERE DisplayName = 'Server'</wql>
+        </wmi57_object>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:obj:3" version="1">
+          <namespace>root\cimv2</namespace>
+          <wql>SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+        </wmi57_object>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:obj:4" version="1">
+          <namespace>root\cimv2</namespace>
+          <wql>SELECT ProcessId, ThreadCount FROM Win32_Process WHERE ProcessId = 0</wql>
+        </wmi57_object>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:obj:5" version="1">
+          <namespace>root\cimv2</namespace>
+          <wql>SELECT ProcessId FROM Win32_Process WHERE ProcessId = 400</wql>
+        </wmi57_object>
+        <wmi57_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:obj:6" version="1">
+          <namespace>root\cimv2</namespace>
+          <wql>SELECT DisplayName, Caption FROM Win32_Service WHERE DisplayName = 'Does not Exist'</wql>
+        </wmi57_object>
+      </objects>
+      <states>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:1" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">.*</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">.*</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:2" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">no such service</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">no such service</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:3" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Server</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:4" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">no such service</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">no such service</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:5" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Client</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:6" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:7" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Server</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Server</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:8" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="not equal">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="not equal">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:9" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="case insensitive equals">sErVeR</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="case insensitive equals">SerVEr</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:10" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="case insensitive not equal">workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="case insensitive not equal">workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:11" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">Serve[Rr]</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">Serve[Rr]</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:12" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="not equal">Server</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="not equal">Server</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:13" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="case insensitive equals">workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="case insensitive equals">workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:14" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="case insensitive not equal">sERver</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="case insensitive not equal">SErvER</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:15" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">[wW]orks.*</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">[wW]orks.*</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:16" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="equals">0</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:17" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="not equal">2</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:18" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="greater than">-1</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:19" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="less than">1</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:20" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="greater than or equal">-122311</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:21" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="less than or equal">16346356325</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:22" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="equals">1</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:23" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="not equal">0</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:24" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="greater than">0</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:25" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="less than">0</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:26" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="greater than or equal">421234</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:27" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="int" name="processid" operation="less than or equal">-1231545</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:28" version="1">
+          <namespace datatype="string" operation="equals">root\cimv2</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:29" version="1">
+          <namespace datatype="string" operation="not equal">root\foo</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:30" version="1">
+          <namespace datatype="string" operation="case insensitive equals">root\cimv2</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:31" version="1">
+          <namespace datatype="string" operation="case insensitive not equal">root\foo</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:32" version="1">
+          <namespace datatype="string" operation="pattern match">root\\cimv[\d]</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:33" version="1">
+          <namespace datatype="string" operation="equals">root\bar</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:34" version="1">
+          <namespace datatype="string" operation="not equal">root\cimv2</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:35" version="1">
+          <namespace datatype="string" operation="case insensitive equals">root\bar</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:36" version="1">
+          <namespace datatype="string" operation="case insensitive not equal">root\cimv2</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:37" version="1">
+          <namespace datatype="string" operation="pattern match">root\\bar</namespace>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:38" version="1">
+          <wql datatype="string" operation="equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:39" version="1">
+          <wql datatype="string" operation="not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:40" version="1">
+          <wql datatype="string" operation="case insensitive equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:41" version="1">
+          <wql datatype="string" operation="case insensitive not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:42" version="1">
+          <wql datatype="string" operation="pattern match">SELECT ProcessId FROM Win32_Process WHERE ProcessId = [\d]</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:43" version="1">
+          <wql datatype="string" operation="equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:44" version="1">
+          <wql datatype="string" operation="not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:45" version="1">
+          <wql datatype="string" operation="case insensitive equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:46" version="1">
+          <wql datatype="string" operation="case insensitive not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:47" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">.*</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">.*</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:48" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:49" version="2">
+          <result datatype="record">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">no such service</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">no such service</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:50" version="1">
+          <result datatype="record" entity_check="only one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:51" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:52" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">no such service</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">no such service</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:53" version="1">
+          <result datatype="record" entity_check="none satisfy">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Server</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:54" version="1">
+          <result datatype="record" entity_check="only one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">.*</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">.*</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:63" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">.*</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">.*</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:64" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <!-- ste:65 none exits - deprected -->
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:66" version="1">
+          <result datatype="record" entity_check="none satisfy">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">no such service</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">no such service</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:67" version="1">
+          <result datatype="record" entity_check="only one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:68" version="1">
+          <result datatype="record" entity_check="all">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Workstation</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Workstation</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:69" version="1">
+          <result datatype="record" entity_check="at least one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">no such service</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">no such service</field>
+          </result>
+        </wmi57_state>
+        <!-- ste:65 none exits - deprected -->
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:71" version="1">
+          <result datatype="record" entity_check="none satisfy">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="equals">Server</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="equals">Server</field>
+          </result>
+        </wmi57_state>
+        <wmi57_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi57:ste:72" version="1">
+          <result datatype="record" entity_check="only one">
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="displayname" operation="pattern match">.*</field>
+            <field xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" datatype="string" name="caption" operation="pattern match">.*</field>
+          </result>
+        </wmi57_state>
+      </states>
+    </oval_definitions>
+  </component>
+  <component id="scap_gov.nist_comp_wmi57-cpe-oval.xml" timestamp="2012-11-09T09:58:48">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+      <generator>
+        <oval:product_name>National Institute of Standards and Technology</oval:product_name>
+        <oval:schema_version>5.3</oval:schema_version>
+        <oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+      </generator>
+      <!-- ==================================================================================================== -->
+      <!-- ==========================================  DEFINITIONS  =========================================== -->
+      <!-- ==================================================================================================== -->
+      <definitions>
+        <definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+          <metadata>
+            <title>Microsoft Windows is installed</title>
+            <affected family="windows">
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows Vista</platform>
+              <platform>Microsoft Windows XP</platform>
+            </affected>
+            <reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+            <description>The operating system installed on the system is Microsoft Windows</description>
+          </metadata>
+          <criteria>
+            <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+          </criteria>
+        </definition>
+      </definitions>
+      <!-- ==================================================================================================== -->
+      <!-- ============================================  TESTS  =============================================== -->
+      <!-- ==================================================================================================== -->
+      <tests>
+        <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+          <object object_ref="oval:org.mitre.oval:obj:99"/>
+          <state state_ref="oval:org.mitre.oval:ste:99"/>
+        </family_test>
+      </tests>
+      <!-- ==================================================================================================== -->
+      <!-- ============================================  OBJECTS  ============================================= -->
+      <!-- ==================================================================================================== -->
+      <objects>
+        <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+      </objects>
+      <!-- ==================================================================================================== -->
+      <!-- =============================================  STATES  ============================================= -->
+      <!-- ==================================================================================================== -->
+      <states>
+        <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+          <family operation="equals">windows</family>
+        </family_state>
+      </states>
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+    </oval_definitions>
+  </component>
+  <component id="scap_gov.nist_comp_wmi57-cpe-dictionary.xml" timestamp="2012-11-09T09:58:48">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+      <cpe-item name="cpe:/o:microsoft:windows">
+        <title xml:lang="en-US">Microsoft Windows</title>
+        <notes xml:lang="en-US">
+          <note>This CPE Name represents the Windows OS</note>
+        </notes>
+        <check href="wmi57-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+</data-stream-collection>

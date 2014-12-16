@@ -1,0 +1,750 @@
+<html xmlns:svr="http://scap.nist.gov/schema/validation/results/0.1" xmlns:xcf="nist:scap:xslt:function">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SCAP Content Validation Results</title><style type="text/css">
+				
+				
+				body,div,p,blockquote,ol,ul,dl,li,dt,dd,td,th,pre {
+				font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+				}
+
+				body {
+				background-color: #ffffff;
+				color: #000154;
+				font-size: 0.85em;
+				margin: 2em;
+				width: 75%;
+				}
+
+
+				h3,h4,h5,h6 {
+				font-size:1em;
+				}
+
+				
+				html,form,div,ol,ul,dl,li,dt,dd,td,th,h1,h2,h3,h4,h5,h6,pre,p,blockquote,fieldset,img {
+				margin:0;
+				padding:0;
+				}
+
+				h1 {
+				margin: 1em -0.5em 0.5em;
+				font-size:1.5em;
+				border-bottom: solid 3px #cccccc;
+				}
+
+				h2 {
+				margin: 1em -0.5em 0.5em;
+				padding: 2px 3px 2px;
+				font-size:1.25em;
+				border-bottom: solid 3px #cccccc;
+				background-color: #eeeeee;
+				}
+
+				h3 {
+				margin: 1em -0.5em 0.5em 0.5em;
+				padding: 2px 3px 2px;
+				font-size:1em;
+				border-bottom: solid 3px #cccccc;
+				background-color: #eeeeee;
+				}
+
+				pre {
+				background-color: #dddddd;
+				border: solid thin black;
+				margin: 0.5em 5em;
+				padding: 1em;
+				overflow: auto;
+				width: 100%;
+				font-size: 1.25em;
+				}
+
+				code, samp {
+				font-family: courier;
+				}
+
+				
+				a img,:link img,:visited img, img, fieldset {
+				border:none;
+				}
+
+				
+				address {
+				font-style:normal;
+				}
+
+				
+				p {
+				margin: 0 0 0.3em 0;
+				}
+
+				
+				abbr, acronym, .help {
+				border-bottom: 1px dotted #333;
+				cursor: help;
+				}
+
+				.command {
+				font-size: 1em;
+				font-weight: bold;
+				}
+
+				.flag {
+				font-weight: bold;
+				}
+
+				.arg {
+				font-weight: bold;
+				font-style: italic;
+				}
+
+				div.section {
+				margin: 2em 1.25em 0em;
+				}
+
+				div.topOfPage {
+				font-size: 0.7em;
+				margin: 1em -1.5em 0em;
+				}
+
+				#parameters dd {
+				margin: 0.25em 1em;
+				}
+
+				#parameters dt {
+				margin-top: 1em;
+				}
+
+				#parameters dd ul {
+				list-style: none;
+				}
+
+				#parameters dd li {
+				margin: 0.25em 1em;
+				}
+
+				#remarks ul {
+				list-style: none;
+				}
+
+				#remarks li {
+				margin: 1em 1em;
+				}
+
+				div.example {
+				margin-left: 1em;
+				}
+
+				table {
+					border-width: 2px;
+					border-style: solid;
+					border-color: #cccccc;
+
+				}
+				td, th { 
+					border-width: 2px;
+					border-style: solid;
+					border-color: #cccccc;
+					padding:10px;
+				}
+                	</style></head>
+   <body>
+      <h1>SCAP Content Validation Results</h1>
+      <h3>Validation Result: <font color="#347235" size="+1">PASS</font><br>Submitted Resource: win_lockout_policy_test-datastream.xml (SHA-256 : 13C037654EB3446995F5EF1F1F0281BEA585654B243CD286BC1E81C6C3D644F5)<br>Validation Time: 2013-08-07T15:41:05<br>Tool Version: scapval-1.2.1.9<br></h3>
+      <h2>scap_gov.nist_comp_lockout_policy_validation_content-xccdf.xml</h2>
+      <table>
+         <tr>
+            <th>Requirement</th>
+            <th>Count</th>
+            <th>Level</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Test</th>
+         </tr>
+         <tr>
+            <th>330-3</th>
+            <td align="center">1<br>(of&nbsp;1)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>Warning: The 'Benchmark' element has no platform specified, which implies the benchmark
+               applies to all platforms. Applicable platforms should be indicate if possible. See
+               the XCCDF 1.2.1 specification, Section 6.2.5.
+            </td>
+            <td>/*[local-name()='Benchmark']</td>
+            <td>false()</td>
+         </tr>
+      </table>
+      <h2>win_lockout_policy_test-datastream.xml</h2>
+      <table>
+         <tr>
+            <th>Requirement</th>
+            <th>Count</th>
+            <th>Level</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Test</th>
+         </tr>
+         <tr>
+            <th>3-2</th>
+            <td align="center">1<br>(of&nbsp;1)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>The @time attribute of the &lt;xccdf:version&gt; element SHOULD be used for a timestamp
+               of when the benchmark was defined.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:version[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]</td>
+            <td>exists(@time)</td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:1 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:2 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][2]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:3 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][3]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:4 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][4]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:5 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][5]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:6 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][6]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:7 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][7]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:8 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][8]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:9 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][9]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:10 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][10]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:11 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][11]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:12 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][12]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:13 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][13]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:14 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][14]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:15 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][15]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:16 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][16]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:17 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][17]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:18 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][18]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:19 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][19]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:20 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][20]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>207-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>oval:nist.validation.winLockoutPolicy:def:21 - OVAL definitions of class 'compliance'
+               should include a reference to a CCE, where applicable.
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][2]/*:oval_definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definitions[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][1]/*:definition[namespace-uri()='http://oval.mitre.org/XMLSchema/oval-definitions-5'][21]</td>
+            <td>if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')])
+               else true()
+            </td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_force-logoff-with-greater-than-operation-1 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_force-logoff-with-equals-operation-2 - An xccdf:Rule should include
+               an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][2]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_force-logoff-with-less-than-operation-3 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][3]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_force-logoff-with-less-than-or-equal-operation-4 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][4]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_force-logoff-with-greater-than-or-equal-operation-5 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][5]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-duration-with-greater-than-operation-6 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][6]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-duration-with-equals-operation-7 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][7]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-duration-with-less-than-or-equal-operation-8 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][8]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-duration-with-greater-than-or-equal-operation-9 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][9]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-duration-with-less-than-operation-10 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][10]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-observation-window-with-greater-than-operation-11 - An
+               xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][11]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-observation-window-with-equals-operation-12 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][12]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-observation-window-with-less-than-or-equal-operation-13
+               - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][13]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-observation-window-with-greater-than-or-equal-operation-14
+               - An xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][14]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-observation-window-with-less-than-operation-15 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][15]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-threshold-with-greater-than-operation-16 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][16]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-threshold-with-equals-operation-17 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][17]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-threshold-with-greater-than-or-equal-operation-18 - An
+               xccdf:Rule should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][18]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-threshold-with-less-than-or-equal-operation-19 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][19]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_lockout-threshold-with-less-than-operation-20 - An xccdf:Rule
+               should include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][20]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+         <tr>
+            <th>251-1</th>
+            <td align="center">1<br>(of&nbsp;21)
+            </td>
+            <td>WARN</td>
+            <td>SCHEMATRON</td>
+            <td>xccdf_gov.nist_rule_criterion-construct-with-negate-property-21 - An xccdf:Rule should
+               include an xccdf:ident containing a CVE, CCE, or CPE
+            </td>
+            <td>/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][21]</td>
+            <td>exists(xccdf:ident[matches(@system,'^(http://cce.mitre.org|http://cve.mitre.org|http://cpe.mitre.org)$')])</td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_audit_policy_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_win_audit_policy_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:00" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_audit_event_policy_validation_content-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_audit_event_policy_validation_content-cpe-dictionary.xml"><cat:catalog><cat:uri name="audit_event_policy_validation_content-cpe-oval.xml" uri="#scap_gov.nist_cref_audit_event_policy_validation_content-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_audit_event_policy_validation_content-xccdf.xml" xlink:href="#scap_gov.nist_comp_audit_event_policy_validation_content-xccdf.xml"><cat:catalog><cat:uri name="audit_event_policy_validation_content-oval.xml" uri="#scap_gov.nist_cref_audit_event_policy_validation_content-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_audit_event_policy_validation_content-oval.xml" xlink:href="#scap_gov.nist_comp_audit_event_policy_validation_content-oval.xml"/><component-ref id="scap_gov.nist_cref_audit_event_policy_validation_content-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_audit_event_policy_validation_content-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_audit_event_policy_validation_content-xccdf.xml" timestamp="2012-11-09T09:58:00"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf-for-auditeventpolicy-test-validation-content" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+<!--
+<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_auditeventpolicy-test-validation-content" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd" style="SCAP_1.2">
+-->  
+  <xccdf:status date="2011-08-08">draft</xccdf:status>
+  <xccdf:title>XCCDF Benchmark That References the Validation Content for the auditeventpolicy_test</xccdf:title>
+  <xccdf:description>This XCCDF Benchmark references the OVAL Defintitions in the validation content for the auditeventpolicy_test.</xccdf:description>
+  <xccdf:version update="2011-08-08">1.0</xccdf:version>
+  <xccdf:metadata>
+    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+  </xccdf:metadata>
+  <xccdf:Profile id="xccdf_gov.nist_profile_auditeventpolicy-validation" prohibitChanges="1">
+    <xccdf:title>XCCDF Profile That References the Validation Content for the auditeventpolicy_test</xccdf:title>
+    <xccdf:description>a profile</xccdf:description>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-management-with-equals-operation-5" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-management-with-equals-operation-6" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-management-with-equals-operation-7" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_account-management-with-equals-operation-8" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_logon-with-equals-operation-13" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_logon-with-equals-operation-14" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_logon-with-equals-operation-15" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_logon-with-equals-operation-16" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_object-access-with-equals-operation-17" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_object-access-with-equals-operation-18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_object-access-with-equals-operation-19" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_object-access-with-equals-operation-20" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_system-with-equals-operation-33" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_system-with-equals-operation-34" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_system-with-equals-operation-35" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_system-with-equals-operation-36" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" selected="true"/>
+  </xccdf:Profile>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" selected="true">
+    <xccdf:title>Test the account_logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:1"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" selected="true">
+    <xccdf:title>Test the account_logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:2"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" selected="true">
+    <xccdf:title>Test the account_logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:3"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" selected="true">
+    <xccdf:title>Test the account_logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:4"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-management-with-equals-operation-5" selected="true">
+    <xccdf:title>Test the account_management entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_management entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:5"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-management-with-equals-operation-6" selected="true">
+    <xccdf:title>Test the account_management entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_management entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:6"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-management-with-equals-operation-7" selected="true">
+    <xccdf:title>Test the account_management entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_management entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:7"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_account-management-with-equals-operation-8" selected="true">
+    <xccdf:title>Test the account_management entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the account_management entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:8"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" selected="true">
+    <xccdf:title>Test the directory_service_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the directory_service_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:9"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" selected="true">
+    <xccdf:title>Test the directory_service_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the directory_service_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:10"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" selected="true">
+    <xccdf:title>Test the directory_service_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the directory_service_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:11"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" selected="true">
+    <xccdf:title>Test the directory_service_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the directory_service_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:12"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_logon-with-equals-operation-13" selected="true">
+    <xccdf:title>Test the logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:13"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_logon-with-equals-operation-14" selected="true">
+    <xccdf:title>Test the logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:14"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_logon-with-equals-operation-15" selected="true">
+    <xccdf:title>Test the logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:15"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_logon-with-equals-operation-16" selected="true">
+    <xccdf:title>Test the logon entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the logon entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:16"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_object-access-with-equals-operation-17" selected="true">
+    <xccdf:title>Test the object_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the object_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:17"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_object-access-with-equals-operation-18" selected="true">
+    <xccdf:title>Test the object_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the object_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:18"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_object-access-with-equals-operation-19" selected="true">
+    <xccdf:title>Test the object_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the object_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:19"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_object-access-with-equals-operation-20" selected="true">
+    <xccdf:title>Test the object_access entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the object_access entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:20"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" selected="true">
+    <xccdf:title>Test the policy_change entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the policy_change entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:21"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" selected="true">
+    <xccdf:title>Test the policy_change entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the policy_change entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:22"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" selected="true">
+    <xccdf:title>Test the policy_change entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the policy_change entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:23"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" selected="true">
+    <xccdf:title>Test the policy_change entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the policy_change entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:24"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" selected="true">
+    <xccdf:title>Test the privilege_use entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the privilege_use entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:25"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" selected="true">
+    <xccdf:title>Test the privilege_use entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the privilege_use entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:26"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" selected="true">
+    <xccdf:title>Test the privilege_use entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the privilege_use entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:27"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" selected="true">
+    <xccdf:title>Test the privilege_use entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the privilege_use entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:28"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" selected="true">
+    <xccdf:title>Test the detailed_tracking entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the detailed_tracking entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:29"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" selected="true">
+    <xccdf:title>Test the detailed_tracking entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the detailed_tracking entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:30"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" selected="true">
+    <xccdf:title>Test the detailed_tracking entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the detailed_tracking entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:31"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" selected="true">
+    <xccdf:title>Test the detailed_tracking entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the detailed_tracking entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:32"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_system-with-equals-operation-33" selected="true">
+    <xccdf:title>Test the system entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the system entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:33"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_system-with-equals-operation-34" selected="true">
+    <xccdf:title>Test the system entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the system entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:34"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_system-with-equals-operation-35" selected="true">
+    <xccdf:title>Test the system entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the system entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:35"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_system-with-equals-operation-36" selected="true">
+    <xccdf:title>Test the system entity with the equals operation</xccdf:title>
+    <xccdf:description>Make sure the system entity properly supports the equals operation.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:36"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" selected="true">
+    <xccdf:title>Test the criterion construct with the negate property</xccdf:title>
+    <xccdf:description>Make sure that the criterion construct properly supports the negate property.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:37"/>
+    </xccdf:check>
+  </xccdf:Rule>
+  <xccdf:Rule id="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" selected="true">
+    <xccdf:title>Test that three criterion constructs can be combined</xccdf:title>
+    <xccdf:description>Make sure that combining three events is properly supported.</xccdf:description>
+    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+      <xccdf:check-content-ref href="audit_event_policy_validation_content-oval.xml" name="oval:nist.validation.winAuditPolicy:def:38"/>
+    </xccdf:check>
+  </xccdf:Rule>  
+</xccdf:Benchmark></component><component id="scap_gov.nist_comp_audit_event_policy_validation_content-oval.xml" timestamp="2012-11-09T09:58:00"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+    <oval:product_version>1.0</oval:product_version>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2011-06-01T10:15:52-04:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:1" version="1">
+      <metadata>
+        <title>Test the account_logon entity with the equals operation</title>
+        <description>Make sure the account_logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_logon equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:1"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:2" version="1">
+      <metadata>
+        <title>Test the account_logon entity with the equals operation</title>
+        <description>Make sure the account_logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_logon equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:3" version="1">
+      <metadata>
+        <title>Test the account_logon entity with the equals operation</title>
+        <description>Make sure the account_logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_logon equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:3"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:4" version="1">
+      <metadata>
+        <title>Test the account_logon entity with the equals operation</title>
+        <description>Make sure the account_logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_logon equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:4"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:5" version="1">
+      <metadata>
+        <title>Test the account_management entity with the equals operation</title>
+        <description>Make sure the account_management entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_management equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:5"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:6" version="1">
+      <metadata>
+        <title>Test the account_management entity with the equals operation</title>
+        <description>Make sure the account_management entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_management equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:6"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:7" version="1">
+      <metadata>
+        <title>Test the account_management entity with the equals operation</title>
+        <description>Make sure the account_management entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_management equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:7"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:8" version="1">
+      <metadata>
+        <title>Test the account_management entity with the equals operation</title>
+        <description>Make sure the account_management entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_management equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:8"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:9" version="1">
+      <metadata>
+        <title>Test the directory_service_access entity with the equals operation</title>
+        <description>Make sure the directory_service_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the directory_service_access equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:9"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:10" version="1">
+      <metadata>
+        <title>Test the directory_service_access entity with the equals operation</title>
+        <description>Make sure the directory_service_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the directory_service_access equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:10"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:11" version="1">
+      <metadata>
+        <title>Test the directory_service_access entity with the equals operation</title>
+        <description>Make sure the directory_service_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the directory_service_access equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:11"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:12" version="1">
+      <metadata>
+        <title>Test the directory_service_access entity with the equals operation</title>
+        <description>Make sure the directory_service_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the directory_service_access equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:12"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:13" version="1">
+      <metadata>
+        <title>Test the logon entity with the equals operation</title>
+        <description>Make sure the logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the logon equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:13"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:14" version="1">
+      <metadata>
+        <title>Test the logon entity with the equals operation</title>
+        <description>Make sure the logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the logon equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:14"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:15" version="1">
+      <metadata>
+        <title>Test the logon entity with the equals operation</title>
+        <description>Make sure the logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the logon equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:15"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:16" version="1">
+      <metadata>
+        <title>Test the logon entity with the equals operation</title>
+        <description>Make sure the logon entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the logon equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:16"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:17" version="1">
+      <metadata>
+        <title>Test the object_access entity with the equals operation</title>
+        <description>Make sure the object_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the object_access equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:17"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:18" version="1">
+      <metadata>
+        <title>Test the object_access entity with the equals operation</title>
+        <description>Make sure the object_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the object_access equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:18"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:19" version="1">
+      <metadata>
+        <title>Test the object_access entity with the equals operation</title>
+        <description>Make sure the object_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the object_access equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:19"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:20" version="1">
+      <metadata>
+        <title>Test the object_access entity with the equals operation</title>
+        <description>Make sure the object_access entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the object_access equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:20"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:21" version="1">
+      <metadata>
+        <title>Test the policy_change entity with the equals operation</title>
+        <description>Make sure the policy_change entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the policy_change equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:21"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:22" version="1">
+      <metadata>
+        <title>Test the policy_change entity with the equals operation</title>
+        <description>Make sure the policy_change entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the policy_change equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:22"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:23" version="1">
+      <metadata>
+        <title>Test the policy_change entity with the equals operation</title>
+        <description>Make sure the policy_change entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the policy_change equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:23"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:24" version="1">
+      <metadata>
+        <title>Test the policy_change entity with the equals operation</title>
+        <description>Make sure the policy_change entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the policy_change equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:24"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:25" version="1">
+      <metadata>
+        <title>Test the privilege_use entity with the equals operation</title>
+        <description>Make sure the privilege_use entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the privilege_use equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:25"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:26" version="1">
+      <metadata>
+        <title>Test the privilege_use entity with the equals operation</title>
+        <description>Make sure the privilege_use entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the privilege_use equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:26"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:27" version="1">
+      <metadata>
+        <title>Test the privilege_use entity with the equals operation</title>
+        <description>Make sure the privilege_use entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the privilege_use equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:27"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:28" version="1">
+      <metadata>
+        <title>Test the privilege_use entity with the equals operation</title>
+        <description>Make sure the privilege_use entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the privilege_use equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:28"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:29" version="1">
+      <metadata>
+        <title>Test the detailed_tracking entity with the equals operation</title>
+        <description>Make sure the detailed_tracking entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the detailed_tracking equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:29"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:30" version="1">
+      <metadata>
+        <title>Test the detailed_tracking entity with the equals operation</title>
+        <description>Make sure the detailed_tracking entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the detailed_tracking equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:30"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:31" version="1">
+      <metadata>
+        <title>Test the detailed_tracking entity with the equals operation</title>
+        <description>Make sure the detailed_tracking entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the detailed_tracking equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:31"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:32" version="1">
+      <metadata>
+        <title>Test the detailed_tracking entity with the equals operation</title>
+        <description>Make sure the detailed_tracking entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the detailed_tracking equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:32"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:33" version="1">
+      <metadata>
+        <title>Test the system entity with the equals operation</title>
+        <description>Make sure the system entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the system equals AUDIT_SUCCESS." test_ref="oval:nist.validation.winAuditPolicy:tst:33"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:34" version="1">
+      <metadata>
+        <title>Test the system entity with the equals operation</title>
+        <description>Make sure the system entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">PASS</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the system equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:34"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:35" version="1">
+      <metadata>
+        <title>Test the system entity with the equals operation</title>
+        <description>Make sure the system entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the system equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:35"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:36" version="1">
+      <metadata>
+        <title>Test the system entity with the equals operation</title>
+        <description>Make sure the system entity properly supports the equals operation.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the system equals AUDIT_NONE." test_ref="oval:nist.validation.winAuditPolicy:tst:36"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:37" version="1">
+      <metadata>
+        <title>Test the criterion construct with the negate property</title>
+        <description>Make sure that the criterion construct properly supports the negate property.</description>
+        <expected_results>
+          <result configuration="1">PASS</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">PASS</result>
+          <result configuration="4">PASS</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_logon equals AUDIT_FAILURE." negate="true" test_ref="oval:nist.validation.winAuditPolicy:tst:2"/>
+      </criteria>
+    </definition>
+    <definition class="compliance" id="oval:nist.validation.winAuditPolicy:def:38" version="1">
+      <metadata>
+        <title>Test that three criterion constructs can be combined</title>
+        <description>Make sure that combining three events is properly supported.</description>
+        <expected_results>
+          <result configuration="1">FAIL</result>
+          <result configuration="2">FAIL</result>
+          <result configuration="3">FAIL</result>
+          <result configuration="4">FAIL</result>
+        </expected_results>
+      </metadata>
+      <criteria>
+        <criterion comment="Test to see that the account_logon equals AUDIT_SUCCESS_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:3"/>
+        <criterion comment="Test to see that the object_access equals AUDIT_FAILURE." test_ref="oval:nist.validation.winAuditPolicy:tst:18"/>
+        <criterion comment="Test to see that the privilege_use equals AUDIT_SUCCESS_FAILURE." negate="true" test_ref="oval:nist.validation.winAuditPolicy:tst:27"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_logon equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:1" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:1"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_logon equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:2" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:2"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_logon equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:3" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:3"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_logon equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:4" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:4"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_management equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:5" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:5"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_management equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:6" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:6"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_management equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:7" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:7"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the account_management equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:8" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:8"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the directory_service_access equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:9" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:9"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the directory_service_access equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:10" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:10"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the directory_service_access equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:11" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:11"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the directory_service_access equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:12" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:12"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the logon equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:13" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:13"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the logon equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:14" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:14"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the logon equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:15" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:15"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the logon equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:16" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:16"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the object_access equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:17" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:17"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the object_access equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:18" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:18"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the object_access equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:19" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:19"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the object_access equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:20" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:20"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the policy_change equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:21" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:21"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the policy_change equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:22" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:22"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the policy_change equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:23" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:23"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the policy_change equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:24" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:24"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the privilege_use equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:25" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:25"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the privilege_use equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:26" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:26"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the privilege_use equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:27" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:27"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the privilege_use equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:28" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:28"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the detailed_tracking equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:29" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:29"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the detailed_tracking equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:30" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:30"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the detailed_tracking equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:31" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:31"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the detailed_tracking equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:32" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:32"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the system equals AUDIT_SUCCESS." id="oval:nist.validation.winAuditPolicy:tst:33" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:33"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the system equals AUDIT_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:34" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:34"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the system equals AUDIT_SUCCESS_FAILURE." id="oval:nist.validation.winAuditPolicy:tst:35" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:35"/>
+    </auditeventpolicy_test>
+    <auditeventpolicy_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" comment="Test to see that the system equals AUDIT_NONE." id="oval:nist.validation.winAuditPolicy:tst:36" version="1">
+      <object object_ref="oval:nist.validation.winAuditPolicy:obj:1"/>
+      <state state_ref="oval:nist.validation.winAuditPolicy:ste:36"/>
+    </auditeventpolicy_test>
+  </tests>
+  <objects>
+    <auditeventpolicy_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:obj:1" version="1"/>
+  </objects>
+  <states>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:1" version="1">
+      <account_logon datatype="string" operation="equals">AUDIT_SUCCESS</account_logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:2" version="1">
+      <account_logon datatype="string" operation="equals">AUDIT_FAILURE</account_logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:3" version="1">
+      <account_logon datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</account_logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:4" version="1">
+      <account_logon datatype="string" operation="equals">AUDIT_NONE</account_logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:5" version="1">
+      <account_management datatype="string" operation="equals">AUDIT_SUCCESS</account_management>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:6" version="1">
+      <account_management datatype="string" operation="equals">AUDIT_FAILURE</account_management>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:7" version="1">
+      <account_management datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</account_management>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:8" version="1">
+      <account_management datatype="string" operation="equals">AUDIT_NONE</account_management>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:9" version="1">
+      <directory_service_access datatype="string" operation="equals">AUDIT_SUCCESS</directory_service_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:10" version="1">
+      <directory_service_access datatype="string" operation="equals">AUDIT_FAILURE</directory_service_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:11" version="1">
+      <directory_service_access datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</directory_service_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:12" version="1">
+      <directory_service_access datatype="string" operation="equals">AUDIT_NONE</directory_service_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:13" version="1">
+      <logon datatype="string" operation="equals">AUDIT_SUCCESS</logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:14" version="1">
+      <logon datatype="string" operation="equals">AUDIT_FAILURE</logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:15" version="1">
+      <logon datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:16" version="1">
+      <logon datatype="string" operation="equals">AUDIT_NONE</logon>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:17" version="1">
+      <object_access datatype="string" operation="equals">AUDIT_SUCCESS</object_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:18" version="1">
+      <object_access datatype="string" operation="equals">AUDIT_FAILURE</object_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:19" version="1">
+      <object_access datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</object_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:20" version="1">
+      <object_access datatype="string" operation="equals">AUDIT_NONE</object_access>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:21" version="1">
+      <policy_change datatype="string" operation="equals">AUDIT_SUCCESS</policy_change>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:22" version="1">
+      <policy_change datatype="string" operation="equals">AUDIT_FAILURE</policy_change>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:23" version="1">
+      <policy_change datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</policy_change>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:24" version="1">
+      <policy_change datatype="string" operation="equals">AUDIT_NONE</policy_change>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:25" version="1">
+      <privilege_use datatype="string" operation="equals">AUDIT_SUCCESS</privilege_use>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:26" version="1">
+      <privilege_use datatype="string" operation="equals">AUDIT_FAILURE</privilege_use>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:27" version="1">
+      <privilege_use datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</privilege_use>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:28" version="1">
+      <privilege_use datatype="string" operation="equals">AUDIT_NONE</privilege_use>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:29" version="1">
+      <detailed_tracking datatype="string" operation="equals">AUDIT_SUCCESS</detailed_tracking>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:30" version="1">
+      <detailed_tracking datatype="string" operation="equals">AUDIT_FAILURE</detailed_tracking>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:31" version="1">
+      <detailed_tracking datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</detailed_tracking>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:32" version="1">
+      <detailed_tracking datatype="string" operation="equals">AUDIT_NONE</detailed_tracking>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:33" version="1">
+      <system datatype="string" operation="equals">AUDIT_SUCCESS</system>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:34" version="1">
+      <system datatype="string" operation="equals">AUDIT_FAILURE</system>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:35" version="1">
+      <system datatype="string" operation="equals">AUDIT_SUCCESS_FAILURE</system>
+    </auditeventpolicy_state>
+    <auditeventpolicy_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winAuditPolicy:ste:36" version="1">
+      <system datatype="string" operation="equals">AUDIT_NONE</system>
+    </auditeventpolicy_state>
+  </states>
+</oval_definitions></component><component id="scap_gov.nist_comp_audit_event_policy_validation_content-cpe-oval.xml" timestamp="2012-11-09T09:58:00"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+	</generator>
+	<!-- ==================================================================================================== -->
+	<!-- ==========================================  DEFINITIONS  =========================================== -->
+	<!-- ==================================================================================================== -->
+	<definitions>
+		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+			<metadata>
+				<title>Microsoft Windows is installed</title>
+				<affected family="windows">
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 8</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows XP</platform>
+				</affected>
+				<reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+				<description>The operating system installed on the system is Microsoft Windows</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+			</criteria>
+		</definition>
+	</definitions>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  TESTS  =============================================== -->
+	<!-- ==================================================================================================== -->
+	<tests>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+			<object object_ref="oval:org.mitre.oval:obj:99"/>
+			<state state_ref="oval:org.mitre.oval:ste:99"/>
+		</family_test>
+	</tests>
+	<!-- ==================================================================================================== -->
+	<!-- ============================================  OBJECTS  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<objects>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+	</objects>
+	<!-- ==================================================================================================== -->
+	<!-- =============================================  STATES  ============================================= -->
+	<!-- ==================================================================================================== -->
+	<states>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+			<family operation="equals">windows</family>
+		</family_state>
+	</states>
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</oval_definitions></component><component id="scap_gov.nist_comp_audit_event_policy_validation_content-cpe-dictionary.xml" timestamp="2012-11-09T09:58:00"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+	<cpe-item name="cpe:/o:microsoft:windows">
+		<title xml:lang="en-US">Microsoft Windows</title>
+		<notes xml:lang="en-US">
+			<note>This CPE Name represents the Windows OS</note>
+		</notes>
+		<check href="audit_event_policy_validation_content-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+	</cpe-item>
+</cpe-list></component></data-stream-collection>

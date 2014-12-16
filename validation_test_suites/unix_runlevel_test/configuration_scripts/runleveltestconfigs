@@ -1,0 +1,8 @@
+1	httpd	yes	on	on	on	on	on	on	on
+	mysqld	yes	on	off	on	on	on	on	on
+2	httpd	yes	off	off	off	off	off	off	off
+	mysqld	yes	on	off	off	off	off	off	off
+3	httpd	no	na	na	na	na	na	na	na		
+	mysqld	no	na	na	na	na	na	na	na
+4	httpd	yes	on	on	on	on	on	on	on
+	mysqld	no	na	na	na	na	na	na	na

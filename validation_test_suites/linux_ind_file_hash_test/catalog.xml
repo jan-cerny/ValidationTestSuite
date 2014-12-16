@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.linux_filehash" bundleVersion="1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Ind:File Hash Tests *nix</bundleName>
+	<bundleGuiName>Ind:File Hash Tests *nix </bundleGuiName>
+	<testSuite version="1" suiteId="G2.linux_file_hash_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>independent</schema>
+		<datastreamFile>linux_ind_file_hash_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>linux_file_hash_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>linux_file_hash_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>linux_file_hash_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>linux_file_hash_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.linux_filehash_profile_filehash</xccdfProfile>
+		<preparation ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>linux_file_hash_test_config_1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf"> 
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_40" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_22" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf"> 
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_40" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_22" expectedResult="fail"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>linux_file_hash_test_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.linux_file_hash_tests_config_2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>independent</schema>
+		<datastreamFile>linux_ind_file_hash_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>linux_file_hash_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>linux_file_hash_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>linux_file_hash_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>linux_file_hash_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.linux_filehash_profile_filehash2</xccdfProfile>
+		<preparation ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>linux_file_hash_test_config_2.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf"> 
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_56" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_48" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_49" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_14" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_15" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_16" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_17" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_11" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_12" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_13" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_58" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_59" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_38" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_39" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_36" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_37" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_34" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_35" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_32" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_33" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_30" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_43" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_60" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_57" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_50" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_51" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_52" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_53" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_42" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_54" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_55" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_47" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_46" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_45" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_44" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_29" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_28" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_41" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_40" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_25" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_24" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_27" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_26" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_23" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_22" expectedResult="notselected"/>
+		</expectedResults>
+		<expectedResults reportType="arf"> 
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_56" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_48" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_49" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_14" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_15" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_16" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_17" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_11" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_12" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_13" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_58" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_59" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_38" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_39" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_36" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_37" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_34" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_35" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_32" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_33" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_30" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_43" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_60" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_57" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_50" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_51" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_52" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_53" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_42" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_54" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_55" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_47" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_46" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_45" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_44" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_29" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_28" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_41" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_40" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_25" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_24" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_27" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_26" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_23" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.linux_filehash_rule_22" expectedResult="notselected"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>linux_file_hash_test_cleanup.py</command>
+			</command>
+		</cleanup>
+
+	</testSuite>
+</testBundle>

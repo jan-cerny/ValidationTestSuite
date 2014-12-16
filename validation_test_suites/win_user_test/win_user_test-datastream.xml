@@ -1,324 +1,344 @@
-<?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_user_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_win_user_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:46" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_user_validation_content-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-cpe-dictionary.xml"><cat:catalog><cat:uri name="user_validation_content-cpe-oval.xml" uri="#scap_gov.nist_cref_user_validation_content-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_user_validation_content-xccdf.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-xccdf.xml"><cat:catalog><cat:uri name="user_validation_content-oval.xml" uri="#scap_gov.nist_cref_user_validation_content-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_user_validation_content-oval.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-oval.xml"/><component-ref id="scap_gov.nist_cref_user_validation_content-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_user_validation_content-xccdf.xml" timestamp="2012-11-09T09:58:46"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf-for-user-test-validation-content" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
-<!--
-<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_user-test-validation-content" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd" style="SCAP_1.2">
--->
-  <xccdf:status date="2011-08-08">draft</xccdf:status>
-  <xccdf:title>XCCDF Benchmark That References the Validation Content for the user_test</xccdf:title>
-  <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the user_test.</xccdf:description>
-  <xccdf:version update="2011-08-08">1.0</xccdf:version>
-  <xccdf:metadata>
-    <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
-    <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
-    <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
-    <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
-  </xccdf:metadata>
-  <xccdf:Profile id="xccdf_gov.nist.validation.winUser_profile_user" prohibitChanges="1">
-    <xccdf:title>XCCDF Profile That References the Validation Content for the user_test</xccdf:title>
-    <xccdf:description>This Profile allows for the tailoring of the validation content for the user_test.</xccdf:description>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-1" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-2" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-3" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-4" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-5" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-6" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-7" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-8" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-9" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-10" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-11" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-12" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-13" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-14" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-15" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-16" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-17" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-18" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-19" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-20" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-21" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-22" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-23" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-24" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-25" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-26" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-27" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-28" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-29" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-30" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-31" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-32" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-33" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-34" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-35" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-36" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist_rule_user_test-37" selected="true"/>
-    <!--<select idref="xccdf_gov.nist_rule_user_test-38" selected="true"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_user_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_gov.nist_datastream_win_user_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:46" use-case="CONFIGURATION">
+    <dictionaries>
+      <component-ref id="scap_gov.nist_cref_user_validation_content-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-cpe-dictionary.xml">
+        <cat:catalog>
+          <cat:uri name="user_validation_content-cpe-oval.xml" uri="#scap_gov.nist_cref_user_validation_content-cpe-oval.xml"/>
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref id="scap_gov.nist_cref_user_validation_content-xccdf.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-xccdf.xml">
+        <cat:catalog>
+          <cat:uri name="user_validation_content-oval.xml" uri="#scap_gov.nist_cref_user_validation_content-oval.xml"/>
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref id="scap_gov.nist_cref_user_validation_content-oval.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-oval.xml"/>
+      <component-ref id="scap_gov.nist_cref_user_validation_content-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_user_validation_content-cpe-oval.xml"/>
+    </checks>
+  </data-stream>
+  <component id="scap_gov.nist_comp_user_validation_content-xccdf.xml" timestamp="2012-11-09T09:58:46">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf-for-user-test-validation-content" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+      <xccdf:status date="2011-08-08">draft</xccdf:status>
+      <xccdf:title>XCCDF Benchmark That References the Validation Content for the user_test</xccdf:title>
+      <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the user_test.</xccdf:description>
+      <xccdf:version update="2011-08-08">1.0</xccdf:version>
+      <xccdf:metadata>
+        <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+        <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
+        <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
+      </xccdf:metadata>
+      <xccdf:Profile id="xccdf_gov.nist.validation.winUser_profile_user" prohibitChanges="1">
+        <xccdf:title>XCCDF Profile That References the Validation Content for the user_test</xccdf:title>
+        <xccdf:description>This Profile allows for the tailoring of the validation content for the user_test.</xccdf:description>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-1" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-2" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-3" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-4" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-5" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-6" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-7" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-8" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-9" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-10" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-11" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-12" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-13" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-14" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-15" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-16" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-17" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-18" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-19" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-20" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-21" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-22" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-23" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-24" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-25" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-26" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-27" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-28" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-29" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-30" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-31" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-32" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-33" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-34" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-35" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-36" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist_rule_user_test-37" selected="true"/>
+        <!--<select idref="xccdf_gov.nist_rule_user_test-38" selected="true"/>
     <select idref="xccdf_gov.nist_rule_user_test-39" selected="true"/>
     <select idref="xccdf_gov.nist_rule_user_test-40" selected="true"/>
     <select idref="xccdf_gov.nist_rule_user_test-41" selected="true"/>
     <select idref="xccdf_gov.nist_rule_user_test-42" selected="true"/>
     <select idref="xccdf_gov.nist_rule_user_test-43" selected="true"/>-->
-  </xccdf:Profile>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-1" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:1"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-2" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:2"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-3" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:3"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-4" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:4"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-5" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:5"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-6" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:6"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-7" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:7"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-8" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:8"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-9" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:9"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-10" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:10"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-11" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:11"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-12" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:12"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-13" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:13"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-14" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:14"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-15" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:15"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-16" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:16"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-17" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:17"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-18" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:18"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-19" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:19"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-20" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:20"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-21" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:21"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-22" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:22"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-23" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:23"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-24" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:24"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-25" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:25"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-26" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:26"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-27" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:27"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-28" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:28"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-29" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:29"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-30" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:30"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-31" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:31"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-32" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:32"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-33" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:33"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-34" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:34"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-35" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:35"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-36" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:36"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <xccdf:Rule id="xccdf_gov.nist_rule_user_test-37" selected="true">
-    <xccdf:title>TODO</xccdf:title>
-    <xccdf:description>TODO</xccdf:description>
-    <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:37"/>
-    </xccdf:check>
-  </xccdf:Rule>
-  <!--<Rule id="xccdf_gov.nist_rule_user_test-38" selected="true">
+      </xccdf:Profile>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-1" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:1"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-2" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:2"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-3" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:3"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-4" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:4"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-5" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:5"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-6" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:6"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-7" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:7"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-8" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:8"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-9" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:9"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-10" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:10"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-11" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:11"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-12" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:12"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-13" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:13"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-14" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:14"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-15" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:15"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-16" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:16"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-17" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:17"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-18" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:18"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-19" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:19"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-20" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:20"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-21" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:21"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-22" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:22"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-23" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:23"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-24" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:24"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-25" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:25"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-26" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:26"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-27" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:27"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-28" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:28"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-29" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:29"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-30" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:30"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-31" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:31"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-32" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:32"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-33" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:33"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-34" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:34"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-35" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:35"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-36" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:36"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <xccdf:Rule id="xccdf_gov.nist_rule_user_test-37" selected="true">
+        <xccdf:title>TODO</xccdf:title>
+        <xccdf:description>TODO</xccdf:description>
+        <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+          <xccdf:check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:37"/>
+        </xccdf:check>
+      </xccdf:Rule>
+      <!--<Rule id="xccdf_gov.nist_rule_user_test-38" selected="true">
     <title>TODO</title>
     <description>TODO</description>
     <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
@@ -360,497 +380,500 @@
       <check-content-ref href="user_validation_content-oval.xml" name="oval:nist.validation.winUser:def:43"/>
     </check>
   </Rule>-->
- 
-</xccdf:Benchmark></component><component id="scap_gov.nist_comp_user_validation_content-oval.xml" timestamp="2012-11-09T09:58:46"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
-  <generator>
-    <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
-    <oval:product_version>1.0</oval:product_version>
-    <oval:schema_version>5.10</oval:schema_version>
-    <oval:timestamp>2011-08-08T09:35:40-04:00</oval:timestamp>
-  </generator>
-  <definitions>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:1" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:1"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:2" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:2"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:3" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:3"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:4" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:4"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:5" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:5"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:6" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:6"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:7" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:7"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:8" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:8"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:9" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:9"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:10" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:10"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:11" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:11"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:12" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:12"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:13" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:13"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:14" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:14"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:15" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:15"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:16" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:16"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:17" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:17"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:18" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:18"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:19" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:19"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:20" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:20"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:21" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:21"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:22" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:22"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:23" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:23"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:24" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:24"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:25" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:25"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:26" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:26"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:27" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:27"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:28" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:28"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:29" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:29"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:30" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:30"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:31" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:31"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:32" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:32"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:33" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:33"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:34" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:34"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:35" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:35"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:36" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:36"/>
-      </criteria>
-    </definition>
-    <definition class="compliance" id="oval:nist.validation.winUser:def:37" version="1">
-      <metadata>
-        <title>TODO</title>
-        <description>TODO</description>
-        <expected_results>
-          <result configuration="1">TODO</result>
-          <result configuration="2">TODO</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:37"/>
-      </criteria>
-    </definition>
-   <!-- <definition id="oval:nist.validation.winUser:def:38" version="1" class="compliance">
+
+    </xccdf:Benchmark>
+  </component>
+  <component id="scap_gov.nist_comp_user_validation_content-oval.xml" timestamp="2012-11-09T09:58:46">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
+      <generator>
+        <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
+        <oval:product_version>1.0</oval:product_version>
+        <oval:schema_version>5.10</oval:schema_version>
+        <oval:timestamp>2011-08-08T09:35:40-04:00</oval:timestamp>
+      </generator>
+      <definitions>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:1" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:1"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:2" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:2"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:3" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:3"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:4" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:4"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:5" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:5"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:6" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:6"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:7" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:7"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:8" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:8"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:9" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:9"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:10" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:10"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:11" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:11"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:12" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:12"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:13" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:13"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:14" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:14"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:15" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:15"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:16" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:16"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:17" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:17"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:18" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:18"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:19" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:19"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:20" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:20"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:21" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:21"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:22" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:22"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:23" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:23"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:24" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:24"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:25" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:25"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:26" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:26"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:27" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:27"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:28" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:28"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:29" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:29"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:30" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:30"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:31" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:31"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:32" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:32"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:33" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:33"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:34" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:34"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:35" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:35"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:36" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:36"/>
+          </criteria>
+        </definition>
+        <definition class="compliance" id="oval:nist.validation.winUser:def:37" version="1">
+          <metadata>
+            <title>TODO</title>
+            <description>TODO</description>
+            <expected_results>
+              <result configuration="1">TODO</result>
+              <result configuration="2">TODO</result>
+            </expected_results>
+          </metadata>
+          <criteria>
+            <criterion comment="TODO" test_ref="oval:nist.validation.winUser:tst:37"/>
+          </criteria>
+        </definition>
+        <!-- <definition id="oval:nist.validation.winUser:def:38" version="1" class="compliance">
       <metadata>
         <title>TODO</title>
         <description>TODO</description>
@@ -928,342 +951,963 @@
         <criterion test_ref="oval:nist.validation.winUser:tst:42" comment="TODO"/>
       </criteria>
     </definition>
- --> </definitions>
-  <tests>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="TODO" id="oval:nist.validation.winUser:tst:1" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winUser:tst:2" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:3" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="TODO" id="oval:nist.validation.winUser:tst:4" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:3"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:5" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="TODO" id="oval:nist.validation.winUser:tst:6" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:3"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winUser:tst:7" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:3"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:8" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:3"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="TODO" id="oval:nist.validation.winUser:tst:9" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:10" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:3"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:11" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:11"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:12" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:12"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:13" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:3"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:14" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:14"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:15" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:15"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:16" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:16"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:17" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:17"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:18" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:19" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:19"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:20" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:20"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:21" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:21"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:22" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:22"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:23" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:23"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:24" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:24"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:25" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:25"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:26" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:26"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:27" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:27"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:28" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:28"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:29" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:29"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:30" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:1"/>
-      <state state_ref="oval:nist.validation.winUser:ste:30"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:31" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:4"/>
-      <state state_ref="oval:nist.validation.winUser:ste:31"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:32" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:4"/>
-      <state state_ref="oval:nist.validation.winUser:ste:32"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:33" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:33"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:34" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:34"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:35" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:35"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:36" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:36"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:37" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:37"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:38" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:38"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:39" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:39"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:40" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:40"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:41" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:41"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:42" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:42"/>
-    </user_test>
-    <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:43" version="1">
-      <object object_ref="oval:nist.validation.winUser:obj:2"/>
-      <state state_ref="oval:nist.validation.winUser:ste:43"/>
-    </user_test>
-  </tests>
-  <objects>
-    <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:1" version="1">
-      <user datatype="string" operation="pattern match">.*</user>
-    </user_object>
-    <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:2" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\jdoe</user>
-    </user_object>
-    <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:3" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\doej</user>
-    </user_object>
-    <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:4" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\jdoe1</user>
-    </user_object>
-  </objects>
-  <states>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:11" version="1">
-      <user datatype="string" operation="pattern match">.*</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:12" version="1">
-      <user datatype="string" operation="pattern match">^.*\\jdoe$</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:14" version="1">
-      <user datatype="string" operation="case insensitive equals">doej</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:15" version="1">
-      <user datatype="string" operation="pattern match">^.*\\jdoe$</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:16" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\jdoe</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:17" version="1">
-      <user datatype="string" operation="case insensitive equals">doej</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:19" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\jdoe</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:20" version="1">
-      <user datatype="string" operation="pattern match">.*</user>
-    </user_state>
-    
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:21" version="1">
-      <user datatype="string" operation="equals">TESTMACHINE\jdoe</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:22" version="1">
-      <user datatype="string" operation="not equal">TESTMACHINE\jdoe1</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:23" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\jdoe</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:24" version="1">
-      <user datatype="string" operation="case insensitive not equal">TESTMACHINE\jdoe1</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:25" version="1">
-      <user datatype="string" operation="pattern match">^.*\\jd\w{2}$</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:26" version="1">
-      <user datatype="string" operation="equals">TESTMACHINE\jdoe1</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:27" version="1">
-      <user datatype="string" operation="not equal">TESTMACHINE\jdoe</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:28" version="1">
-      <user datatype="string" operation="case insensitive equals">TESTMACHINE\jdoe1</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:29" version="1">
-      <user datatype="string" operation="case insensitive not equal">TESTMACHINE\jdoe</user>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:30" version="1">
-      <user datatype="string" operation="pattern match">^.*\\jd\w{2}\d$</user>
-    </user_state>
+ -->
+      </definitions>
+      <tests>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="TODO" id="oval:nist.validation.winUser:tst:1" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winUser:tst:2" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:3" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="TODO" id="oval:nist.validation.winUser:tst:4" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:3"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:5" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="all_exist" comment="TODO" id="oval:nist.validation.winUser:tst:6" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:3"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="any_exist" comment="TODO" id="oval:nist.validation.winUser:tst:7" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:3"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:8" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:3"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="TODO" id="oval:nist.validation.winUser:tst:9" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:10" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:3"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:11" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:11"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:12" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:12"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:13" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:3"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:14" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:14"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:15" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:15"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:16" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:16"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:17" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:17"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:18" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:19" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:19"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:20" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:20"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:21" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:21"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:22" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:22"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:23" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:23"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:24" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:24"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:25" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:25"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:26" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:26"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:27" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:27"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:28" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:28"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:29" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:29"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:30" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:1"/>
+          <state state_ref="oval:nist.validation.winUser:ste:30"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:31" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:4"/>
+          <state state_ref="oval:nist.validation.winUser:ste:31"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:32" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:4"/>
+          <state state_ref="oval:nist.validation.winUser:ste:32"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:33" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:33"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:34" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:34"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:35" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:35"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:36" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:36"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:37" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:37"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:38" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:38"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:39" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:39"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:40" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:40"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:41" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:41"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:42" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:42"/>
+        </user_test>
+        <user_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winUser:tst:43" version="1">
+          <object object_ref="oval:nist.validation.winUser:obj:2"/>
+          <state state_ref="oval:nist.validation.winUser:ste:43"/>
+        </user_test>
+      </tests>
+      <objects>
+        <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:1" version="1">
+          <user datatype="string" operation="pattern match">.*</user>
+        </user_object>
+        <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:2" version="2">
+          <user datatype="string" operation="case insensitive equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:1"/>
+        </user_object>
+        <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:3" version="2">
+          <user datatype="string" operation="pattern match">^TESTMACHINE(\d{2})?\\[Dd][Oo][Ee][Jj]$</user>
+        </user_object>
+        <user_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:obj:4" version="2">
+          <user datatype="string" operation="pattern match">^TESTMACHINE(\d{2})?\\[Jj][Dd][Oo][Ee]1$</user>
+        </user_object>
+      </objects>
+      <states>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:11" version="1">
+          <user datatype="string" operation="pattern match">.*</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:12" version="1">
+          <user datatype="string" operation="pattern match">^.*\\jdoe$</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:14" version="1">
+          <user datatype="string" operation="case insensitive equals">doej</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:15" version="1">
+          <user datatype="string" operation="pattern match">^.*\\jdoe$</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:16" version="2">
+          <user datatype="string" operation="case insensitive equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:3"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:17" version="1">
+          <user datatype="string" operation="case insensitive equals">doej</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:19" version="2">
+          <user datatype="string" operation="case insensitive equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:3"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:20" version="1">
+          <user datatype="string" operation="pattern match">.*</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:21" version="2">
+          <user datatype="string" operation="equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:2"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:22" version="2">
+          <user datatype="string" operation="not equal" var_check="at least one" var_ref="oval:nist.validation.winUser:var:4"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:23" version="2">
+          <user datatype="string" operation="case insensitive equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:5"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:24" version="2">
+          <user datatype="string" operation="case insensitive not equal" var_check="at least one" var_ref="oval:nist.validation.winUser:var:6"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:25" version="1">
+          <user datatype="string" operation="pattern match">^.*\\jd\w{2}$</user>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:26" version="2">
+          <user datatype="string" operation="equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:5"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:27" version="2">
+          <user datatype="string" operation="not equal" var_check="all" var_ref="oval:nist.validation.winUser:var:1"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:28" version="2">
+          <user datatype="string" operation="case insensitive equals" var_check="at least one" var_ref="oval:nist.validation.winUser:var:6"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:29" version="2">
+          <user datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.winUser:var:5"/>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:30" version="1">
+          <user datatype="string" operation="pattern match">^.*\\jd\w{2}\d$</user>
+        </user_state>
 
-	<user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:31" version="1">
-      <enabled datatype="boolean" operation="equals">true</enabled>
-    </user_state>  
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:32" version="1">
-      <enabled datatype="boolean" operation="not equal">false</enabled>
-    </user_state>
-    
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:33" version="1">
-      <group datatype="string" entity_check="at least one" operation="equals">testgroup1</group>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:34" version="1">
-      <group datatype="string" entity_check="all" operation="not equal">testgroup3</group>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:35" version="1">
-      <group datatype="string" entity_check="at least one" operation="case insensitive equals">TestGroup1</group>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:36" version="1">
-      <group datatype="string" entity_check="all" operation="case insensitive not equal">testGroup3</group>
-    </user_state>
-    <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:37" version="1">
-      <group datatype="string" entity_check="at least one" operation="pattern match">.*1$</group>
-    </user_state>
-    
-    <win-def:user_state id="oval:nist.validation.winUser:ste:38" version="1">
-		<win-def:last_logon datatype="int" operation="equals">0</win-def:last_logon>
-    </win-def:user_state>
-    <win-def:user_state id="oval:nist.validation.winUser:ste:39" version="1">
-		<win-def:last_logon datatype="int" operation="not equal">1</win-def:last_logon>
-    </win-def:user_state>
-    <win-def:user_state id="oval:nist.validation.winUser:ste:40" version="1">
-		<win-def:last_logon datatype="int" operation="greater than">0</win-def:last_logon>
-    </win-def:user_state>
-    <win-def:user_state id="oval:nist.validation.winUser:ste:41" version="1">
-		<win-def:last_logon datatype="int" operation="less than">4294967295</win-def:last_logon>
-    </win-def:user_state>
-    <win-def:user_state id="oval:nist.validation.winUser:ste:42" version="1">
-		<win-def:last_logon datatype="int" operation="greater than or equal">0</win-def:last_logon>
-    </win-def:user_state>
-    <win-def:user_state id="oval:nist.validation.winUser:ste:43" version="1">
-		<win-def:last_logon datatype="int" operation="less than or equal">4294967295</win-def:last_logon>
-    </win-def:user_state>
-   
-  </states>
-</oval_definitions></component><component id="scap_gov.nist_comp_user_validation_content-cpe-oval.xml" timestamp="2012-11-09T09:58:46"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
-	<generator>
-		<oval:product_name>National Institute of Standards and Technology</oval:product_name>
-		<oval:schema_version>5.3</oval:schema_version>
-		<oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
-	</generator>
-	<!-- ==================================================================================================== -->
-	<!-- ==========================================  DEFINITIONS  =========================================== -->
-	<!-- ==================================================================================================== -->
-	<definitions>
-		<definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
-			<metadata>
-				<title>Microsoft Windows is installed</title>
-				<affected family="windows">
-					<platform>Microsoft Windows 7</platform>
-					<platform>Microsoft Windows 8</platform>
-					<platform>Microsoft Windows Vista</platform>
-					<platform>Microsoft Windows XP</platform>
-				</affected>
-				<reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
-				<description>The operating system installed on the system is Microsoft Windows</description>
-			</metadata>
-			<criteria>
-				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
-			</criteria>
-		</definition>
-	</definitions>
-	<!-- ==================================================================================================== -->
-	<!-- ============================================  TESTS  =============================================== -->
-	<!-- ==================================================================================================== -->
-	<tests>
-		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
-			<object object_ref="oval:org.mitre.oval:obj:99"/>
-			<state state_ref="oval:org.mitre.oval:ste:99"/>
-		</family_test>
-	</tests>
-	<!-- ==================================================================================================== -->
-	<!-- ============================================  OBJECTS  ============================================= -->
-	<!-- ==================================================================================================== -->
-	<objects>
-		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
-	</objects>
-	<!-- ==================================================================================================== -->
-	<!-- =============================================  STATES  ============================================= -->
-	<!-- ==================================================================================================== -->
-	<states>
-		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
-			<family operation="equals">windows</family>
-		</family_state>
-	</states>
-	<!-- ==================================================================================================== -->
-	<!-- ==================================================================================================== -->
-	<!-- ==================================================================================================== -->
-</oval_definitions></component><component id="scap_gov.nist_comp_user_validation_content-cpe-dictionary.xml" timestamp="2012-11-09T09:58:46"><cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
-	<cpe-item name="cpe:/o:microsoft:windows">
-		<title xml:lang="en-US">Microsoft Windows</title>
-		<notes xml:lang="en-US">
-			<note>This CPE Name represents the Windows OS</note>
-		</notes>
-		<check href="user_validation_content-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
-	</cpe-item>
-</cpe-list></component></data-stream-collection>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:31" version="1">
+          <enabled datatype="boolean" operation="equals">true</enabled>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:32" version="1">
+          <enabled datatype="boolean" operation="not equal">false</enabled>
+        </user_state>
+
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:33" version="1">
+          <group datatype="string" entity_check="at least one" operation="equals">testgroup1</group>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:34" version="1">
+          <group datatype="string" entity_check="all" operation="not equal">testgroup3</group>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:35" version="1">
+          <group datatype="string" entity_check="at least one" operation="case insensitive equals">TestGroup1</group>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:36" version="1">
+          <group datatype="string" entity_check="all" operation="case insensitive not equal">testGroup3</group>
+        </user_state>
+        <user_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winUser:ste:37" version="1">
+          <group datatype="string" entity_check="at least one" operation="pattern match">.*1$</group>
+        </user_state>
+
+        <win-def:user_state id="oval:nist.validation.winUser:ste:38" version="1">
+          <win-def:last_logon datatype="int" operation="equals">0</win-def:last_logon>
+        </win-def:user_state>
+        <win-def:user_state id="oval:nist.validation.winUser:ste:39" version="1">
+          <win-def:last_logon datatype="int" operation="not equal">1</win-def:last_logon>
+        </win-def:user_state>
+        <win-def:user_state id="oval:nist.validation.winUser:ste:40" version="1">
+          <win-def:last_logon datatype="int" operation="greater than">0</win-def:last_logon>
+        </win-def:user_state>
+        <win-def:user_state id="oval:nist.validation.winUser:ste:41" version="1">
+          <win-def:last_logon datatype="int" operation="less than">4294967295</win-def:last_logon>
+        </win-def:user_state>
+        <win-def:user_state id="oval:nist.validation.winUser:ste:42" version="1">
+          <win-def:last_logon datatype="int" operation="greater than or equal">0</win-def:last_logon>
+        </win-def:user_state>
+        <win-def:user_state id="oval:nist.validation.winUser:ste:43" version="1">
+          <win-def:last_logon datatype="int" operation="less than or equal">4294967295</win-def:last_logon>
+        </win-def:user_state>
+      </states>
+      <variables>
+        <constant_variable id="oval:nist.validation.winUser:var:1" version="1" datatype="string" comment="TESTMACHINExx\jdoe">
+          <value>TESTMACHINE\jdoe</value>
+          <value>TESTMACHINE01\jdoe</value>
+          <value>TESTMACHINE02\jdoe</value>
+          <value>TESTMACHINE03\jdoe</value>
+          <value>TESTMACHINE04\jdoe</value>
+          <value>TESTMACHINE05\jdoe</value>
+          <value>TESTMACHINE06\jdoe</value>
+          <value>TESTMACHINE07\jdoe</value>
+          <value>TESTMACHINE08\jdoe</value>
+          <value>TESTMACHINE09\jdoe</value>
+          <value>TESTMACHINE10\jdoe</value>
+          <value>TESTMACHINE11\jdoe</value>
+          <value>TESTMACHINE12\jdoe</value>
+          <value>TESTMACHINE13\jdoe</value>
+          <value>TESTMACHINE14\jdoe</value>
+          <value>TESTMACHINE15\jdoe</value>
+          <value>TESTMACHINE16\jdoe</value>
+          <value>TESTMACHINE17\jdoe</value>
+          <value>TESTMACHINE18\jdoe</value>
+          <value>TESTMACHINE19\jdoe</value>
+          <value>TESTMACHINE20\jdoe</value>
+          <value>TESTMACHINE21\jdoe</value>
+          <value>TESTMACHINE22\jdoe</value>
+          <value>TESTMACHINE23\jdoe</value>
+          <value>TESTMACHINE24\jdoe</value>
+          <value>TESTMACHINE25\jdoe</value>
+          <value>TESTMACHINE26\jdoe</value>
+          <value>TESTMACHINE27\jdoe</value>
+          <value>TESTMACHINE28\jdoe</value>
+          <value>TESTMACHINE29\jdoe</value>
+          <value>TESTMACHINE30\jdoe</value>
+          <value>TESTMACHINE31\jdoe</value>
+          <value>TESTMACHINE32\jdoe</value>
+          <value>TESTMACHINE33\jdoe</value>
+          <value>TESTMACHINE34\jdoe</value>
+          <value>TESTMACHINE35\jdoe</value>
+          <value>TESTMACHINE36\jdoe</value>
+          <value>TESTMACHINE37\jdoe</value>
+          <value>TESTMACHINE38\jdoe</value>
+          <value>TESTMACHINE39\jdoe</value>
+          <value>TESTMACHINE40\jdoe</value>
+          <value>TESTMACHINE41\jdoe</value>
+          <value>TESTMACHINE42\jdoe</value>
+          <value>TESTMACHINE43\jdoe</value>
+          <value>TESTMACHINE44\jdoe</value>
+          <value>TESTMACHINE45\jdoe</value>
+          <value>TESTMACHINE46\jdoe</value>
+          <value>TESTMACHINE47\jdoe</value>
+          <value>TESTMACHINE48\jdoe</value>
+          <value>TESTMACHINE49\jdoe</value>
+          <value>TESTMACHINE50\jdoe</value>
+          <value>TESTMACHINE51\jdoe</value>
+          <value>TESTMACHINE52\jdoe</value>
+          <value>TESTMACHINE53\jdoe</value>
+          <value>TESTMACHINE54\jdoe</value>
+          <value>TESTMACHINE55\jdoe</value>
+          <value>TESTMACHINE56\jdoe</value>
+          <value>TESTMACHINE57\jdoe</value>
+          <value>TESTMACHINE58\jdoe</value>
+          <value>TESTMACHINE59\jdoe</value>
+          <value>TESTMACHINE60\jdoe</value>
+          <value>TESTMACHINE61\jdoe</value>
+          <value>TESTMACHINE62\jdoe</value>
+          <value>TESTMACHINE63\jdoe</value>
+          <value>TESTMACHINE64\jdoe</value>
+          <value>TESTMACHINE65\jdoe</value>
+          <value>TESTMACHINE66\jdoe</value>
+          <value>TESTMACHINE67\jdoe</value>
+          <value>TESTMACHINE68\jdoe</value>
+          <value>TESTMACHINE69\jdoe</value>
+          <value>TESTMACHINE70\jdoe</value>
+          <value>TESTMACHINE71\jdoe</value>
+          <value>TESTMACHINE72\jdoe</value>
+          <value>TESTMACHINE73\jdoe</value>
+          <value>TESTMACHINE74\jdoe</value>
+          <value>TESTMACHINE75\jdoe</value>
+          <value>TESTMACHINE76\jdoe</value>
+          <value>TESTMACHINE77\jdoe</value>
+          <value>TESTMACHINE78\jdoe</value>
+          <value>TESTMACHINE79\jdoe</value>
+          <value>TESTMACHINE80\jdoe</value>
+          <value>TESTMACHINE81\jdoe</value>
+          <value>TESTMACHINE82\jdoe</value>
+          <value>TESTMACHINE83\jdoe</value>
+          <value>TESTMACHINE84\jdoe</value>
+          <value>TESTMACHINE85\jdoe</value>
+          <value>TESTMACHINE86\jdoe</value>
+          <value>TESTMACHINE87\jdoe</value>
+          <value>TESTMACHINE88\jdoe</value>
+          <value>TESTMACHINE89\jdoe</value>
+          <value>TESTMACHINE90\jdoe</value>
+          <value>TESTMACHINE91\jdoe</value>
+          <value>TESTMACHINE92\jdoe</value>
+          <value>TESTMACHINE93\jdoe</value>
+          <value>TESTMACHINE94\jdoe</value>
+          <value>TESTMACHINE95\jdoe</value>
+          <value>TESTMACHINE96\jdoe</value>
+          <value>TESTMACHINE97\jdoe</value>
+          <value>TESTMACHINE98\jdoe</value>
+          <value>TESTMACHINE99\jdoe</value>
+        </constant_variable>
+        <constant_variable id="oval:nist.validation.winUser:var:2" version="1" datatype="string" comment="TESTMACHINExx\jdoe">
+          <value>TESTMACHINE\jdoe</value>
+          <value>TESTMACHINE01\jdoe</value>
+          <value>TESTMACHINE02\jdoe</value>
+          <value>TESTMACHINE03\jdoe</value>
+          <value>TESTMACHINE04\jdoe</value>
+          <value>TESTMACHINE05\jdoe</value>
+          <value>TESTMACHINE06\jdoe</value>
+          <value>TESTMACHINE07\jdoe</value>
+          <value>TESTMACHINE08\jdoe</value>
+          <value>TESTMACHINE09\jdoe</value>
+          <value>TESTMACHINE10\jdoe</value>
+          <value>TESTMACHINE11\jdoe</value>
+          <value>TESTMACHINE12\jdoe</value>
+          <value>TESTMACHINE13\jdoe</value>
+          <value>TESTMACHINE14\jdoe</value>
+          <value>TESTMACHINE15\jdoe</value>
+          <value>TESTMACHINE16\jdoe</value>
+          <value>TESTMACHINE17\jdoe</value>
+          <value>TESTMACHINE18\jdoe</value>
+          <value>TESTMACHINE19\jdoe</value>
+          <value>TESTMACHINE20\jdoe</value>
+          <value>TESTMACHINE21\jdoe</value>
+          <value>TESTMACHINE22\jdoe</value>
+          <value>TESTMACHINE23\jdoe</value>
+          <value>TESTMACHINE24\jdoe</value>
+          <value>TESTMACHINE25\jdoe</value>
+          <value>TESTMACHINE26\jdoe</value>
+          <value>TESTMACHINE27\jdoe</value>
+          <value>TESTMACHINE28\jdoe</value>
+          <value>TESTMACHINE29\jdoe</value>
+          <value>TESTMACHINE30\jdoe</value>
+          <value>TESTMACHINE31\jdoe</value>
+          <value>TESTMACHINE32\jdoe</value>
+          <value>TESTMACHINE33\jdoe</value>
+          <value>TESTMACHINE34\jdoe</value>
+          <value>TESTMACHINE35\jdoe</value>
+          <value>TESTMACHINE36\jdoe</value>
+          <value>TESTMACHINE37\jdoe</value>
+          <value>TESTMACHINE38\jdoe</value>
+          <value>TESTMACHINE39\jdoe</value>
+          <value>TESTMACHINE40\jdoe</value>
+          <value>TESTMACHINE41\jdoe</value>
+          <value>TESTMACHINE42\jdoe</value>
+          <value>TESTMACHINE43\jdoe</value>
+          <value>TESTMACHINE44\jdoe</value>
+          <value>TESTMACHINE45\jdoe</value>
+          <value>TESTMACHINE46\jdoe</value>
+          <value>TESTMACHINE47\jdoe</value>
+          <value>TESTMACHINE48\jdoe</value>
+          <value>TESTMACHINE49\jdoe</value>
+          <value>TESTMACHINE50\jdoe</value>
+          <value>TESTMACHINE51\jdoe</value>
+          <value>TESTMACHINE52\jdoe</value>
+          <value>TESTMACHINE53\jdoe</value>
+          <value>TESTMACHINE54\jdoe</value>
+          <value>TESTMACHINE55\jdoe</value>
+          <value>TESTMACHINE56\jdoe</value>
+          <value>TESTMACHINE57\jdoe</value>
+          <value>TESTMACHINE58\jdoe</value>
+          <value>TESTMACHINE59\jdoe</value>
+          <value>TESTMACHINE60\jdoe</value>
+          <value>TESTMACHINE61\jdoe</value>
+          <value>TESTMACHINE62\jdoe</value>
+          <value>TESTMACHINE63\jdoe</value>
+          <value>TESTMACHINE64\jdoe</value>
+          <value>TESTMACHINE65\jdoe</value>
+          <value>TESTMACHINE66\jdoe</value>
+          <value>TESTMACHINE67\jdoe</value>
+          <value>TESTMACHINE68\jdoe</value>
+          <value>TESTMACHINE69\jdoe</value>
+          <value>TESTMACHINE70\jdoe</value>
+          <value>TESTMACHINE71\jdoe</value>
+          <value>TESTMACHINE72\jdoe</value>
+          <value>TESTMACHINE73\jdoe</value>
+          <value>TESTMACHINE74\jdoe</value>
+          <value>TESTMACHINE75\jdoe</value>
+          <value>TESTMACHINE76\jdoe</value>
+          <value>TESTMACHINE77\jdoe</value>
+          <value>TESTMACHINE78\jdoe</value>
+          <value>TESTMACHINE79\jdoe</value>
+          <value>TESTMACHINE80\jdoe</value>
+          <value>TESTMACHINE81\jdoe</value>
+          <value>TESTMACHINE82\jdoe</value>
+          <value>TESTMACHINE83\jdoe</value>
+          <value>TESTMACHINE84\jdoe</value>
+          <value>TESTMACHINE85\jdoe</value>
+          <value>TESTMACHINE86\jdoe</value>
+          <value>TESTMACHINE87\jdoe</value>
+          <value>TESTMACHINE88\jdoe</value>
+          <value>TESTMACHINE89\jdoe</value>
+          <value>TESTMACHINE90\jdoe</value>
+          <value>TESTMACHINE91\jdoe</value>
+          <value>TESTMACHINE92\jdoe</value>
+          <value>TESTMACHINE93\jdoe</value>
+          <value>TESTMACHINE94\jdoe</value>
+          <value>TESTMACHINE95\jdoe</value>
+          <value>TESTMACHINE96\jdoe</value>
+          <value>TESTMACHINE97\jdoe</value>
+          <value>TESTMACHINE98\jdoe</value>
+          <value>TESTMACHINE99\jdoe</value>
+        </constant_variable>
+        <constant_variable id="oval:nist.validation.winUser:var:3" version="1" datatype="string" comment="TESTMACHINExx\Jdoe">
+          <value>TESTMACHINE\Jdoe</value>
+          <value>TESTMACHINE01\Jdoe</value>
+          <value>TESTMACHINE02\Jdoe</value>
+          <value>TESTMACHINE03\Jdoe</value>
+          <value>TESTMACHINE04\Jdoe</value>
+          <value>TESTMACHINE05\Jdoe</value>
+          <value>TESTMACHINE06\Jdoe</value>
+          <value>TESTMACHINE07\Jdoe</value>
+          <value>TESTMACHINE08\Jdoe</value>
+          <value>TESTMACHINE09\Jdoe</value>
+          <value>TESTMACHINE10\Jdoe</value>
+          <value>TESTMACHINE11\Jdoe</value>
+          <value>TESTMACHINE12\Jdoe</value>
+          <value>TESTMACHINE13\Jdoe</value>
+          <value>TESTMACHINE14\Jdoe</value>
+          <value>TESTMACHINE15\Jdoe</value>
+          <value>TESTMACHINE16\Jdoe</value>
+          <value>TESTMACHINE17\Jdoe</value>
+          <value>TESTMACHINE18\Jdoe</value>
+          <value>TESTMACHINE19\Jdoe</value>
+          <value>TESTMACHINE20\Jdoe</value>
+          <value>TESTMACHINE21\Jdoe</value>
+          <value>TESTMACHINE22\Jdoe</value>
+          <value>TESTMACHINE23\Jdoe</value>
+          <value>TESTMACHINE24\Jdoe</value>
+          <value>TESTMACHINE25\Jdoe</value>
+          <value>TESTMACHINE26\Jdoe</value>
+          <value>TESTMACHINE27\Jdoe</value>
+          <value>TESTMACHINE28\Jdoe</value>
+          <value>TESTMACHINE29\Jdoe</value>
+          <value>TESTMACHINE30\Jdoe</value>
+          <value>TESTMACHINE31\Jdoe</value>
+          <value>TESTMACHINE32\Jdoe</value>
+          <value>TESTMACHINE33\Jdoe</value>
+          <value>TESTMACHINE34\Jdoe</value>
+          <value>TESTMACHINE35\Jdoe</value>
+          <value>TESTMACHINE36\Jdoe</value>
+          <value>TESTMACHINE37\Jdoe</value>
+          <value>TESTMACHINE38\Jdoe</value>
+          <value>TESTMACHINE39\Jdoe</value>
+          <value>TESTMACHINE40\Jdoe</value>
+          <value>TESTMACHINE41\Jdoe</value>
+          <value>TESTMACHINE42\Jdoe</value>
+          <value>TESTMACHINE43\Jdoe</value>
+          <value>TESTMACHINE44\Jdoe</value>
+          <value>TESTMACHINE45\Jdoe</value>
+          <value>TESTMACHINE46\Jdoe</value>
+          <value>TESTMACHINE47\Jdoe</value>
+          <value>TESTMACHINE48\Jdoe</value>
+          <value>TESTMACHINE49\Jdoe</value>
+          <value>TESTMACHINE50\Jdoe</value>
+          <value>TESTMACHINE51\Jdoe</value>
+          <value>TESTMACHINE52\Jdoe</value>
+          <value>TESTMACHINE53\Jdoe</value>
+          <value>TESTMACHINE54\Jdoe</value>
+          <value>TESTMACHINE55\Jdoe</value>
+          <value>TESTMACHINE56\Jdoe</value>
+          <value>TESTMACHINE57\Jdoe</value>
+          <value>TESTMACHINE58\Jdoe</value>
+          <value>TESTMACHINE59\Jdoe</value>
+          <value>TESTMACHINE60\Jdoe</value>
+          <value>TESTMACHINE61\Jdoe</value>
+          <value>TESTMACHINE62\Jdoe</value>
+          <value>TESTMACHINE63\Jdoe</value>
+          <value>TESTMACHINE64\Jdoe</value>
+          <value>TESTMACHINE65\Jdoe</value>
+          <value>TESTMACHINE66\Jdoe</value>
+          <value>TESTMACHINE67\Jdoe</value>
+          <value>TESTMACHINE68\Jdoe</value>
+          <value>TESTMACHINE69\Jdoe</value>
+          <value>TESTMACHINE70\Jdoe</value>
+          <value>TESTMACHINE71\Jdoe</value>
+          <value>TESTMACHINE72\Jdoe</value>
+          <value>TESTMACHINE73\Jdoe</value>
+          <value>TESTMACHINE74\Jdoe</value>
+          <value>TESTMACHINE75\Jdoe</value>
+          <value>TESTMACHINE76\Jdoe</value>
+          <value>TESTMACHINE77\Jdoe</value>
+          <value>TESTMACHINE78\Jdoe</value>
+          <value>TESTMACHINE79\Jdoe</value>
+          <value>TESTMACHINE80\Jdoe</value>
+          <value>TESTMACHINE81\Jdoe</value>
+          <value>TESTMACHINE82\Jdoe</value>
+          <value>TESTMACHINE83\Jdoe</value>
+          <value>TESTMACHINE84\Jdoe</value>
+          <value>TESTMACHINE85\Jdoe</value>
+          <value>TESTMACHINE86\Jdoe</value>
+          <value>TESTMACHINE87\Jdoe</value>
+          <value>TESTMACHINE88\Jdoe</value>
+          <value>TESTMACHINE89\Jdoe</value>
+          <value>TESTMACHINE90\Jdoe</value>
+          <value>TESTMACHINE91\Jdoe</value>
+          <value>TESTMACHINE92\Jdoe</value>
+          <value>TESTMACHINE93\Jdoe</value>
+          <value>TESTMACHINE94\Jdoe</value>
+          <value>TESTMACHINE95\Jdoe</value>
+          <value>TESTMACHINE96\Jdoe</value>
+          <value>TESTMACHINE97\Jdoe</value>
+          <value>TESTMACHINE98\Jdoe</value>
+          <value>TESTMACHINE99\Jdoe</value>
+        </constant_variable>
+        <constant_variable id="oval:nist.validation.winUser:var:4" version="1" datatype="string" comment="TESTMACHINExx\jdoe1">
+          <value>TESTMACHINE\jdoe1</value>
+          <value>TESTMACHINE01\jdoe1</value>
+          <value>TESTMACHINE02\jdoe1</value>
+          <value>TESTMACHINE03\jdoe1</value>
+          <value>TESTMACHINE04\jdoe1</value>
+          <value>TESTMACHINE05\jdoe1</value>
+          <value>TESTMACHINE06\jdoe1</value>
+          <value>TESTMACHINE07\jdoe1</value>
+          <value>TESTMACHINE08\jdoe1</value>
+          <value>TESTMACHINE09\jdoe1</value>
+          <value>TESTMACHINE10\jdoe1</value>
+          <value>TESTMACHINE11\jdoe1</value>
+          <value>TESTMACHINE12\jdoe1</value>
+          <value>TESTMACHINE13\jdoe1</value>
+          <value>TESTMACHINE14\jdoe1</value>
+          <value>TESTMACHINE15\jdoe1</value>
+          <value>TESTMACHINE16\jdoe1</value>
+          <value>TESTMACHINE17\jdoe1</value>
+          <value>TESTMACHINE18\jdoe1</value>
+          <value>TESTMACHINE19\jdoe1</value>
+          <value>TESTMACHINE20\jdoe1</value>
+          <value>TESTMACHINE21\jdoe1</value>
+          <value>TESTMACHINE22\jdoe1</value>
+          <value>TESTMACHINE23\jdoe1</value>
+          <value>TESTMACHINE24\jdoe1</value>
+          <value>TESTMACHINE25\jdoe1</value>
+          <value>TESTMACHINE26\jdoe1</value>
+          <value>TESTMACHINE27\jdoe1</value>
+          <value>TESTMACHINE28\jdoe1</value>
+          <value>TESTMACHINE29\jdoe1</value>
+          <value>TESTMACHINE30\jdoe1</value>
+          <value>TESTMACHINE31\jdoe1</value>
+          <value>TESTMACHINE32\jdoe1</value>
+          <value>TESTMACHINE33\jdoe1</value>
+          <value>TESTMACHINE34\jdoe1</value>
+          <value>TESTMACHINE35\jdoe1</value>
+          <value>TESTMACHINE36\jdoe1</value>
+          <value>TESTMACHINE37\jdoe1</value>
+          <value>TESTMACHINE38\jdoe1</value>
+          <value>TESTMACHINE39\jdoe1</value>
+          <value>TESTMACHINE40\jdoe1</value>
+          <value>TESTMACHINE41\jdoe1</value>
+          <value>TESTMACHINE42\jdoe1</value>
+          <value>TESTMACHINE43\jdoe1</value>
+          <value>TESTMACHINE44\jdoe1</value>
+          <value>TESTMACHINE45\jdoe1</value>
+          <value>TESTMACHINE46\jdoe1</value>
+          <value>TESTMACHINE47\jdoe1</value>
+          <value>TESTMACHINE48\jdoe1</value>
+          <value>TESTMACHINE49\jdoe1</value>
+          <value>TESTMACHINE50\jdoe1</value>
+          <value>TESTMACHINE51\jdoe1</value>
+          <value>TESTMACHINE52\jdoe1</value>
+          <value>TESTMACHINE53\jdoe1</value>
+          <value>TESTMACHINE54\jdoe1</value>
+          <value>TESTMACHINE55\jdoe1</value>
+          <value>TESTMACHINE56\jdoe1</value>
+          <value>TESTMACHINE57\jdoe1</value>
+          <value>TESTMACHINE58\jdoe1</value>
+          <value>TESTMACHINE59\jdoe1</value>
+          <value>TESTMACHINE60\jdoe1</value>
+          <value>TESTMACHINE61\jdoe1</value>
+          <value>TESTMACHINE62\jdoe1</value>
+          <value>TESTMACHINE63\jdoe1</value>
+          <value>TESTMACHINE64\jdoe1</value>
+          <value>TESTMACHINE65\jdoe1</value>
+          <value>TESTMACHINE66\jdoe1</value>
+          <value>TESTMACHINE67\jdoe1</value>
+          <value>TESTMACHINE68\jdoe1</value>
+          <value>TESTMACHINE69\jdoe1</value>
+          <value>TESTMACHINE70\jdoe1</value>
+          <value>TESTMACHINE71\jdoe1</value>
+          <value>TESTMACHINE72\jdoe1</value>
+          <value>TESTMACHINE73\jdoe1</value>
+          <value>TESTMACHINE74\jdoe1</value>
+          <value>TESTMACHINE75\jdoe1</value>
+          <value>TESTMACHINE76\jdoe1</value>
+          <value>TESTMACHINE77\jdoe1</value>
+          <value>TESTMACHINE78\jdoe1</value>
+          <value>TESTMACHINE79\jdoe1</value>
+          <value>TESTMACHINE80\jdoe1</value>
+          <value>TESTMACHINE81\jdoe1</value>
+          <value>TESTMACHINE82\jdoe1</value>
+          <value>TESTMACHINE83\jdoe1</value>
+          <value>TESTMACHINE84\jdoe1</value>
+          <value>TESTMACHINE85\jdoe1</value>
+          <value>TESTMACHINE86\jdoe1</value>
+          <value>TESTMACHINE87\jdoe1</value>
+          <value>TESTMACHINE88\jdoe1</value>
+          <value>TESTMACHINE89\jdoe1</value>
+          <value>TESTMACHINE90\jdoe1</value>
+          <value>TESTMACHINE91\jdoe1</value>
+          <value>TESTMACHINE92\jdoe1</value>
+          <value>TESTMACHINE93\jdoe1</value>
+          <value>TESTMACHINE94\jdoe1</value>
+          <value>TESTMACHINE95\jdoe1</value>
+          <value>TESTMACHINE96\jdoe1</value>
+          <value>TESTMACHINE97\jdoe1</value>
+          <value>TESTMACHINE98\jdoe1</value>
+          <value>TESTMACHINE99\jdoe1</value>
+        </constant_variable>
+        <constant_variable id="oval:nist.validation.winUser:var:5" version="1" datatype="string" comment="TESTMACHINExx\JDOe">
+          <value>TESTMACHINE\JDOe</value>
+          <value>TESTMACHINE01\JDOe</value>
+          <value>TESTMACHINE02\JDOe</value>
+          <value>TESTMACHINE03\JDOe</value>
+          <value>TESTMACHINE04\JDOe</value>
+          <value>TESTMACHINE05\JDOe</value>
+          <value>TESTMACHINE06\JDOe</value>
+          <value>TESTMACHINE07\JDOe</value>
+          <value>TESTMACHINE08\JDOe</value>
+          <value>TESTMACHINE09\JDOe</value>
+          <value>TESTMACHINE10\JDOe</value>
+          <value>TESTMACHINE11\JDOe</value>
+          <value>TESTMACHINE12\JDOe</value>
+          <value>TESTMACHINE13\JDOe</value>
+          <value>TESTMACHINE14\JDOe</value>
+          <value>TESTMACHINE15\JDOe</value>
+          <value>TESTMACHINE16\JDOe</value>
+          <value>TESTMACHINE17\JDOe</value>
+          <value>TESTMACHINE18\JDOe</value>
+          <value>TESTMACHINE19\JDOe</value>
+          <value>TESTMACHINE20\JDOe</value>
+          <value>TESTMACHINE21\JDOe</value>
+          <value>TESTMACHINE22\JDOe</value>
+          <value>TESTMACHINE23\JDOe</value>
+          <value>TESTMACHINE24\JDOe</value>
+          <value>TESTMACHINE25\JDOe</value>
+          <value>TESTMACHINE26\JDOe</value>
+          <value>TESTMACHINE27\JDOe</value>
+          <value>TESTMACHINE28\JDOe</value>
+          <value>TESTMACHINE29\JDOe</value>
+          <value>TESTMACHINE30\JDOe</value>
+          <value>TESTMACHINE31\JDOe</value>
+          <value>TESTMACHINE32\JDOe</value>
+          <value>TESTMACHINE33\JDOe</value>
+          <value>TESTMACHINE34\JDOe</value>
+          <value>TESTMACHINE35\JDOe</value>
+          <value>TESTMACHINE36\JDOe</value>
+          <value>TESTMACHINE37\JDOe</value>
+          <value>TESTMACHINE38\JDOe</value>
+          <value>TESTMACHINE39\JDOe</value>
+          <value>TESTMACHINE40\JDOe</value>
+          <value>TESTMACHINE41\JDOe</value>
+          <value>TESTMACHINE42\JDOe</value>
+          <value>TESTMACHINE43\JDOe</value>
+          <value>TESTMACHINE44\JDOe</value>
+          <value>TESTMACHINE45\JDOe</value>
+          <value>TESTMACHINE46\JDOe</value>
+          <value>TESTMACHINE47\JDOe</value>
+          <value>TESTMACHINE48\JDOe</value>
+          <value>TESTMACHINE49\JDOe</value>
+          <value>TESTMACHINE50\JDOe</value>
+          <value>TESTMACHINE51\JDOe</value>
+          <value>TESTMACHINE52\JDOe</value>
+          <value>TESTMACHINE53\JDOe</value>
+          <value>TESTMACHINE54\JDOe</value>
+          <value>TESTMACHINE55\JDOe</value>
+          <value>TESTMACHINE56\JDOe</value>
+          <value>TESTMACHINE57\JDOe</value>
+          <value>TESTMACHINE58\JDOe</value>
+          <value>TESTMACHINE59\JDOe</value>
+          <value>TESTMACHINE60\JDOe</value>
+          <value>TESTMACHINE61\JDOe</value>
+          <value>TESTMACHINE62\JDOe</value>
+          <value>TESTMACHINE63\JDOe</value>
+          <value>TESTMACHINE64\JDOe</value>
+          <value>TESTMACHINE65\JDOe</value>
+          <value>TESTMACHINE66\JDOe</value>
+          <value>TESTMACHINE67\JDOe</value>
+          <value>TESTMACHINE68\JDOe</value>
+          <value>TESTMACHINE69\JDOe</value>
+          <value>TESTMACHINE70\JDOe</value>
+          <value>TESTMACHINE71\JDOe</value>
+          <value>TESTMACHINE72\JDOe</value>
+          <value>TESTMACHINE73\JDOe</value>
+          <value>TESTMACHINE74\JDOe</value>
+          <value>TESTMACHINE75\JDOe</value>
+          <value>TESTMACHINE76\JDOe</value>
+          <value>TESTMACHINE77\JDOe</value>
+          <value>TESTMACHINE78\JDOe</value>
+          <value>TESTMACHINE79\JDOe</value>
+          <value>TESTMACHINE80\JDOe</value>
+          <value>TESTMACHINE81\JDOe</value>
+          <value>TESTMACHINE82\JDOe</value>
+          <value>TESTMACHINE83\JDOe</value>
+          <value>TESTMACHINE84\JDOe</value>
+          <value>TESTMACHINE85\JDOe</value>
+          <value>TESTMACHINE86\JDOe</value>
+          <value>TESTMACHINE87\JDOe</value>
+          <value>TESTMACHINE88\JDOe</value>
+          <value>TESTMACHINE89\JDOe</value>
+          <value>TESTMACHINE90\JDOe</value>
+          <value>TESTMACHINE91\JDOe</value>
+          <value>TESTMACHINE92\JDOe</value>
+          <value>TESTMACHINE93\JDOe</value>
+          <value>TESTMACHINE94\JDOe</value>
+          <value>TESTMACHINE95\JDOe</value>
+          <value>TESTMACHINE96\JDOe</value>
+          <value>TESTMACHINE97\JDOe</value>
+          <value>TESTMACHINE98\JDOe</value>
+          <value>TESTMACHINE99\JDOe</value>
+        </constant_variable>
+        <constant_variable id="oval:nist.validation.winUser:var:6" version="1" datatype="string" comment="TESTMACHINExx\JDOe1">
+          <value>TESTMACHINE\JDOe1</value>
+          <value>TESTMACHINE01\JDOe1</value>
+          <value>TESTMACHINE02\JDOe1</value>
+          <value>TESTMACHINE03\JDOe1</value>
+          <value>TESTMACHINE04\JDOe1</value>
+          <value>TESTMACHINE05\JDOe1</value>
+          <value>TESTMACHINE06\JDOe1</value>
+          <value>TESTMACHINE07\JDOe1</value>
+          <value>TESTMACHINE08\JDOe1</value>
+          <value>TESTMACHINE09\JDOe1</value>
+          <value>TESTMACHINE10\JDOe1</value>
+          <value>TESTMACHINE11\JDOe1</value>
+          <value>TESTMACHINE12\JDOe1</value>
+          <value>TESTMACHINE13\JDOe1</value>
+          <value>TESTMACHINE14\JDOe1</value>
+          <value>TESTMACHINE15\JDOe1</value>
+          <value>TESTMACHINE16\JDOe1</value>
+          <value>TESTMACHINE17\JDOe1</value>
+          <value>TESTMACHINE18\JDOe1</value>
+          <value>TESTMACHINE19\JDOe1</value>
+          <value>TESTMACHINE20\JDOe1</value>
+          <value>TESTMACHINE21\JDOe1</value>
+          <value>TESTMACHINE22\JDOe1</value>
+          <value>TESTMACHINE23\JDOe1</value>
+          <value>TESTMACHINE24\JDOe1</value>
+          <value>TESTMACHINE25\JDOe1</value>
+          <value>TESTMACHINE26\JDOe1</value>
+          <value>TESTMACHINE27\JDOe1</value>
+          <value>TESTMACHINE28\JDOe1</value>
+          <value>TESTMACHINE29\JDOe1</value>
+          <value>TESTMACHINE30\JDOe1</value>
+          <value>TESTMACHINE31\JDOe1</value>
+          <value>TESTMACHINE32\JDOe1</value>
+          <value>TESTMACHINE33\JDOe1</value>
+          <value>TESTMACHINE34\JDOe1</value>
+          <value>TESTMACHINE35\JDOe1</value>
+          <value>TESTMACHINE36\JDOe1</value>
+          <value>TESTMACHINE37\JDOe1</value>
+          <value>TESTMACHINE38\JDOe1</value>
+          <value>TESTMACHINE39\JDOe1</value>
+          <value>TESTMACHINE40\JDOe1</value>
+          <value>TESTMACHINE41\JDOe1</value>
+          <value>TESTMACHINE42\JDOe1</value>
+          <value>TESTMACHINE43\JDOe1</value>
+          <value>TESTMACHINE44\JDOe1</value>
+          <value>TESTMACHINE45\JDOe1</value>
+          <value>TESTMACHINE46\JDOe1</value>
+          <value>TESTMACHINE47\JDOe1</value>
+          <value>TESTMACHINE48\JDOe1</value>
+          <value>TESTMACHINE49\JDOe1</value>
+          <value>TESTMACHINE50\JDOe1</value>
+          <value>TESTMACHINE51\JDOe1</value>
+          <value>TESTMACHINE52\JDOe1</value>
+          <value>TESTMACHINE53\JDOe1</value>
+          <value>TESTMACHINE54\JDOe1</value>
+          <value>TESTMACHINE55\JDOe1</value>
+          <value>TESTMACHINE56\JDOe1</value>
+          <value>TESTMACHINE57\JDOe1</value>
+          <value>TESTMACHINE58\JDOe1</value>
+          <value>TESTMACHINE59\JDOe1</value>
+          <value>TESTMACHINE60\JDOe1</value>
+          <value>TESTMACHINE61\JDOe1</value>
+          <value>TESTMACHINE62\JDOe1</value>
+          <value>TESTMACHINE63\JDOe1</value>
+          <value>TESTMACHINE64\JDOe1</value>
+          <value>TESTMACHINE65\JDOe1</value>
+          <value>TESTMACHINE66\JDOe1</value>
+          <value>TESTMACHINE67\JDOe1</value>
+          <value>TESTMACHINE68\JDOe1</value>
+          <value>TESTMACHINE69\JDOe1</value>
+          <value>TESTMACHINE70\JDOe1</value>
+          <value>TESTMACHINE71\JDOe1</value>
+          <value>TESTMACHINE72\JDOe1</value>
+          <value>TESTMACHINE73\JDOe1</value>
+          <value>TESTMACHINE74\JDOe1</value>
+          <value>TESTMACHINE75\JDOe1</value>
+          <value>TESTMACHINE76\JDOe1</value>
+          <value>TESTMACHINE77\JDOe1</value>
+          <value>TESTMACHINE78\JDOe1</value>
+          <value>TESTMACHINE79\JDOe1</value>
+          <value>TESTMACHINE80\JDOe1</value>
+          <value>TESTMACHINE81\JDOe1</value>
+          <value>TESTMACHINE82\JDOe1</value>
+          <value>TESTMACHINE83\JDOe1</value>
+          <value>TESTMACHINE84\JDOe1</value>
+          <value>TESTMACHINE85\JDOe1</value>
+          <value>TESTMACHINE86\JDOe1</value>
+          <value>TESTMACHINE87\JDOe1</value>
+          <value>TESTMACHINE88\JDOe1</value>
+          <value>TESTMACHINE89\JDOe1</value>
+          <value>TESTMACHINE90\JDOe1</value>
+          <value>TESTMACHINE91\JDOe1</value>
+          <value>TESTMACHINE92\JDOe1</value>
+          <value>TESTMACHINE93\JDOe1</value>
+          <value>TESTMACHINE94\JDOe1</value>
+          <value>TESTMACHINE95\JDOe1</value>
+          <value>TESTMACHINE96\JDOe1</value>
+          <value>TESTMACHINE97\JDOe1</value>
+          <value>TESTMACHINE98\JDOe1</value>
+          <value>TESTMACHINE99\JDOe1</value>
+        </constant_variable>
+      </variables>
+    </oval_definitions>
+  </component>
+  <component id="scap_gov.nist_comp_user_validation_content-cpe-oval.xml" timestamp="2012-11-09T09:58:46">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+      <generator>
+        <oval:product_name>National Institute of Standards and Technology</oval:product_name>
+        <oval:schema_version>5.3</oval:schema_version>
+        <oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
+      </generator>
+      <!-- ==================================================================================================== -->
+      <!-- ==========================================  DEFINITIONS  =========================================== -->
+      <!-- ==================================================================================================== -->
+      <definitions>
+        <definition class="inventory" id="oval:gov.nist.cpe.oval:def:1" version="3">
+          <metadata>
+            <title>Microsoft Windows is installed</title>
+            <affected family="windows">
+              <platform>Microsoft Windows 7</platform>
+              <platform>Microsoft Windows 8</platform>
+              <platform>Microsoft Windows Vista</platform>
+              <platform>Microsoft Windows XP</platform>
+            </affected>
+            <reference ref_id="cpe:/o:microsoft:windows" source="CPE"/>
+            <description>The operating system installed on the system is Microsoft Windows</description>
+          </metadata>
+          <criteria>
+            <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
+          </criteria>
+        </definition>
+      </definitions>
+      <!-- ==================================================================================================== -->
+      <!-- ============================================  TESTS  =============================================== -->
+      <!-- ==================================================================================================== -->
+      <tests>
+        <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
+          <object object_ref="oval:org.mitre.oval:obj:99"/>
+          <state state_ref="oval:org.mitre.oval:ste:99"/>
+        </family_test>
+      </tests>
+      <!-- ==================================================================================================== -->
+      <!-- ============================================  OBJECTS  ============================================= -->
+      <!-- ==================================================================================================== -->
+      <objects>
+        <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+      </objects>
+      <!-- ==================================================================================================== -->
+      <!-- =============================================  STATES  ============================================= -->
+      <!-- ==================================================================================================== -->
+      <states>
+        <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+          <family operation="equals">windows</family>
+        </family_state>
+      </states>
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+    </oval_definitions>
+  </component>
+  <component id="scap_gov.nist_comp_user_validation_content-cpe-dictionary.xml" timestamp="2012-11-09T09:58:46">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+      <cpe-item name="cpe:/o:microsoft:windows">
+        <title xml:lang="en-US">Microsoft Windows</title>
+        <notes xml:lang="en-US">
+          <note>This CPE Name represents the Windows OS</note>
+        </notes>
+        <check href="user_validation_content-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:1</check>
+      </cpe-item>
+    </cpe-list>
+  </component>
+</data-stream-collection>

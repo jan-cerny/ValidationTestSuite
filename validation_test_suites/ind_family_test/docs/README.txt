@@ -5,7 +5,7 @@ Testing Status
 Partial
 
 Known Issues
-This content has only been tested on Windows Platforms
+This content has only been tested on Windows and RHEL Platforms
 
 Scripts
 None

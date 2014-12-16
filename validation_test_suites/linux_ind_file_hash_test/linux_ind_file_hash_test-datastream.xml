@@ -579,13 +579,13 @@
         <criterion comment="Test to see that every file hash item exists for the specified object." negate="false" test_ref="oval:nist.validation.linux_filehash:tst:1"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.linux_filehash:def:2" version="1">
+    <definition class="compliance" id="oval:nist.validation.linux_filehash:def:2" version="2">
       <metadata>
         <title>Test that the check_existence property is properly supported using the specified value</title>
         <description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:filehash_test.</description>
         <expected_results>
           <result configuration="1">PASS</result>
-          <result configuration="2">FAIL</result>
+          <result configuration="2">PASS</result>
         </expected_results>
       </metadata>
       <criteria>

@@ -1,615 +1,500 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2"
-  xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  id="scap_gov.nist_collection_ind_text_file_content_test-datastream.zip" schematron-version="1.0"
-  xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
-  <data-stream id="scap_gov.nist_datastream_ind_text_file_content_test-datastream.zip"
-    scap-version="1.2" timestamp="2012-02-08T03:00:40" use-case="CONFIGURATION">
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  id="scap_gov.nist_collection_r700-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_gov.nist_datastream_r700-datastream.zip" scap-version="1.2" timestamp="2014-03-10T03:00:00" use-case="CONFIGURATION">
     <dictionaries>
-      <component-ref id="scap_gov.nist_cref_textfilecontent-cpe-dictionary.xml"
-        xlink:href="#scap_gov.nist_comp_textfilecontent-cpe-dictionary.xml">
+      <component-ref id="scap_gov.nist_cref_r700-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_r700-cpe-dictionary.xml">
         <cat:catalog>
-          <cat:uri name="textfilecontent-cpe-oval.xml"
-            uri="#scap_gov.nist_cref_textfilecontent-cpe-oval.xml"/>
+          <cat:uri name="r700-cpe-oval.xml" uri="#scap_gov.nist_cref_r700-cpe-oval.xml"/>
         </cat:catalog>
       </component-ref>
     </dictionaries>
     <checklists>
-      <component-ref id="scap_gov.nist_cref_textfilecontent-xccdf.xml"
-        xlink:href="#scap_gov.nist_comp_textfilecontent-xccdf.xml">
+      <component-ref id="scap_gov.nist_cref_r700-xccdf.xml" xlink:href="#scap_gov.nist_comp_r700-xccdf.xml">
         <cat:catalog>
-          <cat:uri name="textfilecontent-oval.xml"
-            uri="#scap_gov.nist_cref_textfilecontent-oval.xml"/>
+          <cat:uri name="r700-oval.xml" uri="#scap_gov.nist_cref_r700-oval.xml"/>
         </cat:catalog>
       </component-ref>
     </checklists>
     <checks>
-      <component-ref id="scap_gov.nist_cref_textfilecontent-oval.xml"
-        xlink:href="#scap_gov.nist_comp_textfilecontent-oval.xml"/>
-      <component-ref id="scap_gov.nist_cref_textfilecontent-cpe-oval.xml"
-        xlink:href="#scap_gov.nist_comp_textfilecontent-cpe-oval.xml"/>
+      <component-ref id="scap_gov.nist_cref_r700-oval.xml" xlink:href="#scap_gov.nist_comp_r700-oval.xml"/>
+      <component-ref id="scap_gov.nist_cref_r700-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_r700-cpe-oval.xml"/>
     </checks>
   </data-stream>
-  <component id="scap_gov.nist_comp_textfilecontent-xccdf.xml" timestamp="2012-02-08T03:00:40">
-    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2"
-      id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation_benchmark_textfilecontent"
-      style="SCAP_1.2" xml:lang="en"
-      xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
+  <component id="scap_gov.nist_comp_r700-xccdf.xml" timestamp="2014-03-10T03:00:00">
+    <xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation_benchmark_r700" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
       <xccdf:status date="2011-10-05">draft</xccdf:status>
-      <xccdf:title>XCCDF Benchmark That References the Validation Content for the
-        textfilecontent_test</xccdf:title>
-      <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation
-        content for the textfilecontent_test.</xccdf:description>
-      <xccdf:version update="2011-08-08">1.0</xccdf:version>
+      <xccdf:title>XCCDF Benchmark That References the Validation Content for the R700 requirement</xccdf:title>
+      <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the R700 requirement.</xccdf:description>
+      <xccdf:version time="2014-03-10T01:00:00" update="http://scap.nist.gov">v1.0</xccdf:version>
       <xccdf:metadata>
-        <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards
-          and Technology</dc:contributor>
-        <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards
-          and Technology</dc:publisher>
-        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and
-          Technology</dc:creator>
+        <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
+        <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
+        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:creator>
         <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">http://scap.nist.gov</dc:source>
       </xccdf:metadata>
-      <xccdf:Profile id="xccdf_gov.nist.validation_profile_textfilecontent" prohibitChanges="1">
-        <xccdf:title>XCCDF Profile That References the Validation Content for the
-          textfilecontent_test</xccdf:title>
-        <xccdf:description>This Profile allows for the tailoring of the validation content for the
-          textfilecontent_test.</xccdf:description>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_1" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_2" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_3" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_4" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_5" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_6" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_7" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_8" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_9" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_10" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_11" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_13" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_14" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_15" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_16" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_17" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_18" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_19" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_20" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_21" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_22" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_23" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_25" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_26" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_27" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_28" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_29" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_30" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_31" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_32" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_33" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_34" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_36" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_37" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_38" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_39" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_40" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_41" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_42" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_43" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_44" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_45" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_47" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_48" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_49" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_50" selected="true"/>
+      <xccdf:Profile id="xccdf_gov.nist.validation_profile_r700_1" prohibitChanges="1">
+        <xccdf:title>XCCDF Profile 1 That References the Validation Content for the R700 requirement</xccdf:title>
+        <xccdf:description>This Profile 1 allows for the tailoring of the validation content for the R700 requirement.</xccdf:description>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_1" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_2" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_3" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_4" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_5" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_6" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_7" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_8" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_9" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_10" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_11" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_13" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_14" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_15" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_16" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_17" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_18" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_19" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_20" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_21" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_22" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_23" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_25" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_26" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_27" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_28" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_29" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_30" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_31" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_32" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_33" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_34" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_36" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_37" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_38" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_39" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_40" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_41" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_42" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_43" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_44" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_45" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_47" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_48" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_49" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_50" selected="true"/>
       </xccdf:Profile>
-      <xccdf:Profile id="xccdf_gov.nist.validation_profile_textfilecontent2" prohibitChanges="1">
-        <xccdf:title>2nd XCCDF Profile That References the Validation Content for the
-          textfilecontent_test</xccdf:title>
-        <xccdf:description>This Profile only has rule 1 selected</xccdf:description>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_1" selected="true"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_2" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_3" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_4" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_5" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_6" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_7" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_8" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_9" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_10" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_11" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_13" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_14" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_15" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_16" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_17" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_18" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_19" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_20" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_21" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_22" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_23" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_25" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_26" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_27" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_28" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_29" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_30" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_31" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_32" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_33" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_34" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_36" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_37" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_38" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_39" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_40" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_41" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_42" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_43" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_44" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_45" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_47" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_48" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_49" selected="false"/>
-        <xccdf:select idref="xccdf_gov.nist.validation_rule_50" selected="false"/>
+      <xccdf:Profile id="xccdf_gov.nist.validation_profile_r700_2" prohibitChanges="1">
+        <xccdf:title>XCCDF Profile 2 That References the Validation Content for the R700 requirement</xccdf:title>
+        <xccdf:description>The Profile 2 has only rule 1 selected</xccdf:description>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_1" selected="true"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_2" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_3" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_4" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_5" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_6" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_7" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_8" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_9" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_10" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_11" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_13" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_14" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_15" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_16" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_17" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_18" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_19" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_20" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_21" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_22" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_23" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_25" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_26" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_27" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_28" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_29" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_30" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_31" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_32" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_33" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_34" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_36" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_37" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_38" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_39" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_40" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_41" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_42" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_43" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_44" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_45" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_47" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_48" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_49" selected="false"/>
+        <xccdf:select idref="xccdf_gov.nist.validation_rule_r700_50" selected="false"/>
       </xccdf:Profile>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_1" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_1" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:1"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:1"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_2" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_2" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:2"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:2"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_3" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_3" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:3"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:3"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_4" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_4" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:4"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:4"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_5" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_5" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:5"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:5"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_6" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_6" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:6"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:6"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_7" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_7" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:7"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:7"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_8" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_8" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:8"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:8"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_9" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_9" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml" name="oval:nist.validation:def:9"
-          />
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:9"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_10" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_10" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:10"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:10"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_11" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_11" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:11"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:11"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_13" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_13" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:13"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:13"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_14" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_14" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:14"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:14"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_15" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_15" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:15"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:15"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_16" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_16" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:16"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:16"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_17" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_17" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:17"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:17"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_18" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_18" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:18"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:18"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_19" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_19" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:19"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:19"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_20" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_20" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:20"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:20"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_21" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_21" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:21"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:21"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_22" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_22" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:22"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:22"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_23" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_23" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the
           specified value</xccdf:title>
-        <xccdf:description>Make sure that the value specified, for the check_existence property, is
-          properly supported for the ind-def:textfilecontent_test.</xccdf:description>
+        <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the ind-def:textfilecontent_test.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:23"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:23"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_25" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_25" selected="true">
         <xccdf:title>Test the path entity with the equals operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the equals
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:25"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:25"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_26" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_26" selected="true">
         <xccdf:title>Test the path entity with the not equal operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the not equal
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:26"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:26"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_27" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_27" selected="true">
         <xccdf:title>Test the path entity with the case insensitive equals operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the case insensitive equals
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the case insensitive equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:27"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:27"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_28" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_28" selected="true">
         <xccdf:title>Test the path entity with the case insensitive not equal
           operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the case insensitive not
-          equal operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the case insensitive not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:28"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:28"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_29" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_29" selected="true">
         <xccdf:title>Test the path entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:29"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:29"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_30" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_30" selected="true">
         <xccdf:title>Test the path entity with the equals operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the equals
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:30"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:30"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_31" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_31" selected="true">
         <xccdf:title>Test the path entity with the not equal operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the not equal
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:31"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:31"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_32" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_32" selected="true">
         <xccdf:title>Test the path entity with the case insensitive equals operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the case insensitive equals
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the case insensitive equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:32"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:32"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_33" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_33" selected="true">
         <xccdf:title>Test the path entity with the case insensitive not equal
           operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the case insensitive not
-          equal operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the case insensitive not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:33"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:33"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_34" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_34" selected="true">
         <xccdf:title>Test the path entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the path entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the path entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:34"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:34"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_36" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_36" selected="true">
         <xccdf:title>Test the filename entity with the equals operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the equals
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:36"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:36"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_37" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_37" selected="true">
         <xccdf:title>Test the filename entity with the not equal operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the not equal
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:37"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:37"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_38" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_38" selected="true">
         <xccdf:title>Test the filename entity with the case insensitive equals
           operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the case insensitive
-          equals operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the case insensitive equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:38"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:38"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_39" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_39" selected="true">
         <xccdf:title>Test the filename entity with the case insensitive not equal
           operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the case insensitive not
-          equal operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the case insensitive not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:39"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:39"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_40" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_40" selected="true">
         <xccdf:title>Test the filename entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:40"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:40"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_41" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_41" selected="true">
         <xccdf:title>Test the filename entity with the equals operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the equals
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:41"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:41"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_42" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_42" selected="true">
         <xccdf:title>Test the filename entity with the not equal operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the not equal
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:42"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:42"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_43" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_43" selected="true">
         <xccdf:title>Test the filename entity with the case insensitive equals
           operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the case insensitive
-          equals operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the case insensitive equals operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:43"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:43"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_44" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_44" selected="true">
         <xccdf:title>Test the filename entity with the case insensitive not equal
           operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the case insensitive not
-          equal operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the case insensitive not equal operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:44"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:44"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_45" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_45" selected="true">
         <xccdf:title>Test the filename entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the filename entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the filename entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:45"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:45"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_47" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_47" selected="true">
         <xccdf:title>Test the line entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the line entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the line entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:47"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:47"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_48" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_48" selected="true">
         <xccdf:title>Test the line entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the line entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the line entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:48"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:48"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_49" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_49" selected="true">
         <xccdf:title>Test the line entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the line entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the line entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:49"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:49"/>
         </xccdf:check>
       </xccdf:Rule>
-      <xccdf:Rule id="xccdf_gov.nist.validation_rule_50" selected="true">
+      <xccdf:Rule id="xccdf_gov.nist.validation_rule_r700_50" selected="true">
         <xccdf:title>Test the line entity with the pattern match operation</xccdf:title>
-        <xccdf:description>Make sure the line entity properly supports the pattern match
-          operation.</xccdf:description>
+        <xccdf:description>Make sure the line entity properly supports the pattern match operation.</xccdf:description>
         <xccdf:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-          <xccdf:check-content-ref href="textfilecontent-oval.xml"
-            name="oval:nist.validation:def:50"/>
+          <xccdf:check-content-ref href="r700-oval.xml" name="oval:nist.validation.r700:def:50"/>
         </xccdf:check>
       </xccdf:Rule>
     </xccdf:Benchmark>
   </component>
-  <component id="scap_gov.nist_comp_textfilecontent-oval.xml" timestamp="2012-02-08T03:00:40">
-    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
-      xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <component id="scap_gov.nist_comp_r700-oval.xml" timestamp="2014-03-10T03:00:00">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd">
       <generator>
         <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
         <oval:product_version>1.0</oval:product_version>
-        <oval:schema_version>5.8</oval:schema_version>
+        <oval:schema_version>5.10</oval:schema_version>
         <oval:timestamp>2011-10-05T16:05:49-04:00</oval:timestamp>
       </generator>
       <definitions>
-        <definition class="compliance" id="oval:nist.validation:def:1" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:1" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -622,12 +507,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that every text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:1"/>
+            <criterion comment="Test to see that every text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:1"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:2" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:2" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -640,12 +523,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that any text file content items exist for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:2"/>
+            <criterion comment="Test to see that any text file content items exist for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:2"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:3" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:3" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -658,12 +539,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:3"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:3"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:4" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:4" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -676,12 +555,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that no text file content items exist for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:4"/>
+            <criterion comment="Test to see that no text file content items exist for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:4"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:5" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:5" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -694,12 +571,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that only one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:5"/>
+            <criterion comment="Test to see that only one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:5"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:6" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:6" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -712,12 +587,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that every text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:6"/>
+            <criterion comment="Test to see that every text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:6"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:7" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:7" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -730,12 +603,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that any text file content items exist for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:7"/>
+            <criterion comment="Test to see that any text file content items exist for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:7"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:8" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:8" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -748,12 +619,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:8"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:8"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:9" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:9" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -766,12 +635,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that no text file content items exist for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:9"/>
+            <criterion comment="Test to see that no text file content items exist for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:9"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:10" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:10" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -784,12 +651,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that only one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:10"/>
+            <criterion comment="Test to see that only one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:10"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:11" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:11" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -802,12 +667,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that only one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:11"/>
+            <criterion comment="Test to see that only one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:11"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:13" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:13" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -820,12 +683,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:13"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:13"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:14" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:14" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -838,12 +699,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:14"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:14"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:15" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:15" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -856,12 +715,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:15"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:15"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:16" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:16" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -874,12 +731,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:16"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:16"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:17" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:17" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -892,12 +747,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:17"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:17"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:18" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:18" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -910,12 +763,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:18"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:18"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:19" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:19" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -928,12 +779,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:19"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:19"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:20" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:20" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -946,12 +795,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:20"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:20"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:21" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:21" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -964,12 +811,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:21"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:21"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:22" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:22" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -982,12 +827,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:22"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:22"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:23" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:23" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified
               value</title>
@@ -1000,12 +843,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that at least one text file content item exists for the specified object."
-              negate="false" test_ref="oval:nist.validation:tst:23"/>
+            <criterion comment="Test to see that at least one text file content item exists for the specified object." negate="false" test_ref="oval:nist.validation.r700:tst:23"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:25" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:25" version="2">
           <metadata>
             <title>Test the path entity with the equals operation</title>
             <description>Make sure the path entity properly supports the equals
@@ -1017,11 +858,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path equals C:\scapVal\e." negate="false"
-              test_ref="oval:nist.validation:tst:25"/>
+            <criterion comment="Test to see that the path equals C:\scapVal\e." negate="false" test_ref="oval:nist.validation.r700:tst:25"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:26" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:26" version="2">
           <metadata>
             <title>Test the path entity with the not equal operation</title>
             <description>Make sure the path entity properly supports the not equal
@@ -1033,11 +873,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path is not equal to C:\scapVal\e."
-              negate="false" test_ref="oval:nist.validation:tst:26"/>
+            <criterion comment="Test to see that the path is not equal to C:\scapVal\e." negate="false" test_ref="oval:nist.validation.r700:tst:26"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:27" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:27" version="2">
           <metadata>
             <title>Test the path entity with the case insensitive equals operation</title>
             <description>Make sure the path entity properly supports the case insensitive equals
@@ -1049,11 +888,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path case insensitive equals C:\scapVal\e."
-              negate="false" test_ref="oval:nist.validation:tst:27"/>
+            <criterion comment="Test to see that the path case insensitive equals C:\scapVal\e." negate="false" test_ref="oval:nist.validation.r700:tst:27"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:28" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:28" version="2">
           <metadata>
             <title>Test the path entity with the case insensitive not equal operation</title>
             <description>Make sure the path entity properly supports the case insensitive not equal
@@ -1065,12 +903,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the path is case insensitive not equal to C:\scapVal\e."
-              negate="false" test_ref="oval:nist.validation:tst:28"/>
+            <criterion comment="Test to see that the path is case insensitive not equal to C:\scapVal\e." negate="false" test_ref="oval:nist.validation.r700:tst:28"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:29" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:29" version="2">
           <metadata>
             <title>Test the path entity with the pattern match operation</title>
             <description>Make sure the path entity properly supports the pattern match
@@ -1082,12 +918,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e."
-              negate="false" test_ref="oval:nist.validation:tst:29"/>
+            <criterion comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e." negate="false" test_ref="oval:nist.validation.r700:tst:29"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:30" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:30" version="2">
           <metadata>
             <title>Test the path entity with the equals operation</title>
             <description>Make sure the path entity properly supports the equals
@@ -1099,11 +933,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path equals C:\scapVal\eX." negate="false"
-              test_ref="oval:nist.validation:tst:30"/>
+            <criterion comment="Test to see that the path equals C:\scapVal\eX." negate="false" test_ref="oval:nist.validation.r700:tst:30"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:31" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:31" version="2">
           <metadata>
             <title>Test the path entity with the not equal operation</title>
             <description>Make sure the path entity properly supports the not equal
@@ -1115,11 +948,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path is not equal to C:\scapVal\eX."
-              negate="false" test_ref="oval:nist.validation:tst:31"/>
+            <criterion comment="Test to see that the path is not equal to C:\scapVal\eX." negate="false" test_ref="oval:nist.validation.r700:tst:31"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:32" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:32" version="2">
           <metadata>
             <title>Test the path entity with the case insensitive equals operation</title>
             <description>Make sure the path entity properly supports the case insensitive equals
@@ -1131,11 +963,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path case insensitive equals C:\scapVal\eX."
-              negate="false" test_ref="oval:nist.validation:tst:32"/>
+            <criterion comment="Test to see that the path case insensitive equals C:\scapVal\eX." negate="false" test_ref="oval:nist.validation.r700:tst:32"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:33" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:33" version="2">
           <metadata>
             <title>Test the path entity with the case insensitive not equal operation</title>
             <description>Make sure the path entity properly supports the case insensitive not equal
@@ -1147,12 +978,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the path is case insensitive not equal to C:\scapVal\eX."
-              negate="false" test_ref="oval:nist.validation:tst:33"/>
+            <criterion comment="Test to see that the path is case insensitive not equal to C:\scapVal\eX." negate="false" test_ref="oval:nist.validation.r700:tst:33"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:34" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:34" version="2">
           <metadata>
             <title>Test the path entity with the pattern match operation</title>
             <description>Make sure the path entity properly supports the pattern match
@@ -1164,12 +993,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e."
-              negate="false" test_ref="oval:nist.validation:tst:34"/>
+            <criterion comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e." negate="false" test_ref="oval:nist.validation.r700:tst:34"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:36" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:36" version="2">
           <metadata>
             <title>Test the filename entity with the equals operation</title>
             <description>Make sure the filename entity properly supports the equals
@@ -1181,11 +1008,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filename equals 1.txt." negate="false"
-              test_ref="oval:nist.validation:tst:36"/>
+            <criterion comment="Test to see that the filename equals 1.txt." negate="false" test_ref="oval:nist.validation.r700:tst:36"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:37" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:37" version="2">
           <metadata>
             <title>Test the filename entity with the not equal operation</title>
             <description>Make sure the filename entity properly supports the not equal
@@ -1197,11 +1023,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filename is not equal to 1.txt." negate="false"
-              test_ref="oval:nist.validation:tst:37"/>
+            <criterion comment="Test to see that the filename is not equal to 1.txt." negate="false" test_ref="oval:nist.validation.r700:tst:37"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:38" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:38" version="2">
           <metadata>
             <title>Test the filename entity with the case insensitive equals operation</title>
             <description>Make sure the filename entity properly supports the case insensitive equals
@@ -1213,11 +1038,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filename case insensitive equals 1.txt."
-              negate="false" test_ref="oval:nist.validation:tst:38"/>
+            <criterion comment="Test to see that the filename case insensitive equals 1.txt." negate="false" test_ref="oval:nist.validation.r700:tst:38"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:39" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:39" version="2">
           <metadata>
             <title>Test the filename entity with the case insensitive not equal operation</title>
             <description>Make sure the filename entity properly supports the case insensitive not
@@ -1229,12 +1053,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the filename is case insensitive not equal to 1.txt."
-              negate="false" test_ref="oval:nist.validation:tst:39"/>
+            <criterion comment="Test to see that the filename is case insensitive not equal to 1.txt." negate="false" test_ref="oval:nist.validation.r700:tst:39"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:40" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:40" version="2">
           <metadata>
             <title>Test the filename entity with the pattern match operation</title>
             <description>Make sure the filename entity properly supports the pattern match
@@ -1246,12 +1068,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the filename matches the regular expression [\d]+.txt."
-              negate="false" test_ref="oval:nist.validation:tst:40"/>
+            <criterion comment="Test to see that the filename matches the regular expression [\d]+.txt." negate="false" test_ref="oval:nist.validation.r700:tst:40"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:41" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:41" version="2">
           <metadata>
             <title>Test the filename entity with the equals operation</title>
             <description>Make sure the filename entity properly supports the equals
@@ -1263,11 +1083,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filename equals 2.txt." negate="false"
-              test_ref="oval:nist.validation:tst:41"/>
+            <criterion comment="Test to see that the filename equals 2.txt." negate="false" test_ref="oval:nist.validation.r700:tst:41"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:42" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:42" version="2">
           <metadata>
             <title>Test the filename entity with the not equal operation</title>
             <description>Make sure the filename entity properly supports the not equal
@@ -1279,11 +1098,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filename is not equal to 2.txt." negate="false"
-              test_ref="oval:nist.validation:tst:42"/>
+            <criterion comment="Test to see that the filename is not equal to 2.txt." negate="false" test_ref="oval:nist.validation.r700:tst:42"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:43" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:43" version="2">
           <metadata>
             <title>Test the filename entity with the case insensitive equals operation</title>
             <description>Make sure the filename entity properly supports the case insensitive equals
@@ -1295,11 +1113,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filename case insensitive equals 2.txt."
-              negate="false" test_ref="oval:nist.validation:tst:43"/>
+            <criterion comment="Test to see that the filename case insensitive equals 2.txt." negate="false" test_ref="oval:nist.validation.r700:tst:43"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:44" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:44" version="2">
           <metadata>
             <title>Test the filename entity with the case insensitive not equal operation</title>
             <description>Make sure the filename entity properly supports the case insensitive not
@@ -1311,12 +1128,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the filename is case insensitive not equal to 2.txt."
-              negate="false" test_ref="oval:nist.validation:tst:44"/>
+            <criterion comment="Test to see that the filename is case insensitive not equal to 2.txt." negate="false" test_ref="oval:nist.validation.r700:tst:44"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:45" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:45" version="2">
           <metadata>
             <title>Test the filename entity with the pattern match operation</title>
             <description>Make sure the filename entity properly supports the pattern match
@@ -1328,12 +1143,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the filename matches the regular expression [\w]+.txt."
-              negate="false" test_ref="oval:nist.validation:tst:45"/>
+            <criterion comment="Test to see that the filename matches the regular expression [\w]+.txt." negate="false" test_ref="oval:nist.validation.r700:tst:45"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:47" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:47" version="2">
           <metadata>
             <title>Test the line entity with the pattern match operation</title>
             <description>Make sure the line entity properly supports the pattern match
@@ -1345,11 +1158,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the line matches the regular expression abc."
-              negate="false" test_ref="oval:nist.validation:tst:47"/>
+            <criterion comment="Test to see that the line matches the regular expression abc." negate="false" test_ref="oval:nist.validation.r700:tst:47"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:48" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:48" version="2">
           <metadata>
             <title>Test the line entity with the pattern match operation</title>
             <description>Make sure the line entity properly supports the pattern match
@@ -1361,11 +1173,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the line matches the regular expression ^abc$."
-              negate="false" test_ref="oval:nist.validation:tst:48"/>
+            <criterion comment="Test to see that the line matches the regular expression ^abc$." negate="false" test_ref="oval:nist.validation.r700:tst:48"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:49" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:49" version="2">
           <metadata>
             <title>Test the line entity with the pattern match operation</title>
             <description>Make sure the line entity properly supports the pattern match
@@ -1377,12 +1188,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion
-              comment="Test to see that the line matches the regular expression ^a[bcdef]{1-5}$."
-              negate="false" test_ref="oval:nist.validation:tst:49"/>
+            <criterion comment="Test to see that the line matches the regular expression ^a[bcdef]{1-5}$." negate="false" test_ref="oval:nist.validation.r700:tst:49"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation:def:50" version="1">
+        <definition class="compliance" id="oval:nist.validation.r700:def:50" version="2">
           <metadata>
             <title>Test the line entity with the pattern match operation</title>
             <description>Make sure the line entity properly supports the pattern match
@@ -1394,499 +1203,293 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the line matches the regular expression xyz."
-              negate="false" test_ref="oval:nist.validation:tst:50"/>
+            <criterion comment="Test to see that the line matches the regular expression xyz." negate="false" test_ref="oval:nist.validation.r700:tst:50"/>
           </criteria>
         </definition>
       </definitions>
       <tests>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="all_exist"
-          comment="Test to see that every text file content item exists for the specified object."
-          id="oval:nist.validation:tst:1" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="all_exist" comment="Test to see that every text file content item exists for the specified object." id="oval:nist.validation.r700:tst:1" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="any_exist"
-          comment="Test to see that any text file content items exist for the specified object."
-          id="oval:nist.validation:tst:2" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="any_exist" comment="Test to see that any text file content items exist for the specified object." id="oval:nist.validation.r700:tst:2" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:3" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:3" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="none_exist"
-          comment="Test to see that no text file content items exist for the specified object."
-          id="oval:nist.validation:tst:4" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="none_exist" comment="Test to see that no text file content items exist for the specified object." id="oval:nist.validation.r700:tst:4" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="only_one_exists"
-          comment="Test to see that only one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:5" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="only_one_exists" comment="Test to see that only one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:5" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="all_exist"
-          comment="Test to see that every text file content item exists for the specified object."
-          id="oval:nist.validation:tst:6" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="all_exist" comment="Test to see that every text file content item exists for the specified object." id="oval:nist.validation.r700:tst:6" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="any_exist"
-          comment="Test to see that any text file content items exist for the specified object."
-          id="oval:nist.validation:tst:7" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="any_exist" comment="Test to see that any text file content items exist for the specified object." id="oval:nist.validation.r700:tst:7" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:8" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:8" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="none_exist"
-          comment="Test to see that no text file content items exist for the specified object."
-          id="oval:nist.validation:tst:9" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="none_exist" comment="Test to see that no text file content items exist for the specified object." id="oval:nist.validation.r700:tst:9" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="only_one_exists"
-          comment="Test to see that only one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:10" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="only_one_exists" comment="Test to see that only one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:10" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="only_one_exists"
-          comment="Test to see that only one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:11" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="only_one_exists" comment="Test to see that only one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:11" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:13" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
-          <state state_ref="oval:nist.validation:ste:24"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:13" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
+          <state state_ref="oval:nist.validation.r700:ste:24"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="at least one" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:14" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
-          <state state_ref="oval:nist.validation:ste:24"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="at least one" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:14" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
+          <state state_ref="oval:nist.validation.r700:ste:24"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="none exist" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:15" version="1">
-          <object object_ref="oval:nist.validation:obj:4"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none exist" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:15" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:4"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="none satisfy" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:16" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
-          <state state_ref="oval:nist.validation:ste:25"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:16" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
+          <state state_ref="oval:nist.validation.r700:ste:25"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="only one" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:17" version="1">
-          <object object_ref="oval:nist.validation:obj:1"/>
-          <state state_ref="oval:nist.validation:ste:25"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:17" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:1"/>
+          <state state_ref="oval:nist.validation.r700:ste:25"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:18" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:18" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="at least one" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:19" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="at least one" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:19" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="none exist" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:20" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none exist" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:20" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="none satisfy" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:21" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:21" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="only one" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:22" version="1">
-          <object object_ref="oval:nist.validation:obj:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:22" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="only one" check_existence="at_least_one_exists"
-          comment="Test to see that at least one text file content item exists for the specified object."
-          id="oval:nist.validation:tst:23" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="Test to see that at least one text file content item exists for the specified object." id="oval:nist.validation.r700:tst:23" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path equals C:\scapVal\e." id="oval:nist.validation:tst:25"
-          version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:1"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path equals C:\scapVal\e." id="oval:nist.validation.r700:tst:25" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:1"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path is not equal to C:\scapVal\e."
-          id="oval:nist.validation:tst:26" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:2"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path is not equal to C:\scapVal\e." id="oval:nist.validation.r700:tst:26" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:2"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path case insensitive equals C:\scapVal\e."
-          id="oval:nist.validation:tst:27" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:3"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path case insensitive equals C:\scapVal\e." id="oval:nist.validation.r700:tst:27" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:3"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path is case insensitive not equal to C:\scapVal\e."
-          id="oval:nist.validation:tst:28" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:4"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path is case insensitive not equal to C:\scapVal\e." id="oval:nist.validation.r700:tst:28" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:4"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e."
-          id="oval:nist.validation:tst:29" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:5"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e." id="oval:nist.validation.r700:tst:29" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:5"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path equals C:\scapVal\eX." id="oval:nist.validation:tst:30"
-          version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:6"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path equals C:\scapVal\eX." id="oval:nist.validation.r700:tst:30" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:6"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path is not equal to C:\scapVal\eX."
-          id="oval:nist.validation:tst:31" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:7"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path is not equal to C:\scapVal\eX." id="oval:nist.validation.r700:tst:31" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:7"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path case insensitive equals C:\scapVal\eX."
-          id="oval:nist.validation:tst:32" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:8"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path case insensitive equals C:\scapVal\eX." id="oval:nist.validation.r700:tst:32" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:8"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path is case insensitive not equal to C:\scapVal\eX."
-          id="oval:nist.validation:tst:33" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:26"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path is case insensitive not equal to C:\scapVal\eX." id="oval:nist.validation.r700:tst:33" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:26"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e."
-          id="oval:nist.validation:tst:34" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:5"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression C:\sca[pO]Val\e." id="oval:nist.validation.r700:tst:34" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:5"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename equals 1.txt." id="oval:nist.validation:tst:36"
-          version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:10"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename equals 1.txt." id="oval:nist.validation.r700:tst:36" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:10"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename is not equal to 1.txt."
-          id="oval:nist.validation:tst:37" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:11"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename is not equal to 1.txt." id="oval:nist.validation.r700:tst:37" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:11"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename case insensitive equals 1.txt."
-          id="oval:nist.validation:tst:38" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:12"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename case insensitive equals 1.txt." id="oval:nist.validation.r700:tst:38" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:12"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename is case insensitive not equal to 1.txt."
-          id="oval:nist.validation:tst:39" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:13"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename is case insensitive not equal to 1.txt." id="oval:nist.validation.r700:tst:39" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:13"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename matches the regular expression [\d]+.txt."
-          id="oval:nist.validation:tst:40" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:14"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename matches the regular expression [\d]+.txt." id="oval:nist.validation.r700:tst:40" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:14"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename equals 2.txt." id="oval:nist.validation:tst:41"
-          version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:15"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename equals 2.txt." id="oval:nist.validation.r700:tst:41" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:15"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename is not equal to 2.txt."
-          id="oval:nist.validation:tst:42" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:16"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename is not equal to 2.txt." id="oval:nist.validation.r700:tst:42" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:16"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename case insensitive equals 2.txt."
-          id="oval:nist.validation:tst:43" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:17"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename case insensitive equals 2.txt." id="oval:nist.validation.r700:tst:43" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:17"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename is case insensitive not equal to 2.txt."
-          id="oval:nist.validation:tst:44" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:18"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename is case insensitive not equal to 2.txt." id="oval:nist.validation.r700:tst:44" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:18"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the filename matches the regular expression [\w]+.txt."
-          id="oval:nist.validation:tst:45" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:19"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filename matches the regular expression [\w]+.txt." id="oval:nist.validation.r700:tst:45" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:19"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the line matches the regular expression abc."
-          id="oval:nist.validation:tst:47" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:20"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the line matches the regular expression abc." id="oval:nist.validation.r700:tst:47" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:20"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the line matches the regular expression ^abc$."
-          id="oval:nist.validation:tst:48" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:21"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the line matches the regular expression ^abc$." id="oval:nist.validation.r700:tst:48" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:21"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the line matches the regular expression ^a[bcdef]{1-5}$."
-          id="oval:nist.validation:tst:49" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:22"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the line matches the regular expression ^a[bcdef]{1-5}$." id="oval:nist.validation.r700:tst:49" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:22"/>
         </textfilecontent_test>
-        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="all" check_existence="at_least_one_exists"
-          comment="Test to see that the line matches the regular expression xyz."
-          id="oval:nist.validation:tst:50" version="1">
-          <object object_ref="oval:nist.validation:obj:3"/>
-          <state state_ref="oval:nist.validation:ste:23"/>
+        <textfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the line matches the regular expression xyz." id="oval:nist.validation.r700:tst:50" version="2">
+          <object object_ref="oval:nist.validation.r700:obj:3"/>
+          <state state_ref="oval:nist.validation.r700:ste:23"/>
         </textfilecontent_test>
       </tests>
       <objects>
-        <textfilecontent_object
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:obj:1" version="1">
-          <path operation="equals">C:\scapVal\e</path>
+        <textfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:obj:1" version="2">
+          <path operation="equals">C:\scapVal\ind_tfc\e</path>
           <filename operation="pattern match">.*\.txt</filename>
           <line operation="pattern match">.*</line>
         </textfilecontent_object>
-        <textfilecontent_object
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:obj:2" version="1">
-          <path operation="equals">C:\scapVal\ne</path>
+        <textfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:obj:2" version="2">
+          <path operation="equals">C:\scapVal\ind_tfc\ne</path>
           <filename operation="pattern match">.*\.txt</filename>
           <line operation="pattern match">.*</line>
         </textfilecontent_object>
-        <textfilecontent_object
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:obj:3" version="1">
-          <path operation="equals">C:\scapVal\e</path>
+        <textfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:obj:3" version="2">
+          <path operation="equals">C:\scapVal\ind_tfc\e</path>
           <filename operation="equals">1.txt</filename>
           <line operation="pattern match">.*</line>
         </textfilecontent_object>
-        <textfilecontent_object
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:obj:4" version="1">
-          <path operation="equals">C:\scapVal\e</path>
+        <textfilecontent_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:obj:4" version="2">
+          <path operation="equals">C:\scapVal\ind_tfc\e</path>
           <filename operation="equals">3.txt</filename>
           <line operation="pattern match">.*</line>
         </textfilecontent_object>
       </objects>
       <states>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:1" version="1">
-          <path datatype="string" operation="equals">C:\scapVal\e</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:1" version="2">
+          <path datatype="string" operation="equals">C:\scapVal\ind_tfc\e</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:2" version="1">
-          <path datatype="string" operation="not equal">C:\scapVal\e</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:2" version="2">
+          <path datatype="string" operation="not equal">C:\scapVal\ind_tfc\e</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:3" version="1">
-          <path datatype="string" operation="case insensitive equals">C:\scapVal\e</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:3" version="2">
+          <path datatype="string" operation="case insensitive equals">C:\scapVal\ind_tfc\e</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:4" version="1">
-          <path datatype="string" operation="case insensitive not equal">C:\scapVal\e</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:4" version="2">
+          <path datatype="string" operation="case insensitive not equal">C:\scapVal\ind_tfc\e</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:5" version="1">
-          <path datatype="string" operation="pattern match">C:\\sca[pO]Val\\e</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:5" version="2">
+          <path datatype="string" operation="pattern match">C:\\sca[pO]Val\\ind_tfc\\e</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:6" version="1">
-          <path datatype="string" operation="equals">C:\scapVal\eX</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:6" version="2">
+          <path datatype="string" operation="equals">C:\scapVal\ind_tfc\eX</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:7" version="1">
-          <path datatype="string" operation="not equal">C:\scapVal\eX</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:7" version="2">
+          <path datatype="string" operation="not equal">C:\scapVal\ind_tfc\eX</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:8" version="1">
-          <path datatype="string" operation="case insensitive equals">C:\scapVal\eX</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:8" version="2">
+          <path datatype="string" operation="case insensitive equals">C:\scapVal\ind_tfc\eX</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:9" version="1">
-          <path datatype="string" operation="case insensitive not equal">C:\scapVal\eX</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:9" version="2">
+          <path datatype="string" operation="case insensitive not equal">C:\scapVal\ind_tfc\eX</path>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:10" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:10" version="2">
           <filename datatype="string" operation="equals">1.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:11" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:11" version="2">
           <filename datatype="string" operation="not equal">1.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:12" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:12" version="2">
           <filename datatype="string" operation="case insensitive equals">1.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:13" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:13" version="2">
           <filename datatype="string" operation="case insensitive not equal">1.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:14" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:14" version="2">
           <filename datatype="string" operation="pattern match">[\d]+.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:15" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:15" version="2">
           <filename datatype="string" operation="equals">2.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:16" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:16" version="2">
           <filename datatype="string" operation="not equal">2.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:17" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:17" version="2">
           <filename datatype="string" operation="case insensitive equals">2.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:18" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:18" version="2">
           <filename datatype="string" operation="case insensitive not equal">2.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:19" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:19" version="2">
           <filename datatype="string" operation="pattern match">[\w]{4}.txt</filename>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:20" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:20" version="2">
           <line datatype="string" operation="pattern match">abc</line>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:21" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:21" version="2">
           <line datatype="string" operation="pattern match">^abc$</line>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:22" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:22" version="2">
           <line datatype="string" operation="pattern match">^a[bcdef]{1,5}$</line>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:23" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:23" version="2">
           <line datatype="string" operation="pattern match">xyz</line>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:24" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:24" version="2">
           <line datatype="string" operation="equals">abc</line>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:25" version="1">
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:25" version="2">
           <line datatype="string" operation="equals">xyz</line>
         </textfilecontent_state>
-        <textfilecontent_state
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          id="oval:nist.validation:ste:26" version="1">
-          <path datatype="string" operation="case insensitive not equal">C:\scapVal\e</path>
+        <textfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.r700:ste:26" version="2">
+          <path datatype="string" operation="case insensitive not equal">C:\scapVal\ind_tfc\e</path>
         </textfilecontent_state>
+        
       </states>
     </oval_definitions>
   </component>
-  <component id="scap_gov.nist_comp_textfilecontent-cpe-oval.xml"
-    timestamp="2012-01-31T01:45:45">
-    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
-      xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5"
-      xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows"
-      xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-      xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix"
-      xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux"
-      xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd
-      http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd
-      http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/unix-definitions-schema.xsd
-      http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/linux-definitions-schema.xsd
-      http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd
-      http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+  <component id="scap_gov.nist_comp_r700-cpe-oval.xml" timestamp="2014-03-10T01:00:00">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd
+      http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd
+      http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd
+      http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd
+      http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd
+      http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd">
       <generator>
         <oval:product_name>National Institute of Standards and Technology</oval:product_name>
-        <oval:schema_version>5.3</oval:schema_version>
+        <oval:schema_version>5.10</oval:schema_version>
         <oval:timestamp>2009-12-09T09:49:40.000-05:00</oval:timestamp>
       </generator>
       <!-- ==================================================================================================== -->
@@ -1903,9 +1506,7 @@
             <description>The operating system installed on the system is Microsoft Windows 7 (32-bit)</description>
           </metadata>
           <criteria>
-            <criterion
-              comment="the installed operating system is part of the Microsoft Windows family"
-              test_ref="oval:org.mitre.oval:tst:99"/>
+            <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99"/>
             <criterion comment="Windows 7 is installed" test_ref="oval:org.mitre.oval:tst:10792"/>
           </criteria>
         </definition>
@@ -1919,10 +1520,8 @@
             <description>The operating system installed on the system is Red Hat Enterprise Linux 3, 4, 5 or 6</description>
           </metadata>
           <criteria>
-            <criterion comment="Installed operating system is part of the unix family"
-              test_ref="oval:gov.nist.cpe.oval:tst:100"/>
-            <criterion comment="Red Hat Enterprise Linux 3, 4, 5 or 6 is installed"
-              test_ref="oval:gov.nist.cpe.oval:tst:101"/>
+            <criterion comment="Installed operating system is part of the unix family" test_ref="oval:gov.nist.cpe.oval:tst:100"/>
+            <criterion comment="Red Hat Enterprise Linux 3, 4, 5 or 6 is installed" test_ref="oval:gov.nist.cpe.oval:tst:101"/>
           </criteria>
         </definition>
       </definitions>
@@ -1930,29 +1529,19 @@
       <!-- ============================================  TESTS  =============================================== -->
       <!-- ==================================================================================================== -->
       <tests>
-        <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          check="only one" check_existence="at_least_one_exists"
-          comment="the installed operating system is part of the Microsoft Windows family"
-          id="oval:org.mitre.oval:tst:99" version="1">
+        <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" check_existence="at_least_one_exists" comment="the installed operating system is part of the Microsoft Windows family" id="oval:org.mitre.oval:tst:99" version="1">
           <object object_ref="oval:org.mitre.oval:obj:99"/>
           <state state_ref="oval:org.mitre.oval:ste:99"/>
         </family_test>
-        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows"
-          check="at least one" check_existence="at_least_one_exists"
-          comment="Windows 7 is installed" id="oval:org.mitre.oval:tst:10792" version="4">
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Windows 7 is installed" id="oval:org.mitre.oval:tst:10792" version="4">
           <object object_ref="oval:org.mitre.oval:obj:5590"/>
           <state state_ref="oval:org.mitre.oval:ste:5027"/>
         </registry_test>
-        <family_test check_existence="at_least_one_exists" id="oval:gov.nist.cpe.oval:tst:100"
-          version="1" check="only one"
-          comment="installed operating system is part of the Unix family"
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+        <family_test check_existence="at_least_one_exists" id="oval:gov.nist.cpe.oval:tst:100" version="1" check="only one" comment="installed operating system is part of the Unix family" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
           <object object_ref="oval:gov.nist.cpe.oval:obj:100"/>
           <state state_ref="oval:gov.nist.cpe.oval:ste:100"/>
         </family_test>
-        <rpminfo_test check_existence="at_least_one_exists" id="oval:gov.nist.cpe.oval:tst:101"
-          version="1" check="at least one" comment="redhat-release is version 3, 4, 5 or 6"
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+        <rpminfo_test check_existence="at_least_one_exists" id="oval:gov.nist.cpe.oval:tst:101" version="1" check="at least one" comment="redhat-release is version 3, 4, 5 or 6" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
           <object object_ref="oval:gov.nist.cpe.oval:obj:101"/>
           <state state_ref="oval:gov.nist.cpe.oval:ste:101"/>
         </rpminfo_test>
@@ -1961,21 +1550,14 @@
       <!-- ============================================  OBJECTS  ============================================= -->
       <!-- ==================================================================================================== -->
       <objects>
-        <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          comment="This is the default family object. Only one family object should exist."
-          id="oval:org.mitre.oval:obj:99" version="1"/>
-        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows"
-          comment="This registry key identifies the Windows ProductName"
-          id="oval:org.mitre.oval:obj:5590" version="1">
+        <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="This is the default family object. Only one family object should exist." id="oval:org.mitre.oval:obj:99" version="1"/>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="This registry key identifies the Windows ProductName" id="oval:org.mitre.oval:obj:5590" version="1">
           <hive>HKEY_LOCAL_MACHINE</hive>
           <key>SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
           <name>ProductName</name>
         </registry_object>
-        <family_object id="oval:gov.nist.cpe.oval:obj:100" version="1"
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"/>
-        <rpminfo_object id="oval:gov.nist.cpe.oval:obj:101" version="1"
-          comment="the redhat-release rpm"
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+        <family_object id="oval:gov.nist.cpe.oval:obj:100" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"/>
+        <rpminfo_object id="oval:gov.nist.cpe.oval:obj:101" version="1" comment="the redhat-release rpm" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
           <name>redhat-release</name>
         </rpminfo_object>
       </objects>
@@ -1983,21 +1565,16 @@
       <!-- =============================================  STATES  ============================================= -->
       <!-- ==================================================================================================== -->
       <states>
-        <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent"
-          comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
+        <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" comment="Microsoft Windows family" id="oval:org.mitre.oval:ste:99" version="2">
           <family operation="equals">windows</family>
         </family_state>
-        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows"
-          comment="The registry key matches with Windows 7" id="oval:org.mitre.oval:ste:5027"
-          version="4">
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="The registry key matches with Windows 7" id="oval:org.mitre.oval:ste:5027" version="4">
           <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 7[a-zA-Z0-9\(\)\s]*$</value>
         </registry_state>
-        <family_state id="oval:gov.nist.cpe.oval:ste:100" version="1"
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
+        <family_state id="oval:gov.nist.cpe.oval:ste:100" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent">
           <family>unix</family>
         </family_state>
-        <rpminfo_state id="oval:gov.nist.cpe.oval:ste:101" version="1"
-          xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+        <rpminfo_state id="oval:gov.nist.cpe.oval:ste:101" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
           <version operation="pattern match">^[3-6]\D</version>
         </rpminfo_state>
       </states>
@@ -2006,23 +1583,21 @@
       <!-- ==================================================================================================== -->
     </oval_definitions>
   </component>
-  <component id="scap_gov.nist_comp_textfilecontent-cpe-dictionary.xml"
-    timestamp="2012-01-31T01:45:45">
-    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0"
-      xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+  <component id="scap_gov.nist_comp_r700-cpe-dictionary.xml" timestamp="2014-03-10T01:00:00">
+    <cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
       <cpe-item name="cpe:/o:microsoft:windows_7">
         <title xml:lang="en-US">Microsoft Windows 7</title>
         <notes xml:lang="en-US">
           <note>This CPE Name represents version 6.1.7600 of the Windows OS</note>
         </notes>
-        <check href="textfilecontent-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:2</check>
+        <check href="r700-cpe-oval.xml" system="http://oval.mitre.org/XMLSchema/oval-definitions-5">oval:gov.nist.cpe.oval:def:2</check>
       </cpe-item>
       <cpe-item name="cpe:/o:redhat:enterprise_linux">
         <title xml:lang="en-US">Red Hat Enterprise Linux</title>
         <notes xml:lang="en-US">
           <note>This CPE Name represents Red Hat Enterprise Linux OS</note>
         </notes>
-        <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="textfilecontent-cpe-oval.xml">oval:gov.nist.cpe.oval:def:100</check>
+        <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="r700-cpe-oval.xml">oval:gov.nist.cpe.oval:def:100</check>
       </cpe-item>
     </cpe-list>
   </component>

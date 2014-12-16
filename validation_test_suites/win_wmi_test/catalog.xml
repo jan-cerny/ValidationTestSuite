@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.wmi" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win:WMI Tests</bundleName>
+	<bundleGuiName>Win:WMI Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.wmi_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_wmi_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>wmi_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>wmi_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>wmi_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>wmi_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winWmi_profile_wmi</xccdfProfile>
+		<!--<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command/>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_56" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_54" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_56" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_54" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winWmi_rule_22" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

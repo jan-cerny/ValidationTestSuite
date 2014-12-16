@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.linuxenvironmentvariable" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Ind:Environment Variable Tests *nix</bundleName>
+	<bundleGuiName>Ind:Environment Variable Tests *nix</bundleGuiName>
+	<testSuite version="1" suiteId="G2.linux_environment_variable_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>independent</schema>
+		<datastreamFile>linux_ind_environment_variable_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>linux_environment_variable_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>linux_environment_variable_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>linux_environment_variable_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>linux_environment_variable_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.environmentvariable_profile_linux_environmentvariable</xccdfProfile>
+		<preparation ordered="false" platform="linux">
+			<command commandType="shell" order="1" revision="1">
+				<command>linux-ind_environment_variable_test-config1.sh</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_9" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.linux_environmentvariable_rule_9" expectedResult="fail"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

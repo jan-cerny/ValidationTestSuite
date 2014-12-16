@@ -1,18 +1,2 @@
-First open a powershell window with admin privileges
-at the command line, create an alias based on the version of windows you are using (x86 or x64)
-for x86:
-new-alias installutil %Windir%\Microsoft.NET\Framework\v2.0.50727\installutil.exe
-for x64:
-new-alias installutil %Windir%\Microsoft.NET\Framework64\v2.0.50727\installutil.exe
-
-Then run the following command:
-installutil GetValTest.dll
-
-Once this completes, verify that it shows up in the registered snap ins by running:
-
-get-PSSnapin -reg *val*
-
-You should see:
-Name        : GetValTestCmdLets
-PSVersion   : 2.0
-Description : A cmdlet for use in NIST SCAP Validation Testing
+Please see the 'Configuration Instructions' section from docs\README.txt
+for the win_cmdlet test

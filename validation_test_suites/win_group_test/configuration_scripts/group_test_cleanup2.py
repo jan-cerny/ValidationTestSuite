@@ -9,18 +9,18 @@ __maintainer__ = 'matt.kerr'
 __email__ = "TODO"
 __status__ = "Alpha"
 
-from subprocess import *
+import subprocess
 
 def performConfig(workingDir=None):
     # remove from guests group
-    Popen(["net","localgroup","guests","testuser2","/delete"])
-    Popen(["net","localgroup","guests","testsub2","/delete"])
+    subprocess.call(["net","localgroup","guests","testuser2","/delete"])
+    subprocess.call(["net","localgroup","guests","testsub2","/delete"])
     # delete groups
-    Popen(["net","localgroup","testsub1","/delete"])
-    Popen(["net","localgroup","testsub2","/delete"])
+    subprocess.call(["net","localgroup","testsub1","/delete"])
+    subprocess.call(["net","localgroup","testsub2","/delete"])
     # delete users
-    Popen(["net","user","testuser","/delete"])
-    Popen(["net","user","testuser2","/delete"])
+    subprocess.call(["net","user","testuser","/delete"])
+    subprocess.call(["net","user","testuser2","/delete"])
     return
 
 if __name__=="__main__":

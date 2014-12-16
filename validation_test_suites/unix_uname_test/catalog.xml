@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.uname" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+      <bundleName>Unix:Uname Tests</bundleName>
+      <bundleGuiName>Unix:Uname Tests</bundleGuiName>
+      <testSuite version="1" suiteId="G2.uname_tests_config_1">
+            <suiteName>Configuration 1</suiteName>
+            <guiName>Configuration 1</guiName>
+            <schema>unix</schema>
+            <datastreamFile>uname-test-datastream.xml</datastreamFile>
+            <cpeOvalFilename>uname-cpe-oval.xml</cpeOvalFilename>
+            <cpeDictionaryFilename>uname-cpe-dictionary.xml</cpeDictionaryFilename>
+            <ovalFilename>uname-oval.xml</ovalFilename>
+            <xccdfFilename>uname-xccdf.xml</xccdfFilename>
+            <xccdfProfile>xccdf_gov.nist_profile_xccdf_gov.nist.validation.unixUname_profile_uname</xccdfProfile>
+            <preparation ordered="false" platform="linux">
+                  <command commandType="executable" order="1" revision="1">
+                        <command/>
+                  </command>
+            </preparation>
+            <expectedResults reportType="xccdf">
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_1"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_2"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_3"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_4"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_5"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_6"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_7"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_8"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_9"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_10"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_11"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_12"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_13"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_14"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_15"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_16"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_17"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_18"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_19"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_20"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_21"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_22"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_23"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_24"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_25"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_26"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_27"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_28"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_29"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_30"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_31"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_32"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_33"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_34"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_35"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_36"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_37"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_38"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_39"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_40"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_41"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_42"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_43"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_44"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_45"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_46"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_47"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_48"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_49"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_50"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_51"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_52"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_53"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_54"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_55"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_56"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_57"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_58"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_59"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_60"/>
+            </expectedResults>
+            <expectedResults reportType="arf">
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_1"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_2"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_3"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_4"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_5"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_6"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_7"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_8"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_9"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_10"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_11"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_12"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_13"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_14"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_15"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_16"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_17"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_18"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_19"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_20"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_21"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_22"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_23"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_24"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_25"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_26"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_27"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_28"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_29"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_30"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_31"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_32"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_33"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_34"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_35"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_36"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_37"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_38"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_39"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_40"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_41"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_42"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_43"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_44"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_45"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_46"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_47"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_48"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_49"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_50"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_51"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_52"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_53"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_54"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_55"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_56"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_57"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_58"/>
+                  <result expectedResult="pass" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_59"/>
+                  <result expectedResult="fail" definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixUname_rule_60"/>
+            </expectedResults>
+      </testSuite>
+</testBundle>

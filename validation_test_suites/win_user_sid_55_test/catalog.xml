@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.winUserSid5555" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win: User SID 55 Test</bundleName>
+	<bundleGuiName>Win: User SID 55 Test</bundleGuiName>
+	<testSuite version="1" suiteId="G2.configuration1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_user_sid_55_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>user_sid55-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>user_sid55-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>user_sid55-oval.xml</ovalFilename>
+		<xccdfFilename>user_sid55-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winUserSid55_profile_user-sid55</xccdfProfile>
+		<preparation ordered="false" platform="any">
+			<command commandType="python">
+				<command>win_user_sid_55_config1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_44" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winUserSid55_rule_44" expectedResult="fail"/>
+		</expectedResults>
+		<cleanup ordered="false">
+			<command commandType="python">
+				<command>win_user_sid_55_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

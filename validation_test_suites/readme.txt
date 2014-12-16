@@ -1,4 +1,8 @@
-SCAP 1.2 Public Validation Test Suite
+SCAP 1.2 Validation Test Suite
+
+This project contains unit test content for testing the capabilities of Security Content Automation Protocol (SCAP) capable products.
+
+This content is for testing purposes only and should be run on a non-production system.  While attempts are made to clean up the changes made as part of testing, there is no guarantee that the system will be in a secure or usable state afterward.  After running this content the system should be wiped and the operating system reinstalled and configured appropriately before the system is used.
 
 Overview --
 The validation test suite is composed of several components.
@@ -22,6 +26,8 @@ The spreadsheet associated with each data stream provides the required test syst
 
 The second page identifies the required configurations that must be used when using the data streams on a test system. The configuration page consists of a group of configurations and the associated value for each configuration. Test systems must be configured according to the spreadsheet; else the results of a scan using the data streams will not match the expected results. If the configurations page is blank or missing, then no special configuration is required for testing the data stream and the data stream may be tested on a default system installation.
 
+In cases where there are conflicts between the spreadsheet and any other files, the spreadsheet should be given precedence.
+
 Configuration Scripts --
 The validation test suite includes configuration scripts for automating the configuration of test systems according to the configurations defined in the spreadsheets. Use of these scripts is optional and there is no support associated with these scripts. They are provided as a courtesy. Test systems may be manually configured according to the prescribed configurations defined in the spreadsheets.
 
@@ -31,7 +37,7 @@ The configuration scripts may be in the following forms:
   - System batch file
   - Inf file for use with secedit.exe
 
-The python scripts require Python 2.7, Python 3.2 and the Python extensions for Windows. The python runtime and interpreter are available at http://www.python.org . The python extensions for Windows are available at http://python.net/crew/mhammond/win32/ . The executable files are either standard system utilities or custom programs developed as part of the validation content creation process.
+The python scripts require Python 3.2 and the Python extensions for Windows. The python runtime and interpreter are available at http://www.python.org . The python extensions for Windows are available at http://python.net/crew/mhammond/win32/ . The executable files are either standard system utilities or custom programs developed as part of the validation content creation process.
 Regardless of the configuration method chosen, users should verify the configuration of the test system matches the configuration defined in the spreadsheet.
 
 Testing Process --

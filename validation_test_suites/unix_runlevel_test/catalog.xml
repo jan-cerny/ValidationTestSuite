@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.runlevel" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Unix:Runlevel Tests</bundleName>
+	<bundleGuiName>Unix:Runlevel Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.runlevel_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_runlevel_test-datastream</datastreamFile>
+		<cpeOvalFilename>runlevel_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>runlevel_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>runlevel_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>runlevel_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_runlevel-validation</xccdfProfile>
+		<preparation ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>run_level_test_config_1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="fail"/>
+		</expectedResults>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.runlevel_tests_config_2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_runlevel_test-datastream</datastreamFile>
+		<cpeOvalFilename>runlevel_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>runlevel_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>runlevel_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>runlevel_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_runlevel-validation</xccdfProfile>
+		<preparation ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>run_level_test_config_2.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.runlevel_tests_config_3">
+		<suiteName>Configuration 3</suiteName>
+		<guiName>Configuration 3</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_runlevel_test-datastream</datastreamFile>
+		<cpeOvalFilename>runlevel_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>runlevel_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>runlevel_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>runlevel_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_runlevel-validation</xccdfProfile>
+		<preparation ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>run_level_test_config_3.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="fail"/>
+		</expectedResults>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.runlevel_tests_config_4">
+		<suiteName>Configuration 4</suiteName>
+		<guiName>Configuration 4</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_runlevel_test-datastream</datastreamFile>
+		<cpeOvalFilename>runlevel_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>runlevel_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>runlevel_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>runlevel_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_runlevel-validation</xccdfProfile>
+		<preparation ordered="false" platform="unix">
+			<command commandType="python" order="1" revision="1">
+				<command>run_level_test_config_4.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_criterion-construct-with-negate-property-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_start-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_service-exists-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-existence-property-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_kill-with-equals-operation-29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_test-construct-with-check-property-40" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

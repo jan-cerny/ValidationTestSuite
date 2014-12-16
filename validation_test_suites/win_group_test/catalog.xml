@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.win_group_tests" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win:Group Tests</bundleName>
+	<bundleGuiName>Win:Group Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.configuration1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_group_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>win_group-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>win_group-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>win_group-oval.xml</ovalFilename>
+		<xccdfFilename>win_group-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winGroup_profile_group</xccdfProfile>
+		<preparation ordered="false" platform="any">
+			<!--<command commandType="manual">
+				<command>Please ensure that the system is named 'testmachine'</command>
+			</command>-->
+			<command commandType="python" order="1" revision="1">
+				<command>group_test_config_1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_40" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_40" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="python">
+				<command>group_test_cleanup1.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.configuration2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_group_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>win_group-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>win_group-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>win_group-oval.xml</ovalFilename>
+		<xccdfFilename>win_group-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winGroup_profile_group</xccdfProfile>
+		<preparation ordered="false" platform="any">
+			<!--<command commandType="manual">
+				<command>Please ensure that the system is named 'testmachine'</command>
+			</command>-->
+			<command commandType="python" order="1" revision="1">
+				<command>group_test_config_2.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_40" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winGroup_rule_40" expectedResult="fail"/>
+		</expectedResults>
+
+		<cleanup ordered="false" platform="any">
+			<command commandType="python">
+				<command>group_test_cleanup2.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

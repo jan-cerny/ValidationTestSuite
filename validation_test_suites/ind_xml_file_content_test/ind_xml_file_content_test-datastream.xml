@@ -1085,7 +1085,7 @@
         <criterion comment="Test to see that the filepath is case insensitive not equal to C:\scap_validation_content\ind_xml\e\1.xml." negate="false" test_ref="oval:nist.validation.xmlFileContent:tst:32"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.xmlFileContent:def:33" version="1">
+    <definition class="compliance" id="oval:nist.validation.xmlFileContent:def:33" version="2">
       <metadata>
         <title>Test the filepath entity with the pattern match operation</title>
         <description>Make sure the filepath entity properly supports the pattern match operation.</description>
@@ -1094,7 +1094,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the filepath matches the regular expression C:\scap_validation_content\ind_xml\\e\\\d\.xml." negate="false" test_ref="oval:nist.validation.xmlFileContent:tst:33"/>
+        <criterion comment="Test to see that the filepath matches the regular expression C:\scap_validation_content\\ind_xml\\e\\\d\.xml." negate="false" test_ref="oval:nist.validation.xmlFileContent:tst:33"/>
       </criteria>
     </definition>
     <definition class="compliance" id="oval:nist.validation.xmlFileContent:def:34" version="1">
@@ -1205,7 +1205,7 @@
         <criterion comment="Test to see that the path is case insensitive not equal to C:\scap_validation_content\ind_xml\e." negate="false" test_ref="oval:nist.validation.xmlFileContent:tst:42"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.xmlFileContent:def:43" version="1">
+    <definition class="compliance" id="oval:nist.validation.xmlFileContent:def:43" version="2">
       <metadata>
         <title>Test the path entity with the pattern match operation</title>
         <description>Make sure the path entity properly supports the pattern match operation.</description>
@@ -1214,7 +1214,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the path matches the regular expression C:\scap_validation_content\ind_xml\\e." negate="false" test_ref="oval:nist.validation.xmlFileContent:tst:43"/>
+        <criterion comment="Test to see that the path matches the regular expression C:\scap_validation_content\\ind_xml\\e." negate="false" test_ref="oval:nist.validation.xmlFileContent:tst:43"/>
       </criteria>
     </definition>
     <definition class="compliance" id="oval:nist.validation.xmlFileContent:def:44" version="1">
@@ -1841,7 +1841,7 @@
       <object object_ref="oval:nist.validation.xmlFileContent:obj:5"/>
       <state state_ref="oval:nist.validation.xmlFileContent:ste:13"/>
     </xmlfilecontent_test>
-    <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filepath matches the regular expression C:\scap_validation_content\ind_xml\\e\\\d\.xml." id="oval:nist.validation.xmlFileContent:tst:33" version="1">
+    <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the filepath matches the regular expression C:\scap_validation_content\\ind_xml\\e\\\d\.xml." id="oval:nist.validation.xmlFileContent:tst:33" version="2">
       <object object_ref="oval:nist.validation.xmlFileContent:obj:5"/>
       <state state_ref="oval:nist.validation.xmlFileContent:ste:14"/>
     </xmlfilecontent_test>
@@ -1881,7 +1881,7 @@
       <object object_ref="oval:nist.validation.xmlFileContent:obj:5"/>
       <state state_ref="oval:nist.validation.xmlFileContent:ste:22"/>
     </xmlfilecontent_test>
-    <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression C:\scap_validation_content\ind_xml\\e." id="oval:nist.validation.xmlFileContent:tst:43" version="1">
+    <xmlfilecontent_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression C:\scap_validation_content\\ind_xml\\e." id="oval:nist.validation.xmlFileContent:tst:43" version="2">
       <object object_ref="oval:nist.validation.xmlFileContent:obj:5"/>
       <state state_ref="oval:nist.validation.xmlFileContent:ste:23"/>
     </xmlfilecontent_test>
@@ -2133,8 +2133,8 @@
     <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:13" version="1">
       <filepath datatype="string" operation="case insensitive not equal">C:\scap_validation_content\ind_xml\e\1.xml</filepath>
     </xmlfilecontent_state>
-    <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:14" version="1">
-      <filepath datatype="string" operation="pattern match">C:\scap_validation_content\ind_xml\\e\\\d\.xml</filepath>
+    <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:14" version="2">
+      <filepath datatype="string" operation="pattern match">C:\scap_validation_content\\ind_xml\\e\\\d\.xml</filepath>
     </xmlfilecontent_state>
     <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:15" version="1">
       <path datatype="string" operation="not equal">C:\scap_validation_content\ind_xml\dne</path>
@@ -2160,8 +2160,8 @@
     <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:22" version="1">
       <path datatype="string" operation="case insensitive not equal">C:\scap_validation_content\ind_xml\e</path>
     </xmlfilecontent_state>
-    <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:23" version="1">
-      <path datatype="string" operation="pattern match">C:\scap_validation_content\ind_xml\\e</path>
+    <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:23" version="2">
+      <path datatype="string" operation="pattern match">C:\scap_validation_content\\ind_xml\\e</path>
     </xmlfilecontent_state>
     <xmlfilecontent_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.xmlFileContent:ste:24" version="1">
       <filename datatype="string" operation="equals">1.xml</filename>

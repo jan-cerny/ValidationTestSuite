@@ -9,24 +9,58 @@ __maintainer__ = 'matt.kerr'
 __email__ = "TODO"
 __status__ = "Alpha"
 
-from subprocess import *
+import subprocess
 import time
+import random
+import string
+
+def performCleanup(workingDir=None):
+    # remove from guests group
+    subprocess.call(["net","localgroup","guests","testuser","/delete"])
+    subprocess.call(["net","localgroup","guests","testsub1","/delete"])
+    # delete groups
+    subprocess.call(["net","localgroup","testsub1","/delete"])
+    subprocess.call(["net","localgroup","testsub2","/delete"])
+    # delete users
+    subprocess.call(["net","user","testuser","/delete"])
+    subprocess.call(["net","user","testuser2","/delete"])
+    # remove from guests group
+    subprocess.call(["net","localgroup","guests","testuser2","/delete"])
+    subprocess.call(["net","localgroup","guests","testsub2","/delete"])
+    return
+
+def performGenPassword(workingDir=None):
+    chars = string.ascii_letters + string.digits + string.punctuation
+    newpasswdgen = ''
+    length = 14
+    for i in range(length):
+        newpasswdgen = ''.join(random.choice(chars) for x in range(length))
+    return newpasswdgen
+
 def performConfig(workingDir=None):
+    #Cleanup first
+    print ("\n----------------------------------")
+    print ("Deleting the existing configuration...")
+    performCleanup()
+    print ("\n----------------------------------")
+    print ("Configuring the system...")
+    newpass = performGenPassword()
+    print ("Generated complex password: ", newpass)
     #Create users
-    Popen(["net","user","testuser","Geek!234567","/add"])
-    Popen(["net","user","testuser2","Geek!234567","/add"])
-    time.sleep(2)
+    print ("creating user: 'testuser'")
+    subprocess.call(["net","user","testuser",newpass,"/add"])
+    print ("creating user: 'testuser2'")
+    subprocess.call(["net","user","testuser2",newpass,"/add"])
 
     #Create groups
-    Popen(["net","localgroup","testsub1","/add"])
-    Popen(["net","localgroup","testsub2","/add"])
-    time.sleep(2)
+    print ("creating group: 'testsub1'")
+    subprocess.call(["net","localgroup","testsub1","/add"])
+    print ("creating group: 'testsub2'")
+    subprocess.call(["net","localgroup","testsub2","/add"])
 
     #add users to groups
-    Popen(["net","localgroup","guests","testuser2","/add"])
-    Popen(["net","localgroup","guests","testsub2","/add"])
-    time.sleep(2)
-
+    subprocess.call(["net","localgroup","guests","testuser2","/add"])
+    subprocess.call(["net","localgroup","guests","testsub2","/add"])
     print("I'm done.")
 	
 	

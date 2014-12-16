@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="scap_gov.nist_collection_win_wmi_test-datastream.zip" schematron-version="1.0" xsi:schemaLocation="http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd"><data-stream id="scap_gov.nist_datastream_win_wmi_test-datastream.zip" scap-version="1.2" timestamp="2012-11-09T09:58:50" use-case="CONFIGURATION"><dictionaries><component-ref id="scap_gov.nist_cref_wmi_validation_content-cpe-dictionary.xml" xlink:href="#scap_gov.nist_comp_wmi_validation_content-cpe-dictionary.xml"><cat:catalog><cat:uri name="wmi_validation_content-cpe-oval.xml" uri="#scap_gov.nist_cref_wmi_validation_content-cpe-oval.xml"/></cat:catalog></component-ref></dictionaries><checklists><component-ref id="scap_gov.nist_cref_wmi_validation_content-xccdf.xml" xlink:href="#scap_gov.nist_comp_wmi_validation_content-xccdf.xml"><cat:catalog><cat:uri name="wmi_validation_content-oval.xml" uri="#scap_gov.nist_cref_wmi_validation_content-oval.xml"/></cat:catalog></component-ref></checklists><checks><component-ref id="scap_gov.nist_cref_wmi_validation_content-oval.xml" xlink:href="#scap_gov.nist_comp_wmi_validation_content-oval.xml"/><component-ref id="scap_gov.nist_cref_wmi_validation_content-cpe-oval.xml" xlink:href="#scap_gov.nist_comp_wmi_validation_content-cpe-oval.xml"/></checks></data-stream><component id="scap_gov.nist_comp_wmi_validation_content-xccdf.xml" timestamp="2012-11-09T09:58:50"><xccdf:Benchmark xmlns:xccdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_xccdf_gov.nist.validation.winWmi_benchmark_wmi" style="SCAP_1.2" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd">
-<!--
-<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.2" id="xccdf_gov.nist_benchmark_wmi_validation_tests" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd" style="SCAP_1.2">
--->
   <xccdf:status date="2011-08-16">draft</xccdf:status>
   <xccdf:title>XCCDF Benchmark That References the Validation Content for the wmi_test</xccdf:title>
   <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the wmi_test.</xccdf:description>
@@ -18,7 +15,7 @@
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_1" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_2" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_3" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_4" selected="false"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_4" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_5" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_6" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_7" selected="true"/>
@@ -32,7 +29,7 @@
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_15" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_16" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_17" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_18" selected="true"/>
+    <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_18" selected="false"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_19" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_20" selected="true"/>
     <xccdf:select idref="xccdf_gov.nist.validation.winWmi_rule_21" selected="true"/>
@@ -664,16 +661,16 @@
         <criterion comment="Test to see that the result equals workstation." negate="false" test_ref="oval:nist.validation.winWmi:tst:12"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.winWmi:def:13" version="1">
+    <definition class="compliance" id="oval:nist.validation.winWmi:def:13" version="2">
       <metadata>
-        <title>Test the result entity with the equals operation</title>
-        <description>Make sure the result entity properly supports the equals operation.</description>
+        <title>Test that the check property is properly supported using NONE EXIST value.</title>
+        <description>Make sure the check property is properly supported using NONE EXIST value.</description>
         <expected_results>
           <result configuration="1">PASS</result>
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the result equals no such service." negate="false" test_ref="oval:nist.validation.winWmi:tst:13"/>
+        <criterion comment="Test that the check property is properly supported using NONE EXIST value." negate="false" test_ref="oval:nist.validation.winWmi:tst:13"/>
       </criteria>
     </definition>
     <definition class="compliance" id="oval:nist.validation.winWmi:def:14" version="1">
@@ -1168,7 +1165,7 @@
         <criterion comment="Test to see that the wql is not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi:tst:54"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.winWmi:def:55" version="1">
+    <definition class="compliance" id="oval:nist.validation.winWmi:def:55" version="2">
       <metadata>
         <title>Test the wql entity with the case insensitive equals operation</title>
         <description>Make sure the wql entity properly supports the case insensitive equals operation.</description>
@@ -1177,7 +1174,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." negate="false" test_ref="oval:nist.validation.winWmi:tst:55"/>
+        <criterion comment="Test to see that the wql case insensitive equals 'SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0'." negate="false" test_ref="oval:nist.validation.winWmi:tst:55"/>
       </criteria>
     </definition>
     <definition class="compliance" id="oval:nist.validation.winWmi:def:56" version="1">
@@ -1204,7 +1201,7 @@
         <criterion comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." negate="false" test_ref="oval:nist.validation.winWmi:tst:57"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.winWmi:def:58" version="1">
+    <definition class="compliance" id="oval:nist.validation.winWmi:def:58" version="2">
       <metadata>
         <title>Test the wql entity with the equals operation</title>
         <description>Make sure the wql entity properly supports the equals operation.</description>
@@ -1213,7 +1210,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the wql equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi:tst:58"/>
+        <criterion comment="Test to see that the wql equals 'SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0'." negate="false" test_ref="oval:nist.validation.winWmi:tst:58"/>
       </criteria>
     </definition>
     <definition class="compliance" id="oval:nist.validation.winWmi:def:59" version="1">
@@ -1240,7 +1237,7 @@
         <criterion comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." negate="false" test_ref="oval:nist.validation.winWmi:tst:60"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.winWmi:def:61" version="1">
+    <definition class="compliance" id="oval:nist.validation.winWmi:def:61" version="2">
       <metadata>
         <title>Test the wql entity with the case insensitive not equal operation</title>
         <description>Make sure the wql entity properly supports the case insensitive not equal operation.</description>
@@ -1249,10 +1246,10 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the wql is case insensitive not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." negate="false" test_ref="oval:nist.validation.winWmi:tst:61"/>
+        <criterion comment="Test to see that the wql is case insensitive not equal to 'SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0'." negate="false" test_ref="oval:nist.validation.winWmi:tst:61"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.winWmi:def:62" version="1">
+    <definition class="compliance" id="oval:nist.validation.winWmi:def:62" version="2">
       <metadata>
         <title>Test the wql entity with the pattern match operation</title>
         <description>Make sure the wql entity properly supports the pattern match operation.</description>
@@ -1261,7 +1258,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." negate="false" test_ref="oval:nist.validation.winWmi:tst:62"/>
+        <criterion comment="Test to see that the wql matches the regular expression ^sELECT ProcessId FROM Win32_Process WHERE ProcessId = 0$." negate="false" test_ref="oval:nist.validation.winWmi:tst:62"/>
       </criteria>
     </definition>
   </definitions>
@@ -1311,7 +1308,7 @@
       <object object_ref="oval:nist.validation.winWmi:obj:1"/>
       <state state_ref="oval:nist.validation.winWmi:ste:46"/>
     </wmi_test>
-    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the result equals no such service." id="oval:nist.validation.winWmi:tst:13" version="1">
+    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" check_existence="at_least_one_exists" comment="Test that the check property is properly supported using NONE EXIST value." id="oval:nist.validation.winWmi:tst:13" version="2">
       <object object_ref="oval:nist.validation.winWmi:obj:5"/>
     </wmi_test>
     <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="Test to see that the result equals no such service." id="oval:nist.validation.winWmi:tst:14" version="1">
@@ -1478,7 +1475,7 @@
       <object object_ref="oval:nist.validation.winWmi:obj:3"/>
       <state state_ref="oval:nist.validation.winWmi:ste:37"/>
     </wmi_test>
-    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql case insensitive equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." id="oval:nist.validation.winWmi:tst:55" version="1">
+    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql case insensitive equals 'SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0'." id="oval:nist.validation.winWmi:tst:55" version="2">
       <object object_ref="oval:nist.validation.winWmi:obj:3"/>
       <state state_ref="oval:nist.validation.winWmi:ste:38"/>
     </wmi_test>
@@ -1490,7 +1487,7 @@
       <object object_ref="oval:nist.validation.winWmi:obj:3"/>
       <state state_ref="oval:nist.validation.winWmi:ste:40"/>
     </wmi_test>
-    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql equals SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5." id="oval:nist.validation.winWmi:tst:58" version="1">
+    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql equals 'SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0'." id="oval:nist.validation.winWmi:tst:58" version="2">
       <object object_ref="oval:nist.validation.winWmi:obj:3"/>
       <state state_ref="oval:nist.validation.winWmi:ste:41"/>
     </wmi_test>
@@ -1502,13 +1499,13 @@
       <object object_ref="oval:nist.validation.winWmi:obj:3"/>
       <state state_ref="oval:nist.validation.winWmi:ste:43"/>
     </wmi_test>
-    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql is case insensitive not equal to SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0." id="oval:nist.validation.winWmi:tst:61" version="1">
+    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql is case insensitive not equal to 'SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0'." id="oval:nist.validation.winWmi:tst:61" version="2">
       <object object_ref="oval:nist.validation.winWmi:obj:3"/>
       <state state_ref="oval:nist.validation.winWmi:ste:44"/>
     </wmi_test>
-    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql matches the regular expression SELECT ProcessId FROM Win32_Process WHERE ProcessId = [/d]." id="oval:nist.validation.winWmi:tst:62" version="1">
-      <object object_ref="oval:nist.validation.winWmi:obj:4"/>
-      <state state_ref="oval:nist.validation.winWmi:ste:40"/>
+    <wmi_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the wql matches the regular expression ^sELECT ProcessId FROM Win32_Process WHERE ProcessId = 0$." id="oval:nist.validation.winWmi:tst:62" version="2">
+      <object object_ref="oval:nist.validation.winWmi:obj:3"/>
+      <state state_ref="oval:nist.validation.winWmi:ste:55"/>
     </wmi_test>
   </tests>
   <objects>
@@ -1645,8 +1642,8 @@
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:37" version="1">
       <wql datatype="string" operation="not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
     </wmi_state>
-    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:38" version="1">
-      <wql datatype="string" operation="case insensitive equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:38" version="2">
+      <wql datatype="string" operation="case insensitive equals">SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
     </wmi_state>
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:39" version="1">
       <wql datatype="string" operation="case insensitive not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
@@ -1654,8 +1651,8 @@
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:40" version="1">
       <wql datatype="string" operation="pattern match">^SELECT ProcessId FROM Win32_Process WHERE ProcessId = [\d]$</wql>
     </wmi_state>
-    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:41" version="1">
-      <wql datatype="string" operation="equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
+    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:41" version="2">
+      <wql datatype="string" operation="equals">SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
     </wmi_state>
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:42" version="1">
       <wql datatype="string" operation="not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
@@ -1663,8 +1660,8 @@
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:43" version="1">
       <wql datatype="string" operation="case insensitive equals">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 5</wql>
     </wmi_state>
-    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:44" version="1">
-      <wql datatype="string" operation="case insensitive not equal">SELECT ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
+    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:44" version="2">
+      <wql datatype="string" operation="case insensitive not equal">SeLeCt ProcessId FROM Win32_Process WHERE ProcessId = 0</wql>
     </wmi_state>
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:45" version="1">
       <result datatype="string" entity_check="all" operation="pattern match">.*</result>
@@ -1696,7 +1693,9 @@
     <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:54" version="1">
       <result datatype="string" entity_check="only one" operation="pattern match">.*</result>
     </wmi_state>
-    
+    <wmi_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWmi:ste:55" version="1">
+      <wql datatype="string" operation="pattern match">^sELECT ProcessId FROM Win32_Process WHERE ProcessId = 0$</wql>
+    </wmi_state>
   </states>
 </oval_definitions></component><component id="scap_gov.nist_comp_wmi_validation_content-cpe-oval.xml" timestamp="2012-11-09T09:58:50"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
 	<generator>

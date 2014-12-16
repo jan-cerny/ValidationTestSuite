@@ -2,20 +2,23 @@
 <scap-validation-results xmlns="http://scap.nist.gov/schema/validation/results/0.1"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          implementation-version="scapval-1.2.1.9"
-                         message-count="205"
+                         message-count="206"
                          resource-id="ind_file_hash_test-datastream.xml"
-                         validation-datetime="2013-08-07T15:33:04"
+                         validation-datetime="2014-03-11T16:12:05"
                          xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
    <messages>
-      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
+      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\hbooth\AppData\Local\Temp\.</message>
       <message level="INFO" resource-id="ind_file_hash_test-datastream.xml"
                type="SUBMITTED_RESOURCE">Resource ind_file_hash_test-datastream.xml was submitted.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\nvdcce-0.1-feed.xml.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2.1.9\data_feeds\nvdcce-0.1-feed.xml.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2.1.9\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="WARN" requirement-id="A1"
+               resource-id="C:\utilities\scapval-1.2.1.9\data_feeds"
+               type="APPLICATION">Working off-line, unable to download latest CCE and CPE dictionaries.</message>
       <message level="INFO" type="APPLICATION">Hashing inputs.</message>
-      <message level="INFO" resource-id="ind_file_hash_test-datastream.xml" type="HASH">SHA-256 : CF670957C9BDF412D68EEAD313D241037F3E795A0AD4BDD5A27A2F2E3FDB83C4</message>
-      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
-      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 838DDDFCA7C69A311563DF7B7928313CAC0D0DE4F43339302E1D0558E6FC8123</message>
+      <message level="INFO" resource-id="ind_file_hash_test-datastream.xml" type="HASH">SHA-256 : 11653349E6C6870150553A5A6B5474B0B0ADEB70CD71AB0C8D80C75B936728AB</message>
+      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : 2F329900A81A38FED411B5CC7B39DCA9D28B2E30520E8F9A08F16AA0D8F3C2EB</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 7314EC13F1E32A7D1DEAB3ECC78E531D3823A2875590815EE2D670C1CADF65EA</message>
       <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection ind_file_hash_test-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_file_hash_validation_content-cpe-dictionary.xml</message>
@@ -1118,8 +1121,8 @@
                resource-id="ind_file_hash_test-datastream.xml"
                test="exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace eq namespace-uri(current()) and @name eq local-name(current())])"
                type="SCHEMATRON">oval:nist.validation.filehash:tst:60 - The OVAL test type is not checked in the NIST SCAP Validation Program.</message>
-      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:04.190.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:03.680.</message>
       <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
-      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:07.675.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:06.399.</message>
    </messages>
 </scap-validation-results>

@@ -5,7 +5,7 @@ Testing Status
 Complete
 
 Known Issues
-The tests [97 - 110] are not selected (inconsistent results).
+- The tests [97 - 110] are not selected (inconsistent results).
 
 Scripts
 None

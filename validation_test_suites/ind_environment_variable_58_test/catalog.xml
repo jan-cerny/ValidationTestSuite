@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.TODOind_environment_variable58_tests" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Ind: Environmental Variable 58 test</bundleName>
+	<bundleGuiName>Ind: Environmental Variable 58 test</bundleGuiName>
+	<testSuite version="1" suiteId="G2.configuration1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>independent</schema>
+		<datastreamFile>ind_environment_variable_58_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>environmentvariable58-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>environmentvariable58-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>environmentvariable58-oval.xml</ovalFilename>
+		<xccdfFilename>environmentvariable58-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.environmentvariable58_profile_environmentvariable58</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_9" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_9" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.configuration1_remote">
+		<suiteName>Configuration 1 (Remote Scanners)</suiteName>
+		<guiName>Configuration 1 (Remote Scanners)</guiName>
+		<schema>independent</schema>
+		<datastreamFile>ind_environment_variable_58_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>environmentvariable58-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>environmentvariable58-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>environmentvariable58-oval.xml</ovalFilename>
+		<xccdfFilename>environmentvariable58-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.environmentvariable58_profile_environmentvariable58</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_45" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_9" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_45" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_validation.environmentvariable58_rule_9" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

@@ -4,19 +4,22 @@
                          implementation-version="scapval-1.2.1.9"
                          message-count="449"
                          resource-id="win_audit_policy_subcategory_test-datastream.xml"
-                         validation-datetime="2013-08-07T15:38:50"
+                         validation-datetime="2014-03-11T16:14:33"
                          xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
    <messages>
-      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
+      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\hbooth\AppData\Local\Temp\.</message>
       <message level="INFO" resource-id="win_audit_policy_subcategory_test-datastream.xml"
                type="SUBMITTED_RESOURCE">Resource win_audit_policy_subcategory_test-datastream.xml was submitted.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\nvdcce-0.1-feed.xml.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2.1.9\data_feeds\nvdcce-0.1-feed.xml.</message>
+      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2.1.9\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="WARN" requirement-id="A1"
+               resource-id="C:\utilities\scapval-1.2.1.9\data_feeds"
+               type="APPLICATION">Working off-line, unable to download latest CCE and CPE dictionaries.</message>
       <message level="INFO" type="APPLICATION">Hashing inputs.</message>
       <message level="INFO" resource-id="win_audit_policy_subcategory_test-datastream.xml"
-               type="HASH">SHA-256 : 4E0A1487516B99926ADC3C549EA50AF4DE9F01732E322B9521752F45FFC8EFFC</message>
-      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
-      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 838DDDFCA7C69A311563DF7B7928313CAC0D0DE4F43339302E1D0558E6FC8123</message>
+               type="HASH">SHA-256 : 5AC267DE8D0D9ECBA5FEDFB0937FBDBDFB2F66901CFB4C1C20DE574215AEC0C0</message>
+      <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : 2F329900A81A38FED411B5CC7B39DCA9D28B2E30520E8F9A08F16AA0D8F3C2EB</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 7314EC13F1E32A7D1DEAB3ECC78E531D3823A2875590815EE2D670C1CADF65EA</message>
       <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection win_audit_policy_subcategory_test-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_audit_event_policy_subcategory_content-cpe-dictionary.xml</message>
@@ -25,10 +28,6 @@
       <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_audit_event_policy_subcategory_content-cpe-oval.xml</message>
       <message level="INFO" type="APPLICATION">Applying SCAP schematron rules to content.</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule xccdf-1.2.sch with phase #ALL against source scap_gov.nist_comp_audit_event_policy_subcategory_content-xccdf.xml</message>
-      <message level="WARN" location="/*[local-name()='Benchmark']" requirement-id="330-3"
-               resource-id="scap_gov.nist_comp_audit_event_policy_subcategory_content-xccdf.xml"
-               test="false()"
-               type="SCHEMATRON">Warning: The 'Benchmark' element has no platform specified, which implies the benchmark applies to all platforms. Applicable platforms should be indicate if possible. See the XCCDF 1.2.1 specification, Section 6.2.5.</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.8.sch against source scap_gov.nist_comp_audit_event_policy_subcategory_content-oval.xml</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.3.sch against source scap_gov.nist_comp_audit_event_policy_subcategory_content-cpe-oval.xml</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule tmsad-1.0.sch against source win_audit_policy_subcategory_test-datastream.xml</message>
@@ -2583,8 +2582,8 @@
                resource-id="win_audit_policy_subcategory_test-datastream.xml"
                test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
                type="SCHEMATRON">oval:nist.validation.winAuditPolicySubcategory:def:212 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
-      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:04.475.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:04.398.</message>
       <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
-      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:08.848.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:08.065.</message>
    </messages>
 </scap-validation-results>

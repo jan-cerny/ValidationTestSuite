@@ -919,8 +919,7 @@
 		</xccdf:Benchmark>
 	</component>
 	<component id="scap_gov.nist_comp_win-process58-oval.xml" timestamp="2012-11-09T09:58:28">
-		<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-			xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
+		<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
 			<generator>
 				<oval:product_name>NIST Validation Content Generation Script</oval:product_name>
 				<oval:product_version>1.0</oval:product_version>
@@ -1840,7 +1839,7 @@
 						<criterion comment="Test to see that the current_dir is not equal to c:\." negate="false" test_ref="oval:nist.validation.winProcess58:tst:76"/>
 					</criteria>
 				</definition>
-				<definition id="oval:nist.validation.winProcess58:def:77" version="2" class="compliance">
+				<definition id="oval:nist.validation.winProcess58:def:77" version="4" class="compliance">
 					<metadata>
 						<title>Test the current_dir entity with the case insensitive equals operation</title>
 						<description>Make sure the current_dir entity properly supports the case insensitive equals operation.</description>
@@ -1849,7 +1848,7 @@
 						</expected_results>
 					</metadata>
 					<criteria>
-						<criterion test_ref="oval:nist.validation.winProcess58:tst:77" comment="Test to see that the current_dir case insensitive equals %Systemroot%\SyStEm32." negate="false"/>
+						<criterion test_ref="oval:nist.validation.winProcess58:tst:77" comment="Test to see that the current_dir case insensitive equals c:\wInDoWs\SyStEm32" negate="false"/>
 					</criteria>
 				</definition>
 				<definition class="compliance" id="oval:nist.validation.winProcess58:def:78" version="1">
@@ -1912,7 +1911,7 @@
 						<criterion comment="Test to see that the current_dir case insensitive equals c:\." negate="false" test_ref="oval:nist.validation.winProcess58:tst:82"/>
 					</criteria>
 				</definition>
-				<definition id="oval:nist.validation.winProcess58:def:83" version="2" class="compliance">
+				<definition id="oval:nist.validation.winProcess58:def:83" version="4" class="compliance">
 					<metadata>
 						<title>Test the current_dir entity with the case insensitive not equal operation</title>
 						<description>Make sure the current_dir entity properly supports the case insensitive not equal operation.</description>
@@ -1921,7 +1920,7 @@
 						</expected_results>
 					</metadata>
 					<criteria>
-						<criterion test_ref="oval:nist.validation.winProcess58:tst:83" comment="Test to see that the current_dir is case insensitive not equal to %Systemroot%\SyStEm32." negate="false"/>
+						<criterion test_ref="oval:nist.validation.winProcess58:tst:83" comment="Test to see that the current_dir is case insensitive not equal to c:\wInDoWs\SyStEm32" negate="false"/>
 					</criteria>
 				</definition>
 				<definition class="compliance" id="oval:nist.validation.winProcess58:def:84" version="1">
@@ -2550,7 +2549,7 @@
 					<object object_ref="oval:nist.validation.winProcess58:obj:5"/>
 					<state state_ref="oval:nist.validation.winProcess58:ste:57"/>
 				</process58_test>
-				<process58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:tst:77" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the current_dir case insensitive equals %Systemroot%\SyStEm32.">
+				<process58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:tst:77" version="4" check_existence="at_least_one_exists" check="all" comment="Test to see that the current_dir case insensitive equals c:\wInDoWs\SyStEm32">
 					<object object_ref="oval:nist.validation.winProcess58:obj:5"/>
 					<state state_ref="oval:nist.validation.winProcess58:ste:58"/>
 				</process58_test>
@@ -2574,7 +2573,7 @@
 					<object object_ref="oval:nist.validation.winProcess58:obj:5"/>
 					<state state_ref="oval:nist.validation.winProcess58:ste:63"/>
 				</process58_test>
-				<process58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:tst:83" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the current_dir is case insensitive not equal to %Systemroot%\SyStEm32.">
+				<process58_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:tst:83" version="4" check_existence="at_least_one_exists" check="all" comment="Test to see that the current_dir is case insensitive not equal to c:\wInDoWs\SyStEm32">
 					<object object_ref="oval:nist.validation.winProcess58:obj:5"/>
 					<state state_ref="oval:nist.validation.winProcess58:ste:64"/>
 				</process58_test>
@@ -2699,34 +2698,25 @@
 				</process58_object>
 				<process58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:obj:3" version="3">
 					<command_line operation="pattern match">[Cc]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]\\[Ee][Xx][Pp][Ll][Oo][Rr][Ee][Rr]\.[Ee][Xx][Ee]</command_line>
-					<!-- <command_line operation="pattern match">^[Cc]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]\\[Ee][Xx][Pp][Ll][Oo][Rr][Ee][Rr]\.[Ee][Xx][Ee]$</command_line> -->
-					<!-- <command_line operation="equals">c:\windows\explorer.exe</command_line> -->
 					<pid datatype="int" operation="greater than or equal">0</pid>
 				</process58_object>
 				<process58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:obj:4" version="2">
 					<command_line operation="pattern match">^.*$</command_line>
 					<pid datatype="int" operation="greater than or equal">0</pid>
 					<filter xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" action="include">oval:nist.validation.winProcess58:ste:81</filter>
-					<!-- 
-			<command_line operation="pattern match">.*</command_line>
-			<pid datatype="int" operation="equals">4</pid>
-			 -->
 				</process58_object>
 				<process58_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:obj:5" version="2">
 					<command_line operation="pattern match">^.*$</command_line>
 					<pid datatype="int" operation="greater than or equal">0</pid>
 					<filter xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" action="include">oval:nist.validation.winProcess58:ste:81</filter>
-					<!-- <command_line operation="equals" var_ref="oval:nist.validation.winProcess58:var:1" var_check="all"/>
-			<pid datatype="int" operation="greater than or equal">0</pid>  -->
 				</process58_object>
-				<environmentvariable_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.winProcess58:obj:6" version="1">
-					<name operation="equals">SYSTEMROOT</name>
+				<environmentvariable_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:nist.validation.winProcess58:obj:6" version="3">
+					<name operation="pattern match">^[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]$</name>
 				</environmentvariable_object>
 			</objects>
 			<states>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:1" version="2">
 					<pid datatype="int" operation="equals" var_ref="oval:nist.validation.winProcess58:var:5" var_check="at least one"/>
-					<!-- <pid datatype="int" operation="equals">0</pid> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:2" version="1">
 					<pid datatype="int" operation="equals">1</pid>
@@ -2762,7 +2752,6 @@
 					<command_line datatype="string" operation="pattern match">.*\\eexplorer.exe</command_line>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:13" version="2">
-					<!-- <pid datatype="int" operation="equals">4</pid> -->
 					<pid datatype="int" operation="equals" var_ref="oval:nist.validation.winProcess58:var:5" var_check="at least one"/>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:14" version="1">
@@ -2772,7 +2761,6 @@
 					<pid datatype="int" operation="greater than">1</pid>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:16" version="2">
-					<!-- <pid datatype="int" operation="less than">5</pid> -->
 					<pid datatype="int" operation="less than">4294967295</pid>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:17" version="1">
@@ -2782,7 +2770,6 @@
 					<pid datatype="int" operation="less than or equal">4294967295</pid>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:19" version="2">
-					<!-- <pid datatype="int" operation="not equal">4</pid> -->
 					<pid datatype="int" operation="not equal" var_ref="oval:nist.validation.winProcess58:var:5"/>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:20" version="1">
@@ -2793,7 +2780,6 @@
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:22" version="2">
 					<pid datatype="int" operation="greater than or equal">4294967295</pid>
-					<!-- <pid datatype="int" operation="greater than or equal">5</pid> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:23" version="1">
 					<pid datatype="int" operation="less than or equal">0</pid>
@@ -2866,14 +2852,12 @@
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:46" version="2">
 					<image_path datatype="string" operation="equals" var_ref="oval:nist.validation.winProcess58:var:7" var_check="all"/>
-					<!-- <image_path datatype="string" operation="equals" var_ref="oval:nist.validation.winProcess58:var:1" var_check="all"/> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:47" version="1">
 					<image_path datatype="string" operation="not equal" var_check="all" var_ref="oval:nist.validation.winProcess58:var:3"/>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:48" version="2">
 					<image_path datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.winProcess58:var:7" var_check="all"/>
-					<!-- <image_path datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.winProcess58:var:1" var_check="all"/> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:49" version="1">
 					<image_path datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.winProcess58:var:3"/>
@@ -2886,27 +2870,24 @@
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:52" version="2">
 					<image_path datatype="string" operation="not equal" var_ref="oval:nist.validation.winProcess58:var:7" var_check="all"/>
-					<!-- <image_path datatype="string" operation="not equal" var_ref="oval:nist.validation.winProcess58:var:1" var_check="all"/> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:53" version="1">
 					<image_path datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.winProcess58:var:3"/>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:54" version="2">
 					<image_path datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.winProcess58:var:7" var_check="all"/>
-					<!-- <image_path datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.winProcess58:var:1" var_check="all"/> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:55" version="1">
 					<image_path datatype="string" operation="pattern match">.*\smss.eex</image_path>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:56" version="2">
 					<current_dir datatype="string" operation="equals" var_ref="oval:nist.validation.winProcess58:var:8" var_check="all"/>
-					<!-- <current_dir datatype="string" operation="equals" var_ref="oval:nist.validation.winProcess58:var:4" var_check="all"/> -->
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:57" version="1">
 					<current_dir datatype="string" operation="not equal">c:\</current_dir>
 				</process58_state>
-				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:58" version="1">
-					<current_dir datatype="string" operation="case insensitive equals" var_check="all" var_ref="oval:nist.validation.winProcess58:var:4"/>
+				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:58" version="3">
+					<current_dir datatype="string" operation="case insensitive equals">c:\wInDoWs\SyStEm32</current_dir>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:59" version="1">
 					<current_dir datatype="string" operation="case insensitive not equal">c:\</current_dir>
@@ -2919,13 +2900,12 @@
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:62" version="2">
 					<current_dir datatype="string" operation="not equal" var_ref="oval:nist.validation.winProcess58:var:8" var_check="all"/>
-					<!-- <current_dir datatype="string" operation="not equal" var_ref="oval:nist.validation.winProcess58:var:4" var_check="all"/> -->			
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:63" version="1">
 					<current_dir datatype="string" operation="case insensitive equals">c:\</current_dir>
 				</process58_state>
-				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:64" version="1">
-					<current_dir datatype="string" operation="case insensitive not equal" var_check="all" var_ref="oval:nist.validation.winProcess58:var:4"/>
+				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:64" version="3">
+					<current_dir datatype="string" operation="case insensitive not equal">c:\wInDoWs\SyStEm32</current_dir>
 				</process58_state>
 				<process58_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winProcess58:ste:65" version="1">
 					<current_dir datatype="string" operation="pattern match">a.*</current_dir>
@@ -3044,14 +3024,6 @@
 				</local_variable>
 				<local_variable id="oval:nist.validation.winProcess58:var:2" version="2" datatype="string" comment="This variable represents the expanded representation of %SYSTEMROOT%\explorer.exe">
 					<object_component object_ref="oval:nist.validation.winProcess58:obj:3" item_field="command_line"/>
-					<!-- 
-			<concat>
-				<end character="\">
-					<object_component object_ref="oval:nist.validation.winProcess58:obj:6" item_field="value"/>
-				</end>
-				<literal_component>explorer.exe</literal_component>
-			</concat>
-			 -->
 				</local_variable>
 				<local_variable comment="This variable represents the expanded representation of %SYSTEMROOT%\System32\smss.ex" datatype="string" id="oval:nist.validation.winProcess58:var:3" version="1">
 					<concat>
@@ -3114,8 +3086,7 @@
 		</oval_definitions>
 	</component>
 	<component id="scap_gov.nist_comp_win-process58-cpe-oval.xml" timestamp="2012-11-09T09:58:28">
-		<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-			xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+		<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
 			<generator>
 				<oval:product_name>National Institute of Standards and Technology</oval:product_name>
 				<oval:schema_version>5.3</oval:schema_version>

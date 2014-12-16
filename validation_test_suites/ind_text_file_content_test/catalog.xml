@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.text_file_content_test" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Ind:Text File Content</bundleName>
+	<bundleGuiName>Ind:Independent Text File Content</bundleGuiName>
+	<testSuite version="1" suiteId="configuration1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>independent</schema>
+		<datastreamFile>ind_text_file_content_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>textfilecontent-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>textfilecontent-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>textfilecontent-oval.xml</ovalFilename>
+		<xccdfFilename>textfilecontent-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.textFileContent_profile_textfilecontent</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>text_file_test_config_1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_48" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_45" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_40" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_22" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_23" expectedResult="notselected"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_48" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_45" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_40" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_22" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_23" expectedResult="notselected"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="windows">
+			<command commandType="python">
+				<command>text_file_content_test_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="configuration2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>independent</schema>
+		<datastreamFile>ind_text_file_content_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>textfilecontent-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>textfilecontent-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>textfilecontent-oval.xml</ovalFilename>
+		<xccdfFilename>textfilecontent-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.textFileContent_profile_textfilecontent</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>text_file_test_config_2.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_17" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_50" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_45" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_40" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_22" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_23" expectedResult="notselected"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_17" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_43" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_50" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_45" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_40" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_22" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.textFileContent_rule_23" expectedResult="notselected"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="windows">
+			<command commandType="python">
+				<command>text_file_content_test_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

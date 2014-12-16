@@ -16,9 +16,14 @@ def performConfig(workingDir = None):
     recursiveRegDelete(winreg.HKEY_LOCAL_MACHINE, 'SOFTWARE\\Microsoft\\MSMQ\\SCAP_Validation_Tests\\')
     return
 
+	
 def recursiveRegDelete(hive, key):
     # open key
-    hKey = winreg.OpenKey(hive, key, 0, winreg.KEY_ALL_ACCESS)
+    try:
+        hKey = winreg.OpenKey(hive, key, 0, winreg.KEY_ALL_ACCESS)
+    except EnvironmentError:
+        print("The registry key does not exist. Nothing to delete...")
+        return
     # enumerate values
     values = getValues(hKey)
     # delete values
@@ -30,7 +35,7 @@ def recursiveRegDelete(hive, key):
     # Call recursiveRegDelete on subkey
     for subkey in keys:
         recursiveRegDelete(hive, key + subkey + '\\' )
-        # close the key
+    # close the key
     winreg.CloseKey(hKey)
     #delete key
     winreg.DeleteKey(hive, key)

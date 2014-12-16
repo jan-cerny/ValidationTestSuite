@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.auditevent" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win:Audit Event Tests</bundleName>
+	<bundleGuiName>Win:Audit Event Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.audit_event_policy_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_audit_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>audit_event_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>audit_event_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>audit_event_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>audit_event_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_auditeventpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command>secedit.exe /configure /db test /cfg auditeventpolicy_config_1.inf /overwrite /quiet</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.audit_event_policy_tests_config_2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_audit_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>audit_event_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>audit_event_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>audit_event_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>audit_event_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_auditeventpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command>secedit.exe /configure /db test /cfg auditeventpolicy_config_2.inf /overwrite /quiet</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="fail"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.audit_event_policy_tests_config_3">
+		<suiteName>Configuration 3</suiteName>
+		<guiName>Configuration 3</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_audit_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>audit_event_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>audit_event_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>audit_event_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>audit_event_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_auditeventpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command>secedit.exe /configure /db test /cfg auditeventpolicy_config_3.inf /overwrite /quiet</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="fail"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.audit_event_policy_tests_config_4">
+		<suiteName>Configuration 4</suiteName>
+		<guiName>Configuration 4</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_audit_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>audit_event_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>audit_event_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>audit_event_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>audit_event_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_auditeventpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command>secedit.exe /configure /db test /cfg auditeventpolicy_config_4.inf /overwrite /quiet</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_logon-with-equals-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_combining-three-criterion-constructs-38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_system-with-equals-operation-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_criterion-construct-with-negate-property-37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_privilege-use-with-equals-operation-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-22" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_policy-change-with-equals-operation-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_directory-service-access-with-equals-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-management-with-equals-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_detailed-tracking-with-equals-operation-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-3" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_account-logon-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_object-access-with-equals-operation-17" expectedResult="fail"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

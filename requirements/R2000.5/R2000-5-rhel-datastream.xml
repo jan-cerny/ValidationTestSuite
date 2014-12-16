@@ -21,8 +21,7 @@
         </checks>
     </data-stream>
     <component id="scap_gov.nist_comp_ind-R2000-5-cpe-oval.xml" timestamp="2012-11-02T03:53:05">
-        <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-            xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
+        <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
             <generator>
                 <oval:product_name>National Institute of Standards and Technology</oval:product_name>
                 <oval:schema_version>5.10</oval:schema_version>
@@ -102,7 +101,7 @@
             <xccdf:title>XCCDF Benchmark That References the Validation Content for the R2000.5 on Red Hat Enterprise Linux platforms.</xccdf:title>
             <xccdf:description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the R2000.5 on Red Hat Enterprise Linux platforms.</xccdf:description>
             <xccdf:platform idref="cpe:/o:redhat:enterprise_linux"/>
-            <xccdf:version time="2013-08-02T10:00:00" update="1">1.0</xccdf:version>
+            <xccdf:version time="2013-12-04T10:00:00" update="1">1.1</xccdf:version>
             <xccdf:metadata>
                 <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:contributor>
                 <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</dc:publisher>
@@ -125,14 +124,14 @@
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <!--                Values                                  -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <xccdf:Value id="xccdf_gov.nist_value_rhel.validation_R2000.5_var_1" operator="greater than or equal" type="string">
+            <xccdf:Value id="xccdf_gov.nist_value_rhel.validation_R2000.5_var_1" type="string">
                 <xccdf:title>File versions var 1</xccdf:title>
                 <xccdf:description>File versions</xccdf:description>
                 <xccdf:value>0.0.0.0</xccdf:value>
                 <xccdf:value selector="version_0000">0.0.0.0</xccdf:value>
                 <xccdf:value selector="version_1111">1.1.1.1</xccdf:value>
             </xccdf:Value>
-            <xccdf:Value id="xccdf_gov.nist_value_rhel.validation_R2000.5_var_2" operator="greater than or equal" type="string">
+            <xccdf:Value id="xccdf_gov.nist_value_rhel.validation_R2000.5_var_2" type="string">
                 <xccdf:title>File versions var 2</xccdf:title>
                 <xccdf:description>File versions</xccdf:description>
                 <xccdf:value>0.0.0.0</xccdf:value>
@@ -161,8 +160,7 @@
         </xccdf:Benchmark>
     </component>
     <component id="scap_gov.nist_comp_rhel-R2000-5-oval.xml" timestamp="2013-08-02T03:53:05">
-        <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-            xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
+        <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/windows-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/independent-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/oval-common-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/linux-definitions-schema.xsd     http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.10/ovaldefinition/complete/unix-definitions-schema.xsd">
             <generator>
                 <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
                 <oval:product_version>1.0</oval:product_version>

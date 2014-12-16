@@ -18,6 +18,7 @@ win_user_test_config2.py
 win_user_test_cleanup.py
 
 Configuration Instructions
+Manual Configuration: The computer name must be "TESTMACHINE" or "TESTMACHINE"[01-99]".
 Configuration 1 - Run win_user_test_config1.py
 Configuration 2 - Run win_user_test_config2.py
 

@@ -1940,7 +1940,7 @@
             <criterion comment="Test to see that the hive equals HKEY_LOCAL_MACHINE." test_ref="oval:nist.validation.winRegistry:tst:19"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winRegistry:def:20" version="1">
+        <definition class="compliance" id="oval:nist.validation.winRegistry:def:20" version="2">
           <metadata>
             <title>Test the value entity with the equals operation</title>
             <description>Make sure the value entity properly supports the equals operation.</description>
@@ -1949,7 +1949,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the value equals 1." test_ref="oval:nist.validation.winRegistry:tst:20"/>
+            <criterion comment="Test to see that the value equals 4294967295." test_ref="oval:nist.validation.winRegistry:tst:20"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.winRegistry:def:21" version="1">
@@ -4245,7 +4245,7 @@
           <object object_ref="oval:nist.validation.winRegistry:obj:1"/>
           <state state_ref="oval:nist.validation.winRegistry:ste:1"/>
         </registry_test>
-        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="Test to see that the value equals 1." id="oval:nist.validation.winRegistry:tst:20" version="1">
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="Test to see that the value equals 4294967295." id="oval:nist.validation.winRegistry:tst:20" version="2">
           <object object_ref="oval:nist.validation.winRegistry:obj:1"/>
           <state state_ref="oval:nist.validation.winRegistry:ste:6"/>
         </registry_test>

@@ -1,3 +1,20 @@
-An SCAP data stream collection with multiple data streams.
+Description
+	An SCAP data stream collection with multiple data streams.
 
-Untested
+Content Status
+	Complete
+
+Testing Status
+	Partial tested.
+
+Known Issues
+	None
+
+Scripts
+	None
+
+Configuration Instructions
+	None
+
+Cleanup Instructions 
+	None

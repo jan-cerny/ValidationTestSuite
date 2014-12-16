@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.unix_password_tests" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Unix:Password Tests</bundleName>
+	<bundleGuiName>Unix:Password Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.configuration1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_password_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>unix_password-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>unix_password-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>unix_password-oval.xml</ovalFilename>
+		<xccdfFilename>unix_password-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.unixPassword_profile_password</xccdfProfile>
+		<preparation ordered="false" platform="any">
+			<command commandType="python" order="1" revision="1">
+				<command>unix_password_test_config_1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_83" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_82" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_80" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_87" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_86" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_85" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_84" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_90" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_91" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_63" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_62" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_65" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_64" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_66" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_68" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_72" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_73" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_70" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_71" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_76" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_74" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_75" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_78" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_58" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_50" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_53" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_55" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_56" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_30" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_83" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_82" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_80" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_87" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_86" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_85" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_84" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_90" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_91" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_63" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_62" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_65" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_64" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_66" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_68" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_72" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_73" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_70" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_71" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_76" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_74" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_75" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_78" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_58" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_50" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_53" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_55" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_56" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_28" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_25" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_23" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.unixPassword_rule_22" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

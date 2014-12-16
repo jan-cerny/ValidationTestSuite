@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.unix_file_test" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Unix:R1100</bundleName>
+	<bundleGuiName>Unix:R1100 Test</bundleGuiName>
+	<testSuite version="1" suiteId="G2.configuration1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>unix</schema>
+		<datastreamFile>r1100-xccdf.xml</datastreamFile>
+		<cpeOvalFilename>r1100-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>r1100-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>r1100-oval.xml</ovalFilename>
+		<xccdfFilename>r1100-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation_profile_file</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.r1100_rule_89" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_87" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_23" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_24" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_25" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_26" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_27" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_28" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_29" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_30" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_32" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_90" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_91" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_92" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_93" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_94" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_95" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_96" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_97" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_98" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_135" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_136" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_137" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_138" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_139" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_153" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_155" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_152" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_150" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_151" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_156" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_157" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_154" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_158" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_141" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_140" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_143" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_142" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_145" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_144" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_147" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_146" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_149" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_148" expectedResult="fail"/>
+		</expectedResults>
+		
+		
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.r1100_rule_89" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_87" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_23" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_24" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_25" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_26" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_27" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_28" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_29" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_30" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_32" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_90" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_91" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_92" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_93" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_94" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_95" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_96" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_97" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_98" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_135" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_136" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_137" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_138" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_139" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_153" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_155" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_152" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_150" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_151" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_156" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_157" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_154" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_158" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_141" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_140" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_143" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_142" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_145" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_144" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_147" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_146" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_149" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.r1100_rule_148" expectedResult="fail"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

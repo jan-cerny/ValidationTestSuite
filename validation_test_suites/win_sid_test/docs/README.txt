@@ -1,17 +1,17 @@
 Content Status
-Complete
+	Complete
 
 Testing Status
-Complete
+	Complete
 
 Known Issues
-The current OVALDI version (5.10.1.5) does not correctly evaluates the tests 4, 6, 8 and 13.
+	None
 
 Scripts
-None
+	None
 
 Configuration Instructions
-None
+	None
 
 Cleanup Instructions 
-None
+	None

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.passwordpolicy" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win:Password Policy Tests</bundleName>
+	<bundleGuiName>Win:Password Policy Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.password_policy_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_password_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>password_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>password_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>password_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>password_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_passwordpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command>secedit.exe /configure /db test /cfg passwordpolicy_config_1.inf /overwrite /quiet</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-operation-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-equals-operation-17" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-or-equal-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-equals-operation-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-or-equal-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-or-equal-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-or-equal-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-or-equal-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-or-equal-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-or-equal-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-extend-definition-construct-with-negate-property-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-or-equal-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-operation-3" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-equals-operation-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-operation-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-equals-operation-17" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-or-equal-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-equals-operation-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-or-equal-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-or-equal-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-or-equal-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-or-equal-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-equals-operation-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-or-equal-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-or-equal-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-extend-definition-construct-with-negate-property-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-or-equal-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-operation-3" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.password_policy_tests_config_2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_password_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>password_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>password_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>password_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>password_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_passwordpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command>secedit.exe /configure /db test /cfg passwordpolicy_config_2.inf /overwrite /quiet</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-or-equal-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-or-equal-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-or-equal-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-or-equal-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-or-equal-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-or-equal-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-or-equal-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-extend-definition-construct-with-negate-property-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-or-equal-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-operation-3" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-operation-18" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-operation-1" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-operation-8" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-or-equal-operation-20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-or-equal-operation-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-operation-11" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-or-equal-operation-10" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-or-equal-operation-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-or-equal-operation-4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-operation-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-operation-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-or-equal-operation-14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-or-equal-operation-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-extend-definition-construct-with-negate-property-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-operation-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-or-equal-operation-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-operation-3" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.password_policy_tests_config_3">
+		<suiteName>Configuration 3</suiteName>
+		<guiName>Configuration 3</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_password_policy_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>password_policy_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>password_policy_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>password_policy_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>password_policy_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_passwordpolicy-validation</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="executable" inPath="false" order="1" revision="1">
+				<command>lockout_policy_set.exe min_age:2332800 min_length:14 max_age:TIMEQ_FOREVER history_length:24</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-operation-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-or-equal-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-or-equal-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-or-equal-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-or-equal-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-or-equal-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-or-equal-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-or-equal-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-extend-definition-construct-with-negate-property-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-or-equal-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-operation-3" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-operation-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-equals-operation-7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-operation-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-equals-operation-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-operation-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-less-than-or-equal-operation-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-equals-operation-12" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-or-equal-operation-5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-operation-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-less-than-or-equal-operation-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-or-equal-operation-9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-greater-than-or-equal-operation-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-operation-13" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-equals-operation-2" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-operation-16" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-greater-than-or-equal-operation-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-password-hist-len-with-greater-than-or-equal-operation-19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-extend-definition-construct-with-negate-property-21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-max-passwd-age-with-greater-than-operation-6" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-age-with-less-than-or-equal-operation-15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_-min-passwd-len-with-less-than-operation-3" expectedResult="fail"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="executable" revision="1">
+				<command>secedit.exe /configure /db test /cfg Win7-BaseInstall.inf /overwrite /quiet</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

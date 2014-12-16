@@ -887,7 +887,7 @@
             <criterion comment="Test to see that the os_name matches the regular expression Solaris." test_ref="oval:nist.validation.unixUname:tst:30"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:31" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:31" version="4">
           <metadata>
             <title>Test the os_release entity with the equals operation</title>
             <description>Make sure the os_release entity properly supports the equals operation.</description>
@@ -896,10 +896,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_release equals at least one value of var:1." test_ref="oval:nist.validation.unixUname:tst:31"/>
+            <criterion comment="Test to see that the os_release equals the os_release value collected off the system." test_ref="oval:nist.validation.unixUname:tst:31"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:32" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:32" version="4">
           <metadata>
             <title>Test the os_release entity with the not equal operation</title>
             <description>Make sure the os_release entity properly supports the not equal operation.</description>
@@ -908,10 +908,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_release is not equal to all values of var:1." test_ref="oval:nist.validation.unixUname:tst:32"/>
+            <criterion comment="Test to see that the os_release is not equal to the os_release value collected off the system." test_ref="oval:nist.validation.unixUname:tst:32"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:33" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:33" version="4">
           <metadata>
             <title>Test the os_release entity with the case insensitive equals operation</title>
             <description>Make sure the os_release entity properly supports the case insensitive equals operation.</description>
@@ -920,10 +920,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_release case insensitive equals at least one value of var:2." test_ref="oval:nist.validation.unixUname:tst:33"/>
+            <criterion comment="Test to see that the os_release is case insensitive equals to the os_release version collected off the system where the 'el5' component has been changed to 'eL5'." test_ref="oval:nist.validation.unixUname:tst:33"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:34" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:34" version="4">
           <metadata>
             <title>Test the os_release entity with the case insensitive not equal operation</title>
             <description>Make sure the os_release entity properly supports the case insensitive not equal operation.</description>
@@ -932,7 +932,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_release is case insensitive not equal to all values of var:2." test_ref="oval:nist.validation.unixUname:tst:34"/>
+            <criterion comment="Test to see that the os_release is case insensitive not equal to the os_release version collected off the system where the 'el5' component has been changed to 'eL5'." test_ref="oval:nist.validation.unixUname:tst:34"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.unixUname:def:35" version="1">
@@ -1007,7 +1007,7 @@
             <criterion comment="Test to see that the os_release matches the regular expression ^[a-z]$." test_ref="oval:nist.validation.unixUname:tst:40"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:41" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:41" version="4">
           <metadata>
             <title>Test the os_version entity with the equals operation</title>
             <description>Make sure the os_version entity properly supports the equals operation.</description>
@@ -1016,10 +1016,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_version equals at least one value of var:3." test_ref="oval:nist.validation.unixUname:tst:41"/>
+            <criterion comment="Test to see that the os_version equals the os_version value collected off the system." test_ref="oval:nist.validation.unixUname:tst:41"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:42" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:42" version="4">
           <metadata>
             <title>Test the os_version entity with the not equal operation</title>
             <description>Make sure the os_version entity properly supports the not equal operation.</description>
@@ -1028,10 +1028,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_version is not equal all values of var:3." test_ref="oval:nist.validation.unixUname:tst:42"/>
+            <criterion comment="Test to see that the os_version is not equal to the os_version value collected off the system." test_ref="oval:nist.validation.unixUname:tst:42"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:43" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:43" version="4">
           <metadata>
             <title>Test the os_version entity with the case insensitive equals operation</title>
             <description>Make sure the os_version entity properly supports the case insensitive equals operation.</description>
@@ -1040,10 +1040,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_version case insensitive equals at least one value of var:4." test_ref="oval:nist.validation.unixUname:tst:43"/>
+            <criterion comment="Test to see that the os_version case insensitive equals to '#1 SMP DAY MON DD HH:MM:SS e[S|D]T YYYY' where DAY, MON, DD, HH, MM, SS, [S|D]T, and YYYY are filled in with the values collected off the system. Assumes built with respect to EST or EDT." test_ref="oval:nist.validation.unixUname:tst:43"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.unixUname:def:44" version="1">
+        <definition class="compliance" id="oval:nist.validation.unixUname:def:44" version="4">
           <metadata>
             <title>Test the os_version entity with the case insensitive not equal operation</title>
             <description>Make sure the os_version entity properly supports the case insensitive not equal operation.</description>
@@ -1052,7 +1052,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the os_version is case insensitive not equal to all values of var:4." test_ref="oval:nist.validation.unixUname:tst:44"/>
+            <criterion comment="Test to see that the os_version is case insensitive not equal to '#1 SMP DAY MON DD HH:MM:SS e[S|D]T YYYY' where DAY, MON, DD, HH, MM, SS, [S|D]T, and YYYY are filled in with the values collected off the system. Assumes built with respect to EST or EDT." test_ref="oval:nist.validation.unixUname:tst:44"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.unixUname:def:45" version="1">
@@ -1373,19 +1373,19 @@
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:30"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release equals at least one value of var:1." id="oval:nist.validation.unixUname:tst:31" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release equals the os_release value collected off the system." id="oval:nist.validation.unixUname:tst:31" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:31"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release is not equal to all values of var:1." id="oval:nist.validation.unixUname:tst:32" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release is not equal to the os_release value collected off the system." id="oval:nist.validation.unixUname:tst:32" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:32"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release case insensitive equals at least one value of var:2." id="oval:nist.validation.unixUname:tst:33" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release is case insensitive equals to the os_release version collected off the system where the 'el5' component has been changed to 'eL5'." id="oval:nist.validation.unixUname:tst:33" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:33"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release is case insensitive not equal to all values of var:2." id="oval:nist.validation.unixUname:tst:34" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_release is case insensitive not equal to the os_release version collected off the system where the 'el5' component has been changed to 'eL5'." id="oval:nist.validation.unixUname:tst:34" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:34"/>
         </uname_test>
@@ -1413,19 +1413,19 @@
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:40"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version equals at least one value of var:3." id="oval:nist.validation.unixUname:tst:41" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version equals the os_version value collected off the system." id="oval:nist.validation.unixUname:tst:41" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:41"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version is not equal all values of var:3." id="oval:nist.validation.unixUname:tst:42" version="1">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version is not equal to the os_version value collected off the system." id="oval:nist.validation.unixUname:tst:42" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:42"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version case insensitive equals at least one value of var:4." id="oval:nist.validation.unixUname:tst:43" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version case insensitive equals to '#1 SMP DAY MON DD HH:MM:SS e[S|D]T YYYY' where DAY, MON, DD, HH, MM, SS, [S|D]T, and YYYY are filled in with the values collected off the system. Assumes built with respect to EST or EDT." id="oval:nist.validation.unixUname:tst:43" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:43"/>
         </uname_test>
-        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version is case insensitive not equal to all values of var:4." id="oval:nist.validation.unixUname:tst:44" version="2">
+        <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" check="all" comment="Test to see that the os_version is case insensitive not equal to '#1 SMP DAY MON DD HH:MM:SS e[S|D]T YYYY' where DAY, MON, DD, HH, MM, SS, [S|D]T, and YYYY are filled in with the values collected off the system. Assumes built with respect to EST or EDT." id="oval:nist.validation.unixUname:tst:44" version="5">
           <object object_ref="oval:nist.validation.unixUname:obj:1"/>
           <state state_ref="oval:nist.validation.unixUname:ste:44"/>
         </uname_test>
@@ -1604,21 +1604,25 @@
         <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:30" version="1">
           <os_name datatype="string" operation="pattern match">Solaris</os_name>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:31" version="2">
-          <os_release datatype="string" operation="equals" var_ref="oval:nist.validation.unixUname:var:1" entity_check="at least one" var_check="at least one"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:31" version="4">
+          <!-- <os_release datatype="string" operation="equals" var_ref="oval:nist.validation.unixUname:var:1" entity_check="at least one" var_check="at least one"/> -->
           <!-- <os_release datatype="string" operation="equals">2.6.18-308.20.1.el5</os_release> -->
+        <os_release datatype="string" operation="equals" var_ref="oval:nist.validation.unixUname:var:5" var_check="at least one"/>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:32" version="2">
-          <os_release datatype="string" operation="not equal" var_ref="oval:nist.validation.unixUname:var:1" entity_check="at least one" var_check="all"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:32" version="4">
+          <!-- <os_release datatype="string" operation="not equal" var_ref="oval:nist.validation.unixUname:var:1" entity_check="at least one" var_check="all"/> -->
           <!-- <os_release datatype="string" operation="not equal">2.6.18-308.20.1.el5</os_release> -->
+        <os_release datatype="string" operation="not equal" var_ref="oval:nist.validation.unixUname:var:5" var_check="all"/>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:33" version="2">
-          <os_release datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.unixUname:var:2" entity_check="at least one" var_check="at least one"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:33" version="4">
+          <!-- <os_release datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.unixUname:var:2" entity_check="at least one" var_check="at least one"/> -->
           <!-- <os_release datatype="string" operation="case insensitive equals">2.6.18-308.20.1.eL5</os_release> -->
+        <os_release datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.unixUname:var:6" var_check="at least one"/>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:34" version="2">
-          <os_release datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.unixUname:var:2" entity_check="at least one" var_check="all"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:34" version="4">
+          <!-- <os_release datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.unixUname:var:2" entity_check="at least one" var_check="all"/> -->
           <!-- <os_release datatype="string" operation="case insensitive not equal">2.6.18-308.20.1.eL5</os_release> -->
+        <os_release datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.unixUname:var:6" var_check="all"/>
         </uname_state>
         <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:35" version="1">
           <os_release datatype="string" operation="pattern match">^2\.6\.\d{2}-\d{3}\.[\w]+</os_release>
@@ -1638,21 +1642,25 @@
         <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:40" version="1">
           <os_release datatype="string" operation="pattern match">^[a-z]$</os_release>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:41" version="2">
-          <os_version datatype="string" operation="equals" var_ref="oval:nist.validation.unixUname:var:3" entity_check="at least one" var_check="at least one"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:41" version="4">
+          <!-- <os_version datatype="string" operation="equals" var_ref="oval:nist.validation.unixUname:var:3" entity_check="at least one" var_check="at least one"/> -->
           <!-- <os_version datatype="string" operation="equals">#1 SMP Tue Nov 6 04:38:29 EST 2012</os_version> -->
+        <os_version datatype="string" operation="equals" var_ref="oval:nist.validation.unixUname:var:7" var_check="at least one"/>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:42" version="2">
-          <os_version datatype="string" operation="not equal" var_ref="oval:nist.validation.unixUname:var:3" entity_check="at least one" var_check="all"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:42" version="4">
+          <!-- <os_version datatype="string" operation="not equal" var_ref="oval:nist.validation.unixUname:var:3" entity_check="at least one" var_check="all"/> -->
           <!-- <os_version datatype="string" operation="not equal">#1 SMP Tue Nov 6 04:38:29 EST 2012</os_version> -->
+        <os_version datatype="string" operation="not equal" var_ref="oval:nist.validation.unixUname:var:7" var_check="all"/>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:43" version="2">
-          <os_version datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.unixUname:var:4" entity_check="at least one" var_check="at least one"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:43" version="4">
+          <!-- <os_version datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.unixUname:var:4" entity_check="at least one" var_check="at least one"/> -->
           <!-- <os_version datatype="string" operation="case insensitive equals">#1 SMP Tue NOV 6 04:38:29 EsT 2012</os_version> -->
+        <os_version datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.unixUname:var:8" var_check="at least one"/>
         </uname_state>
-        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:44" version="2">
-          <os_version datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.unixUname:var:4" entity_check="at least one" var_check="all"/>
+        <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:44" version="4">
+          <!-- <os_version datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.unixUname:var:4" entity_check="at least one" var_check="all"/> -->
           <!-- <os_version datatype="string" operation="case insensitive not equal">#1 SMP Tue NOV 6 04:38:29 EsT 2012</os_version> -->
+        <os_version datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.unixUname:var:8" var_check="all"/>
         </uname_state>
         <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.unixUname:ste:45" version="1">
           <os_version datatype="string" operation="pattern match">^#1 SMP.+\d{4}$</os_version>
@@ -1782,6 +1790,31 @@
           <value>#1 SMP Fri MAR 22 05:43:34 EdT 2013</value>
           <value>#1 SMP Fri APR 26 09:22:54 EdT 2013</value>
         </constant_variable>
+      <local_variable id="oval:nist.validation.unixUname:var:5" version="1" datatype="string" comment="Collected kernel version as found on system.">
+        <object_component object_ref="oval:nist.validation.unixUname:obj:1" item_field="os_release"/>
+      </local_variable>
+      <local_variable id="oval:nist.validation.unixUname:var:6" version="1" datatype="string" comment="Collected kernel version as found on system with the 'el5' component modified for the case-insensitive checks.">
+        <end character=".eL5">
+          <regex_capture pattern="([\d\.\-]+)\.el5">
+            <object_component object_ref="oval:nist.validation.unixUname:obj:1" item_field="os_release"/>
+          </regex_capture>
+        </end>
+      </local_variable>
+      <local_variable id="oval:nist.validation.unixUname:var:7" version="1" datatype="string" comment="Collected OS version as found on system.">
+        <object_component object_ref="oval:nist.validation.unixUname:obj:1" item_field="os_version"/>
+      </local_variable>
+      <local_variable id="oval:nist.validation.unixUname:var:8" version="1" datatype="string" comment="Collected OS version as found on system with the timezone component modified for the case-insensitive checks.">
+        <concat>
+          <regex_capture pattern="(#1 SMP [A-Z][a-z]{2} [A-Z][a-z]{2} [0-9]{1,2} [0-9]{2}:[0-9]{2}:[0-9]{2} )[A-Z]{3} [0-9]{4}">
+            <object_component object_ref="oval:nist.validation.unixUname:obj:1" item_field="os_version"/>
+          </regex_capture>
+          <begin character="e">
+            <regex_capture pattern="#1 SMP [A-Z][a-z]{2} [A-Z][a-z]{2} [0-9]{1,2} [0-9]{2}:[0-9]{2}:[0-9]{2} E([A-Z]{2} [0-9]{4})">
+              <object_component object_ref="oval:nist.validation.unixUname:obj:1" item_field="os_version"/>
+            </regex_capture>
+          </begin>
+        </concat>
+      </local_variable>
       </variables>
     </oval_definitions>
   </component>

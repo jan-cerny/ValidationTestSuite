@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.unix_inetd_tests" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Unix:Inetd Tests</bundleName>
+	<bundleGuiName>Unix:Inetd Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.configuration1">
+		<suiteName>Configuration 1 - inetd is not installed</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_inetd_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>inetd-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>inetd-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>inetd-oval.xml</ovalFilename>
+		<xccdfFilename>inetd-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_xccdf_gov.nist.validation.inetd_profile_inetd</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_6" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_7" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_4" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_5" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_2" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_3" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_61" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_1" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_56" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_66" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_8" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_9" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_48" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_72" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_71" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_49" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_69" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_14" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_15" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_16" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_17" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_10" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_57" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_12" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_13" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_58" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_59" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_62" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_38" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_39" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_36" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_37" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_34" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_35" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_32" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_33" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_30" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_67" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_43" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_60" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_68" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_50" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_51" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_70" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_52" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_65" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_53" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_42" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_54" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_55" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_47" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_46" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_45" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_44" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_29" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_28" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_41" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_40" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_25" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_24" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_27" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_26" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_23" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_22" expectedResult="notselected"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_6" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_7" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_4" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_5" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_2" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_3" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_61" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_1" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_56" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_66" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_8" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_9" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_48" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_72" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_71" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_49" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_69" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_14" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_15" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_16" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_17" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_10" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_57" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_12" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_13" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_18" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_19" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_58" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_59" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_62" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_38" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_39" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_36" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_37" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_34" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_35" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_32" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_33" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_30" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_67" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_43" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_60" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_68" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_50" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_51" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_70" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_52" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_65" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_53" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_42" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_54" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_55" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_47" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_46" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_45" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_44" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_29" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_28" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_41" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_40" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_25" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_24" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_27" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_26" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_21" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_20" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_23" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_22" expectedResult="notselected"/>
+		</expectedResults>
+	</testSuite>
+
+	<testSuite version="1" suiteId="G2.ConfigurationX">
+		<suiteName>Configuration X - if inetd is installed</suiteName>
+		<guiName>Configuration X</guiName>
+		<schema>unix</schema>
+		<datastreamFile>unix_inetd_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>inetd-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>inetd-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>inetd-oval.xml</ovalFilename>
+		<xccdfFilename>inetd-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist_profile_xccdf_gov.nist.validation.inetd_profile_inetd</xccdfProfile>
+		<!--<preparation ordered="false" platform="TODO">
+			<command commandType="shell" order="1" revision="1">
+				<command>TODO</command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_61" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_72" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_71" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_69" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_63" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_64" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_67" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_65" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_7" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_61" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_72" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_71" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_49" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_69" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_63" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_64" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_67" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_65" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_44" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_29" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_24" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist.validation.inetd_rule_22" expectedResult="pass"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

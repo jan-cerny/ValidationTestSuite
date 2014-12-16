@@ -478,8 +478,7 @@
     </xccdf:Benchmark>
   </component>
   <component id="scap_gov.nist_comp_wuaupdatesearcher-oval.xml" timestamp="2012-11-09T09:58:52">
-    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd                  http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#linux http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/linux-definitions-schema.xsd               http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
       <generator>
         <oval:product_name>NIST Validation Content Generation Script</oval:product_name>
         <oval:product_version>1.0</oval:product_version>
@@ -1195,8 +1194,10 @@
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:11"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:12" version="2" state_operator="OR">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:12" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:8"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:9"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:12"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
         </wuaupdatesearcher_test>
@@ -1207,9 +1208,11 @@
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:14"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:15" version="2" state_operator="OR">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:15" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
-          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:15"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:8"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:9"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:12"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
         </wuaupdatesearcher_test>
         <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:16" version="2">
@@ -1224,9 +1227,11 @@
         <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none exist" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:18" version="2">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:19" version="2" state_operator="OR">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="none satisfy" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:19" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
-          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:19"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:8"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:9"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:12"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
         </wuaupdatesearcher_test>
         <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="only one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:20" version="2">
@@ -1273,26 +1278,33 @@
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:1"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:30"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:31" version="2" state_operator="OR">
-          <!-- <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:31" version="2" state_operator="OR"> -->
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:31" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
-          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:31"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:8"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:9"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:12"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:13"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:32" version="2" state_operator="OR">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:32" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:32"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:42"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:52"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:62"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:33" version="2" state_operator="OR">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:33" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:33"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:43"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:53"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:63"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:34" version="2" state_operator="OR">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:34" version="3" state_operator="OR">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:34"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:44"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:54"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:64"/>
         </wuaupdatesearcher_test>
         <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:35" version="2">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
@@ -1302,19 +1314,23 @@
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:36"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:37" version="2" state_operator="AND">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:37" version="3" state_operator="AND">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:37"/>
-          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:45"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:47"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:57"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:67"/>
         </wuaupdatesearcher_test>
         <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:38" version="2">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:38"/>
         </wuaupdatesearcher_test>
-        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:39" version="2" state_operator="AND">
+        <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:39" version="3" state_operator="AND">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
           <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:39"/>
-          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:46"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:49"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:59"/>
+          <state state_ref="oval:nist.validation.winWuaUpdateSearcher:ste:69"/>
         </wuaupdatesearcher_test>
         <wuaupdatesearcher_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="TODO" id="oval:nist.validation.winWuaUpdateSearcher:tst:40" version="2">
           <object object_ref="oval:nist.validation.winWuaUpdateSearcher:obj:6"/>
@@ -1398,36 +1414,40 @@
           <behaviors include_superseded_updates="true"/>
           <search_criteria>UpdateId='55555555-751a-48ec-80a2-2d0b06fbf379'</search_criteria>
         </wuaupdatesearcher_object>
-        
-        
-        
-        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:4" version="2" comment="Security Update for Windows 7 for x64-based Systems (KB2509553)">
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:4" version="3" comment="MS11-030 Security Update for Windows 7 for x64-based Systems (KB2509553)">
           <behaviors include_superseded_updates="true"/>
           <search_criteria>UpdateId='ddb30279-d5f2-4505-851e-3689abfb80a0'</search_criteria>
         </wuaupdatesearcher_object>
-        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:5" version="1" comment="Security Update for Windows 7 (KB2509553)">
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:5" version="2" comment="MS11-030 Security Update for Windows 7 (KB2509553)">
           <behaviors include_superseded_updates="true"/>
           <search_criteria>UpdateId='58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc'</search_criteria>
         </wuaupdatesearcher_object>
-        
-        
-        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:6" version="1" comment="Union of Security Update for Windows 7 (KB2509553) and Security Update for Windows 7 for x64-based Systems (KB2509553)">
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:6" version="2" comment="Union of MS11-030 updates for Windows XP, Windows Vista, Windows 7 x64, and Windows 7 x86">
           <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
-            <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:4</object_reference>
-            <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:5</object_reference>
+            <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+              <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:4</object_reference>
+              <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:5</object_reference>
+            </set>
+            <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+              <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:8</object_reference>
+              <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:9</object_reference>
+            </set>
           </set>
         </wuaupdatesearcher_object>
-        
-
-
         <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:7" version="1" comment="set=UNION IsInstalled=1 and RebootRequired=0">
           <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
             <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:1</object_reference>
             <object_reference>oval:nist.validation.winWuaUpdateSearcher:obj:55</object_reference>
           </set>
         </wuaupdatesearcher_object>
-        
-        
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:8" version="1" comment="MS11-030 Security update for Windows XP (KB2509553)">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>UpdateId='d53dc918-bae4-4b71-8f2e-bc4e5749b387'</search_criteria>
+        </wuaupdatesearcher_object>
+        <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:9" version="1" comment="MS11-030 Security update for Windows Vista (KB2509553)">
+          <behaviors include_superseded_updates="true"/>
+          <search_criteria>UpdateId='de84abd3-b30c-4d9f-aa7a-fe8539571b7b'</search_criteria>
+        </wuaupdatesearcher_object>
         <wuaupdatesearcher_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:obj:41" version="1">
           <behaviors include_superseded_updates="true"/>
           <search_criteria>type='driver'</search_criteria>
@@ -1493,26 +1513,26 @@
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:11" version="1">
           <update_id datatype="string" entity_check="at least one" operation="pattern match">.*</update_id>
         </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:12" version="2" comment="Security Update for Windows 7 for x64-based Systems (KB2584146)">
-          <update_id datatype="string" entity_check="at least one" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:8" version="1" comment="MS11-030 Security update for Windows XP (KB2509553)">
+          <update_id datatype="string" entity_check="at least one" operation="equals">d53dc918-bae4-4b71-8f2e-bc4e5749b387</update_id>
         </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:13" version="1" comment="Security Update for Windows 7 (KB2509553)">
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:9" version="1" comment="MS11-030 Security update for Windows Vista (KB2509553)">
+          <update_id datatype="string" entity_check="at least one" operation="equals">de84abd3-b30c-4d9f-aa7a-fe8539571b7b</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:12" version="3" comment="MS11-030 Security Update for Windows 7 for x64-based Systems (KB2509553)">
+          <update_id datatype="string" entity_check="at least one" operation="equals">ddb30279-d5f2-4505-851e-3689abfb80a0</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:13" version="2" comment="MS11-030 Security Update for Windows 7 (KB2509553)">
           <update_id datatype="string" entity_check="at least one" operation="equals">58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:14" version="1">
           <update_id datatype="string" entity_check="at least one" operation="pattern match">^.{1}z.*$</update_id>
         </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:15" version="1">
-          <update_id datatype="string" entity_check="at least one" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
-        </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:16" version="1">
-          <update_id datatype="string" entity_check="all" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:16" version="2" comment="MS11-030 Security Update for Windows 7 for x64-based Systems (KB2509553)">
+          <update_id datatype="string" entity_check="all" operation="equals">ddb30279-d5f2-4505-851e-3689abfb80a0</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:17" version="1">
           <update_id datatype="string" entity_check="at least one" operation="equals">123</update_id>
-        </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:19" version="1">
-          <update_id datatype="string" entity_check="at least one" operation="equals">4ae85c00-0eaa-4be0-b81b-dbd7053d5fae</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:20" version="1">
           <update_id datatype="string" entity_check="only one" operation="pattern match">.*</update_id>
@@ -1547,14 +1567,17 @@
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:30" version="1">
           <search_criteria datatype="string" operation="pattern match">^\w*\d$</search_criteria>
         </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:31" version="2" comment="Security Update for Windows 7 for x64-based Systems (KB2509553)">
-          <update_id datatype="string" entity_check="at least one" operation="equals">ddb30279-d5f2-4505-851e-3689abfb80a0</update_id>
-        </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:32" version="1">
           <update_id datatype="string" entity_check="all" operation="not equal">ddb30279-d5f2-4505-851e-3689ABfb80a0</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:42" version="1">
           <update_id datatype="string" entity_check="all" operation="not equal">58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:52" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">d53dc918-bae4-4b71-8f2e-bc4e5749b387</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:62" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">de84abd3-b30c-4d9f-aa7a-fe8539571b7b</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:33" version="1">
           <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">DDB30279-d5f2-4505-851e-3689abfb80a0</update_id>
@@ -1562,11 +1585,23 @@
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:43" version="1">
           <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">58E9EACA-4CC8-429d-9d0f-3e2d47c1cfbc</update_id>
         </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:53" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">D53DC918-BAE4-4b71-8f2e-bc4e5749b387</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:63" version="1">
+          <update_id datatype="string" entity_check="at least one" operation="case insensitive equals">DE84ABD3-B30C-4d9f-aa7a-fe8539571b7b</update_id>
+        </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:34" version="1">
           <update_id datatype="string" entity_check="all" operation="case insensitive not equal">ddb31279-d5f2-4505-851e-3689ABfb80a0</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:44" version="1">
           <update_id datatype="string" entity_check="all" operation="case insensitive not equal">58e9eaca-4cc8-429d-9d0f-3E2D47C1CFBC</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:54" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">d53dc918-bae4-4b71-8f2e-BC4E5749B387</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:64" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">de84abd3-b30c-4d9f-aa7a-FE8539571B7B</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:35" version="1">
           <update_id datatype="string" entity_check="at least one" operation="pattern match">^[\-a-fA-f\d]*$</update_id>
@@ -1589,18 +1624,35 @@
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:46" version="1">
           <update_id datatype="string" entity_check="all" operation="case insensitive not equal">58E9EACA-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
         </wuaupdatesearcher_state>
-        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:40" version="2">
-          <update_id datatype="string" entity_check="all" operation="pattern match">^[^0]+$</update_id>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:40" version="3">
+          <update_id datatype="string" entity_check="all" operation="pattern match">^[^0]+\.$</update_id>
         </wuaupdatesearcher_state>
         <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:41" version="1">
           <search_criteria datatype="string" operation="pattern match">.*</search_criteria>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:47" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">58e9eaca-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:57" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">d53dc918-bae4-4b71-8f2e-bc4e5749b387</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:67" version="1">
+          <update_id datatype="string" entity_check="all" operation="not equal">de84abd3-b30c-4d9f-aa7a-fe8539571b7b</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:49" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">58E9EACA-4cc8-429d-9d0f-3e2d47c1cfbc</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:59" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">D53DC918-bae4-4b71-8f2e-bc4e5749b387</update_id>
+        </wuaupdatesearcher_state>
+        <wuaupdatesearcher_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winWuaUpdateSearcher:ste:69" version="1">
+          <update_id datatype="string" entity_check="all" operation="case insensitive not equal">DE84ABD3-b30c-4d9f-aa7a-fe8539571b7b</update_id>
         </wuaupdatesearcher_state>
       </states>
     </oval_definitions>
   </component>
   <component id="scap_gov.nist_comp_wuaupdatesearcher-cpe-oval.xml" timestamp="2012-11-09T09:58:52">
-    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-      xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+    <oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
       <generator>
         <oval:product_name>National Institute of Standards and Technology</oval:product_name>
         <oval:schema_version>5.3</oval:schema_version>

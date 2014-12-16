@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.user" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win:User Tests</bundleName>
+	<bundleGuiName>Win:User Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.user_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_user_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>user_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>user_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>user_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>user_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winUser_profile_user</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>win_user_test_config1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_user_test-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-37" expectedResult="pass"/>
+			<!--<result definition="xccdf_gov.nist_rule_user_test-38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-43" expectedResult="pass"/>-->
+		</expectedResults>
+				<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_user_test-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-31" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-37" expectedResult="pass"/>
+			<!--<result definition="xccdf_gov.nist_rule_user_test-38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-43" expectedResult="pass"/>-->
+		</expectedResults>
+		<cleanup ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>win_user_test_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.user_tests_config_2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_user_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>user_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>user_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>user_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>user_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winUser_profile_user</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>win_user_test_config2.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist_rule_user_test-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-37" expectedResult="fail"/>
+			<!--<result definition="xccdf_gov.nist_rule_user_test-38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-43" expectedResult="pass"/>-->
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist_rule_user_test-1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-33" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-34" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-35" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-36" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-37" expectedResult="fail"/>
+			<!--<result definition="xccdf_gov.nist_rule_user_test-38" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-39" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_user_test-41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_user_test-43" expectedResult="pass"/>-->
+		</expectedResults>
+		<cleanup ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>win_user_test_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

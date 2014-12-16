@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.fileeffectiverights" bundleVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Win:File Effective Rights Tests</bundleName>
+	<bundleGuiName>Win:File Effective Rights Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.file_effective_rights_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_file_effective_rights_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>file_effective_rights_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>file_effective_rights_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>file_effective_rights_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>file_effective_rights_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winFileEffectiveRights_profile_fileeffectiverights</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>file_effective_rights_config1.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_89" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_83" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_82" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_81" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_80" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_87" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_86" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_85" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_84" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_90" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_91" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_61" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_60" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_62" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_65" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_67" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_66" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_69" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_68" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_72" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_73" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_70" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_71" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_76" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_77" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_74" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_75" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_78" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_79" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_58" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_54" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_56" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_89" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_83" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_82" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_81" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_80" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_87" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_86" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_85" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_84" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_90" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_91" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_61" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_60" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_62" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_65" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_67" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_66" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_69" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_68" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_72" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_73" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_70" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_71" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_76" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_77" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_74" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_75" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_78" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_79" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_58" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_59" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_54" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_56" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_57" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="python">
+				<command>file_effective_rights_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.file_effective_rights_tests_config_2">
+		<suiteName>Configuration 2</suiteName>
+		<guiName>Configuration 2</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_file_effective_rights_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>file_effective_rights_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>file_effective_rights_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>file_effective_rights_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>file_effective_rights_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winFileEffectiveRights_profile_fileeffectiverights</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>file_effective_rights_config2.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_88" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_83" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_82" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_80" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_87" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_86" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_85" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_84" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_90" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_91" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_65" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_72" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_73" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_71" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_76" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_74" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_75" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_78" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_53" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_55" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_88" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_83" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_82" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_80" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_87" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_86" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_85" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_84" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_90" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_91" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_65" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_72" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_73" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_71" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_76" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_74" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_75" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_78" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_53" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_55" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="python">
+				<command>file_effective_rights_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+	<testSuite version="1" suiteId="G2.file_effective_rights_tests_config_3">
+		<suiteName>Configuration 3</suiteName>
+		<guiName>Configuration 3</guiName>
+		<schema>microsoft windows</schema>
+		<datastreamFile>win_file_effective_rights_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>file_effective_rights_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>file_effective_rights_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>file_effective_rights_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>file_effective_rights_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.winFileEffectiveRights_profile_fileeffectiverights</xccdfProfile>
+		<preparation ordered="false" platform="windows">
+			<command commandType="python" order="1" revision="1">
+				<command>file_effective_rights_config3.py</command>
+			</command>
+		</preparation>
+		<expectedResults reportType="xccdf">
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_88" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_83" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_82" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_80" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_87" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_86" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_85" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_84" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_90" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_91" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_65" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_72" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_73" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_71" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_76" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_74" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_75" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_78" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_53" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_55" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<expectedResults reportType="arf">
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_39" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_36" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_37" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_32" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_33" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_31" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_88" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_83" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_82" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_80" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_87" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_86" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_85" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_84" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_14" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_15" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_19" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_90" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_91" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_61" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_63" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_62" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_65" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_64" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_72" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_73" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_71" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_76" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_74" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_75" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_78" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_47" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_46" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_42" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_41" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_4" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_5" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_9" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_51" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_52" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_53" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_54" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_55" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_27" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_26" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_21" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_20" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist.validation.winFileEffectiveRights_rule_22" expectedResult="pass"/>
+		</expectedResults>
+		<cleanup ordered="false" platform="any">
+			<command commandType="python" inPath="false">
+				<command>file_effective_rights_cleanup.py</command>
+			</command>
+		</cleanup>
+	</testSuite>
+</testBundle>

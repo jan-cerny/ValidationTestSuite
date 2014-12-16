@@ -2,9 +2,9 @@
 <scap-validation-results xmlns="http://scap.nist.gov/schema/validation/results/0.1"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          implementation-version="scapval-1.2.1.9"
-                         message-count="28"
+                         message-count="27"
                          resource-id="R2000-5-win-datastream.xml"
-                         validation-datetime="2013-08-05T09:34:54"
+                         validation-datetime="2014-02-05T22:15:12"
                          xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
    <messages>
       <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
@@ -12,9 +12,9 @@
       <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\nvdcce-0.1-feed.xml.</message>
       <message level="INFO" type="APPLICATION">File is less than 12 hours old, skipping download for C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
       <message level="INFO" type="APPLICATION">Hashing inputs.</message>
-      <message level="INFO" resource-id="R2000-5-win-datastream.xml" type="HASH">SHA-256 : 9F39D4D2AD6F0843889249C4A36C1F64A6327B0566EBC5E8E724C2FEA38EF61C</message>
+      <message level="INFO" resource-id="R2000-5-win-datastream.xml" type="HASH">SHA-256 : 63E85197D325955CE5A3EA77A69AE30D71B13C01C2509C6BB9B379BBFC6332AA</message>
       <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
-      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 838DDDFCA7C69A311563DF7B7928313CAC0D0DE4F43339302E1D0558E6FC8123</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 874241026D2DA6AD082BA4AA2B6BA17063EBF9843DD3AC5F6DB671EDE1A0CA51</message>
       <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection R2000-5-win-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_win-R2000-5-cpe-dictionary.xml</message>
@@ -33,12 +33,6 @@
       <message level="INFO" type="APPLICATION">Running Schematron rule tmsad-1.0.sch against source R2000-5-win-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule source-data-stream-1.2_1.0.sch against source R2000-5-win-datastream.xml</message>
       <message level="WARN"
-               location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:version[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
-               requirement-id="3-2"
-               resource-id="R2000-5-win-datastream.xml"
-               test="exists(@time)"
-               type="SCHEMATRON">The @time attribute of the &lt;xccdf:version&gt; element SHOULD be used for a timestamp of when the benchmark was defined.</message>
-      <message level="WARN"
                location="/*:data-stream-collection[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:component[namespace-uri()='http://scap.nist.gov/schema/scap/source/1.2'][1]/*:Benchmark[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]/*:Rule[namespace-uri()='http://checklists.nist.gov/xccdf/1.2'][1]"
                requirement-id="251-1"
                resource-id="R2000-5-win-datastream.xml"
@@ -56,8 +50,8 @@
                resource-id="R2000-5-win-datastream.xml"
                test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
                type="SCHEMATRON">oval:nist.validation.r2000.5:def:5 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
-      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:02.381.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:02.393.</message>
       <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
-      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:05.694.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:05.358.</message>
    </messages>
 </scap-validation-results>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testBundle bundleId="G2.partition" bundleVersion="1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="file:///C:/Programs/validationTestHarness/thControlFile.xsd">
+	<bundleName>Lin:Partition Tests</bundleName>
+	<bundleGuiName>Lin:Partition Tests</bundleGuiName>
+	<testSuite version="1" suiteId="G2.partition_tests_config_1">
+		<suiteName>Configuration 1</suiteName>
+		<guiName>Configuration 1</guiName>
+		<schema>linux</schema>
+		<datastreamFile>linux_partition_test-datastream.xml</datastreamFile>
+		<cpeOvalFilename>partition_validation_content-cpe-oval.xml</cpeOvalFilename>
+		<cpeDictionaryFilename>partition_validation_content-cpe-dictionary.xml</cpeDictionaryFilename>
+		<ovalFilename>partition_validation_content-oval.xml</ovalFilename>
+		<xccdfFilename>partition_validation_content-xccdf.xml</xccdfFilename>
+		<xccdfProfile>xccdf_gov.nist.validation.linuxPartition_profile_partition</xccdfProfile>
+		<!--<preparation ordered="false" platform="windows">
+			<command commandType="executable" order="1" revision="1">
+				<command></command>
+			</command>
+		</preparation>-->
+		<expectedResults reportType="xccdf"> 
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test52" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test54" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test106" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test104" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test105" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test102" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test103" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test100" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test101" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test39" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test37" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test36" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test33" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test82" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test83" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test80" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test86" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test87" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test84" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test85" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test99" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test98" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test95" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test94" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test97" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test96" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test91" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test90" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test93" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test61" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test62" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test63" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test64" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test65" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test73" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test72" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test71" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test76" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test75" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test74" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test78" expectedResult="fail"/>
+		</expectedResults>
+		<expectedResults reportType="arf"> 
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test9" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test8" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test1" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test3" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test2" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test5" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test4" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test7" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test6" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test48" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test49" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test46" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test47" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test44" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test45" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test42" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test43" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test40" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test41" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test59" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test58" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test51" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test50" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test53" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test52" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test55" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test54" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test57" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test56" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test28" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test29" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test24" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test25" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test26" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test27" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test20" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test21" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test22" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test23" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test106" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test104" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test105" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test102" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test103" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test100" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test101" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test39" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test38" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test37" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test36" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test35" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test34" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test33" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test32" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test31" expectedResult="notselected"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test30" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test82" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test83" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test80" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test81" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test86" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test87" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test84" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test85" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test88" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test89" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test99" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test98" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test95" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test94" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test97" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test96" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test91" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test90" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test93" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test92" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test15" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test14" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test17" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test16" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test11" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test10" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test13" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test12" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test19" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test18" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test60" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test61" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test62" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test63" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test64" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test65" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test66" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test67" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test68" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test69" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test73" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test72" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test71" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test70" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test77" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test76" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test75" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test74" expectedResult="pass"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test79" expectedResult="fail"/>
+			<result definition="xccdf_gov.nist_rule_xccdf_gov.nist_rule_partition_test78" expectedResult="fail"/>
+		</expectedResults>
+	</testSuite>
+</testBundle>

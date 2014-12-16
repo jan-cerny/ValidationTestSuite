@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
-  xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/windows-definitions-schema.xsd
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/windows-definitions-schema.xsd
 														http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/independent-definitions-schema.xsd
 													    http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/oval-definitions-schema.xsd
 														http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/oval-common-schema.xsd
@@ -421,32 +419,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:34" comment="Test to see that the path is not equal to /tmp/scap_validation_content/e." negate="false"/>
       </criteria>
     </definition>
-    <!--
-      <definition id="oval:nist.validation.r1100:def:35" version="2" class="compliance">
-      <metadata>
-        <title>Test the path entity with the case insensitive equals operation</title>
-        <description>Make sure the path entity properly supports the case insensitive equals operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:35" comment="Test to see that the path case insensitive equals /tmp/scap_validation_content/e." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:36" version="2" class="compliance">
-      <metadata>
-        <title>Test the path entity with the case insensitive not equal operation</title>
-        <description>Make sure the path entity properly supports the case insensitive not equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:36" comment="Test to see that the path is case insensitive not equal to /tmp/scap_validation_content/e." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:37" version="2" class="compliance">
       <metadata>
         <title>Test the path entity with the pattern match operation</title>
@@ -483,32 +455,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:39" comment="Test to see that the path is not equal to /tmp/scap_validation_content/eX." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:40" version="2" class="compliance">
-      <metadata>
-        <title>Test the path entity with the case insensitive equals operation</title>
-        <description>Make sure the path entity properly supports the case insensitive equals operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:40" comment="Test to see that the path case insensitive equals /tmp/scap_validation_content/eX." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:41" version="2" class="compliance">
-      <metadata>
-        <title>Test the path entity with the case insensitive not equal operation</title>
-        <description>Make sure the path entity properly supports the case insensitive not equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:41" comment="Test to see that the path is case insensitive not equal to /tmp/scap_validation_content/eX." negate="false"/>
-      </criteria>
-    </definition>
-    -->
     <definition id="oval:nist.validation.r1100:def:42" version="2" class="compliance">
       <metadata>
         <title>Test the path entity with the pattern match operation</title>
@@ -545,32 +491,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:44" comment="Test to see that the filename is not equal to 1.txt." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-      <definition id="oval:nist.validation.r1100:def:45" version="2" class="compliance">
-      <metadata>
-        <title>Test the filename entity with the case insensitive equals operation</title>
-        <description>Make sure the filename entity properly supports the case insensitive equals operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:45" comment="Test to see that the filename case insensitive equals ABC.txt." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:46" version="2" class="compliance">
-      <metadata>
-        <title>Test the filename entity with the case insensitive not equal operation</title>
-        <description>Make sure the filename entity properly supports the case insensitive not equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:46" comment="Test to see that the filename is case insensitive not equal to 1bc.txt." negate="false"/>
-      </criteria>
-    </definition> 
-    -->
     <definition id="oval:nist.validation.r1100:def:47" version="2" class="compliance">
       <metadata>
         <title>Test the filename entity with the pattern match operation</title>
@@ -607,31 +527,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:49" comment="Test to see that the filename is not equal to 2.txt." negate="false"/>
       </criteria>
     </definition>
-    <!-- <definition id="oval:nist.validation.r1100:def:50" version="2" class="compliance">
-      <metadata>
-        <title>Test the filename entity with the case insensitive equals operation</title>
-        <description>Make sure the filename entity properly supports the case insensitive equals operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:50" comment="Test to see that the filename case insensitive equals 2.txt." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:51" version="2" class="compliance">
-      <metadata>
-        <title>Test the filename entity with the case insensitive not equal operation</title>
-        <description>Make sure the filename entity properly supports the case insensitive not equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:51" comment="Test to see that the filename is case insensitive not equal to ABC.txt." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:52" version="2" class="compliance">
       <metadata>
         <title>Test the filename entity with the pattern match operation</title>
@@ -668,32 +563,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:54" comment="Test to see that the type is not equal to regular." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-      <definition id="oval:nist.validation.r1100:def:55" version="2" class="compliance">
-      <metadata>
-        <title>Test the type entity with the case insensitive equals operation</title>
-        <description>Make sure the type entity properly supports the case insensitive equals operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:55" comment="Test to see that the type case insensitive equals Regular." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:56" version="2" class="compliance">
-      <metadata>
-        <title>Test the type entity with the case insensitive not equal operation</title>
-        <description>Make sure the type entity properly supports the case insensitive not equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:56" comment="Test to see that the type is case insensitive not equal to Regular." negate="false"/>
-      </criteria>
-    </definition>
-    -->
     <definition id="oval:nist.validation.r1100:def:57" version="2" class="compliance">
       <metadata>
         <title>Test the type entity with the pattern match operation</title>
@@ -730,32 +599,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:59" comment="Test to see that the type is not equal to directory." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:60" version="2" class="compliance">
-      <metadata>
-        <title>Test the type entity with the case insensitive equals operation</title>
-        <description>Make sure the type entity properly supports the case insensitive equals operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:60" comment="Test to see that the type case insensitive equals DIRECTORY." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:61" version="2" class="compliance">
-      <metadata>
-        <title>Test the type entity with the case insensitive not equal operation</title>
-        <description>Make sure the type entity properly supports the case insensitive not equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:61" comment="Test to see that the type is case insensitive not equal to DIRECTORY." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:62" version="2" class="compliance">
       <metadata>
         <title>Test the type entity with the pattern match operation</title>
@@ -768,6 +611,7 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:62" comment="Test to see that the type matches the regular expression [def]irectory." negate="false"/>
       </criteria>
     </definition>
+    <!-- 
     <definition id="oval:nist.validation.r1100:def:63" version="2" class="compliance">
       <metadata>
         <title>Test the group_id entity with the equals operation</title>
@@ -792,56 +636,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:64" comment="Test to see that the group_id is not equal to 500." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:65" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the greater than operation</title>
-        <description>Make sure the group_id entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:65" comment="Test to see that the group_id is greater than 499." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:66" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the less than operation</title>
-        <description>Make sure the group_id entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:66" comment="Test to see that the group_id is less than 499." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:67" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the greater than or equal operation</title>
-        <description>Make sure the group_id entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:67" comment="Test to see that the group_id is greater than or equal to 499." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:68" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the less than or equal operation</title>
-        <description>Make sure the group_id entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:68" comment="Test to see that the group_id is less than or equal to 499." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:69" version="2" class="compliance">
       <metadata>
         <title>Test the group_id entity with the equals operation</title>
@@ -866,56 +660,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:70" comment="Test to see that the group_id is not equal to 499." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:71" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the greater than operation</title>
-        <description>Make sure the group_id entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:71" comment="Test to see that the group_id is greater than 501." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:72" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the less than operation</title>
-        <description>Make sure the group_id entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:72" comment="Test to see that the group_id is less than 501." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:73" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the greater than or equal operation</title>
-        <description>Make sure the group_id entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:73" comment="Test to see that the group_id is greater than or equal to 501." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:74" version="2" class="compliance">
-      <metadata>
-        <title>Test the group_id entity with the less than or equal operation</title>
-        <description>Make sure the group_id entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:74" comment="Test to see that the group_id is less than or equal to 501." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:75" version="2" class="compliance">
       <metadata>
         <title>Test the user_id entity with the equals operation</title>
@@ -940,56 +684,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:76" comment="Test to see that the user_id is not equal to 5000." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:77" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the greater than operation</title>
-        <description>Make sure the user_id entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:77" comment="Test to see that the user_id is greater than 4999." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:78" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the less than operation</title>
-        <description>Make sure the user_id entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:78" comment="Test to see that the user_id is less than 4999." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:79" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the greater than or equal operation</title>
-        <description>Make sure the user_id entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:79" comment="Test to see that the user_id is greater than or equal to 4999." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:80" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the less than or equal operation</title>
-        <description>Make sure the user_id entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:80" comment="Test to see that the user_id is less than or equal to 4999." negate="false"/>
-      </criteria>
-    </definition>
-    -->
     <definition id="oval:nist.validation.r1100:def:81" version="2" class="compliance">
       <metadata>
         <title>Test the user_id entity with the equals operation</title>
@@ -1014,56 +708,7 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:82" comment="Test to see that the user_id is not equal to 4999." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:83" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the greater than operation</title>
-        <description>Make sure the user_id entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:83" comment="Test to see that the user_id is greater than 5001." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:84" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the less than operation</title>
-        <description>Make sure the user_id entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:84" comment="Test to see that the user_id is less than 5001." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:85" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the greater than or equal operation</title>
-        <description>Make sure the user_id entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:85" comment="Test to see that the user_id is greater than or equal to 5001." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:86" version="2" class="compliance">
-      <metadata>
-        <title>Test the user_id entity with the less than or equal operation</title>
-        <description>Make sure the user_id entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:86" comment="Test to see that the user_id is less than or equal to 5001." negate="false"/>
-      </criteria>
-    </definition>
-     -->
+    -->
     <definition id="oval:nist.validation.r1100:def:87" version="2" class="compliance">
       <metadata>
         <title>Test the size entity with the equals operation</title>
@@ -1169,7 +814,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:95" comment="Test to see that the size is greater than 158." negate="false"/>
+        <criterion test_ref="oval:nist.validation.r1100:tst:95" comment="Test to see that the size is greater than 160." negate="false"/>
       </criteria>
     </definition>
     <definition id="oval:nist.validation.r1100:def:96" version="2" class="compliance">
@@ -1181,7 +826,7 @@
         </expected_results>
       </metadata>
       <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:96" comment="Test to see that the size is less than 160." negate="false"/>
+        <criterion test_ref="oval:nist.validation.r1100:tst:96" comment="Test to see that the size is less than 158." negate="false"/>
       </criteria>
     </definition>
     <definition id="oval:nist.validation.r1100:def:97" version="2" class="compliance">
@@ -1208,6 +853,7 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:98" comment="Test to see that the size is less than or equal to 158." negate="false"/>
       </criteria>
     </definition>
+    <!--
     <definition id="oval:nist.validation.r1100:def:99" version="2" class="compliance">
       <metadata>
         <title>Test the a_time entity with the equals operation</title>
@@ -1232,56 +878,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:100" comment="Test to see that the a_time is not equal to 1312212371." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-      <definition id="oval:nist.validation.r1100:def:101" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the greater than operation</title>
-        <description>Make sure the a_time entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:101" comment="Test to see that the a_time is greater than 1312212371." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:102" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the less than operation</title>
-        <description>Make sure the a_time entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:102" comment="Test to see that the a_time is less than 1312212373." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:103" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the greater than or equal operation</title>
-        <description>Make sure the a_time entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:103" comment="Test to see that the a_time is greater than or equal to 1312125972." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:104" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the less than or equal operation</title>
-        <description>Make sure the a_time entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:104" comment="Test to see that the a_time is less than or equal to 1312298772." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:105" version="2" class="compliance">
       <metadata>
         <title>Test the a_time entity with the equals operation</title>
@@ -1306,56 +902,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:106" comment="Test to see that the a_time is not equal to 1312212372." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:107" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the greater than operation</title>
-        <description>Make sure the a_time entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:107" comment="Test to see that the a_time is greater than 1312212373." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:108" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the less than operation</title>
-        <description>Make sure the a_time entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:108" comment="Test to see that the a_time is less than 1312212371." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:109" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the greater than or equal operation</title>
-        <description>Make sure the a_time entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:109" comment="Test to see that the a_time is greater than or equal to 1312298772." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:110" version="2" class="compliance">
-      <metadata>
-        <title>Test the a_time entity with the less than or equal operation</title>
-        <description>Make sure the a_time entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:110" comment="Test to see that the a_time is less than or equal to 1312125972." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:111" version="2" class="compliance">
       <metadata>
         <title>Test the c_time entity with the equals operation</title>
@@ -1380,56 +926,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:112" comment="Test to see that the c_time is not equal to 1312296328." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:113" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the greater than operation</title>
-        <description>Make sure the c_time entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:113" comment="Test to see that the c_time is greater than 1312296328." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:114" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the less than operation</title>
-        <description>Make sure the c_time entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:114" comment="Test to see that the c_time is less than 1312296330." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:115" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the greater than or equal operation</title>
-        <description>Make sure the c_time entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:115" comment="Test to see that the c_time is greater than or equal to 1312296328." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:116" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the less than or equal operation</title>
-        <description>Make sure the c_time entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:116" comment="Test to see that the c_time is less than or equal to 1312296330." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:117" version="2" class="compliance">
       <metadata>
         <title>Test the c_time entity with the equals operation</title>
@@ -1454,56 +950,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:118" comment="Test to see that the c_time is not equal to 1312296329." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:119" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the greater than operation</title>
-        <description>Make sure the c_time entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:119" comment="Test to see that the c_time is greater than 1312296330." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:120" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the less than operation</title>
-        <description>Make sure the c_time entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:120" comment="Test to see that the c_time is less than 1312296328." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:121" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the greater than or equal operation</title>
-        <description>Make sure the c_time entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:121" comment="Test to see that the c_time is greater than or equal to 1312296330." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:122" version="2" class="compliance">
-      <metadata>
-        <title>Test the c_time entity with the less than or equal operation</title>
-        <description>Make sure the c_time entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:122" comment="Test to see that the c_time is less than or equal to 1312296328." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:123" version="2" class="compliance">
       <metadata>
         <title>Test the m_time entity with the equals operation</title>
@@ -1528,56 +974,6 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:124" comment="Test to see that the m_time is not equal to 1312209570." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:125" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the greater than operation</title>
-        <description>Make sure the m_time entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:125" comment="Test to see that the m_time is greater than 1312209570." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:126" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the less than operation</title>
-        <description>Make sure the m_time entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:126" comment="Test to see that the m_time is less than 1312209572." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:127" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the greater than or equal operation</title>
-        <description>Make sure the m_time entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:127" comment="Test to see that the m_time is greater than or equal to 1312209570." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:128" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the less than or equal operation</title>
-        <description>Make sure the m_time entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">PASS</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:128" comment="Test to see that the m_time is less than or equal to 1312209572." negate="false"/>
-      </criteria>
-    </definition>
-     -->
     <definition id="oval:nist.validation.r1100:def:129" version="2" class="compliance">
       <metadata>
         <title>Test the m_time entity with the equals operation</title>
@@ -1602,56 +998,7 @@
         <criterion test_ref="oval:nist.validation.r1100:tst:130" comment="Test to see that the m_time is not equal to 1312209571." negate="false"/>
       </criteria>
     </definition>
-    <!-- 
-    <definition id="oval:nist.validation.r1100:def:131" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the greater than operation</title>
-        <description>Make sure the m_time entity properly supports the greater than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:131" comment="Test to see that the m_time is greater than 1312209572." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:132" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the less than operation</title>
-        <description>Make sure the m_time entity properly supports the less than operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:132" comment="Test to see that the m_time is less than 1312209570." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:133" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the greater than or equal operation</title>
-        <description>Make sure the m_time entity properly supports the greater than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:133" comment="Test to see that the m_time is greater than or equal to 1312209572." negate="false"/>
-      </criteria>
-    </definition>
-    <definition id="oval:nist.validation.r1100:def:134" version="2" class="compliance">
-      <metadata>
-        <title>Test the m_time entity with the less than or equal operation</title>
-        <description>Make sure the m_time entity properly supports the less than or equal operation.</description>
-        <expected_results>
-          <result configuration="1">FAIL</result>
-        </expected_results>
-      </metadata>
-      <criteria>
-        <criterion test_ref="oval:nist.validation.r1100:tst:134" comment="Test to see that the m_time is less than or equal to 1312209570." negate="false"/>
-      </criteria>
-    </definition>
-     -->
+    -->
     <definition id="oval:nist.validation.r1100:def:135" version="2" class="compliance">
       <metadata>
         <title>Test the suid entity with the equals operation</title>
@@ -2067,16 +1414,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:14"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:35" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the path case insensitive equals /tmp/scap_validation_content/e.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:15"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:36" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the path is case insensitive not equal to /tmp/scap_validation_content/e.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:16"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:37" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the path matches the regular expression /tmp/scap[_ -]validation_content/e.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:17"/>
@@ -2089,16 +1426,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:18"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:40" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the path case insensitive equals /tmp/scap_validation_content/eX.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:19"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:41" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the path is case insensitive not equal to /tmp/scap_validation_content/eX.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:20"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:42" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the path matches the regular expression /tmp/scap[ -]validation_conten\e.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:21"/>
@@ -2111,16 +1438,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:22"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:45" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the filename case insensitive equals ABC.txt.">
-      <object object_ref="oval:nist.validation.r1100:obj:6"/>
-      <state state_ref="oval:nist.validation.r1100:ste:23"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:46" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the filename is case insensitive not equal to 1bc.txt.">
-      <object object_ref="oval:nist.validation.r1100:obj:7"/>
-      <state state_ref="oval:nist.validation.r1100:ste:24"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:47" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the filename matches the regular expression [\d]+\.txt.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:25"/>
@@ -2133,16 +1450,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:27"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:50" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the filename case insensitive equals 2.txt.">
-      <object object_ref="oval:nist.validation.r1100:obj:7"/>
-      <state state_ref="oval:nist.validation.r1100:ste:28"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:51" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the filename is case insensitive not equal to ABC.txt.">
-      <object object_ref="oval:nist.validation.r1100:obj:7"/>
-      <state state_ref="oval:nist.validation.r1100:ste:29"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:52" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the filename matches the regular expression [\w]+\.txt.">
       <object object_ref="oval:nist.validation.r1100:obj:8"/>
       <state state_ref="oval:nist.validation.r1100:ste:30"/>
@@ -2155,16 +1462,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:32"/>
     </file_test>
-    <!--
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:55" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the type case insensitive equals Regular.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:33"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:56" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the type is case insensitive not equal to Regular.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:34"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:57" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the type matches the regular expression [rs]egular.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:35"/>
@@ -2177,20 +1474,11 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:37"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:60" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the type case insensitive equals DIRECTORY.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:38"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:61" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the type is case insensitive not equal to DIRECTORY.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:39"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:62" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the type matches the regular expression [def]irectory.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:40"/>
     </file_test>
+    <!--    
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:63" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id equals 500.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:41"/>
@@ -2199,24 +1487,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:42"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:65" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is greater than 499.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:43"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:66" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is less than 499.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:44"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:67" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is greater than or equal to 499.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:45"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:68" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is less than or equal to 499.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:46"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:69" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id equals 499.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:47"/>
@@ -2225,23 +1495,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:48"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:71" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is greater than 501.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:49"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:72" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is less than 501.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:50"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:73" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is greater than or equal to 501.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:51"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:74" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the group_id is less than or equal to 501.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:52"/>
-    </file_test> -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:75" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id equals 5000.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:53"/>
@@ -2250,24 +1503,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:54"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:77" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is greater than 4999.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:55"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:78" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is less than 4999.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:56"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:79" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is greater than or equal to 4999.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:57"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:80" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is less than or equal to 4999.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:58"/>
-    </file_test> 
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:81" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id equals 4999.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:59"/>
@@ -2275,23 +1510,6 @@
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:82" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is not equal to 4999.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:60"/>
-    </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:83" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is greater than 5001.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:61"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:84" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is less than 5001.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:62"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:85" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is greater than or equal to 5001.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:63"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:86" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the user_id is less than or equal to 5001.">
-      <object object_ref="oval:nist.validation.r1100:obj:5"/>
-      <state state_ref="oval:nist.validation.r1100:ste:64"/>
     </file_test>
     -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:87" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the size equals 159.">
@@ -2326,13 +1544,13 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:72"/>
     </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:95" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the size is greater than 158.">
+    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:95" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the size is greater than 160.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:67"/>
+      <state state_ref="oval:nist.validation.r1100:ste:132"/>
     </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:96" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the size is less than 160.">
+    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:96" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the size is less than 158.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:68"/>
+      <state state_ref="oval:nist.validation.r1100:ste:133"/>
     </file_test>
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:97" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the size is greater than or equal to 160.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
@@ -2342,6 +1560,7 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:74"/>
     </file_test>
+    <!-- 
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:99" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time equals 1312212372.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:75"/>
@@ -2350,24 +1569,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:76"/>
     </file_test>
-    <!--     
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:101" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is greater than 1312212371.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:77"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:102" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is less than 1312212373.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:78"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:103" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is greater than or equal to 1312125972.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:79"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:104" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is less than or equal to 1312298772.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:80"/>
-    </file_test>
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:105" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time equals 1312212373.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:81"/>
@@ -2376,24 +1577,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:82"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:107" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is greater than 1312212373.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:83"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:108" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is less than 1312212371.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:84"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:109" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is greater than or equal to 1312298772.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:85"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:110" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the a_time is less than or equal to 1312125972.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:86"/>
-    </file_test> 
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:111" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time equals 1312296329.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:87"/>
@@ -2402,24 +1585,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:88"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:113" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is greater than 1312296328.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:89"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:114" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is less than 1312296330.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:90"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:115" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is greater than or equal to 1312296328.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:91"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:116" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is less than or equal to 1312296330.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:92"/>
-    </file_test> 
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:117" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time equals 1312296328.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:93"/>
@@ -2428,24 +1593,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:94"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:119" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is greater than 1312296330.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:95"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:120" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is less than 1312296328.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:96"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:121" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is greater than or equal to 1312296330.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:97"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:122" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the c_time is less than or equal to 1312296328.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:98"/>
-    </file_test> 
-    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:123" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time equals 1312209571.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:99"/>
@@ -2454,24 +1601,6 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:100"/>
     </file_test>
-    <!--     
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:125" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is greater than 1312209570.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:101"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:126" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is less than 1312209572.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:102"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:127" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is greater than or equal to 1312209570.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:103"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:128" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is less than or equal to 1312209572.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:104"/>
-    </file_test>
-     -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:129" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time equals 1312209570.">
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:105"/>
@@ -2480,24 +1609,7 @@
       <object object_ref="oval:nist.validation.r1100:obj:9"/>
       <state state_ref="oval:nist.validation.r1100:ste:106"/>
     </file_test>
-    <!-- 
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:131" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is greater than 1312209572.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:107"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:132" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is less than 1312209570.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:108"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:133" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is greater than or equal to 1312209572.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:109"/>
-    </file_test>
-    <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:134" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the m_time is less than or equal to 1312209570.">
-      <object object_ref="oval:nist.validation.r1100:obj:9"/>
-      <state state_ref="oval:nist.validation.r1100:ste:110"/>
-    </file_test>
-     -->
+    -->
     <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:tst:135" version="2" check_existence="at_least_one_exists" check="all" comment="Test to see that the suid equals true.">
       <object object_ref="oval:nist.validation.r1100:obj:5"/>
       <state state_ref="oval:nist.validation.r1100:ste:111"/>
@@ -2597,163 +1709,141 @@
   </tests>
   <objects>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:1" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path operation="pattern match">^/tmp/scap_validation_content/unix_file/e$</path>
       <filename operation="pattern match">.*\.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:2" version="2">
-      <path operation="equals">/tmp/scap_validation_content/ne</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/ne</path>
       <filename operation="pattern match">.*\.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:3" version="2">
-      <path>/tmp/scap_validation_content/ne</path>
+      <path operation="pattern match">^/tmp/scap_validation_content/unix_file/ne</path>
       <filename operation="pattern match">.*\.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:4" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e</path>
       <filename operation="equals">1.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:5" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>1.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:6" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e</path>
       <filename operation="equals">abc.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:7" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>abc.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:8" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e/1.txt</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e/1.txt</path>
       <filename operation="equals">1.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:9" version="2">
-      <path>/tmp/scap_validation_content</path>
+      <path>/tmp/scap_validation_content/unix_file</path>
       <filename>Skeleton.sh</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:10" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e</path>
       <filename operation="equals">2.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:11" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>2.txt</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:12" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e</path>
       <filename xsi:nil="true" operation="equals"/>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:13" version="2">
-      <path>/tmp/scap_validation_content/ne</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/ne/</path>
       <filename operation="pattern match">.*</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:14" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e</path>
       <filename operation="equals">Skeleton2.sh</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:15" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>Skeleton2.sh</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:16" version="2">
-      <path operation="equals">/tmp/scap_validation_content/e</path>
+      <path operation="equals">/tmp/scap_validation_content/unix_file/e</path>
       <filename operation="equals">Skeleton3.sh</filename>
     </file_object>
     <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:obj:17" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>Skeleton3.sh</filename>
     </file_object>
   </objects>
+
+
   <states>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:1" version="2">
-      <path datatype="string" operation="equals">/tmp/scap_validation_content/e</path>
+      <path datatype="string" operation="equals">/tmp/scap_validation_content/unix_file/e</path>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:2" version="2">
-      <path datatype="string" operation="equals">/tmp/scap_validation_content/eX</path>
+      <path datatype="string" operation="equals">/tmp/scap_validation_content/unix_file/eX</path>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:3" version="2">
       <filename datatype="string" operation="equals">1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:4" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:5" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:6" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:7" version="2">
-      <path>/tmp/scap_validation_content/e</path>
+      <path>/tmp/scap_validation_content/unix_file/e</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:8" version="2">
-      <path>/tmp/scap_validation_content</path>
+      <path operation="pattern match">/tmp/scap_validation_content/unix_file</path>
       <filename operation="pattern match">[abcde]+/1\.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:9" version="2">
-      <path>/tmp/scap_validation_content/eX</path>
+      <path>/tmp/scap_validation_content/unix_file/eX</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:10" version="2">
-      <path>/tmp/scap_validation_content/eX</path>
+      <path operation="not equal">/tmp/scap_validation_content/unix_file/eX</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:11" version="2">
-      <path>/tmp/scap_validation_content/eX</path>
+      <path>/tmp/scap_validation_content/unix_file/eX</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:12" version="2">
-      <path>/tmp/scap_validation_content/eX</path>
+      <path operation="case insensitive not equal">/tmp/scap_validation_content/unix_file/eX</path>
       <filename>1.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:13" version="2">
-      <path operation="pattern match">/tmp/scap[ \-]validation_conten/e</path>
+      <path operation="pattern match">/tmp/scap[ \-]validation_conten/unix_file/e</path>
       <filename operation="pattern match">1\.txt</filename>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:14" version="2">
-      <path datatype="string" operation="not equal">/tmp/scap_validation_content/e</path>
+      <path datatype="string" operation="not equal">/tmp/scap_validation_content/unix_file/e</path>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:15" version="2">
-      <path datatype="string" operation="case insensitive equals">/tmp/scap_validation_content/e</path>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:16" version="2">
-      <path datatype="string" operation="case insensitive not equal">/tmp/scap_validation_content/e</path>
-    </file_state>
-     -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:17" version="2">
-      <path datatype="string" operation="pattern match">/tmp/scap[_ \-]validation_content/e</path>
+      <path datatype="string" operation="pattern match">/tmp/scap[_ \-]validation_content/unix_file/e</path>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:18" version="2">
-      <path datatype="string" operation="not equal">/tmp/scap_validation_content/eX</path>
+      <path datatype="string" operation="not equal">/tmp/scap_validation_content/unix_file/eX</path>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:19" version="2">
-      <path datatype="string" operation="case insensitive equals">/tmp/scap_validation_content/eX</path>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:20" version="2">
-      <path datatype="string" operation="case insensitive not equal">/tmp/scap_validation_content/eX</path>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:21" version="2">
-      <path datatype="string" operation="pattern match">/tmp/scap[ \-]validation_conten/e</path>
+      <path datatype="string" operation="pattern match">/tmp/scap[ \-]validation_conten/unix_file/e</path>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:22" version="2">
       <filename datatype="string" operation="not equal">1.txt</filename>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:23" version="2">
-      <filename datatype="string" operation="case insensitive equals">ABC.txt</filename>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:24" version="2">
-      <filename datatype="string" operation="case insensitive not equal">1bc.txt</filename>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:25" version="2">
       <filename datatype="string" operation="pattern match">[\d]+\.txt</filename>
     </file_state>
@@ -2763,14 +1853,6 @@
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:27" version="2">
       <filename datatype="string" operation="not equal">2.txt</filename>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:28" version="2">
-      <filename datatype="string" operation="case insensitive equals">2.txt</filename>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:29" version="2">
-      <filename datatype="string" operation="case insensitive not equal">ABC.txt</filename>
-    </file_state>
-     -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:30" version="2">
       <filename datatype="string" operation="pattern match">[\w]+\.txt</filename>
     </file_state>
@@ -2780,14 +1862,6 @@
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:32" version="2">
       <type datatype="string" operation="not equal">regular</type>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:33" version="2">
-      <type datatype="string" operation="case insensitive equals">Regular</type>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:34" version="2">
-      <type datatype="string" operation="case insensitive not equal">Regular</type>
-    </file_state>
-     -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:35" version="2">
       <type datatype="string" operation="pattern match">[rs]egular</type>
     </file_state>
@@ -2797,97 +1871,35 @@
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:37" version="2">
       <type datatype="string" operation="not equal">directory</type>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:38" version="2">
-      <type datatype="string" operation="case insensitive equals">DIRECTORY</type>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:39" version="2">
-      <type datatype="string" operation="case insensitive not equal">DIRECTORY</type>
-    </file_state>
-     -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:40" version="2">
       <type datatype="string" operation="pattern match">[def]irectory</type>
     </file_state>
+    <!--
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:41" version="2">
-      <group_id datatype="string" operation="equals">500</group_id>
+      <group_id operation="equals">500</group_id>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:42" version="2">
-      <group_id datatype="string" operation="not equal">500</group_id>
+      <group_id operation="not equal">500</group_id>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:43" version="2">
-      <group_id datatype="string" operation="greater than">499</group_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:44" version="2">
-      <group_id datatype="string" operation="less than">499</group_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:45" version="2">
-      <group_id datatype="string" operation="greater than or equal">499</group_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:46" version="2">
-      <group_id datatype="string" operation="less than or equal">499</group_id>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:47" version="2">
-      <group_id datatype="string" operation="equals">499</group_id>
+      <group_id operation="equals">499</group_id>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:48" version="2">
-      <group_id datatype="string" operation="not equal">499</group_id>
+      <group_id operation="not equal">499</group_id>
     </file_state>
-    <!--
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:49" version="2">
-      <group_id datatype="string" operation="greater than">501</group_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:50" version="2">
-      <group_id datatype="string" operation="less than">501</group_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:51" version="2">
-      <group_id datatype="string" operation="greater than or equal">501</group_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:52" version="2">
-      <group_id datatype="string" operation="less than or equal">501</group_id>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:53" version="2">
-      <user_id datatype="string" operation="equals">5000</user_id>
+      <user_id  operation="equals">5000</user_id>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:54" version="2">
-      <user_id datatype="string" operation="not equal">5000</user_id>
+      <user_id  operation="not equal">5000</user_id>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:55" version="2">
-      <user_id datatype="string" operation="greater than">4999</user_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:56" version="2">
-      <user_id datatype="string" operation="less than">4999</user_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:57" version="2">
-      <user_id datatype="string" operation="greater than or equal">4999</user_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:58" version="2">
-      <user_id datatype="string" operation="less than or equal">4999</user_id>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:59" version="2">
-      <user_id datatype="string" operation="equals">4999</user_id>
+      <user_id  operation="equals">4999</user_id>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:60" version="2">
-      <user_id datatype="string" operation="not equal">4999</user_id>
+      <user_id  operation="not equal">4999</user_id>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:61" version="2">
-      <user_id datatype="string" operation="greater than">5001</user_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:62" version="2">
-      <user_id datatype="string" operation="less than">5001</user_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:63" version="2">
-      <user_id datatype="string" operation="greater than or equal">5001</user_id>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:64" version="2">
-      <user_id datatype="string" operation="less than or equal">5001</user_id>
-    </file_state>
--->
+    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:65" version="2">
       <size datatype="int" operation="equals">159</size>
     </file_state>
@@ -2896,6 +1908,9 @@
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:67" version="2">
       <size datatype="int" operation="greater than">158</size>
+    </file_state>
+    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:132" version="2">
+      <size datatype="int" operation="greater than">160</size>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:68" version="2">
       <size datatype="int" operation="less than">160</size>
@@ -2918,126 +1933,44 @@
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:74" version="2">
       <size datatype="int" operation="less than or equal">158</size>
     </file_state>
+    <!--
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:75" version="2">
-      <a_time datatype="string" operation="equals">1312212372</a_time>
+      <a_time  operation="equals">1312212372</a_time>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:76" version="2">
-      <a_time datatype="string" operation="not equal">1312212371</a_time>
+      <a_time  operation="not equal">1312212371</a_time>
     </file_state>
-    <!--
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:77" version="2">
-      <a_time datatype="string" operation="greater than">1312212371</a_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:78" version="2">
-      <a_time datatype="string" operation="less than">1312212373</a_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:79" version="2">
-      <a_time datatype="string" operation="greater than or equal">1312125972</a_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:80" version="2">
-      <a_time datatype="string" operation="less than or equal">1312298772</a_time>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:81" version="2">
-      <a_time datatype="string" operation="equals">1312212373</a_time>
+      <a_time  operation="equals">1312212373</a_time>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:82" version="2">
-      <a_time datatype="string" operation="not equal">1312212372</a_time>
+      <a_time  operation="not equal">1312212372</a_time>
     </file_state>
-    <!--
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:83" version="2">
-      <a_time datatype="string" operation="greater than">1312212373</a_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:84" version="2">
-      <a_time datatype="string" operation="less than">1312212371</a_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:85" version="2">
-      <a_time datatype="string" operation="greater than or equal">1312298772</a_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:86" version="2">
-      <a_time datatype="string" operation="less than or equal">1312125972</a_time>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:87" version="2">
-      <c_time datatype="string" operation="equals">1312296329</c_time>
+      <c_time  operation="equals">1312296329</c_time>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:88" version="2">
-      <c_time datatype="string" operation="not equal">1312296328</c_time>
+      <c_time  operation="not equal">1312296328</c_time>
     </file_state>
-    <!--
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:89" version="2">
-      <c_time datatype="string" operation="greater than">1312296328</c_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:90" version="2">
-      <c_time datatype="string" operation="less than">1312296330</c_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:91" version="2">
-      <c_time datatype="string" operation="greater than or equal">1312296328</c_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:92" version="2">
-      <c_time datatype="string" operation="less than or equal">1312296330</c_time>
-    </file_state>
-    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:93" version="2">
-      <c_time datatype="string" operation="equals">1312296328</c_time>
+      <c_time  operation="equals">1312296328</c_time>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:94" version="2">
-      <c_time datatype="string" operation="not equal">1312296329</c_time>
+      <c_time  operation="not equal">1312296329</c_time>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:95" version="2">
-      <c_time datatype="string" operation="greater than">1312296330</c_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:96" version="2">
-      <c_time datatype="string" operation="less than">1312296328</c_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:97" version="2">
-      <c_time datatype="string" operation="greater than or equal">1312296330</c_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:98" version="2">
-      <c_time datatype="string" operation="less than or equal">1312296328</c_time>
-    </file_state>
-     -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:99" version="2">
-      <m_time datatype="string" operation="equals">1312209571</m_time>
+      <m_time  operation="equals">1312209571</m_time>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:100" version="2">
-      <m_time datatype="string" operation="not equal">1312209570</m_time>
+      <m_time  operation="not equal">1312209570</m_time>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:101" version="2">
-      <m_time datatype="string" operation="greater than">1312209570</m_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:102" version="2">
-      <m_time datatype="string" operation="less than">1312209572</m_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:103" version="2">
-      <m_time datatype="string" operation="greater than or equal">1312209570</m_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:104" version="2">
-      <m_time datatype="string" operation="less than or equal">1312209572</m_time>
-    </file_state>
-     -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:105" version="2">
-      <m_time datatype="string" operation="equals">1312209570</m_time>
+      <m_time  operation="equals">1312209570</m_time>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:106" version="2">
-      <m_time datatype="string" operation="not equal">1312209571</m_time>
+      <m_time  operation="not equal">1312209571</m_time>
     </file_state>
-    <!-- 
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:107" version="2">
-      <m_time datatype="string" operation="greater than">1312209572</m_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:108" version="2">
-      <m_time datatype="string" operation="less than">1312209570</m_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:109" version="2">
-      <m_time datatype="string" operation="greater than or equal">1312209572</m_time>
-    </file_state>
-    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:110" version="2">
-      <m_time datatype="string" operation="less than or equal">1312209570</m_time>
-    </file_state>
-     -->
+    -->
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:111" version="2">
       <suid datatype="boolean" operation="equals">true</suid>
     </file_state>
@@ -3075,7 +2008,8 @@
       <gwrite datatype="boolean" operation="equals">true</gwrite>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:123" version="2">
-      <gwrite datatype="boolean" operation="equals">false</gwrite>
+      <!-- <gwrite datatype="boolean" operation="equals">false</gwrite> -->
+      <gwrite datatype="boolean" operation="not equal">false</gwrite>
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:124" version="2">
       <gexec datatype="boolean" operation="not equal">0</gexec>
@@ -3094,6 +2028,9 @@
     </file_state>
     <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:129" version="2">
       <oexec datatype="boolean" operation="not equal">false</oexec>
+    </file_state>
+    <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:nist.validation.r1100:ste:133" version="2">
+      <size datatype="int" operation="less than">158</size>
     </file_state>
   </states>
 </oval_definitions>

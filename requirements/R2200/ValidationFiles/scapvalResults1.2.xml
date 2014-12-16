@@ -4,17 +4,17 @@
                          implementation-version="scapval-1.2.1.9"
                          message-count="27"
                          resource-id="r2200-datastream.xml"
-                         validation-datetime="2013-07-25T13:08:20"
+                         validation-datetime="2014-02-05T22:08:01"
                          xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
    <messages>
       <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
       <message level="INFO" resource-id="r2200-datastream.xml" type="SUBMITTED_RESOURCE">Resource r2200-datastream.xml was submitted.</message>
       <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\nvdcce-0.1-feed.xml.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="INFO" type="APPLICATION">File is less than 12 hours old, skipping download for C:\SCAP-tools\SCAPContentValidationTool1.2.1.9\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
       <message level="INFO" type="APPLICATION">Hashing inputs.</message>
-      <message level="INFO" resource-id="r2200-datastream.xml" type="HASH">SHA-256 : D3607D27FCEF9B135B9A173D2E3370B8DB5E40F59EEBD021B97C5C5D0A795F33</message>
+      <message level="INFO" resource-id="r2200-datastream.xml" type="HASH">SHA-256 : 32DD7552AC7CC0CF436EE69C2B4A7A3FDF089465FCEB5BA2AA9517DD0DF75AA7</message>
       <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
-      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : B93206807686732937E1FBF2DE8CE68579D827D259E0BC0EC39FB49C409B9620</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 874241026D2DA6AD082BA4AA2B6BA17063EBF9843DD3AC5F6DB671EDE1A0CA51</message>
       <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection r2200-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_ocil_content-cpe-dictionary.xml</message>
@@ -28,7 +28,7 @@
                test="false()"
                type="SCHEMATRON">Warning: The 'Benchmark' element has no platform specified, which implies the benchmark applies to all platforms. Applicable platforms should be indicate if possible. See the XCCDF 1.2.1 specification, Section 6.2.5.</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule ocil-2.0.sch against source scap_gov.nist_comp_validation_program_ocil-ocil.xml</message>
-      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.3.sch against source scap_gov.nist_comp_validation_program_ocil-cpe-oval.xml</message>
+      <message level="INFO" type="APPLICATION">Running Schematron rule oval-definitions-schematron-5.10.sch against source scap_gov.nist_comp_validation_program_ocil-cpe-oval.xml</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule tmsad-1.0.sch against source r2200-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running Schematron rule source-data-stream-1.2_1.0.sch against source r2200-datastream.xml</message>
       <message level="WARN"
@@ -49,8 +49,8 @@
                resource-id="r2200-datastream.xml"
                test="exists(document(concat('','/validation_program_oval_test_types.xml'))/test_types/test_type[@namespace eq namespace-uri(current()) and @name eq local-name(current())])"
                type="SCHEMATRON">oval:gov.nist.cpe.oval:tst:101 - The OVAL test type is not checked in the NIST SCAP Validation Program.</message>
-      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:02.747.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:01.953.</message>
       <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
-      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:06.388.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:05.241.</message>
    </messages>
 </scap-validation-results>

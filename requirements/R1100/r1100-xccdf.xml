@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Benchmark xmlns="http://checklists.nist.gov/xccdf/1.1" id="xccdf_gov.nist.validation_benchmark_file" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd" style="SCAP_1.1">
   <status date="2011-10-14">draft</status>
-  <title>XCCDF Benchmark That References the Validation Content for the file_test</title>
-  <description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the file_test.</description>
+  <title>XCCDF Benchmark That References the Validation Content for the R1100 requirement</title>
+  <description>This XCCDF Benchmark references the OVAL Definitions in the validation content for the R1100 requirement.</description>
   <version update="1">1.0</version>
   <metadata>
     <dc:contributor>National Institute of Standards and Technology</dc:contributor>
@@ -11,8 +11,8 @@
     <dc:source>http://scap.nist.gov</dc:source>
   </metadata>
   <Profile id="xccdf_gov.nist.validation_profile_file" prohibitChanges="1">
-    <title>XCCDF Profile That References the Validation Content for the file_test</title>
-    <description>This Profile allows for the tailoring of the validation content for the file_test.</description>
+    <title>XCCDF Profile That References the Validation Content for the R1100 requirement</title>
+    <description>This Profile allows for the tailoring of the validation content for the R1100 requirement.</description>
     <select idref="xccdf_gov.nist.validation.r1100_rule_1" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_2" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_3" selected="true"/>
@@ -35,70 +35,53 @@
     <select idref="xccdf_gov.nist.validation.r1100_rule_20" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_21" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_22" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_23" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_24" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_25" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_26" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_27" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_28" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_29" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_30" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_31" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_32" selected="true"/>
+
+    <select idref="xccdf_gov.nist.validation.r1100_rule_23" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_24" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_25" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_26" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_27" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_28" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_29" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_30" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_31" selected="false"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_32" selected="false"/>
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_33" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_34" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_35" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_36" selected="true"/> -->
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_37" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_38" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_39" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_40" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_41" selected="true"/> -->
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_42" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_43" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_44" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_45" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_46" selected="true"/> -->
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_47" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_48" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_49" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_50" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_51" selected="true"/> -->
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_52" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_53" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_54" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_55" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_56" selected="true"/> -->
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_57" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_58" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_59" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_60" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_61" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_62" selected="true"/>
+
+<!--
     <select idref="xccdf_gov.nist.validation.r1100_rule_63" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_64" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_65" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_66" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_67" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_68" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_69" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_70" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_71" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_72" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_73" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_74" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_75" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_76" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_77" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_78" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_79" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_80" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_81" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_82" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_83" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_84" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_85" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_86" selected="true"/> -->
+-->
+    
     <select idref="xccdf_gov.nist.validation.r1100_rule_87" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_88" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_89" selected="true"/>
@@ -111,42 +94,20 @@
     <select idref="xccdf_gov.nist.validation.r1100_rule_96" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_97" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_98" selected="true"/>
+<!-- 
     <select idref="xccdf_gov.nist.validation.r1100_rule_99" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_100" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_101" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_102" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_103" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_104" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_105" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_106" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_107" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_108" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_109" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_110" selected="true"/> -->
-    <select idref="xccdf_gov.nist.validation.r1100_rule_111" selected="true"/>
+    <select idref="xccdf_gov.nist.validation.r1100_rule_111" selected="false"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_112" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_113" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_114" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_115" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_116" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_117" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_118" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_119" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_120" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_121" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_122" selected="true"/> -->
+    <select idref="xccdf_gov.nist.validation.r1100_rule_118" selected="false"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_123" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_124" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_125" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_126" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_127" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_128" selected="true"/> -->
     <select idref="xccdf_gov.nist.validation.r1100_rule_129" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_130" selected="true"/>
-    <!-- <select idref="xccdf_gov.nist.validation.r1100_rule_131" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_132" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_133" selected="true"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_134" selected="true"/> -->
+-->    
     <select idref="xccdf_gov.nist.validation.r1100_rule_135" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_136" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_137" selected="true"/>
@@ -171,10 +132,7 @@
     <select idref="xccdf_gov.nist.validation.r1100_rule_156" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_157" selected="true"/>
     <select idref="xccdf_gov.nist.validation.r1100_rule_158" selected="true"/>
-    <!-- 
-    <select idref="xccdf_gov.nist.validation.r1100_rule_159" selected="false"/>
-    <select idref="xccdf_gov.nist.validation.r1100_rule_160" selected="false"/>
-     -->
+    
   </Profile>
   <Rule id="xccdf_gov.nist.validation.r1100_rule_1" selected="true">
     <title>Test that the check_existence property is properly supported using the specified value</title>
@@ -414,22 +372,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:34"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_35" selected="true">
-    <title>Test the path entity with the case insensitive equals operation</title>
-    <description>Make sure the path entity properly supports the case insensitive equals operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:35"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_36" selected="true">
-    <title>Test the path entity with the case insensitive not equal operation</title>
-    <description>Make sure the path entity properly supports the case insensitive not equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:36"/>
-    </check>
-  </Rule>
-   -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_37" selected="true">
     <title>Test the path entity with the pattern match operation</title>
     <description>Make sure the path entity properly supports the pattern match operation.</description>
@@ -451,22 +393,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:39"/>
     </check>
   </Rule>
-<!--   
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_40" selected="true">
-    <title>Test the path entity with the case insensitive equals operation</title>
-    <description>Make sure the path entity properly supports the case insensitive equals operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:40"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_41" selected="true">
-    <title>Test the path entity with the case insensitive not equal operation</title>
-    <description>Make sure the path entity properly supports the case insensitive not equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:41"/>
-    </check>
-  </Rule>
-   -->
+  
   <Rule id="xccdf_gov.nist.validation.r1100_rule_42" selected="true">
     <title>Test the path entity with the pattern match operation</title>
     <description>Make sure the path entity properly supports the pattern match operation.</description>
@@ -488,22 +415,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:44"/>
     </check>
   </Rule>
-  <!--
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_45" selected="true">
-    <title>Test the filename entity with the case insensitive equals operation</title>
-    <description>Make sure the filename entity properly supports the case insensitive equals operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:45"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_46" selected="true">
-    <title>Test the filename entity with the case insensitive not equal operation</title>
-    <description>Make sure the filename entity properly supports the case insensitive not equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:46"/>
-    </check>
-  </Rule>
-  -->
+  
   <Rule id="xccdf_gov.nist.validation.r1100_rule_47" selected="true">
     <title>Test the filename entity with the pattern match operation</title>
     <description>Make sure the filename entity properly supports the pattern match operation.</description>
@@ -525,22 +437,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:49"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_50" selected="true">
-    <title>Test the filename entity with the case insensitive equals operation</title>
-    <description>Make sure the filename entity properly supports the case insensitive equals operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:50"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_51" selected="true">
-    <title>Test the filename entity with the case insensitive not equal operation</title>
-    <description>Make sure the filename entity properly supports the case insensitive not equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:51"/>
-    </check>
-  </Rule>
-   -->
+  
   <Rule id="xccdf_gov.nist.validation.r1100_rule_52" selected="true">
     <title>Test the filename entity with the pattern match operation</title>
     <description>Make sure the filename entity properly supports the pattern match operation.</description>
@@ -562,22 +459,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:54"/>
     </check>
   </Rule>
-  <!--
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_55" selected="true">
-    <title>Test the type entity with the case insensitive equals operation</title>
-    <description>Make sure the type entity properly supports the case insensitive equals operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:55"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_56" selected="true">
-    <title>Test the type entity with the case insensitive not equal operation</title>
-    <description>Make sure the type entity properly supports the case insensitive not equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:56"/>
-    </check>
-  </Rule>
-  -->
+  
   <Rule id="xccdf_gov.nist.validation.r1100_rule_57" selected="true">
     <title>Test the type entity with the pattern match operation</title>
     <description>Make sure the type entity properly supports the pattern match operation.</description>
@@ -599,22 +481,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:59"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_60" selected="true">
-    <title>Test the type entity with the case insensitive equals operation</title>
-    <description>Make sure the type entity properly supports the case insensitive equals operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:60"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_61" selected="true">
-    <title>Test the type entity with the case insensitive not equal operation</title>
-    <description>Make sure the type entity properly supports the case insensitive not equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:61"/>
-    </check>
-  </Rule>
-   -->
+  
   <Rule id="xccdf_gov.nist.validation.r1100_rule_62" selected="true">
     <title>Test the type entity with the pattern match operation</title>
     <description>Make sure the type entity properly supports the pattern match operation.</description>
@@ -622,6 +489,8 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:62"/>
     </check>
   </Rule>
+  
+  <!--
   <Rule id="xccdf_gov.nist.validation.r1100_rule_63" selected="true">
     <title>Test the group_id entity with the equals operation</title>
     <description>Make sure the group_id entity properly supports the equals operation.</description>
@@ -636,36 +505,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:64"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_65" selected="true">
-    <title>Test the group_id entity with the greater than operation</title>
-    <description>Make sure the group_id entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:65"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_66" selected="true">
-    <title>Test the group_id entity with the less than operation</title>
-    <description>Make sure the group_id entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:66"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_67" selected="true">
-    <title>Test the group_id entity with the greater than or equal operation</title>
-    <description>Make sure the group_id entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:67"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_68" selected="true">
-    <title>Test the group_id entity with the less than or equal operation</title>
-    <description>Make sure the group_id entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:68"/>
-    </check>
-  </Rule>
-  -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_69" selected="true">
     <title>Test the group_id entity with the equals operation</title>
     <description>Make sure the group_id entity properly supports the equals operation.</description>
@@ -680,36 +519,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:70"/>
     </check>
   </Rule>
-  <!--
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_71" selected="true">
-    <title>Test the group_id entity with the greater than operation</title>
-    <description>Make sure the group_id entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:71"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_72" selected="true">
-    <title>Test the group_id entity with the less than operation</title>
-    <description>Make sure the group_id entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:72"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_73" selected="true">
-    <title>Test the group_id entity with the greater than or equal operation</title>
-    <description>Make sure the group_id entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:73"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_74" selected="true">
-    <title>Test the group_id entity with the less than or equal operation</title>
-    <description>Make sure the group_id entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:74"/>
-    </check>
-  </Rule>
-  -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_75" selected="true">
     <title>Test the user_id entity with the equals operation</title>
     <description>Make sure the user_id entity properly supports the equals operation.</description>
@@ -724,36 +533,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:76"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_77" selected="true">
-    <title>Test the user_id entity with the greater than operation</title>
-    <description>Make sure the user_id entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:77"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_78" selected="true">
-    <title>Test the user_id entity with the less than operation</title>
-    <description>Make sure the user_id entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:78"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_79" selected="true">
-    <title>Test the user_id entity with the greater than or equal operation</title>
-    <description>Make sure the user_id entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:79"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_80" selected="true">
-    <title>Test the user_id entity with the less than or equal operation</title>
-    <description>Make sure the user_id entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:80"/>
-    </check>
-  </Rule>
-   -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_81" selected="true">
     <title>Test the user_id entity with the equals operation</title>
     <description>Make sure the user_id entity properly supports the equals operation.</description>
@@ -768,36 +547,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:82"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_83" selected="true">
-    <title>Test the user_id entity with the greater than operation</title>
-    <description>Make sure the user_id entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:83"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_84" selected="true">
-    <title>Test the user_id entity with the less than operation</title>
-    <description>Make sure the user_id entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:84"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_85" selected="true">
-    <title>Test the user_id entity with the greater than or equal operation</title>
-    <description>Make sure the user_id entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:85"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_86" selected="true">
-    <title>Test the user_id entity with the less than or equal operation</title>
-    <description>Make sure the user_id entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:86"/>
-    </check>
-  </Rule>
-   -->
+  -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_87" selected="true">
     <title>Test the size entity with the equals operation</title>
     <description>Make sure the size entity properly supports the equals operation.</description>
@@ -882,6 +632,8 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:98"/>
     </check>
   </Rule>
+
+<!--
   <Rule id="xccdf_gov.nist.validation.r1100_rule_99" selected="true">
     <title>Test the a_time entity with the equals operation</title>
     <description>Make sure the a_time entity properly supports the equals operation.</description>
@@ -896,36 +648,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:100"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_101" selected="true">
-    <title>Test the a_time entity with the greater than operation</title>
-    <description>Make sure the a_time entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:101"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_102" selected="true">
-    <title>Test the a_time entity with the less than operation</title>
-    <description>Make sure the a_time entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:102"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_103" selected="true">
-    <title>Test the a_time entity with the greater than or equal operation</title>
-    <description>Make sure the a_time entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:103"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_104" selected="true">
-    <title>Test the a_time entity with the less than or equal operation</title>
-    <description>Make sure the a_time entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:104"/>
-    </check>
-  </Rule>
-   -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_105" selected="true">
     <title>Test the a_time entity with the equals operation</title>
     <description>Make sure the a_time entity properly supports the equals operation.</description>
@@ -940,37 +662,7 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:106"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_107" selected="true">
-    <title>Test the a_time entity with the greater than operation</title>
-    <description>Make sure the a_time entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:107"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_108" selected="true">
-    <title>Test the a_time entity with the less than operation</title>
-    <description>Make sure the a_time entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:108"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_109" selected="true">
-    <title>Test the a_time entity with the greater than or equal operation</title>
-    <description>Make sure the a_time entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:109"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_110" selected="true">
-    <title>Test the a_time entity with the less than or equal operation</title>
-    <description>Make sure the a_time entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:110"/>
-    </check>
-  </Rule>
-   -->
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_111" selected="true">
+  <Rule id="xccdf_gov.nist.validation.r1100_rule_111" selected="false">
     <title>Test the c_time entity with the equals operation</title>
     <description>Make sure the c_time entity properly supports the equals operation.</description>
     <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
@@ -984,36 +676,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:112"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_113" selected="true">
-    <title>Test the c_time entity with the greater than operation</title>
-    <description>Make sure the c_time entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:113"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_114" selected="true">
-    <title>Test the c_time entity with the less than operation</title>
-    <description>Make sure the c_time entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:114"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_115" selected="true">
-    <title>Test the c_time entity with the greater than or equal operation</title>
-    <description>Make sure the c_time entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:115"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_116" selected="true">
-    <title>Test the c_time entity with the less than or equal operation</title>
-    <description>Make sure the c_time entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:116"/>
-    </check>
-  </Rule>
-   -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_117" selected="true">
     <title>Test the c_time entity with the equals operation</title>
     <description>Make sure the c_time entity properly supports the equals operation.</description>
@@ -1021,43 +683,13 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:117"/>
     </check>
   </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_118" selected="true">
+  <Rule id="xccdf_gov.nist.validation.r1100_rule_118" selected="false">
     <title>Test the c_time entity with the not equal operation</title>
     <description>Make sure the c_time entity properly supports the not equal operation.</description>
     <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:118"/>
     </check>
   </Rule>
-  <!--
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_119" selected="true">
-    <title>Test the c_time entity with the greater than operation</title>
-    <description>Make sure the c_time entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:119"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_120" selected="true">
-    <title>Test the c_time entity with the less than operation</title>
-    <description>Make sure the c_time entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:120"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_121" selected="true">
-    <title>Test the c_time entity with the greater than or equal operation</title>
-    <description>Make sure the c_time entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:121"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_122" selected="true">
-    <title>Test the c_time entity with the less than or equal operation</title>
-    <description>Make sure the c_time entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:122"/>
-    </check>
-  </Rule>
-  -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_123" selected="true">
     <title>Test the m_time entity with the equals operation</title>
     <description>Make sure the m_time entity properly supports the equals operation.</description>
@@ -1072,36 +704,6 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:124"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_125" selected="true">
-    <title>Test the m_time entity with the greater than operation</title>
-    <description>Make sure the m_time entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:125"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_126" selected="true">
-    <title>Test the m_time entity with the less than operation</title>
-    <description>Make sure the m_time entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:126"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_127" selected="true">
-    <title>Test the m_time entity with the greater than or equal operation</title>
-    <description>Make sure the m_time entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:127"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_128" selected="true">
-    <title>Test the m_time entity with the less than or equal operation</title>
-    <description>Make sure the m_time entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:128"/>
-    </check>
-  </Rule>
-  -->
   <Rule id="xccdf_gov.nist.validation.r1100_rule_129" selected="true">
     <title>Test the m_time entity with the equals operation</title>
     <description>Make sure the m_time entity properly supports the equals operation.</description>
@@ -1116,36 +718,8 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:130"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_131" selected="true">
-    <title>Test the m_time entity with the greater than operation</title>
-    <description>Make sure the m_time entity properly supports the greater than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:131"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_132" selected="true">
-    <title>Test the m_time entity with the less than operation</title>
-    <description>Make sure the m_time entity properly supports the less than operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:132"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_133" selected="true">
-    <title>Test the m_time entity with the greater than or equal operation</title>
-    <description>Make sure the m_time entity properly supports the greater than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:133"/>
-    </check>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_134" selected="true">
-    <title>Test the m_time entity with the less than or equal operation</title>
-    <description>Make sure the m_time entity properly supports the less than or equal operation.</description>
-    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
-      <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:134"/>
-    </check>
-  </Rule>
-   -->
+-->  
+  
   <Rule id="xccdf_gov.nist.validation.r1100_rule_135" selected="true">
     <title>Test the suid entity with the equals operation</title>
     <description>Make sure the suid entity properly supports the equals operation.</description>
@@ -1314,14 +888,5 @@
       <check-content-ref href="r1100-oval.xml" name="oval:nist.validation.r1100:def:158"/>
     </check>
   </Rule>
-  <!-- 
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_159" selected="true">
-    <title>Test the has_extended_acl entity with the equals operation</title>
-    <description>Make sure the has_extended_acl entity properly supports the equals operation.</description>
-  </Rule>
-  <Rule id="xccdf_gov.nist.validation.r1100_rule_160" selected="true">
-    <title>Test the has_extended_acl entity with the not equal operation</title>
-    <description>Make sure the has_extended_acl entity properly supports the not equal operation.</description>
-  </Rule>
-   -->
+  
 </Benchmark>

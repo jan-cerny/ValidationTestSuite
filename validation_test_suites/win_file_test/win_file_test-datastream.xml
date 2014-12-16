@@ -243,220 +243,7 @@
         <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_206" selected="true"/>
         <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_207" selected="false"/>
       </xccdf:Profile>
-      <!--
-  <xccdf:Profile id="xccdf_gov.nist.validation.winFile_profile_file2" prohibitChanges="1">
-    <xccdf:title>XCCDF Profile That References the Validation Content for the file_test</xccdf:title>
-    <xccdf:description>This Profile allows for the tailoring of the validation content for the file_test.</xccdf:description>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_1" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_2" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_3" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_4" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_5" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_6" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_7" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_8" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_9" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_10" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_11" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_12" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_13" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_14" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_15" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_16" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_17" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_18" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_19" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_20" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_21" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_22" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_23" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_24" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_25" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_26" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_27" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_28" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_29" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_30" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_31" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_32" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_33" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_34" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_35" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_36" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_37" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_38" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_39" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_40" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_41" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_42" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_43" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_44" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_45" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_46" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_47" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_48" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_49" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_50" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_51" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_52" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_53" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_54" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_55" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_56" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_57" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_58" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_59" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_60" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_61" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_62" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_63" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_64" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_65" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_66" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_67" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_68" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_69" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_70" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_71" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_72" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_73" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_74" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_75" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_76" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_77" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_78" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_79" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_80" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_81" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_82" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_83" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_84" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_85" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_86" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_87" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_88" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_89" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_90" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_91" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_92" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_93" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_94" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_95" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_96" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_97" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_98" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_99" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_100" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_101" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_102" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_103" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_104" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_105" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_106" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_107" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_108" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_109" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_110" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_111" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_112" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_113" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_114" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_115" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_116" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_117" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_118" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_119" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_120" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_121" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_122" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_123" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_124" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_125" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_126" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_127" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_128" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_129" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_130" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_131" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_132" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_133" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_134" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_135" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_136" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_137" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_138" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_139" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_140" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_141" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_142" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_143" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_144" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_145" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_146" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_147" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_148" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_149" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_150" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_151" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_152" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_153" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_154" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_155" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_156" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_157" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_158" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_159" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_160" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_161" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_162" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_163" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_164" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_165" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_166" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_167" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_168" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_169" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_170" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_171" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_172" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_173" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_174" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_175" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_176" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_177" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_178" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_179" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_180" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_181" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_182" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_183" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_184" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_185" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_186" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_187" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_188" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_189" selected="false"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_190" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_191" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_192" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_193" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_194" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_195" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_196" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_197" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_198" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_199" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_200" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_201" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_202" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_203" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_204" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_205" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_206" selected="true"/>
-    <xccdf:select idref="xccdf_gov.nist.validation.winFile_rule_207" selected="false"/>
-  </xccdf:Profile>
-  -->
-
+      
       <xccdf:Rule id="xccdf_gov.nist.validation.winFile_rule_1" selected="true">
         <xccdf:title>Test that the check_existence property is properly supported using the specified value</xccdf:title>
         <xccdf:description>Make sure that the value specified, for the check_existence property, is properly supported for the win-def:file_test.</xccdf:description>
@@ -1990,12 +1777,12 @@
             <criterion comment="Test to see that every file item exists for the specified object." negate="false" test_ref="oval:nist.validation.winFile:tst:6"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:7" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:7" version="2">
           <metadata>
             <title>Test that the check_existence property is properly supported using the specified value</title>
             <description>Make sure that the value specified, for the check_existence property, is properly supported for the win-def:file_test.</description>
             <expected_results>
-              <result configuration="1">FAIL</result>
+              <result configuration="1">PASS</result>
             </expected_results>
           </metadata>
           <criteria>
@@ -2230,7 +2017,7 @@
             <criterion comment="Test to see that the filepath is case insensitive not equal to C:\scap_validation_content\win_file\e\1.txt." negate="false" test_ref="oval:nist.validation.winFile:tst:26"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:27" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:27" version="2">
           <metadata>
             <title>Test the filepath entity with the pattern match operation</title>
             <description>Make sure the filepath entity properly supports the pattern match operation.</description>
@@ -2239,7 +2026,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filepath matches the regular expression C:\scap_validation_content\win_file\[abcde]+\1.txt." negate="false" test_ref="oval:nist.validation.winFile:tst:27"/>
+            <criterion comment="Test to see that the filepath matches the regular expression [Cc]:\\scap_validation_content\\win_file\\[abcde]+\\1.txt" negate="false" test_ref="oval:nist.validation.winFile:tst:27"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.winFile:def:28" version="1">
@@ -2290,7 +2077,7 @@
             <criterion comment="Test to see that the filepath is case insensitive not equal to C:\scap_validation_content\win_file\eX\1.txt." negate="false" test_ref="oval:nist.validation.winFile:tst:31"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:32" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:32" version="2">
           <metadata>
             <title>Test the filepath entity with the pattern match operation</title>
             <description>Make sure the filepath entity properly supports the pattern match operation.</description>
@@ -2299,7 +2086,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the filepath matches the regular expression c:\scap[ -]validation_conten\e\1.txt." negate="false" test_ref="oval:nist.validation.winFile:tst:32"/>
+            <criterion comment="Test to see that the filepath matches the regular expression [Cc]:\\scap[ \-]validation_conten\\win_file\\e\\1.txt" negate="false" test_ref="oval:nist.validation.winFile:tst:32"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.winFile:def:33" version="1">
@@ -2350,7 +2137,7 @@
             <criterion comment="Test to see that the path is case insensitive not equal to C:\scap_validation_content\win_file\e." negate="false" test_ref="oval:nist.validation.winFile:tst:36"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:37" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:37" version="2">
           <metadata>
             <title>Test the path entity with the pattern match operation</title>
             <description>Make sure the path entity properly supports the pattern match operation.</description>
@@ -2359,7 +2146,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path matches the regular expression c:\scap[_ -]validation_content\e." negate="false" test_ref="oval:nist.validation.winFile:tst:37"/>
+            <criterion comment="Test to see that the path matches the regular expression [Cc]:\\scap[_ \-]validation_content\\win_file\\e" negate="false" test_ref="oval:nist.validation.winFile:tst:37"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.winFile:def:38" version="1">
@@ -2410,7 +2197,7 @@
             <criterion comment="Test to see that the path is case insensitive not equal to C:\scap_validation_content\win_file\eX." negate="false" test_ref="oval:nist.validation.winFile:tst:41"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:42" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:42" version="2">
           <metadata>
             <title>Test the path entity with the pattern match operation</title>
             <description>Make sure the path entity properly supports the pattern match operation.</description>
@@ -2419,7 +2206,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the path matches the regular expression c:\scap[ -]validation_conten\e." negate="false" test_ref="oval:nist.validation.winFile:tst:42"/>
+            <criterion comment="Test to see that the path matches the regular expression [Cc]:\\scap[ \-]validation_conten\\win_file\\e" negate="false" test_ref="oval:nist.validation.winFile:tst:42"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.winFile:def:43" version="1">
@@ -2542,7 +2329,7 @@
             <criterion comment="Test to see that the filename matches the regular expression [\w]+.txt." negate="false" test_ref="oval:nist.validation.winFile:tst:52"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:53" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:53" version="2">
           <metadata>
             <title>Test the owner entity with the equals operation</title>
             <description>Make sure the owner entity properly supports the equals operation.</description>
@@ -2551,10 +2338,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the owner equals administrator." negate="false" test_ref="oval:nist.validation.winFile:tst:53"/>
+            <criterion comment="Test to see that the owner equals 'BUILTIN\Administrators' or 'ComputerName\administrator'." negate="false" test_ref="oval:nist.validation.winFile:tst:53"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:54" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:54" version="2">
           <metadata>
             <title>Test the owner entity with the not equal operation</title>
             <description>Make sure the owner entity properly supports the not equal operation.</description>
@@ -2563,10 +2350,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the owner is not equal to administrator." negate="false" test_ref="oval:nist.validation.winFile:tst:54"/>
+            <criterion comment="Test to see that the owner is not equal to 'BUILTIN\Administrators' and 'ComputerName\administrator'." negate="false" test_ref="oval:nist.validation.winFile:tst:54"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:55" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:55" version="2">
           <metadata>
             <title>Test the owner entity with the case insensitive equals operation</title>
             <description>Make sure the owner entity properly supports the case insensitive equals operation.</description>
@@ -2575,10 +2362,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the owner case insensitive equals administrator." negate="false" test_ref="oval:nist.validation.winFile:tst:55"/>
+            <criterion comment="Test to see that the owner case insensitive equals 'BUILTIN\Administrators' or 'ComputerName\AdMiNiStRaToR'." negate="false" test_ref="oval:nist.validation.winFile:tst:55"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:56" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:56" version="2">
           <metadata>
             <title>Test the owner entity with the case insensitive not equal operation</title>
             <description>Make sure the owner entity properly supports the case insensitive not equal operation.</description>
@@ -2587,10 +2374,10 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the owner is case insensitive not equal to administrator." negate="false" test_ref="oval:nist.validation.winFile:tst:56"/>
+            <criterion comment="Test to see that the owner is case insensitive not equal to 'BUILTIN\Administrators' and 'ComputerName\AdMiNiStRaToR'." negate="false" test_ref="oval:nist.validation.winFile:tst:56"/>
           </criteria>
         </definition>
-        <definition class="compliance" id="oval:nist.validation.winFile:def:57" version="1">
+        <definition class="compliance" id="oval:nist.validation.winFile:def:57" version="2">
           <metadata>
             <title>Test the owner entity with the pattern match operation</title>
             <description>Make sure the owner entity properly supports the pattern match operation.</description>
@@ -2599,7 +2386,7 @@
             </expected_results>
           </metadata>
           <criteria>
-            <criterion comment="Test to see that the owner matches the regular expression [ab]dministrator." negate="false" test_ref="oval:nist.validation.winFile:tst:57"/>
+            <criterion comment="Test to see that the owner matches the regular expression '^.*[ABab]dministrators?$'." negate="false" test_ref="oval:nist.validation.winFile:tst:57"/>
           </criteria>
         </definition>
         <definition class="compliance" id="oval:nist.validation.winFile:def:58" version="1">
@@ -4507,7 +4294,7 @@
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:7"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the filepath matches the regular expression C:\scap_validation_content\win_file\[abcde]+\1.txt." id="oval:nist.validation.winFile:tst:27" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the filepath matches the regular expression [Cc]:\\scap_validation_content\\win_file\\[abcde]+\\1.txt" id="oval:nist.validation.winFile:tst:27" version="2">
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:8"/>
         </file_test>
@@ -4527,7 +4314,7 @@
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:12"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the filepath matches the regular expression c:\scap[ -]validation_conten\e\1.txt." id="oval:nist.validation.winFile:tst:32" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the filepath matches the regular expression [Cc]:\\scap[ \-]validation_conten\\win_file\\e\\1.txt" id="oval:nist.validation.winFile:tst:32" version="2">
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:13"/>
         </file_test>
@@ -4547,7 +4334,7 @@
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:16"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression c:\scap[_ -]validation_content\e." id="oval:nist.validation.winFile:tst:37" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression [Cc]:\\scap[_ \-]validation_content\\win_file\\e" id="oval:nist.validation.winFile:tst:37" version="2">
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:17"/>
         </file_test>
@@ -4567,7 +4354,7 @@
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:20"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression c:\scap[ -]validation_conten\e." id="oval:nist.validation.winFile:tst:42" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the path matches the regular expression [Cc]:\\scap[ \-]validation_conten\\win_file\\e" id="oval:nist.validation.winFile:tst:42" version="2">
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:21"/>
         </file_test>
@@ -4611,23 +4398,27 @@
           <object object_ref="oval:nist.validation.winFile:obj:3"/>
           <state state_ref="oval:nist.validation.winFile:ste:30"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner equals administrator." id="oval:nist.validation.winFile:tst:53" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner equals 'BUILTIN\Administrators' or 'ComputerName\administrator'." id="oval:nist.validation.winFile:tst:53" version="2" state_operator="OR">
           <object object_ref="oval:nist.validation.winFile:obj:4"/>
           <state state_ref="oval:nist.validation.winFile:ste:31"/>
+          <state state_ref="oval:nist.validation.winFile:ste:190"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner is not equal to administrator." id="oval:nist.validation.winFile:tst:54" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner is not equal to 'BUILTIN\Administrators' and 'ComputerName\administrator'." id="oval:nist.validation.winFile:tst:54" version="2" state_operator="AND">
           <object object_ref="oval:nist.validation.winFile:obj:4"/>
           <state state_ref="oval:nist.validation.winFile:ste:32"/>
+          <state state_ref="oval:nist.validation.winFile:ste:191"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner case insensitive equals administrator." id="oval:nist.validation.winFile:tst:55" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner case insensitive equals 'BUILTIN\Administrators' or 'ComputerName\AdMiNiStRaToR'." id="oval:nist.validation.winFile:tst:55" version="2" state_operator="OR">
           <object object_ref="oval:nist.validation.winFile:obj:4"/>
           <state state_ref="oval:nist.validation.winFile:ste:33"/>
+          <state state_ref="oval:nist.validation.winFile:ste:192"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner is case insensitive not equal to administrator." id="oval:nist.validation.winFile:tst:56" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner is case insensitive not equal to 'BUILTIN\Administrators' and 'ComputerName\AdMiNiStRaToR'." id="oval:nist.validation.winFile:tst:56" version="2">
           <object object_ref="oval:nist.validation.winFile:obj:4"/>
           <state state_ref="oval:nist.validation.winFile:ste:34"/>
+          <state state_ref="oval:nist.validation.winFile:ste:193"/>
         </file_test>
-        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner matches the regular expression [ab]dministrator." id="oval:nist.validation.winFile:tst:57" version="1">
+        <file_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Test to see that the owner matches the regular expression '^.*[ABab]dministrators?$'." id="oval:nist.validation.winFile:tst:57" version="2">
           <object object_ref="oval:nist.validation.winFile:obj:4"/>
           <state state_ref="oval:nist.validation.winFile:ste:35"/>
         </file_test>
@@ -5255,6 +5046,11 @@
         <file_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:obj:5" version="1">
           <filepath operation="pattern match">^C:\\scap_validation_content\\win_file\\.*\\Skeleton\.exe$</filepath>
         </file_object>
+        <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:obj:6" version="1">
+          <hive>HKEY_LOCAL_MACHINE</hive>
+          <key>SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName</key>
+          <name>ComputerName</name>
+        </registry_object>
       </objects>
       <states>
         <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:1" version="1">
@@ -5359,8 +5155,8 @@
         <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:34" version="1">
           <owner datatype="string" operation="case insensitive not equal">BUILTIN\Administrators</owner>
         </file_state>
-        <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:35" version="1">
-          <owner datatype="string" operation="pattern match">BUILTIN\\[ABab]dministrators</owner>
+        <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:35" version="2">
+          <owner datatype="string" operation="pattern match">^.*[ABab]dministrators?$</owner>
         </file_state>
         <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:36" version="1">
           <owner datatype="string" operation="equals">guest</owner>
@@ -5832,6 +5628,18 @@
         <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:189" version="1">
           <language datatype="string" operation="case insensitive not equal">ENGLISH - United States</language>
         </file_state>
+        <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:190" version="1">
+          <owner datatype="string" operation="equals" var_ref="oval:nist.validation.winFile:var:4" var_check="all" entity_check="all"/>
+        </file_state>
+        <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:191" version="1">
+          <owner datatype="string" operation="not equal" var_ref="oval:nist.validation.winFile:var:4" var_check="all" entity_check="all"/>
+        </file_state>
+        <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:192" version="1">
+          <owner datatype="string" operation="case insensitive equals" var_ref="oval:nist.validation.winFile:var:5" var_check="all" entity_check="all"/>
+        </file_state>
+        <file_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winFile:ste:193" version="1">
+          <owner datatype="string" operation="case insensitive not equal" var_ref="oval:nist.validation.winFile:var:5" var_check="all" entity_check="all"/>
+        </file_state>
       </states>
       <variables>
         <constant_variable comment="This variable contains the regular expression FILE_TYPE_DIS[CK]." datatype="string" id="oval:nist.validation.winFile:var:1" version="1">
@@ -5842,6 +5650,18 @@
         </constant_variable>
         <local_variable id="oval:nist.validation.winFile:var:3" version="1" datatype="int" comment="c_time value">
           <object_component item_field="c_time" object_ref="oval:nist.validation.winFile:obj:4"/>
+        </local_variable>
+        <local_variable id="oval:nist.validation.winFile:var:4" version="1" datatype="string" comment="ComputerName\Administrator">
+          <concat>
+            <object_component item_field="value" object_ref="oval:nist.validation.winFile:obj:6"/>
+            <literal_component>\Administrator</literal_component>
+          </concat>
+        </local_variable>
+        <local_variable id="oval:nist.validation.winFile:var:5" version="1" datatype="string" comment="ComputerName\AdMiNiStRaToR">
+          <concat>
+            <object_component item_field="value" object_ref="oval:nist.validation.winFile:obj:6"/>
+            <literal_component>\AdMiNiStRaToR</literal_component>
+          </concat>
         </local_variable>
       </variables>
     </oval_definitions>

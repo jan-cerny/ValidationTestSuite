@@ -1,3 +1,22 @@
-A data stream with multiple profiles.
+Description
+	A data stream with multiple profiles.
 
-Untested
+Content Status
+	Complete
+
+Testing Status
+	Partial tested.
+
+Known Issues
+	None
+
+Scripts
+	None
+
+Configuration Instructions
+	None
+
+Cleanup Instructions 
+	None
+
+

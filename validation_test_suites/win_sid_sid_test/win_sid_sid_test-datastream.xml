@@ -457,16 +457,16 @@
         <criterion comment="Test to see that the trustee_sid matches the regular expression .*-500." negate="false" test_ref="oval:nist.validation.winSidSid:tst:3"/>
       </criteria>
     </definition>
-    <definition class="compliance" id="oval:nist.validation.winSidSid:def:4" version="1">
+    <definition class="compliance" id="oval:nist.validation.winSidSid:def:4" version="3">
       <metadata>
-        <title>Test the trustee_sid entity with the pattern match operation</title>
-        <description>Make sure the trustee_sid entity properly supports the pattern match operation.</description>
+        <title>Test that the check_existance property (value = none_exist) is properly supported.</title>
+        <description>Make sure the trustee_sid entity properly supports the check_existance property.</description> 
         <expected_results>
           <result configuration="1">PASS</result>
         </expected_results>
       </metadata>
       <criteria>
-        <criterion comment="Test to see that the trustee_sid matches the regular expression .*-501." negate="false" test_ref="oval:nist.validation.winSidSid:tst:4"/>
+        <criterion test_ref="oval:nist.validation.winSidSid:tst:4" comment="Test that the check_existance property (value = none_exist) is properly supported." negate="false"/>
       </criteria>
     </definition>
     <definition class="compliance" id="oval:nist.validation.winSidSid:def:5" version="1">
@@ -1035,7 +1035,7 @@
       <object object_ref="oval:nist.validation.winSidSid:obj:1"/>
       <state state_ref="oval:nist.validation.winSidSid:ste:3"/>
     </sid_sid_test>
-    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="Test to see that the trustee_sid matches the regular expression .*-501." id="oval:nist.validation.winSidSid:tst:4" version="1">
+    <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="none_exist" comment="Test that the check_existance property (value = none_exist) is properly supported." id="oval:nist.validation.winSidSid:tst:4" version="2">
       <object object_ref="oval:nist.validation.winSidSid:obj:11"/>
     </sid_sid_test>
     <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="only_one_exists" comment="Test to see that the trustee_sid matches the regular expression .*-500." id="oval:nist.validation.winSidSid:tst:5" version="1">
@@ -1069,7 +1069,6 @@
       <object object_ref="oval:nist.validation.winSidSid:obj:2"/>
       <state state_ref="oval:nist.validation.winSidSid:ste:2"/>
     </sid_sid_test>
-    <!-- <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:13" version="1" check_existence="at_least_one_exists" check="none exist" comment="Test to see that the trustee_sid matches the regular expression .*-499."> -->
     <sid_sid_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:tst:13" version="2" check="none exist" comment="Test that the check property (value = none exist) is properly supported.">
       <object object_ref="oval:nist.validation.winSidSid:obj:11"/>
       <state state_ref="oval:nist.validation.winSidSid:ste:6"/>
@@ -1263,11 +1262,16 @@
 		<trustee_sid operation="equals">S-1-5-0</trustee_sid>
         <!--<trustee_sid operation="equals" var_ref="oval:nist.validation.winSidSid:var:2" var_check="all"/>-->
     </sid_sid_object>
-    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:11" version="1">
-      <trustee_sid operation="equals" var_ref="oval:nist.validation.winSidSid:var:2"/>      
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:11" version="2">
+      <trustee_sid operation="equals" var_check="at least one" var_ref="oval:nist.validation.winSidSid:var:3"/>
     </sid_sid_object>
     <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:12" version="1">
       <trustee_sid operation="equals" var_ref="oval:nist.validation.winSidSid:var:1"/>      
+    </sid_sid_object>
+    <sid_sid_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:obj:13" version="1">
+      <behaviors include_group="false" resolve_group="true"/>
+      <trustee_sid operation="equals">S-1-5-32-544</trustee_sid>
+      <filter xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" action="include">oval:nist.validation.winSidSid:ste:38</filter>
     </sid_sid_object>
   </objects>
   <states>
@@ -1382,6 +1386,9 @@
     <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:37" version="1">
       <trustee_name datatype="string" operation="case insensitive equals">Users</trustee_name>
     </sid_sid_state>
+    <sid_sid_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:nist.validation.winSidSid:ste:38" version="1">
+      <trustee_sid datatype="string" operation="pattern match">^S-1-5-.+-500$</trustee_sid>
+    </sid_sid_state>
   </states>
   <variables>
     <local_variable comment="This local variable retrieves the SID of the group whose name is 'Administrators'." datatype="string" id="oval:nist.validation.winSidSid:var:1" version="1">
@@ -1389,6 +1396,13 @@
     </local_variable>
     <local_variable comment="This local variable retrieves the SID of an account that doesn't exist" datatype="string" id="oval:nist.validation.winSidSid:var:2" version="1">
       <object_component item_field="trustee_sid" object_ref="oval:nist.validation.winSidSid:obj:9"/>
+    </local_variable>    
+    <local_variable comment="This local variable retrieves Administrator's SID and replaces -500 with -498" datatype="string" id="oval:nist.validation.winSidSid:var:3" version="1">
+      <end character="-498">
+        <regex_capture pattern="(S-1-5-.+)-500$">
+          <object_component item_field="trustee_sid" object_ref="oval:nist.validation.winSidSid:obj:13"/>
+        </regex_capture>
+      </end>
     </local_variable>
   </variables>
 </oval_definitions></component><component id="scap_gov.nist_comp_sid_sid-cpe-oval.xml" timestamp="2012-11-09T09:58:37"><oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">

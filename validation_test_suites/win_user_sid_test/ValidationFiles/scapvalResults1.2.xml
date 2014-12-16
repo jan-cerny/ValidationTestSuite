@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scap-validation-results xmlns="http://scap.nist.gov/schema/validation/results/0.1"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                         implementation-version="scapval-1.2.1.9"
+                         implementation-version="scapval-1.2.1.5"
                          message-count="113"
                          resource-id="win_user_sid_test-datastream.xml"
-                         validation-datetime="2013-08-07T15:43:12"
+                         validation-datetime="2013-06-06T17:10:07"
                          xsi:schemaLocation="http://scap.nist.gov/schema/validation/results/0.1 http://scap.nist.gov/schema/scap-validation-results_0.1.xsd">
    <messages>
-      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\DRAGOS~1.PRI\AppData\Local\Temp\.</message>
+      <message level="DEBUG" type="APPLICATION">Temporary directory is C:\Users\hbooth\AppData\Local\Temp\.</message>
       <message level="INFO" resource-id="win_user_sid_test-datastream.xml"
                type="SUBMITTED_RESOURCE">Resource win_user_sid_test-datastream.xml was submitted.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\nvdcce-0.1-feed.xml.</message>
-      <message level="DEBUG" type="APPLICATION">File is more than 12 hours old, C:\utilities\scapval-1.2\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
+      <message level="INFO" type="APPLICATION">File is less than 12 hours old, skipping download for C:\utilities\scapval-1.2.1.5\data_feeds\nvdcce-0.1-feed.xml.</message>
+      <message level="INFO" type="APPLICATION">File is less than 12 hours old, skipping download for C:\utilities\scapval-1.2.1.5\data_feeds\official-cpe-dictionary_v2.2.xml.</message>
       <message level="INFO" type="APPLICATION">Hashing inputs.</message>
       <message level="INFO" resource-id="win_user_sid_test-datastream.xml" type="HASH">SHA-256 : 7DBE7D44C338407D7CE7E6BECBFE1C63064BC758BDD9AE8C97C11D4DEB211905</message>
       <message level="INFO" resource-id="nvdcce-0.1-feed.xml" type="HASH">SHA-256 : FE625DF8D1B114581D664210DDD83F5207C42E6296A49E2A09F35BC42E0C92EA</message>
-      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 838DDDFCA7C69A311563DF7B7928313CAC0D0DE4F43339302E1D0558E6FC8123</message>
+      <message level="INFO" resource-id="official-cpe-dictionary_v2.2.xml" type="HASH">SHA-256 : 4603631AE4AA698F5DDF9F1EE86FB4B5C911651D11AA758E158A6D6E5BDEE844</message>
       <message level="INFO" type="APPLICATION">Validating against XML schemas.</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against data stream collection win_user_sid_test-datastream.xml</message>
       <message level="INFO" type="APPLICATION">Running XML schema validation against component scap_gov.nist_comp_user_sid-cpe-dictionary.xml</message>
@@ -566,8 +566,8 @@
                resource-id="win_user_sid_test-datastream.xml"
                test="if(@class eq 'compliance') then exists(oval-def:metadata/oval-def:reference[matches(@source,'^(http://cce.mitre.org|CCE)$')]) else true()"
                type="SCHEMATRON">oval:nist.validation.winUserSid:def:44 - OVAL definitions of class 'compliance' should include a reference to a CCE, where applicable.</message>
-      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:03.472.</message>
+      <message level="DEBUG" type="APPLICATION">Finished schematron validation in 00:00:01.370.</message>
       <message level="DEBUG" type="APPLICATION">Schematron validation completed without errors.</message>
-      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:06.820.</message>
+      <message level="INFO" type="APPLICATION">Finished SCAP content validation in 00:00:03.530.</message>
    </messages>
 </scap-validation-results>
